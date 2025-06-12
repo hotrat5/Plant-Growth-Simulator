@@ -1,0 +1,4 @@
+qqqqqqqqqqqqqq,1
+wwwwwwwwwwwwww,0
+eeeeeeeeeeeeee,0
+rrrrrrrrrrrrrr,1

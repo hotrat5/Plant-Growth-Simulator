@@ -1,0 +1,4 @@
+qqqqqqqqqqqq,aaaaa
+在说明语句：int *f()中，标识符f代表的是,返回指向int类型指针的函数
+wwwwwwwwwwwwww,sssss
+rrrrrrrrrr,ffff2

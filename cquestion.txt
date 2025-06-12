@@ -1,0 +1,6 @@
+若有说明：int i， j=7 ，*p=&i，则与i=j，等价的语句是,i=*p,*p=*&j,i=&j,i=**p,1
+对于基类型相同的两个指针变量之间，不能进行的运算是,<,=,+,-,2
+ttttttttt,dfghsd,asd,asd,fg,1
+eeeeeeeeeeeeee,dfghsd,asd,asd,fg,0
+wwwwwwwwwwwwww,dfghsd,asd,asd,fg,0
+qqqqqqqqqqqqqq,sdfsag,asf,sda,gd,1
