@@ -1,0 +1,16 @@
+{
+  "codename": "FontPlant",
+  "ttf_path": "/assets/PingFangSC-Regular.ttf",
+  "bin_path": "/assets\\ui_font_FontPlant.bin",
+  "c_path": "/assets\\ui_font_FontPlant.c",
+  "cfg_path": "/assets\\ui_font_FontPlant.fcfg",
+  "size": 14,
+  "bpp": 1,
+  "letters": 5,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "植物类型名称温湿度年龄环境光照状态健康浇水施肥详情切换天气季节春夏秋冬获得点击它取你的第一株向日葵恭喜颗种子",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}

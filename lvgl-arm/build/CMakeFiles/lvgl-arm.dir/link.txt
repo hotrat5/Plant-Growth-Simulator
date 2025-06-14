@@ -1,0 +1,1 @@
+/usr/local/arm/5.4.0/usr/bin/arm-linux-gcc CMakeFiles/lvgl-arm.dir/main.c.o -o lvgl-arm  lib/liblvgl.a lvgl/liblvgl_examples.a lvgl/liblvgl_demos.a lib/liblv_drivers.a UI/libui.a lib/liblvgl.a 
