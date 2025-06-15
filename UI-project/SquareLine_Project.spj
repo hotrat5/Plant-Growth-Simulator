@@ -13776,14 +13776,13 @@
               },
               {
                 "nid": 900979446,
-                "flags": 1048576,
                 "strtype": "OBJECT/Flags",
                 "InheritedType": 1
               },
               {
                 "nid": -995642758,
                 "strtype": "OBJECT/Hidden",
-                "strval": "False",
+                "strval": "True",
                 "InheritedType": 2
               },
               {
@@ -14005,21 +14004,7 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [
-                  {
-                    "nid": 1237070555,
-                    "strtype": "_style/StyleState",
-                    "strval": "DEFAULT",
-                    "childs": [
-                      {
-                        "nid": 714220624,
-                        "strtype": "_style/Blend_opacity",
-                        "InheritedType": 6
-                      }
-                    ],
-                    "InheritedType": 1
-                  }
-                ],
+                "childs": [],
                 "nid": -406752486,
                 "strtype": "IMAGE/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Transform",
@@ -14156,14 +14141,13 @@
               },
               {
                 "nid": 752856968,
-                "flags": 1048576,
                 "strtype": "OBJECT/Flags",
                 "InheritedType": 1
               },
               {
                 "nid": 1698923436,
                 "strtype": "OBJECT/Hidden",
-                "strval": "False",
+                "strval": "True",
                 "InheritedType": 2
               },
               {
@@ -14385,21 +14369,7 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [
-                  {
-                    "nid": -1400087217,
-                    "strtype": "_style/StyleState",
-                    "strval": "DEFAULT",
-                    "childs": [
-                      {
-                        "nid": 1547140343,
-                        "strtype": "_style/Blend_opacity",
-                        "InheritedType": 6
-                      }
-                    ],
-                    "InheritedType": 1
-                  }
-                ],
+                "childs": [],
                 "nid": 546897502,
                 "strtype": "IMAGE/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Transform",
@@ -14536,14 +14506,13 @@
               },
               {
                 "nid": 609971495,
-                "flags": 1048576,
                 "strtype": "OBJECT/Flags",
                 "InheritedType": 1
               },
               {
                 "nid": 276054132,
                 "strtype": "OBJECT/Hidden",
-                "strval": "False",
+                "strval": "True",
                 "InheritedType": 2
               },
               {
@@ -14765,21 +14734,7 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [
-                  {
-                    "nid": -518551410,
-                    "strtype": "_style/StyleState",
-                    "strval": "DEFAULT",
-                    "childs": [
-                      {
-                        "nid": 362569009,
-                        "strtype": "_style/Blend_opacity",
-                        "InheritedType": 6
-                      }
-                    ],
-                    "InheritedType": 1
-                  }
-                ],
+                "childs": [],
                 "nid": 2038081626,
                 "strtype": "IMAGE/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Transform",
@@ -14916,14 +14871,13 @@
               },
               {
                 "nid": 1943695570,
-                "flags": 1048576,
                 "strtype": "OBJECT/Flags",
                 "InheritedType": 1
               },
               {
                 "nid": 1778081648,
                 "strtype": "OBJECT/Hidden",
-                "strval": "False",
+                "strval": "True",
                 "InheritedType": 2
               },
               {
@@ -15146,21 +15100,7 @@
               },
               {
                 "part": "lv.PART.MAIN",
-                "childs": [
-                  {
-                    "nid": -1857658161,
-                    "strtype": "_style/StyleState",
-                    "strval": "DEFAULT",
-                    "childs": [
-                      {
-                        "nid": -1363245211,
-                        "strtype": "_style/Blend_opacity",
-                        "InheritedType": 6
-                      }
-                    ],
-                    "InheritedType": 1
-                  }
-                ],
+                "childs": [],
                 "nid": -2043077896,
                 "strtype": "IMAGE/Style_main",
                 "strval": "lv.PART.MAIN, Rectangle, Image, Transform",
@@ -40563,7 +40503,7 @@
     "theme_color2": 0,
     "uiExportFolderPath": "D:\\Embeddedst\\Projects\\Plant-Growth-Simulator\\lvgl-fb\\UI",
     "projectExportFolderPath": "",
-    "backup_cnt": 130,
+    "backup_cnt": 140,
     "autosave_cnt": 0,
     "lvgl_version": "8.3.11",
     "callfuncsexport": "C_FILE",
