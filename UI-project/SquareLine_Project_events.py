@@ -90,3 +90,15 @@ def plant_watering(event_struct):
 def growthstagechange(event_struct):
     return
 
+
+def switch2illustratedscreen(event_struct):
+    return
+
+
+def addscreen(event_struct):
+    return
+
+
+def initnewscreen(event_struct):
+    return
+
