@@ -64,4 +64,16 @@ void ui_IllustratedScreen1_screen_init(void)
     lv_label_set_text(ui_Label2, "向日葵");
     lv_obj_set_style_text_font(ui_Label2, &ui_font_FontPlant, LV_PART_MAIN | LV_STATE_DEFAULT);
 
+    ui_Image17 = lv_img_create(ui_IllustratedScreen1);
+    lv_img_set_src(ui_Image17, &ui_img_zen_prevgarden_png);
+    lv_obj_set_width(ui_Image17, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Image17, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Image17, -345);
+    lv_obj_set_y(ui_Image17, -179);
+    lv_obj_set_align(ui_Image17, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Image17, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image17, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    lv_obj_add_event_cb(ui_Image17, ui_event_Image17, LV_EVENT_ALL, NULL);
+
 }

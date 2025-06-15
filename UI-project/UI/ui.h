@@ -43,25 +43,32 @@ extern lv_obj_t * ui_fertilize1;
 void ui_event_watering1(lv_event_t * e);
 extern lv_obj_t * ui_watering1;
 extern lv_obj_t * ui_health1;
+void ui_event_healthlabel1(lv_event_t * e);
 extern lv_obj_t * ui_healthlabel1;
 extern lv_obj_t * ui_healthImage1;
 extern lv_obj_t * ui_state1;
+void ui_event_statelabel1(lv_event_t * e);
 extern lv_obj_t * ui_statelabel1;
 extern lv_obj_t * ui_stateImage1;
 extern lv_obj_t * ui_humidity1;
+void ui_event_humiditylabel1(lv_event_t * e);
 extern lv_obj_t * ui_humiditylabel1;
 extern lv_obj_t * ui_humidityImage1;
 extern lv_obj_t * ui_temperature1;
+void ui_event_temperaturelabel1(lv_event_t * e);
 extern lv_obj_t * ui_temperaturelabel1;
 extern lv_obj_t * ui_temperatureImage1;
 extern lv_obj_t * ui_light1;
+void ui_event_lightlabel1(lv_event_t * e);
 extern lv_obj_t * ui_lightlabel1;
 extern lv_obj_t * ui_lightImage1;
 extern lv_obj_t * ui_weather1;
-extern lv_obj_t * ui_label1;
-extern lv_obj_t * ui_image1;
+void ui_event_weatherlabel1(lv_event_t * e);
+extern lv_obj_t * ui_weatherlabel1;
+extern lv_obj_t * ui_weatherimage1;
 extern lv_obj_t * ui_season1;
 extern lv_obj_t * ui_seasonimage1;
+void ui_event_seasonlabel1(lv_event_t * e);
 extern lv_obj_t * ui_seasonlabel1;
 extern lv_obj_t * ui_firstplant;
 void ui_event_Illustrated1(lv_event_t * e);
@@ -77,12 +84,19 @@ extern lv_obj_t * ui_plant1;
 extern lv_obj_t * ui_plantimg1;
 extern lv_obj_t * ui_plantlabel1;
 extern lv_obj_t * ui_seed;
+void ui_event_seed1(lv_event_t * e);
 extern lv_obj_t * ui_seed1;
+void ui_event_sprout1(lv_event_t * e);
 extern lv_obj_t * ui_sprout1;
 void ui_event_seeding1(lv_event_t * e);
 extern lv_obj_t * ui_seeding1;
+void ui_event_mature1(lv_event_t * e);
 extern lv_obj_t * ui_mature1;
+void ui_event_flowering(lv_event_t * e);
 extern lv_obj_t * ui_flowering;
+extern lv_obj_t * ui_achivevment1;
+extern lv_obj_t * ui_achivevmentimage1;
+extern lv_obj_t * ui_achivevmentlabel1;
 // SCREEN: ui_secondscreen
 void ui_secondscreen_screen_init(void);
 extern lv_obj_t * ui_secondscreen;
@@ -135,12 +149,33 @@ extern lv_obj_t * ui_illuTextArea1;
 extern lv_obj_t * ui_illuImage1;
 extern lv_obj_t * ui_sunflower;
 extern lv_obj_t * ui_Label2;
+void ui_event_Image17(lv_event_t * e);
+extern lv_obj_t * ui_Image17;
 // SCREEN: ui_IllustratedScreen2
 void ui_IllustratedScreen2_screen_init(void);
 extern lv_obj_t * ui_IllustratedScreen2;
 extern lv_obj_t * ui_illustratedbg2;
 extern lv_obj_t * ui_illuTextArea2;
 extern lv_obj_t * ui_illuImage2;
+// SCREEN: ui_achievementScreen
+void ui_achievementScreen_screen_init(void);
+extern lv_obj_t * ui_achievementScreen;
+extern lv_obj_t * ui_achievementbg;
+extern lv_obj_t * ui_Image9;
+extern lv_obj_t * ui_Image2;
+extern lv_obj_t * ui_Image3;
+extern lv_obj_t * ui_Image4;
+extern lv_obj_t * ui_Image5;
+extern lv_obj_t * ui_Image6;
+extern lv_obj_t * ui_Image10;
+extern lv_obj_t * ui_Image11;
+extern lv_obj_t * ui_Image7;
+extern lv_obj_t * ui_Image8;
+extern lv_obj_t * ui_Image12;
+extern lv_obj_t * ui_Image13;
+extern lv_obj_t * ui_Image14;
+extern lv_obj_t * ui_Image15;
+extern lv_obj_t * ui_Image16;
 extern lv_obj_t * ui____initial_actions0;
 
 
@@ -164,15 +199,21 @@ LV_IMG_DECLARE(ui_img_577302902);    // assets/妙蛙种子.png
 LV_IMG_DECLARE(ui_img_seed1_png);    // assets/seed1.png
 LV_IMG_DECLARE(ui_img_sprout1_png);    // assets/sprout1.png
 LV_IMG_DECLARE(ui_img_seedling1_png);    // assets/seedling1.png
-LV_IMG_DECLARE(ui_img_seedingframe1_png);    // assets/seedingframe1.png
 LV_IMG_DECLARE(ui_img_mature1_png);    // assets/mature1.png
 LV_IMG_DECLARE(ui_img_flowering1_png);    // assets/flowering1.png
+LV_IMG_DECLARE(ui_img_403432398);    // assets/个人成就.png
 LV_IMG_DECLARE(ui_img_zen_prevgarden_png);    // assets/Zen_PrevGarden.png
 LV_IMG_DECLARE(ui_img_letterbg__png);    // assets/letterBG..png
 LV_IMG_DECLARE(ui_img_uppercaveplants__png);    // assets/upperCavePlants..png
 LV_IMG_DECLARE(ui_img_sunflower_png);    // assets/sunflower.png
+LV_IMG_DECLARE(ui_img_grass__png);    // assets/grass..png
+LV_IMG_DECLARE(ui_img_hoedirt1_png);    // assets/hoeDirt1.png
+LV_IMG_DECLARE(ui_img_hoedirtsnow__png);    // assets/hoeDirtSnow..png
+LV_IMG_DECLARE(ui_img_seedingframe1_png);    // assets/seedingframe1.png
 LV_IMG_DECLARE(ui_img_2096096803);    // assets/包裹的礼物_1749863734.png
 LV_IMG_DECLARE(ui_img_348401948);    // assets/萌芽_1749865223.png
+LV_IMG_DECLARE(ui_img_fruittrees2_png);    // assets/fruitTrees2.png
+LV_IMG_DECLARE(ui_img_fruittrees1_png);    // assets/fruitTrees1.png
 
 
 

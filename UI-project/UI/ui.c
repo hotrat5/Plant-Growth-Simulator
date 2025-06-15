@@ -39,25 +39,32 @@ lv_obj_t * ui_fertilize1;
 void ui_event_watering1(lv_event_t * e);
 lv_obj_t * ui_watering1;
 lv_obj_t * ui_health1;
+void ui_event_healthlabel1(lv_event_t * e);
 lv_obj_t * ui_healthlabel1;
 lv_obj_t * ui_healthImage1;
 lv_obj_t * ui_state1;
+void ui_event_statelabel1(lv_event_t * e);
 lv_obj_t * ui_statelabel1;
 lv_obj_t * ui_stateImage1;
 lv_obj_t * ui_humidity1;
+void ui_event_humiditylabel1(lv_event_t * e);
 lv_obj_t * ui_humiditylabel1;
 lv_obj_t * ui_humidityImage1;
 lv_obj_t * ui_temperature1;
+void ui_event_temperaturelabel1(lv_event_t * e);
 lv_obj_t * ui_temperaturelabel1;
 lv_obj_t * ui_temperatureImage1;
 lv_obj_t * ui_light1;
+void ui_event_lightlabel1(lv_event_t * e);
 lv_obj_t * ui_lightlabel1;
 lv_obj_t * ui_lightImage1;
 lv_obj_t * ui_weather1;
-lv_obj_t * ui_label1;
-lv_obj_t * ui_image1;
+void ui_event_weatherlabel1(lv_event_t * e);
+lv_obj_t * ui_weatherlabel1;
+lv_obj_t * ui_weatherimage1;
 lv_obj_t * ui_season1;
 lv_obj_t * ui_seasonimage1;
+void ui_event_seasonlabel1(lv_event_t * e);
 lv_obj_t * ui_seasonlabel1;
 lv_obj_t * ui_firstplant;
 void ui_event_Illustrated1(lv_event_t * e);
@@ -73,12 +80,19 @@ lv_obj_t * ui_plant1;
 lv_obj_t * ui_plantimg1;
 lv_obj_t * ui_plantlabel1;
 lv_obj_t * ui_seed;
+void ui_event_seed1(lv_event_t * e);
 lv_obj_t * ui_seed1;
+void ui_event_sprout1(lv_event_t * e);
 lv_obj_t * ui_sprout1;
 void ui_event_seeding1(lv_event_t * e);
 lv_obj_t * ui_seeding1;
+void ui_event_mature1(lv_event_t * e);
 lv_obj_t * ui_mature1;
+void ui_event_flowering(lv_event_t * e);
 lv_obj_t * ui_flowering;
+lv_obj_t * ui_achivevment1;
+lv_obj_t * ui_achivevmentimage1;
+lv_obj_t * ui_achivevmentlabel1;
 
 
 // SCREEN: ui_secondscreen
@@ -135,6 +149,8 @@ lv_obj_t * ui_illuTextArea1;
 lv_obj_t * ui_illuImage1;
 lv_obj_t * ui_sunflower;
 lv_obj_t * ui_Label2;
+void ui_event_Image17(lv_event_t * e);
+lv_obj_t * ui_Image17;
 
 
 // SCREEN: ui_IllustratedScreen2
@@ -143,8 +159,36 @@ lv_obj_t * ui_IllustratedScreen2;
 lv_obj_t * ui_illustratedbg2;
 lv_obj_t * ui_illuTextArea2;
 lv_obj_t * ui_illuImage2;
+
+
+// SCREEN: ui_achievementScreen
+void ui_achievementScreen_screen_init(void);
+lv_obj_t * ui_achievementScreen;
+lv_obj_t * ui_achievementbg;
+lv_obj_t * ui_Image9;
+lv_obj_t * ui_Image2;
+lv_obj_t * ui_Image3;
+lv_obj_t * ui_Image4;
+lv_obj_t * ui_Image5;
+lv_obj_t * ui_Image6;
+lv_obj_t * ui_Image10;
+lv_obj_t * ui_Image11;
+lv_obj_t * ui_Image7;
+lv_obj_t * ui_Image8;
+lv_obj_t * ui_Image12;
+lv_obj_t * ui_Image13;
+lv_obj_t * ui_Image14;
+lv_obj_t * ui_Image15;
+lv_obj_t * ui_Image16;
 lv_obj_t * ui____initial_actions0;
 const lv_img_dsc_t * ui_imgset_back[1] = {&ui_img_back1_png};
+const lv_img_dsc_t * ui_imgset_flowering[1] = {&ui_img_flowering1_png};
+const lv_img_dsc_t * ui_imgset_hoedirt[1] = {&ui_img_hoedirt1_png};
+const lv_img_dsc_t * ui_imgset_mature[1] = {&ui_img_mature1_png};
+const lv_img_dsc_t * ui_imgset_seed[1] = {&ui_img_seed1_png};
+const lv_img_dsc_t * ui_imgset_seedingframe[1] = {&ui_img_seedingframe1_png};
+const lv_img_dsc_t * ui_imgset_seedling[1] = {&ui_img_seedling1_png};
+const lv_img_dsc_t * ui_imgset_sprout[1] = {&ui_img_sprout1_png};
 const lv_img_dsc_t * ui_imgset_529531944[1] = {&ui_img_2096096803};
 const lv_img_dsc_t * ui_imgset_1641601393[1] = {&ui_img_178160675};
 const lv_img_dsc_t * ui_imgset_292235680[1] = {&ui_img_1745983305};
@@ -155,12 +199,7 @@ const lv_img_dsc_t * ui_imgset_1333792314[1] = {&ui_img_683165229};
 const lv_img_dsc_t * ui_imgset_886194291[1] = {&ui_img_561135566};
 const lv_img_dsc_t * ui_imgset_581817586[1] = {&ui_img_348401948};
 const lv_img_dsc_t * ui_imgset_1100402257[1] = {&ui_img_1606731336};
-const lv_img_dsc_t * ui_imgset_seed[1] = {&ui_img_seed1_png};
-const lv_img_dsc_t * ui_imgset_flowering[1] = {&ui_img_flowering1_png};
-const lv_img_dsc_t * ui_imgset_mature[1] = {&ui_img_mature1_png};
-const lv_img_dsc_t * ui_imgset_seedling[1] = {&ui_img_seedling1_png};
-const lv_img_dsc_t * ui_imgset_sprout[1] = {&ui_img_sprout1_png};
-const lv_img_dsc_t * ui_imgset_seedingframe[1] = {&ui_img_seedingframe1_png};
+const lv_img_dsc_t * ui_imgset_fruittrees[2] = {&ui_img_fruittrees1_png, &ui_img_fruittrees2_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 32
@@ -602,6 +641,62 @@ void ui_event_watering1(lv_event_t * e)
         watering(e);
     }
 }
+void ui_event_healthlabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        healthchange(e);
+    }
+}
+void ui_event_statelabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        agechange(e);
+    }
+}
+void ui_event_humiditylabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        humiditychange(e);
+    }
+}
+void ui_event_temperaturelabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        temperaturechange(e);
+    }
+}
+void ui_event_lightlabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        lightchange(e);
+    }
+}
+void ui_event_weatherlabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        weatherchange(e);
+    }
+}
+void ui_event_seasonlabel1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        seasonchange(e);
+    }
+}
 void ui_event_Illustrated1(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
@@ -636,12 +731,44 @@ void ui_event_plant1(lv_event_t * e)
         grow_plant(e);
     }
 }
+void ui_event_seed1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        growseed(e);
+    }
+}
+void ui_event_sprout1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        growsproutEvent(e);
+    }
+}
 void ui_event_seeding1(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_image_set_property(ui_seeding1, _UI_IMAGE_PROPERTY_IMAGE, & ui_img_seedingframe1_png);
+        growseeding(e);
+    }
+}
+void ui_event_mature1(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        growmature(e);
+    }
+}
+void ui_event_flowering(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        growflowering(e);
     }
 }
 void ui_event_Insectremoval2(lv_event_t * e)
@@ -699,6 +826,14 @@ void ui_event_prev2(lv_event_t * e)
         _ui_screen_change(&ui_firstscreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_firstscreen_screen_init);
     }
 }
+void ui_event_Image17(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_firstscreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_firstscreen_screen_init);
+    }
+}
 
 ///////////////////// SCREENS ////////////////////
 
@@ -713,6 +848,7 @@ void ui_init(void)
     ui_secondscreen_screen_init();
     ui_IllustratedScreen1_screen_init();
     ui_IllustratedScreen2_screen_init();
+    ui_achievementScreen_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_initscreen);
 }

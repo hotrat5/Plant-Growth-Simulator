@@ -13,8 +13,20 @@ extern "C" {
 void insert_removal(lv_event_t * e);
 void fertilize(lv_event_t * e);
 void watering(lv_event_t * e);
+void healthchange(lv_event_t * e);
+void agechange(lv_event_t * e);
+void humiditychange(lv_event_t * e);
+void temperaturechange(lv_event_t * e);
+void lightchange(lv_event_t * e);
+void weatherchange(lv_event_t * e);
+void seasonchange(lv_event_t * e);
 void get_seed(lv_event_t * e);
 void grow_plant(lv_event_t * e);
+void growseed(lv_event_t * e);
+void growsproutEvent(lv_event_t * e);
+void growseeding(lv_event_t * e);
+void growmature(lv_event_t * e);
+void growflowering(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/

@@ -74,3 +74,19 @@ def lightchange(event_struct):
 def temperaturechange(event_struct):
     return
 
+
+def plant_insert_removal(event_struct):
+    return
+
+
+def plant_fertilize(event_struct):
+    return
+
+
+def plant_watering(event_struct):
+    return
+
+
+def growthstagechange(event_struct):
+    return
+

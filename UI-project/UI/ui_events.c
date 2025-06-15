@@ -29,3 +29,63 @@ void grow_plant(lv_event_t * e)
 {
 	// Your code here
 }
+
+void healthchange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void agechange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void humiditychange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void temperaturechange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void lightchange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void weatherchange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void seasonchange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void growseed(lv_event_t * e)
+{
+	// Your code here
+}
+
+void growsproutEvent(lv_event_t * e)
+{
+	// Your code here
+}
+
+void growseeding(lv_event_t * e)
+{
+	// Your code here
+}
+
+void growmature(lv_event_t * e)
+{
+	// Your code here
+}
+
+void growflowering(lv_event_t * e)
+{
+	// Your code here
+}
