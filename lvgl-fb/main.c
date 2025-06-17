@@ -28,12 +28,16 @@ static const uint32_t UPDATE_INTERVAL = 5000;  // 5秒
 static const uint32_t TIMEOUT_WAIT_PLANT = 60000;  // 30秒超时
 
 Environment* env = NULL;
-PlantState* plant = NULL;
+PlantState* plant = NULL;  // 向日葵
+PlantState* tomato = NULL; 
+PlantState* cactus = NULL;
+PlantState* cannibal_flower = NULL;
 User* user = NULL;
 Commodity* commodity = NULL;
 extern bool exist_plant;
 bool day_change = true;
 uint8_t plantstage = 0;
+static bool own_plant[4];
 
 int main(void)
 {
@@ -45,6 +49,8 @@ int main(void)
     // 初始化UI
     ui_init();
 
+    //判断是否拥有植物
+    plant_own();
 
     //初始化用户和商店
     user = (User*)malloc(sizeof(User));
@@ -65,21 +71,41 @@ int main(void)
         printf("内存分配失败！\n");
         return -1;
     }
-
-    env->season = 1;   //夏季开始
-    env->day = 0;
-    
+    own_plant[0] = true;
     plant = (PlantState*)malloc(sizeof(PlantState));
-
-    
     if (plant == NULL) {
         printf("内存分配失败！\n");
         return -1;
     }
+
+    if(own_plant[1]){
+        tomato = (PlantState*)malloc(sizeof(PlantState));
+        if (tomato == NULL) {
+            printf("内存分配失败！\n");
+            return -1;
+        }
+    }
+    if(own_plant[2]){
+        cactus = (PlantState*)malloc(sizeof(PlantState));
+        if (cactus == NULL) {
+            printf("内存分配失败！\n");
+            return -1;
+        }
+    }
+    if(own_plant[3]){
+        cannibal_flower = (PlantState*)malloc(sizeof(PlantState));
+        if (cannibal_flower == NULL) {
+            printf("内存分配失败！\n");
+            return -1;
+        }
+    }
+    
+
+    load_info();
+
     // 等待植物初始化（添加超时机制）
     uint32_t start_time = custom_tick_get();
     printf("等待植物初始化...\n");
-    
     
     while(exist_plant == false) {
         // 处理LVGL事件，保持界面响应
@@ -95,10 +121,6 @@ int main(void)
     
     printf("植物初始化成功！\n");
 
-
-    load_info();
-    printf("%d\n", env->temperature);
-    printf("%d\n", env->weather);
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
@@ -156,47 +178,45 @@ static void plant_update_timer(lv_timer_t *timer) {
         {
         case 1:
             lv_event_send(ui_sunflower2, LV_EVENT_REFRESH, NULL);
-            
+            if(own_plant[1]) lv_event_send(ui_tomato2, LV_EVENT_REFRESH, NULL);
             break;
         case 2:
             lv_event_send(ui_sunflower4, LV_EVENT_REFRESH, NULL);
-            
+            if(own_plant[1]) lv_event_send(ui_tomato4, LV_EVENT_REFRESH, NULL);
             break;
         case 3:
             lv_event_send(ui_sunflower5, LV_EVENT_REFRESH, NULL);
-            
+            if(own_plant[1]) lv_event_send(ui_tomato5, LV_EVENT_REFRESH, NULL);      
             break;
         case 4:
             lv_event_send(ui_sunflower6, LV_EVENT_REFRESH, NULL);
-            
+            if(own_plant[1]) lv_event_send(ui_tomato6, LV_EVENT_REFRESH, NULL);
             break;
         case 5:
-            lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);
-            
+            lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);  
+            if(own_plant[1]) lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL); 
             break;
         case 6:
             lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);
-            
+            if(own_plant[1]) lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);
             break;
         default:
             break;
         }
         lv_event_send(ui_plantstagetextarea1, LV_EVENT_REFRESH, NULL);
-        user->coins += 50;
+       
         lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
     }
 
-    
-    
+    user->coins += 500;
+
     day_change = false;
     //ui_event_temperaturelabel1(NULL);
     plantstage = plant->stage;
     // 如果植物死亡，停止定时器
     if (plant->health <= 0) {
         printf("你的植物已经死亡，模拟结束。\n");
-        
-        lv_timer_del(timer);
-        
+        lv_timer_del(timer);  
     }
 }
 
@@ -205,7 +225,10 @@ static void load_info(){
     load_user(user);
     load_environment(env);
     load_plant(plant);
-    
+    if(own_plant[1]) load_plant(tomato);
+    if(own_plant[2]) load_plant(cactus);
+    if(own_plant[3]) load_plant(cannibal_flower);
+    if(user->plant_num!=0) exist_plant = true;  
 }
 
 // 信号处理函数
@@ -214,74 +237,30 @@ static void handleSignal(int signal) {
     save_commodity(commodity);
     save_environment(env);
     save_plant(plant);
-    
-    printf("程序接收到信号 %d，即将退出\n", signal);
+    if(commodity->ishave[1] == false) save_plant(tomato);
+    if(commodity->ishave[2] == false) save_plant(cactus);
+    if(commodity->ishave[3] == false) save_plant(cannibal_flower);    
+    printf("程序接收到信号，即将退出\n");
     exit(EXIT_SUCCESS);
 }
 
 // 注册信号处理函数
 static void registerSignalHandlers() {
+    //SDL_EventType event;
     signal(SIGINT, handleSignal);  // 处理Ctrl+C
     signal(SIGTERM, handleSignal); // 处理终止信号
     signal(SIGQUIT, handleSignal); // 处理退出信号
+    // if (event.type == SDL_QUIT){
+    //     handleSignal();
+    // }
 }
 
 
-// int main(void)
-// {
-//     lvgl_init_framebuffer_ts();
-
-
-    
-//     if(env == NULL){
-//         env = (Environment*)malloc(sizeof(Environment));
-//     }
-    
-//     PlantState plant;
-//     init_environment(env, SPRING);
-//     init_plant_state(&plant, SUNFLOWER, 2);
-//     ui_init();
-
-//     // 模拟生长过程
-//    while(1){
-//         printf("======= 第 %d 天 =======\n", env->day);
-        
-//         // 更新环境
-//         update_environment(env);
-//         print_environment(env);
-        
-//         // // 用户操作（这里模拟随机操作）
-//         // {
-//         //     printf("今天没有进行任何操作。\n");
-//         // }
-        
-//         // 更新植物健康状态
-//         update_plant_health(&plant, env);
-        
-//         // 更新植物生长状态
-//         update_plant_growth(&plant, env);
-        
-//         // 打印植物状态
-//         print_plant_state(&plant);
-        
-//         // 如果植物死亡，提前结束模拟
-//         if (plant.stage == DEAD) {
-//             printf("你的植物已经死亡，模拟结束。\n");
-//             free(env);
-//             break;
-//         }
-//         delay_minute(1);
-//     }
-
-
-    
-//     while (1)
-//     {
-//         lv_timer_handler();
-//         usleep(5000);
-//     }
-//     return 0;
-// }
+static void plant_own(){
+    if(commodity->ishave[1]  == false) own_plant[1] = true;
+    if(commodity->ishave[2]  == false) own_plant[2] = true;
+    if(commodity->ishave[3]  == false) own_plant[3] = true;
+}
 
 
 

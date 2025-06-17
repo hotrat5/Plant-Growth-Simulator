@@ -315,12 +315,57 @@ void simulate_day(PlantState* plant, Environment* env) {
     //ui_event_temperaturelabel1(NULL);
 }
 
-void buy_plant(User* user, Commodity* commodity, PlantType plant_type){
-    if(user == NULL || commodity == NULL) return;
-    if((user->coins) < (commodity->price[plant_type])) printf("买不起.....\n");
-    if(commodity->ishave) printf("已售完\n");
-    //(user->plant[user->plant_num])->type = commodity->plant_type;
-    user->plant_num++;  
+#include <stdbool.h>
+
+void buy_plant(User* user, Commodity* commodity, PlantType plant_type) {
+    // 1. 检查用户植物数量是否已达上限
+    if (user->plant_num >= 4) {
+        // 植物栏位已满，无法购买
+        return;
+    }
+    
+    // 2. 在商品中查找匹配的植物类型
+    int found_index = -1;
+    for (int i = 0; i < 4; i++) {
+        if (commodity->plant_type[i] == plant_type && commodity->ishave[i]) {
+            found_index = i;
+            break;
+        }
+    }
+    
+    // 3. 检查是否找到可购买的商品
+    if (found_index == -1) {
+        // 未找到可购买的指定植物
+        printf("未找到可购买的指定植物\n");
+        return;
+    }
+    
+    // 4. 检查用户金币是否足够
+    uint16_t price = commodity->price[found_index];
+    if (user->coins < price) {
+        // 金币不足，无法购买
+        printf("金币不足，无法购买\n");
+        return;
+    }
+    
+    // 5. 执行购买操作
+    // 扣除金币
+    user->coins -= price;
+    
+    // 标记商品为已购买
+    commodity->ishave[found_index] = false;
+    
+    // 添加新植物到用户植物栏
+    int plant_index = user->plant_num;
+    user->plant[plant_index].type = plant_type;
+    user->plant[plant_index].rarity = 1;  // 默认稀有度为1
+    user->plant[plant_index].stage = SEEDLING; // 初始为幼苗阶段
+    user->plant[plant_index].health = 100; // 初始健康值100
+    user->plant[plant_index].age = 0;      // 初始年龄0天
+    user->plant[plant_index].growth = 0;   // 初始生长进度0%
+    
+    // 增加用户植物数量
+    user->plant_num++;
 }
 
 // 从文件加载用户数据
@@ -331,18 +376,18 @@ void load_user(User* user) {
     fscanf(file, "%u", &user->coins);
     fscanf(file, "%hhu", &user->plant_num);
     
-    for (int i = 0; i < user->plant_num; i++) {
-        int type, stage;
-        fscanf(file, "%d", &type);
-        fscanf(file, "%hhu", &user->plant[i].rarity);
-        fscanf(file, "%d", &stage);
-        fscanf(file, "%hhu", &user->plant[i].health);
-        fscanf(file, "%u", &user->plant[i].age);
-        fscanf(file, "%hhu", &user->plant[i].growth);
+    // for (int i = 0; i < user->plant_num; i++) {
+    //     int type, stage;
+    //     fscanf(file, "%d", &type);
+    //     fscanf(file, "%hhu", &user->plant[i].rarity);
+    //     fscanf(file, "%d", &stage);
+    //     fscanf(file, "%hhu", &user->plant[i].health);
+    //     fscanf(file, "%u", &user->plant[i].age);
+    //     fscanf(file, "%hhu", &user->plant[i].growth);
         
-        user->plant[i].type = (PlantType)type;
-        user->plant[i].stage = (GrowthStage)stage;
-    }
+    //     user->plant[i].type = (PlantType)type;
+    //     user->plant[i].stage = (GrowthStage)stage;
+    // }
     fclose(file);
 }
 
@@ -382,7 +427,15 @@ void load_environment(Environment* env) {
 
 // 从文件加载单个植物数据
 void load_plant(PlantState* plant) {
-    FILE* file = fopen("plant.txt", "r");
+    FILE* file;
+    
+    switch(plant->type){
+        case 0: file = fopen("plant.txt", "w");break;
+        case 1: file = fopen("tomato.txt", "w");break;
+        case 2: file = fopen("cactus.txt", "w");break;
+        case 3: file = fopen("cannibal.txt", "w");break;
+        default: break;
+    }
     if (!file) return;
 
     int type, stage;
@@ -480,7 +533,16 @@ void save_environment(Environment* env){
 
 void save_plant(PlantState* plant){
     // 打开文件以写入文本数据
-    FILE* file = fopen("plant.txt", "w");
+    FILE* file;
+    
+    switch(plant->type){
+        case 0: file = fopen("plant.txt", "w");break;
+        case 1: file = fopen("tomato.txt", "w");break;
+        case 2: file = fopen("cactus.txt", "w");break;
+        case 3: file = fopen("cannibal.txt", "w");break;
+        default: break;
+    }
+
     if (file == NULL) {
         // 若文件打开失败，输出错误信息并终止程序
         perror("无法打开文件");

@@ -67,6 +67,7 @@ typedef struct {
 typedef struct{
     uint32_t coins;
     uint8_t plant_num;
+    PlantType plant_type;
     PlantState plant[4];
 }User;
 
@@ -74,7 +75,7 @@ typedef struct{
 typedef struct{
     PlantType plant_type[4];
     uint16_t price[4];
-    bool ishave[4];
+    bool ishave[4]; //商店是否有货
 }Commodity;
 
 // 常量定义

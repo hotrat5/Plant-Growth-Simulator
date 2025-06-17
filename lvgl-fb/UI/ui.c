@@ -5,6 +5,7 @@
 
 #include "ui.h"
 #include "ui_helpers.h"
+#include "plant_simulation.h"
 
 ///////////////////// VARIABLES ////////////////////
 void wateringmove1_Animation(lv_obj_t * TargetObject, int delay);
@@ -1170,7 +1171,7 @@ void ui_event_healthlabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_VALUE_CHANGED) {
+    if(event_code == LV_EVENT_REFRESH) {
         healthchange(e);
     }
 }
@@ -1178,7 +1179,7 @@ void ui_event_statelabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         agechange(e);
     }
 }
@@ -1186,7 +1187,7 @@ void ui_event_humiditylabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         humiditychange(e);
     }
 }
@@ -1194,7 +1195,7 @@ void ui_event_temperaturelabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         temperaturechange(e);
     }
 }
@@ -1202,7 +1203,7 @@ void ui_event_lightlabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         lightchange(e);
     }
 }
@@ -1210,7 +1211,7 @@ void ui_event_weatherlabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         weatherchange(e);
     }
 }
@@ -1218,7 +1219,7 @@ void ui_event_seasonlabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         seasonchange(e);
     }
 }
@@ -1291,7 +1292,7 @@ void ui_event_tomato2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_tomato2(e);
     }
 }
@@ -1299,7 +1300,7 @@ void ui_event_tomato3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_tomato3(e);
     }
 }
@@ -1307,7 +1308,7 @@ void ui_event_tomato4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_tomato4(e);
     }
 }
@@ -1315,7 +1316,7 @@ void ui_event_tomato5(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_tomato5(e);
     }
 }
@@ -1323,7 +1324,7 @@ void ui_event_tomato6(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_tomato6(e);
     }
 }
@@ -1331,7 +1332,7 @@ void ui_event_tomato7(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_tomato7(e);
     }
 }
@@ -1381,7 +1382,7 @@ void ui_event_healthlabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_VALUE_CHANGED) {
+    if(event_code == LV_EVENT_REFRESH) {
         healthchange(e);
     }
 }
@@ -1389,7 +1390,7 @@ void ui_event_statelabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         agechange(e);
     }
 }
@@ -1397,7 +1398,7 @@ void ui_event_humiditylabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         humiditychange(e);
     }
 }
@@ -1405,7 +1406,7 @@ void ui_event_temperaturelabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         temperaturechange(e);
     }
 }
@@ -1413,7 +1414,7 @@ void ui_event_lightlabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         lightchange(e);
     }
 }
@@ -1421,7 +1422,7 @@ void ui_event_weatherlabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         weatherchange(e);
     }
 }
@@ -1429,7 +1430,7 @@ void ui_event_seasonlabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         seasonchange(e);
     }
 }
@@ -1502,7 +1503,7 @@ void ui_event_Cactus2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_cactus2(e);
     }
 }
@@ -1510,7 +1511,7 @@ void ui_event_Cactus3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_cactus3(e);
     }
 }
@@ -1518,7 +1519,7 @@ void ui_event_Cactus4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_cactus4(e);
     }
 }
@@ -1526,7 +1527,7 @@ void ui_event_Cactus5(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_cactus5(e);
     }
 }
@@ -1534,7 +1535,7 @@ void ui_event_Cactus6(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_cactus6(e);
     }
 }
@@ -1542,7 +1543,7 @@ void ui_event_Cactus7(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_cactus7(e);
     }
 }
@@ -1713,7 +1714,7 @@ void ui_event_Cannibal2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_canniabl2(e);
     }
 }
@@ -1721,7 +1722,7 @@ void ui_event_Cannibal3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_canniabl3(e);
     }
 }
@@ -1729,7 +1730,7 @@ void ui_event_Cannibal4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_canniabl4(e);
     }
 }
@@ -1737,7 +1738,7 @@ void ui_event_Cannibal5(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_canniabl5(e);
     }
 }
@@ -1745,7 +1746,7 @@ void ui_event_Cannibal6(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_canniabl6(e);
     }
 }
@@ -1753,7 +1754,7 @@ void ui_event_Cannibal7(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         show_canniabl7(e);
     }
 }
@@ -1807,7 +1808,7 @@ void ui_event_Button6(lv_event_t * e)
 }
 
 ///////////////////// SCREENS ////////////////////
-
+extern User* user;
 void ui_init(void)
 {
     lv_disp_t * dispp = lv_disp_get_default();
@@ -1823,5 +1824,9 @@ void ui_init(void)
     ui_cannibalscreen_screen_init();
     ui_mainscreen_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
-    lv_disp_load_scr(ui_initscreen);
+
+    //if(user->plant_num == 0) lv_disp_load_scr(ui_initscreen);
+    //else lv_disp_load_scr(ui_mainscreen);
+    lv_disp_load_scr(ui_mainscreen);
+    
 }

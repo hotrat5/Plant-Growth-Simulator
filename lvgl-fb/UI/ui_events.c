@@ -10,9 +10,12 @@
 #include <stdbool.h>
 
 extern PlantState* plant;
+extern PlantState* tomato;
+extern PlantState* cactus;
+extern PlantState* cannibal_flower;
 extern Environment* env;
 extern User* user;
-
+extern Commodity* commodity;
 
 extern lv_obj_t * ui_temperaturelabel1;
 bool exist_plant = false;
@@ -293,7 +296,6 @@ void message_plantstage(lv_event_t * e)
     // 触发界面刷新
     lv_obj_invalidate(ui_plantstagetextarea1);
 	// Your code here
-    for(int i = 0; i < 1000; i++){}
     lv_obj_add_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
 }
 
@@ -301,11 +303,19 @@ void show_sunflowerseed(lv_event_t * e)
 {
 	// Your code here
     //lv_obj_add_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
-    init_plant(plant, SUNFLOWER, 2);
-    lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
-    exist_plant = true;
- 	lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
-    user->plant_num = 0;
+    if(plant->stage == SEED){
+        init_plant(plant, SUNFLOWER, 2);
+        lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
+        exist_plant = true;
+ 	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
+    }
+    
 
 }
 
@@ -371,27 +381,39 @@ void illu_label_change(lv_event_t * e)
 
 void buy_sunflower(lv_event_t * e)
 {
+    buy_plant(user, commodity, SUNFLOWER);
+    lv_label_set_text(ui_Label3, "已购买");
+    lv_obj_invalidate(ui_Label3);
 	// Your code here
 }
 
 void buy_tomato(lv_event_t * e)
 {
+    buy_plant(user, commodity, TOMATO);
+    lv_label_set_text(ui_Label6, "已购买");
+    lv_obj_invalidate(ui_Label6);
 	// Your code here
 }
 
 void buy_catus(lv_event_t * e)
 {
+    buy_plant(user, commodity, CACTUS);
+    lv_label_set_text(ui_Label5, "已购买");
+    lv_obj_invalidate(ui_Label7);
 	// Your code here
 }
 
 void buy_cannibal(lv_event_t * e)
 {
+    buy_plant(user, commodity, CANNIBAL_FLOWERS);
+    lv_label_set_text(ui_Label7, "已购买");
+    lv_obj_invalidate(ui_Label3);
 	// Your code here
 }
 
 void show_money(lv_event_t * e)
 {
-    char coins = user->coins; 
+    uint32_t coins = user->coins; 
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
@@ -406,104 +428,176 @@ void show_money(lv_event_t * e)
 void show_tomatoseed(lv_event_t * e)
 {
 	// Your code here
+    if(tomato->stage == SEED){
+        init_plant(tomato, TOMATO, 2);
+        lv_obj_clear_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
+        exist_plant = true;
+ 	    lv_obj_add_state(ui_plant2, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant2, LV_STATE_DISABLED);
+    }
 }
 
 void show_tomato2(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_tomato3(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato3, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_tomato4(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_tomato3, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato4, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_tomato5(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_tomato4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato5, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_tomato6(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_tomato5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato6, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_tomato7(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_tomato6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato7, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactusseed(lv_event_t * e)
 {
+    if(cactus->stage == SEED){
+        init_plant(cactus, CACTUS, 2);
+        lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
+        exist_plant = true;
+ 	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
+    }
 	// Your code here
 }
 
 void show_cactus2(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactus3(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus3, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactus4(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cactus3, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus4, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactus5(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cactus4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus5, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactus6(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cactus5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus6, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactus7(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cactus6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus7, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cannibalseed(lv_event_t * e)
 {
+    if(cannibal_flower->stage == SEED){
+        init_plant(cannibal_flower, CANNIBAL_FLOWERS, 2);
+        lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
+        exist_plant = true;
+ 	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
+    }
 	// Your code here
 }
 
 void show_canniabl2(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_canniabl3(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal3, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_canniabl4(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cannibal3, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal4, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_canniabl5(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cannibal4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal5, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_canniabl6(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cannibal5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal6, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_canniabl7(lv_event_t * e)
 {
+    lv_obj_add_flag(ui_Cannibal6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal7, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
