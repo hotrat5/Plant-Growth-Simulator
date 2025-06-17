@@ -63,20 +63,18 @@ typedef struct {
     uint8_t pest_control_count; // 当天除虫次数
 } PlantState;
 
+//用户
 typedef struct{
-
     uint32_t coins;
-    PlantState* plant_head;
     uint8_t plant_num;
-
+    PlantState plant[4];
 }User;
 
-
+//商品
 typedef struct{
-    PlantType type;
-    uint16_t price;
-    uint8_t ishave;
-
+    PlantType plant_type[4];
+    uint16_t price[4];
+    bool ishave[4];
 }Commodity;
 
 // 常量定义
@@ -103,6 +101,21 @@ const char* get_plant_needs(const PlantState* plant);
 
 // 模拟函数
 void simulate_day(PlantState* plant, Environment* env);
+
+//购买植物
+void buy_plant(User* user, Commodity* commodity, PlantType plant_type);
+
+//从文件中读取信息
+void load_user(User* user);
+void load_commodity(Commodity* commodity);
+void load_environment(Environment* env);
+void load_plant(PlantState* plant);
+
+//保存信息到文件
+void save_user(User* user);
+void save_commodity(Commodity* commodity);
+void save_environment(Environment* env);
+void save_plant(PlantState* plant);
 
 // 打印函数
 void print_environment(const Environment* env);

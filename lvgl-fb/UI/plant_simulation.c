@@ -314,3 +314,191 @@ void simulate_day(PlantState* plant, Environment* env) {
     }
     //ui_event_temperaturelabel1(NULL);
 }
+
+void buy_plant(User* user, Commodity* commodity, PlantType plant_type){
+    if(user == NULL || commodity == NULL) return;
+    if((user->coins) < (commodity->price[plant_type])) printf("买不起.....\n");
+    if(commodity->ishave) printf("已售完\n");
+    //(user->plant[user->plant_num])->type = commodity->plant_type;
+    user->plant_num++;  
+}
+
+// 从文件加载用户数据
+void load_user(User* user) {
+    FILE* file = fopen("user.txt", "r");
+    if (!file) return;
+
+    fscanf(file, "%u", &user->coins);
+    fscanf(file, "%hhu", &user->plant_num);
+    
+    for (int i = 0; i < user->plant_num; i++) {
+        int type, stage;
+        fscanf(file, "%d", &type);
+        fscanf(file, "%hhu", &user->plant[i].rarity);
+        fscanf(file, "%d", &stage);
+        fscanf(file, "%hhu", &user->plant[i].health);
+        fscanf(file, "%u", &user->plant[i].age);
+        fscanf(file, "%hhu", &user->plant[i].growth);
+        
+        user->plant[i].type = (PlantType)type;
+        user->plant[i].stage = (GrowthStage)stage;
+    }
+    fclose(file);
+}
+
+// 从文件加载商品数据
+void load_commodity(Commodity* commodity) {
+    FILE* file = fopen("commodity.txt", "r");
+    if (!file) return;
+
+    for (int i = 0; i < 4; i++) {
+        int type, have;
+        fscanf(file, "%d", &type);
+        fscanf(file, "%hu", &commodity->price[i]);
+        fscanf(file, "%d", &have);
+        
+        commodity->plant_type[i] = (PlantType)type;
+        commodity->ishave[i] = (bool)have;
+    }
+    fclose(file);
+}
+
+// 从文件加载环境数据
+void load_environment(Environment* env) {
+    FILE* file = fopen("environment.txt", "r");
+    if (!file) return;
+
+    int weather;
+    fscanf(file, "%hhu", &env->temperature);
+    fscanf(file, "%hhu", &env->humidity);
+    fscanf(file, "%hhu", &env->light);
+    fscanf(file, "%hhu", &env->season);
+    fscanf(file, "%u", &env->day);
+    fscanf(file, "%d", &weather);
+    
+    env->weather = (WeatherType)weather;
+    fclose(file);
+}
+
+// 从文件加载单个植物数据
+void load_plant(PlantState* plant) {
+    FILE* file = fopen("plant.txt", "r");
+    if (!file) return;
+
+    int type, stage;
+    fscanf(file, "%d", &type);
+    fscanf(file, "%hhu", &plant->rarity);
+    fscanf(file, "%d", &stage);
+    fscanf(file, "%hhu", &plant->health);
+    fscanf(file, "%u", &plant->age);
+    fscanf(file, "%hhu", &plant->growth);
+    
+    plant->type = (PlantType)type;
+    plant->stage = (GrowthStage)stage;
+    fclose(file);
+}
+
+//保存信息到文件
+void save_user(User* user){
+    
+    // 打开文件以写入文本数据
+    FILE* file = fopen("user.txt", "w");
+    if (file == NULL) {
+        // 若文件打开失败，输出错误信息并终止程序
+        perror("无法打开文件");
+        return;
+    }
+
+    if (fprintf(file, "%d\n", user->coins) < 0 ||
+        fprintf(file, "%d\n", user->plant_num) < 0) {
+        // 若写入失败，输出错误信息
+        perror("写入文件失败");
+        fclose(file);
+        return;
+    }
+    
+
+    // 关闭文件
+    if (fclose(file) != 0) {
+        // 若关闭文件失败，输出错误信息
+        perror("关闭文件失败");
+        return;
+    }
+    printf("user finish\n");
+}
+void save_commodity(Commodity* commodity){
+    
+    // 打开文件以写入文本数据
+    FILE* file = fopen("commodity.txt", "w");
+    if (file == NULL) {
+        // 若文件打开失败，输出错误信息并终止程序
+        perror("无法打开文件");
+        return;
+    }
+
+    for(int i = 0; i < 4; i++) {
+        fprintf(file, "%d\n", commodity->plant_type[i]);
+        fprintf(file, "%d\n", commodity->price[i]);
+        fprintf(file, "%d\n", commodity->ishave[i]);
+
+    }
+    
+    
+
+    // 关闭文件
+    if (fclose(file) != 0) {
+        // 若关闭文件失败，输出错误信息
+        perror("关闭文件失败");
+        return;
+    }
+}
+void save_environment(Environment* env){
+    // 打开文件以写入文本数据
+    FILE* file = fopen("environment.txt", "w");
+    if (file == NULL) {
+        // 若文件打开失败，输出错误信息并终止程序
+        perror("无法打开文件");
+        return;
+    }
+
+    if(
+        fprintf(file, "%d\n", env->temperature)<0 ||
+        fprintf(file, "%d\n", env->humidity)<0 ||
+        fprintf(file, "%d\n", env->light)<0 ||
+        fprintf(file, "%d\n", env->season)<0 ||
+        fprintf(file, "%d\n", env->day)<0 ||
+        fprintf(file, "%d\n", env->weather)<0
+    )
+    // 关闭文件
+    if (fclose(file) != 0) {
+        // 若关闭文件失败，输出错误信息
+        perror("关闭文件失败");
+        return;
+    }
+}
+
+
+void save_plant(PlantState* plant){
+    // 打开文件以写入文本数据
+    FILE* file = fopen("plant.txt", "w");
+    if (file == NULL) {
+        // 若文件打开失败，输出错误信息并终止程序
+        perror("无法打开文件");
+        return;
+    }
+
+    if(
+        fprintf(file, "%d\n", plant->type)<0 ||
+        fprintf(file, "%d\n", plant->rarity)<0 ||
+        fprintf(file, "%d\n", plant->stage)<0 ||
+        fprintf(file, "%d\n", plant->health)<0 ||
+        fprintf(file, "%d\n", plant->age)<0 ||
+        fprintf(file, "%d\n", plant->growth)<0
+    )
+    // 关闭文件
+    if (fclose(file) != 0) {
+        // 若关闭文件失败，输出错误信息
+        perror("关闭文件失败");
+        return;
+    }
+}

@@ -10,28 +10,54 @@
 #include <demos/lv_demos.h>
 #include "UI/ui.h"
 #include "UI/plant_simulation.h"
+#include <signal.h>
 
 #define DISP_BUF_SIZE 800 * 480 * 8
 
 void lvgl_init_framebuffer_ts();
 uint32_t custom_tick_get(void);
 static void plant_update_timer(lv_timer_t *timer);
+// 信号处理函数
+static void handleSignal(int signal);
+
+// 注册信号处理函数
+static void registerSignalHandlers();
+static void load_info();
 
 static const uint32_t UPDATE_INTERVAL = 5000;  // 5秒
 static const uint32_t TIMEOUT_WAIT_PLANT = 60000;  // 30秒超时
 
 Environment* env = NULL;
 PlantState* plant = NULL;
+User* user = NULL;
+Commodity* commodity = NULL;
 extern bool exist_plant;
 bool day_change = true;
 uint8_t plantstage = 0;
 
 int main(void)
 {
+    //信号处理
+    registerSignalHandlers();
+
     lvgl_init_framebuffer_ts();
 
     // 初始化UI
     ui_init();
+
+
+    //初始化用户和商店
+    user = (User*)malloc(sizeof(User));
+    if (user == NULL) {
+        printf("内存分配失败！\n");
+        return -1;
+    }
+
+    commodity = (Commodity*)malloc(sizeof(Commodity));
+    if (commodity == NULL) {
+        printf("内存分配失败！\n");
+        return -1;
+    }
 
     // 初始化环境和植物
     env = (Environment*)malloc(sizeof(Environment));
@@ -68,7 +94,11 @@ int main(void)
     }
     
     printf("植物初始化成功！\n");
-    
+
+
+    load_info();
+    printf("%d\n", env->temperature);
+    printf("%d\n", env->weather);
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
@@ -152,6 +182,8 @@ static void plant_update_timer(lv_timer_t *timer) {
             break;
         }
         lv_event_send(ui_plantstagetextarea1, LV_EVENT_REFRESH, NULL);
+        user->coins += 50;
+        lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
     }
 
     
@@ -168,6 +200,31 @@ static void plant_update_timer(lv_timer_t *timer) {
     }
 }
 
+static void load_info(){
+    load_commodity(commodity);
+    load_user(user);
+    load_environment(env);
+    load_plant(plant);
+    
+}
+
+// 信号处理函数
+static void handleSignal(int signal) {
+    save_user(user);
+    save_commodity(commodity);
+    save_environment(env);
+    save_plant(plant);
+    
+    printf("程序接收到信号 %d，即将退出\n", signal);
+    exit(EXIT_SUCCESS);
+}
+
+// 注册信号处理函数
+static void registerSignalHandlers() {
+    signal(SIGINT, handleSignal);  // 处理Ctrl+C
+    signal(SIGTERM, handleSignal); // 处理终止信号
+    signal(SIGQUIT, handleSignal); // 处理退出信号
+}
 
 
 // int main(void)

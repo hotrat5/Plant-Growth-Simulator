@@ -11,6 +11,8 @@
 
 extern PlantState* plant;
 extern Environment* env;
+extern User* user;
+
 
 extern lv_obj_t * ui_temperaturelabel1;
 bool exist_plant = false;
@@ -303,6 +305,7 @@ void show_sunflowerseed(lv_event_t * e)
     lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
     exist_plant = true;
  	lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
+    user->plant_num = 0;
 
 }
 
@@ -388,6 +391,15 @@ void buy_cannibal(lv_event_t * e)
 
 void show_money(lv_event_t * e)
 {
+    char coins = user->coins; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%d", coins);
+    lv_label_set_text(ui_moneymessage, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_moneymessage);
 	// Your code here
 }
 
