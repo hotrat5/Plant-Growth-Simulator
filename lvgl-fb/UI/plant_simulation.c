@@ -295,13 +295,14 @@ void simulate_day(PlantState* plant, Environment* env) {
     plant->water_count = 0;
     plant->fertilize_count = 0;
     plant->pest_control_count = 0;
-    
+    printf("enter generate_environment\n");
     // 生成新环境
     generate_environment(env);
-    
+    printf("out generate_environment\n");
+    printf("enter update_plant_health\n");
     // 更新植物健康（环境因素）
     update_plant_health(plant, env);
-    
+    printf("out update_plant_health\n");
     // 更新植物生长
     if (plant->health > 10) { // 健康状态过低时停止生长
         update_plant_growth(plant);
@@ -426,14 +427,14 @@ void load_environment(Environment* env) {
 }
 
 // 从文件加载单个植物数据
-void load_plant(PlantState* plant) {
+void load_plant(PlantState* plant, int planttype) {
     FILE* file;
     
-    switch(plant->type){
-        case 0: file = fopen("plant.txt", "w");break;
-        case 1: file = fopen("tomato.txt", "w");break;
-        case 2: file = fopen("cactus.txt", "w");break;
-        case 3: file = fopen("cannibal.txt", "w");break;
+    switch(planttype){
+        case 0: file = fopen("plant.txt", "r");break;
+        case 1: file = fopen("tomato.txt", "r");break;
+        case 2: file = fopen("cactus.txt", "r");break;
+        case 3: file = fopen("cannibal.txt", "r");break;
         default: break;
     }
     if (!file) return;

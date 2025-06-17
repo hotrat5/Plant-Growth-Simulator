@@ -19,6 +19,7 @@ uint32_t custom_tick_get(void);
 static void plant_update_timer(lv_timer_t *timer);
 // 信号处理函数
 static void handleSignal(int signal);
+static void plant_own();
 
 // 注册信号处理函数
 static void registerSignalHandlers();
@@ -49,8 +50,8 @@ int main(void)
     // 初始化UI
     ui_init();
 
-    //判断是否拥有植物
-    plant_own();
+    
+    
 
     //初始化用户和商店
     user = (User*)malloc(sizeof(User));
@@ -78,31 +79,31 @@ int main(void)
         return -1;
     }
 
-    if(own_plant[1]){
+    
         tomato = (PlantState*)malloc(sizeof(PlantState));
         if (tomato == NULL) {
             printf("内存分配失败！\n");
             return -1;
         }
-    }
-    if(own_plant[2]){
+    
+    
         cactus = (PlantState*)malloc(sizeof(PlantState));
         if (cactus == NULL) {
             printf("内存分配失败！\n");
             return -1;
         }
-    }
-    if(own_plant[3]){
+   
+    
         cannibal_flower = (PlantState*)malloc(sizeof(PlantState));
         if (cannibal_flower == NULL) {
             printf("内存分配失败！\n");
             return -1;
         }
-    }
+   
     
 
     load_info();
-
+    
     // 等待植物初始化（添加超时机制）
     uint32_t start_time = custom_tick_get();
     printf("等待植物初始化...\n");
@@ -120,7 +121,9 @@ int main(void)
     }
     
     printf("植物初始化成功！\n");
-
+    //判断是否拥有植物
+    plant_own();
+    printf("%d\n", own_plant[1]);
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
@@ -153,13 +156,13 @@ static void plant_update_timer(lv_timer_t *timer) {
     if (plant == NULL || env == NULL || plant->health == 0) {
         return;
     }
-
+    printf("enter plant_update\n");
     day_change = true;
     simulate_day(plant, env);
-    
+    printf("out simulate_day\n");
     print_environment(env);
     print_plant_state(plant);
-
+    
     if(day_change == true){
         lv_event_send(ui_healthlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_statelabel1, LV_EVENT_REFRESH, NULL);
@@ -224,10 +227,10 @@ static void load_info(){
     load_commodity(commodity);
     load_user(user);
     load_environment(env);
-    load_plant(plant);
-    if(own_plant[1]) load_plant(tomato);
-    if(own_plant[2]) load_plant(cactus);
-    if(own_plant[3]) load_plant(cannibal_flower);
+    load_plant(plant, 0);
+    load_plant(tomato, 1);
+    load_plant(cactus, 2);
+    load_plant(cannibal_flower, 3);
     if(user->plant_num!=0) exist_plant = true;  
 }
 
@@ -237,9 +240,9 @@ static void handleSignal(int signal) {
     save_commodity(commodity);
     save_environment(env);
     save_plant(plant);
-    if(commodity->ishave[1] == false) save_plant(tomato);
-    if(commodity->ishave[2] == false) save_plant(cactus);
-    if(commodity->ishave[3] == false) save_plant(cannibal_flower);    
+    if(own_plant[1]) save_plant(tomato);
+    if(own_plant[2]) save_plant(cactus);
+    if(own_plant[3]) save_plant(cannibal_flower);    
     printf("程序接收到信号，即将退出\n");
     exit(EXIT_SUCCESS);
 }
@@ -257,9 +260,11 @@ static void registerSignalHandlers() {
 
 
 static void plant_own(){
-    if(commodity->ishave[1]  == false) own_plant[1] = true;
-    if(commodity->ishave[2]  == false) own_plant[2] = true;
-    if(commodity->ishave[3]  == false) own_plant[3] = true;
+  
+    if(!commodity->ishave[1]) own_plant[1] = true;
+    if(!commodity->ishave[2]) own_plant[2] = true;
+    if(!commodity->ishave[3]) own_plant[3] = true;
+    
 }
 
 

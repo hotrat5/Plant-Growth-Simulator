@@ -110,7 +110,7 @@ void buy_plant(User* user, Commodity* commodity, PlantType plant_type);
 void load_user(User* user);
 void load_commodity(Commodity* commodity);
 void load_environment(Environment* env);
-void load_plant(PlantState* plant);
+void load_plant(PlantState* plant, int planttype);
 
 //保存信息到文件
 void save_user(User* user);
