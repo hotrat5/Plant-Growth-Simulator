@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/lvgl-fb.dir/main.c.o -o lvgl-fb  lib/liblvgl.a lvgl/liblvgl_examples.a lvgl/liblvgl_demos.a lib/liblv_drivers.a -lSDL2 UI/libui.a lib/liblvgl.a 

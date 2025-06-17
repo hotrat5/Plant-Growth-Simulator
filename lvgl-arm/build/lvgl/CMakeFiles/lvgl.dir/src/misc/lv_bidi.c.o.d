@@ -1,0 +1,32 @@
+lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.o: \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_bidi.c \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stddef.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_bidi.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../lv_conf_internal.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stdint.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/stdint.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/features.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/sys/cdefs.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/wordsize.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/wchar.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../lv_conf_kconfig.h \
+ /mnt/hgfs/lvgl/lvgl-arm/./lv_conf.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stdbool.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_txt.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stdarg.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_area.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../font/lv_font.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../font/../lv_conf_internal.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../font/lv_symbol_def.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../font/../misc/lv_area.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_printf.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/inttypes.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_types.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../misc/lv_mem.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../misc/../lv_conf_internal.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/string.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/xlocale.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../misc/lv_types.h

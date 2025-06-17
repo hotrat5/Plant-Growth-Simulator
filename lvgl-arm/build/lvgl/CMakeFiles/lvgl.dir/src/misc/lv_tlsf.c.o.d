@@ -1,0 +1,29 @@
+lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.o: \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_tlsf.c \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../lv_conf_internal.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stdint.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/stdint.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/features.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/sys/cdefs.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/wordsize.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/wchar.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/../lv_conf_kconfig.h \
+ /mnt/hgfs/lvgl/lvgl-arm/./lv_conf.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include-fixed/limits.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include-fixed/syslimits.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/limits.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/posix1_lim.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/local_lim.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/linux/limits.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/posix2_lim.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_tlsf.h \
+ /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stddef.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_mem.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/string.h \
+ /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/xlocale.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_types.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_log.h \
+ /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/misc/lv_assert.h

@@ -1,0 +1,2 @@
+/usr/local/arm/5.4.0/usr/bin/arm-linux-ar qc libui.a CMakeFiles/ui.dir/screens/ui_Screen1.c.o CMakeFiles/ui.dir/ui.c.o CMakeFiles/ui.dir/components/ui_comp_hook.c.o CMakeFiles/ui.dir/ui_helpers.c.o CMakeFiles/ui.dir/ui_events.c.o
+/usr/local/arm/5.4.0/usr/bin/arm-linux-ranlib libui.a
