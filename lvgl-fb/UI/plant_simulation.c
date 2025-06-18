@@ -295,14 +295,12 @@ void simulate_day(PlantState* plant, Environment* env) {
     plant->water_count = 0;
     plant->fertilize_count = 0;
     plant->pest_control_count = 0;
-    printf("enter generate_environment\n");
     // 生成新环境
     generate_environment(env);
-    printf("out generate_environment\n");
-    printf("enter update_plant_health\n");
+    
     // 更新植物健康（环境因素）
     update_plant_health(plant, env);
-    printf("out update_plant_health\n");
+    
     // 更新植物生长
     if (plant->health > 10) { // 健康状态过低时停止生长
         update_plant_growth(plant);

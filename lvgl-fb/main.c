@@ -37,8 +37,9 @@ User* user = NULL;
 Commodity* commodity = NULL;
 extern bool exist_plant;
 bool day_change = true;
-uint8_t plantstage = 0;
+uint8_t plantstage[4] = {0};
 static bool own_plant[4];
+
 
 int main(void)
 {
@@ -49,9 +50,6 @@ int main(void)
 
     // 初始化UI
     ui_init();
-
-    
-    
 
     //初始化用户和商店
     user = (User*)malloc(sizeof(User));
@@ -159,9 +157,21 @@ static void plant_update_timer(lv_timer_t *timer) {
     printf("enter plant_update\n");
     day_change = true;
     simulate_day(plant, env);
-    printf("out simulate_day\n");
+    // 更新植物健康（环境因素）
+    update_plant_health(tomato, env);
+    
+    // 更新植物生长
+    if (tomato->health > 10) { // 健康状态过低时停止生长
+        update_plant_growth(tomato);
+    }
+    
+    
     print_environment(env);
     print_plant_state(plant);
+    print_plant_state(tomato);
+    // print_plant_state(plant);
+    // print_plant_state(plant);
+
     
     if(day_change == true){
         lv_event_send(ui_healthlabel1, LV_EVENT_REFRESH, NULL);
@@ -175,47 +185,156 @@ static void plant_update_timer(lv_timer_t *timer) {
         lv_event_send(ui_Label4, LV_EVENT_REFRESH, NULL);
     }
 
-    if(plantstage != plant->stage){
-        printf("%d\n", plant->stage);
+    if(plantstage[0] != plant->stage){
         switch (plant->stage)
         {
         case 1:
             lv_event_send(ui_sunflower2, LV_EVENT_REFRESH, NULL);
-            if(own_plant[1]) lv_event_send(ui_tomato2, LV_EVENT_REFRESH, NULL);
+                
             break;
         case 2:
             lv_event_send(ui_sunflower4, LV_EVENT_REFRESH, NULL);
-            if(own_plant[1]) lv_event_send(ui_tomato4, LV_EVENT_REFRESH, NULL);
+            
+                lv_event_send(ui_tomato4, LV_EVENT_REFRESH, NULL);
+            
+                
             break;
         case 3:
             lv_event_send(ui_sunflower5, LV_EVENT_REFRESH, NULL);
-            if(own_plant[1]) lv_event_send(ui_tomato5, LV_EVENT_REFRESH, NULL);      
+            
+                      
             break;
         case 4:
             lv_event_send(ui_sunflower6, LV_EVENT_REFRESH, NULL);
-            if(own_plant[1]) lv_event_send(ui_tomato6, LV_EVENT_REFRESH, NULL);
+            
             break;
         case 5:
             lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);  
-            if(own_plant[1]) lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL); 
+             
             break;
         case 6:
             lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);
-            if(own_plant[1]) lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);
+            
+                
             break;
         default:
             break;
         }
-        lv_event_send(ui_plantstagetextarea1, LV_EVENT_REFRESH, NULL);
-       
-        lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
+        //lv_event_send(ui_plantstagetextarea1, LV_EVENT_REFRESH, NULL);
+        
+    }
+
+    if(own_plant[1]){
+        if(plantstage[1] != tomato->stage){
+        switch (tomato->stage)
+        {
+        case 1:
+            lv_event_send(ui_tomato1, LV_EVENT_REFRESH, NULL);
+            break;
+        case 2:
+            
+            lv_event_send(ui_tomato4, LV_EVENT_REFRESH, NULL);
+    
+            break;
+        case 3:
+            lv_event_send(ui_tomato5, LV_EVENT_REFRESH, NULL);
+            
+                      
+            break;
+        case 4:
+            lv_event_send(ui_tomato6, LV_EVENT_REFRESH, NULL);
+            
+            break;
+        case 5:
+            lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);  
+             
+            break;
+        case 6:
+            lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);    
+            break;
+        default:
+            break;
+        }
+    }
+    }
+
+    if(own_plant[2]){
+        if(plantstage[2] != cactus->stage){
+        switch (cactus->stage)
+        {
+        case 1:
+            lv_event_send(ui_Cactus1, LV_EVENT_REFRESH, NULL);
+            break;
+        case 2:
+            
+            lv_event_send(ui_Cactus3, LV_EVENT_REFRESH, NULL);
+    
+            break;
+        case 3:
+            lv_event_send(ui_Cactus5, LV_EVENT_REFRESH, NULL);
+            
+                      
+            break;
+        case 4:
+            lv_event_send(ui_Cactus6, LV_EVENT_REFRESH, NULL);
+            
+            break;
+        case 5:
+            lv_event_send(ui_Cactus7, LV_EVENT_REFRESH, NULL);  
+             
+            break;
+        case 6:
+            lv_event_send(ui_Cactus7, LV_EVENT_REFRESH, NULL);    
+            break;
+        default:
+            break;
+        }
+    }
+    }
+
+    if(own_plant[3]){
+        if(plantstage[3] != cannibal_flower->stage){
+        switch (cannibal_flower->stage)
+        {
+        case 1:
+            lv_event_send(ui_Cannibal2, LV_EVENT_REFRESH, NULL);
+            break;
+        case 2:
+            
+            lv_event_send(ui_Cannibal3, LV_EVENT_REFRESH, NULL);
+    
+            break;
+        case 3:
+            lv_event_send(ui_Cannibal5, LV_EVENT_REFRESH, NULL);
+            
+                      
+            break;
+        case 4:
+            lv_event_send(ui_Cannibal6, LV_EVENT_REFRESH, NULL);
+            
+            break;
+        case 5:
+            lv_event_send(ui_Cannibal7, LV_EVENT_REFRESH, NULL);  
+             
+            break;
+        case 6:
+            lv_event_send(ui_Cannibal7, LV_EVENT_REFRESH, NULL);    
+            break;
+        default:
+            break;
+        }
+    }
     }
 
     user->coins += 500;
 
     day_change = false;
-    //ui_event_temperaturelabel1(NULL);
-    plantstage = plant->stage;
+    lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
+    
+    plantstage[0] = plant->stage;
+    plantstage[1] = tomato->stage;
+    plantstage[2] = cactus->stage;
+    plantstage[3] = cannibal_flower->stage;
     // 如果植物死亡，停止定时器
     if (plant->health <= 0) {
         printf("你的植物已经死亡，模拟结束。\n");
@@ -266,6 +385,9 @@ static void plant_own(){
     if(!commodity->ishave[3]) own_plant[3] = true;
     
 }
+
+
+
 
 
 
