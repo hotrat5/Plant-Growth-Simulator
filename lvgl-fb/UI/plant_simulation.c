@@ -174,6 +174,7 @@ void update_plant_health(PlantState* plant, const Environment* env) {
     // 检查光照适宜度
     if (env->light < plant_prefs[plant->type][2][0]) {
         health_change -= 2; // 太暗
+        
     } else if (env->light > plant_prefs[plant->type][2][1]) {
         health_change -= 1; // 太亮
     } else {
@@ -189,6 +190,12 @@ void update_plant_health(PlantState* plant, const Environment* env) {
         plant->needs_fertilizer = true;
     }
     if (plant->health < 30) {
+        plant->needs_pest_control = true;
+    }
+    if(plant->age%7 == 0){
+        plant->needs_fertilizer = true;
+    }
+    if(plant->age%10 == 0){
         plant->needs_pest_control = true;
     }
 }
