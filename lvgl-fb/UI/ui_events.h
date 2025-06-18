@@ -20,6 +20,28 @@ void temperaturechange(lv_event_t * e);
 void lightchange(lv_event_t * e);
 void weatherchange(lv_event_t * e);
 void seasonchange(lv_event_t * e);
+
+void plant_insert_removal4(lv_event_t * e);
+void plant_fertilize4(lv_event_t * e);
+void plant_watering4(lv_event_t * e);
+void healthchange4(lv_event_t * e);
+void agechange4(lv_event_t * e);
+
+
+void plant_insert_removal2(lv_event_t * e);
+void plant_fertilize2(lv_event_t * e);
+void plant_watering2(lv_event_t * e);
+void healthchange2(lv_event_t * e);
+void agechange2(lv_event_t * e);
+
+
+void plant_insert_removal3(lv_event_t * e);
+void plant_fertilize3(lv_event_t * e);
+void plant_watering3(lv_event_t * e);
+void healthchange3(lv_event_t * e);
+void agechange3(lv_event_t * e);
+
+
 void switch2illustratedscreen(lv_event_t * e);
 void message_plantstage(lv_event_t * e);
 void show_sunflowerseed(lv_event_t * e);

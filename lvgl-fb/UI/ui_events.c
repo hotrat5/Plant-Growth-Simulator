@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-extern PlantState* plant;
+extern PlantState* sunflower;
 extern PlantState* tomato;
 extern PlantState* cactus;
 extern PlantState* cannibal_flower;
@@ -23,7 +23,28 @@ bool exist_plant = false;
 
 void plant_insert_removal(lv_event_t * e)
 {
-	pest_control(plant);
+	pest_control(sunflower);
+	//plant->health = plant->health + 5;
+	// Your code here
+}
+
+void plant_insert_removal2(lv_event_t * e)
+{
+	pest_control(tomato);
+	//plant->health = plant->health + 5;
+	// Your code here
+}
+
+void plant_insert_removal3(lv_event_t * e)
+{
+	pest_control(cactus);
+	//plant->health = plant->health + 5;
+	// Your code here
+}
+
+void plant_insert_removal4(lv_event_t * e)
+{
+	pest_control(cannibal_flower);
 	//plant->health = plant->health + 5;
 	// Your code here
 }
@@ -31,45 +52,60 @@ void plant_insert_removal(lv_event_t * e)
 void plant_fertilize(lv_event_t * e)
 {
 	// Your code here
-	fertilize(plant);
+	fertilize(sunflower);
 	//plant->health = plant->health + 5;
 }
+void plant_fertilize2(lv_event_t * e)
+{
+	// Your code here
+	fertilize(tomato);
+	//plant->health = plant->health + 5;
+}
+void plant_fertilize3(lv_event_t * e)
+{
+	// Your code here
+	fertilize(cactus);
+	//plant->health = plant->health + 5;
+}
+void plant_fertilize4(lv_event_t * e)
+{
+	// Your code here
+	fertilize(cannibal_flower);
+	//plant->health = plant->health + 5;
+}
+
 
 void plant_watering(lv_event_t * e)
 {
 	// Your code here
-	watering(plant);
+	watering(sunflower);
 	//plant->health = plant->health + 5;
 }
-
-// void get_seed(lv_event_t * e)
-// {
-// 	const char* type_str[] = {"向日葵", "西红柿", "仙人掌", "食人花"};
-// 	// Your code here
-//     srand(time(NULL));
-    
-//     // 生成0~3的随机数
-//     PlantType type = rand() % 4;
-    
-//     printf("新的植物！%s\n", type_str[type]);
-// 	lv_textarea_add_text(ui_plantstagetextarea1, type_str[type]);
-
-// }
-
-// void grow_plant(lv_event_t * e)
-// {
-// 	init_plant(plant, SUNFLOWER, 2);
-// 	// Your code here
-// 	exist_plant = true;
-// 	lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
-// }
+void plant_watering2(lv_event_t * e)
+{
+	// Your code here
+	watering(tomato);
+	//plant->health = plant->health + 5;
+}
+void plant_watering3(lv_event_t * e)
+{
+	// Your code here
+	watering(cactus);
+	//plant->health = plant->health + 5;
+}
+void plant_watering4(lv_event_t * e)
+{
+	// Your code here
+	watering(cannibal_flower);
+	//plant->health = plant->health + 5;
+}
 
 
 
 void healthchange(lv_event_t * e)
 {
 	// Your code here
-	uint8_t health = plant->health; 
+	uint8_t health = sunflower->health; 
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
@@ -79,11 +115,52 @@ void healthchange(lv_event_t * e)
     // 触发界面刷新
     lv_obj_invalidate(ui_healthlabel1);
 }
+void healthchange2(lv_event_t * e)
+{
+	// Your code here
+	uint8_t health = tomato->health; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel2, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel2);
+}
+
+void healthchange3(lv_event_t * e)
+{
+	// Your code here
+	uint8_t health = cactus->health; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel3, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel3);
+}
+void healthchange4(lv_event_t * e)
+{
+	// Your code here
+	uint8_t health = cannibal_flower->health; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel4);
+}
+
 
 void agechange(lv_event_t * e)
 {
 	// Your code here
-	uint32_t age = plant->age; 
+	uint32_t age = sunflower->age; 
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
@@ -92,6 +169,46 @@ void agechange(lv_event_t * e)
     
     // 触发界面刷新
     lv_obj_invalidate(ui_statelabel1);
+}
+
+void agechange2(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = tomato->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel2, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel2);
+}
+void agechange3(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = cactus->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel3, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel3);
+}
+void agechange4(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = cannibal_flower->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel4);
 }
 
 void humiditychange(lv_event_t * e)
@@ -103,9 +220,15 @@ void humiditychange(lv_event_t * e)
     char temp_str[16];
     snprintf(temp_str, sizeof(temp_str), "湿度: %d", humidity);
     lv_label_set_text(ui_humiditylabel1, temp_str);
-    
+    lv_label_set_text(ui_humiditylabel2, temp_str);
+    lv_label_set_text(ui_humiditylabel3, temp_str);
+    lv_label_set_text(ui_humiditylabel4, temp_str);
     // 触发界面刷新
     lv_obj_invalidate(ui_humiditylabel1);
+    lv_obj_invalidate(ui_humiditylabel2);
+    lv_obj_invalidate(ui_humiditylabel3);
+    lv_obj_invalidate(ui_humiditylabel4);
+
 }
 
 void temperaturechange(lv_event_t * e)
@@ -121,9 +244,16 @@ void temperaturechange(lv_event_t * e)
     char temp_str[16];
     snprintf(temp_str, sizeof(temp_str), "温度: %d度", temperature);
     lv_label_set_text(ui_temperaturelabel1, temp_str);
+    lv_label_set_text(ui_temperaturelabel2, temp_str);
+    lv_label_set_text(ui_temperaturelabel3, temp_str);
+    lv_label_set_text(ui_temperaturelabel4, temp_str);
     
     // 触发界面刷新
     lv_obj_invalidate(ui_temperaturelabel1);
+    lv_obj_invalidate(ui_temperaturelabel2);
+    lv_obj_invalidate(ui_temperaturelabel3);
+    lv_obj_invalidate(ui_temperaturelabel4);
+
 	// Your code here
 }
 
@@ -136,9 +266,15 @@ void lightchange(lv_event_t * e)
     char temp_str[16];
     snprintf(temp_str, sizeof(temp_str), "光照: %d", light);
     lv_label_set_text(ui_lightlabel1, temp_str);
-    
+    lv_label_set_text(ui_lightlabel2, temp_str);
+    lv_label_set_text(ui_lightlabel3, temp_str);
+    lv_label_set_text(ui_lightlabel4, temp_str);
+
     // 触发界面刷新
     lv_obj_invalidate(ui_lightlabel1);
+    lv_obj_invalidate(ui_lightlabel2);
+    lv_obj_invalidate(ui_lightlabel3);
+    lv_obj_invalidate(ui_lightlabel4);
 }
 
 void weatherchange(lv_event_t * e)
@@ -158,7 +294,6 @@ void weatherchange(lv_event_t * e)
     switch(weather){
         case 0:
             lv_obj_set_style_bg_img_src(scr, &ui_img_1664587152, LV_PART_MAIN | LV_STATE_DEFAULT);
-            
             break;
         case 1:
             lv_obj_set_style_bg_img_src(scr, &ui_img_1772208564, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -186,65 +321,76 @@ void seasonchange(lv_event_t * e)
     char temp_str[16];
     snprintf(temp_str, sizeof(temp_str), "%s", season_str[season]);
     lv_label_set_text(ui_seasonlabel1, temp_str);
-    
+    lv_label_set_text(ui_seasonlabel2, temp_str);
+    lv_label_set_text(ui_seasonlabel3, temp_str);
+    lv_label_set_text(ui_seasonlabel4, temp_str);
     // 触发界面刷新
     lv_obj_invalidate(ui_seasonlabel1);
+    lv_obj_invalidate(ui_seasonlabel2);
+    lv_obj_invalidate(ui_seasonlabel3);
+    lv_obj_invalidate(ui_seasonlabel4);
 }
 
-void growseed(lv_event_t * e)
-{
-	// Your code here
-	
-}
-
-
-// void growsproutEvent(lv_event_t * e)
-// {
-// 	// Your code here
-// 	// 设置图片透明度 (0-255, 0为完全透明，255为完全不透明)
-// 	lv_obj_t * target = lv_event_get_target(e);
-// 	lv_obj_add_flag(ui_seed1, LV_OBJ_FLAG_HIDDEN);
-//     lv_obj_clear_flag(ui_sprout1, LV_OBJ_FLAG_HIDDEN);
-	
-// 	//lv_obj_set_style_img_opa(ui_seed1, 255, 0);  // 50% 透明度
-// 	//lv_obj_invalidate(ui_seed1);
-// }
-
-/////////////////////////////////////////////////////////////////////////////////////
-// void growseeding(lv_event_t * e)
-// {
-// 	// Your code here
-// 	lv_obj_add_flag(ui_sprout1, LV_OBJ_FLAG_HIDDEN);
-//     lv_obj_clear_flag(ui_seeding1, LV_OBJ_FLAG_HIDDEN);
-// }
-
-// void growmature(lv_event_t * e)
-// {
-// 	// Your code here
-// 	lv_obj_add_flag(ui_seeding1, LV_OBJ_FLAG_HIDDEN);
-//     lv_obj_clear_flag(ui_mature1, LV_OBJ_FLAG_HIDDEN);
-// }
-
-// void growflowering(lv_event_t * e)
-// {
-// 	// Your code here
-// 	lv_obj_add_flag(ui_mature1, LV_OBJ_FLAG_HIDDEN);
-//     lv_obj_clear_flag(ui_flowering, LV_OBJ_FLAG_HIDDEN);
-// }
+void growseed(lv_event_t * e){}
 
 void growthstagechange(lv_event_t * e)
 {
 	// Your code here
 	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
-	GrowthStage stage = plant->stage; 
+	GrowthStage stage = sunflower->stage; 
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], plant->growth);
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], sunflower->growth);
     lv_label_set_text(ui_growthstagelabel1, temp_str);
     
     // 触发界面刷新
     lv_obj_invalidate(ui_growthstagelabel1);
+}
+
+
+void growthstagechange2(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = tomato->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], tomato->growth);
+    lv_label_set_text(ui_growthstagelabel2, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel2);
+}
+
+void growthstagechange3(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = cactus->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], cactus->growth);
+    lv_label_set_text(ui_growthstagelabel3, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel3);
+}
+void growthstagechange4(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = cannibal_flower->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], cannibal_flower->growth);
+    lv_label_set_text(ui_growthstagelabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel4);
 }
 
 void switch2illustratedscreen(lv_event_t * e)
@@ -286,7 +432,7 @@ void switch2illustratedscreen(lv_event_t * e)
 void message_plantstage(lv_event_t * e)
 {
     const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
-	GrowthStage stage = plant->stage; 
+	GrowthStage stage = sunflower->stage; 
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
@@ -303,8 +449,8 @@ void show_sunflowerseed(lv_event_t * e)
 {
 	// Your code here
     //lv_obj_add_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
-    if(plant->stage == SEED){
-        init_plant(plant, SUNFLOWER, 2);
+    if(sunflower->stage == SEED){
+        init_plant(sunflower, SUNFLOWER, 2);
         lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
         exist_plant = true;
  	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
@@ -364,7 +510,7 @@ void show_sunflower7(lv_event_t * e)
 void show_message(lv_event_t * e)
 {
 	// Your code here
-    const char* buffer = get_plant_needs(plant);
+    const char* buffer = get_plant_needs(sunflower);
     lv_label_set_text(ui_Label4, buffer);
     lv_obj_invalidate(ui_Label4);
 }

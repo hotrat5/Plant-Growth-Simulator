@@ -29,7 +29,8 @@ static const uint32_t UPDATE_INTERVAL = 5000;  // 5秒
 static const uint32_t TIMEOUT_WAIT_PLANT = 60000;  // 30秒超时
 
 Environment* env = NULL;
-PlantState* plant = NULL;  // 向日葵
+//PlantState* plant = NULL;  
+PlantState* sunflower = NULL;// 向日葵
 PlantState* tomato = NULL; 
 PlantState* cactus = NULL;
 PlantState* cannibal_flower = NULL;
@@ -71,8 +72,8 @@ int main(void)
         return -1;
     }
     own_plant[0] = true;
-    plant = (PlantState*)malloc(sizeof(PlantState));
-    if (plant == NULL) {
+    sunflower = (PlantState*)malloc(sizeof(PlantState));
+    if (sunflower == NULL) {
         printf("内存分配失败！\n");
         return -1;
     }
@@ -136,8 +137,8 @@ int main(void)
     }
     
     // 释放资源
-    if (plant != NULL) {
-        free(plant);
+    if (sunflower != NULL) {
+        free(sunflower);
     }
     
     if (env != NULL) {
@@ -151,80 +152,74 @@ int main(void)
 static void plant_update_timer(lv_timer_t *timer) {
     
 
-    if (plant == NULL || env == NULL || plant->health == 0) {
+    if (sunflower == NULL || env == NULL || sunflower->health == 0) {
         return;
     }
     printf("enter plant_update\n");
     day_change = true;
-    simulate_day(plant, env);
-    // 更新植物健康（环境因素）
-    update_plant_health(tomato, env);
+
+    generate_environment(env);
+
+    simulate_day(sunflower, env);
+    simulate_day(tomato, env);
     
-    // 更新植物生长
-    if (tomato->health > 10) { // 健康状态过低时停止生长
-        update_plant_growth(tomato);
-    }
+    // // 更新植物健康（环境因素）
+    // update_plant_health(tomato, env);
+    // // 更新植物生长
+    // if (tomato->health > 10) { // 健康状态过低时停止生长
+    //     update_plant_growth(tomato);
+    // }
     
     
     print_environment(env);
-    print_plant_state(plant);
+    print_plant_state(sunflower);
     print_plant_state(tomato);
-    // print_plant_state(plant);
-    // print_plant_state(plant);
+    
 
     
     if(day_change == true){
         lv_event_send(ui_healthlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_statelabel1, LV_EVENT_REFRESH, NULL);
+        lv_event_send(ui_healthlabel2, LV_EVENT_REFRESH, NULL);
+        lv_event_send(ui_statelabel2, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_humiditylabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_temperaturelabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_lightlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_weatherlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_seasonlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_growthstagelabel1, LV_EVENT_REFRESH, NULL);
+        lv_event_send(ui_growthstagelabel2, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_Label4, LV_EVENT_REFRESH, NULL);
     }
 
-    if(plantstage[0] != plant->stage){
-        switch (plant->stage)
+    if(plantstage[0] != sunflower->stage){
+        switch (sunflower->stage)
         {
         case 1:
             lv_event_send(ui_sunflower2, LV_EVENT_REFRESH, NULL);
-                
             break;
         case 2:
             lv_event_send(ui_sunflower4, LV_EVENT_REFRESH, NULL);
-            
-                lv_event_send(ui_tomato4, LV_EVENT_REFRESH, NULL);
-            
-                
             break;
         case 3:
-            lv_event_send(ui_sunflower5, LV_EVENT_REFRESH, NULL);
-            
-                      
+            lv_event_send(ui_sunflower5, LV_EVENT_REFRESH, NULL);  
             break;
         case 4:
             lv_event_send(ui_sunflower6, LV_EVENT_REFRESH, NULL);
-            
             break;
         case 5:
             lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);  
-             
             break;
         case 6:
             lv_event_send(ui_sunflower7, LV_EVENT_REFRESH, NULL);
-            
-                
             break;
         default:
             break;
         }
-        //lv_event_send(ui_plantstagetextarea1, LV_EVENT_REFRESH, NULL);
         
     }
-
-    if(own_plant[1]){
+//own_plant[1]
+    if(1){
         if(plantstage[1] != tomato->stage){
         switch (tomato->stage)
         {
@@ -232,18 +227,13 @@ static void plant_update_timer(lv_timer_t *timer) {
             lv_event_send(ui_tomato1, LV_EVENT_REFRESH, NULL);
             break;
         case 2:
-            
             lv_event_send(ui_tomato4, LV_EVENT_REFRESH, NULL);
-    
             break;
         case 3:
-            lv_event_send(ui_tomato5, LV_EVENT_REFRESH, NULL);
-            
-                      
+            lv_event_send(ui_tomato5, LV_EVENT_REFRESH, NULL);   
             break;
         case 4:
             lv_event_send(ui_tomato6, LV_EVENT_REFRESH, NULL);
-            
             break;
         case 5:
             lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);  
@@ -266,18 +256,13 @@ static void plant_update_timer(lv_timer_t *timer) {
             lv_event_send(ui_Cactus1, LV_EVENT_REFRESH, NULL);
             break;
         case 2:
-            
             lv_event_send(ui_Cactus3, LV_EVENT_REFRESH, NULL);
-    
             break;
         case 3:
-            lv_event_send(ui_Cactus5, LV_EVENT_REFRESH, NULL);
-            
-                      
+            lv_event_send(ui_Cactus5, LV_EVENT_REFRESH, NULL);        
             break;
         case 4:
-            lv_event_send(ui_Cactus6, LV_EVENT_REFRESH, NULL);
-            
+            lv_event_send(ui_Cactus6, LV_EVENT_REFRESH, NULL);  
             break;
         case 5:
             lv_event_send(ui_Cactus7, LV_EVENT_REFRESH, NULL);  
@@ -299,23 +284,18 @@ static void plant_update_timer(lv_timer_t *timer) {
         case 1:
             lv_event_send(ui_Cannibal2, LV_EVENT_REFRESH, NULL);
             break;
-        case 2:
-            
+        case 2:         
             lv_event_send(ui_Cannibal3, LV_EVENT_REFRESH, NULL);
-    
             break;
         case 3:
-            lv_event_send(ui_Cannibal5, LV_EVENT_REFRESH, NULL);
-            
-                      
+            lv_event_send(ui_Cannibal5, LV_EVENT_REFRESH, NULL);    
             break;
         case 4:
             lv_event_send(ui_Cannibal6, LV_EVENT_REFRESH, NULL);
             
             break;
         case 5:
-            lv_event_send(ui_Cannibal7, LV_EVENT_REFRESH, NULL);  
-             
+            lv_event_send(ui_Cannibal7, LV_EVENT_REFRESH, NULL);               
             break;
         case 6:
             lv_event_send(ui_Cannibal7, LV_EVENT_REFRESH, NULL);    
@@ -331,12 +311,12 @@ static void plant_update_timer(lv_timer_t *timer) {
     day_change = false;
     lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
     
-    plantstage[0] = plant->stage;
+    plantstage[0] = sunflower->stage;
     plantstage[1] = tomato->stage;
     plantstage[2] = cactus->stage;
     plantstage[3] = cannibal_flower->stage;
     // 如果植物死亡，停止定时器
-    if (plant->health <= 0) {
+    if (sunflower->health <= 0) {
         printf("你的植物已经死亡，模拟结束。\n");
         lv_timer_del(timer);  
     }
@@ -346,7 +326,7 @@ static void load_info(){
     load_commodity(commodity);
     load_user(user);
     load_environment(env);
-    load_plant(plant, 0);
+    load_plant(sunflower, 0);
     load_plant(tomato, 1);
     load_plant(cactus, 2);
     load_plant(cannibal_flower, 3);
@@ -358,7 +338,7 @@ static void handleSignal(int signal) {
     save_user(user);
     save_commodity(commodity);
     save_environment(env);
-    save_plant(plant);
+    save_plant(sunflower);
     if(own_plant[1]) save_plant(tomato);
     if(own_plant[2]) save_plant(cactus);
     if(own_plant[3]) save_plant(cannibal_flower);    
@@ -385,11 +365,6 @@ static void plant_own(){
     if(!commodity->ishave[3]) own_plant[3] = true;
     
 }
-
-
-
-
-
 
 void lvgl_init_framebuffer_ts()
 {
@@ -443,7 +418,3 @@ uint32_t custom_tick_get(void)
     uint32_t time_ms = now_ms - start_ms;
     return time_ms;
 }
-
-/*
-
-*/

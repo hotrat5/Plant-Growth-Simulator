@@ -151,6 +151,7 @@ void init_plant(PlantState* plant, PlantType type, uint8_t rarity) {
 void update_plant_health(PlantState* plant, const Environment* env) {
     int8_t health_change = 0;
     
+    
     // 检查温度适宜度
     if (env->temperature < plant_prefs[plant->type][0][0]) {
         health_change -= 2; // 太冷
@@ -231,21 +232,21 @@ void update_plant_growth(PlantState* plant) {
 void pest_control(PlantState* plant) {
     if (plant->pest_control_count >= 1) {
         plant->health = (plant->health < 8) ? 0 : plant->health - 8;
-        printf("Warning: Excessive pest control! Health -8\n");
+        printf("Warning: %dExcessive pest control! Health -8\n", plant->type);
         return;
     }
     
     plant->health = (plant->health + 15 > 100) ? 100 : plant->health + 15;
     plant->needs_pest_control = false;
     plant->pest_control_count++;
-    printf("Applied pest control. Health +15\n");
+    printf("%dApplied pest control. Health +15\n", plant->type);
 }
 
 // 用户操作：施肥
 void fertilize(PlantState* plant) {
     if (plant->fertilize_count >= 1) {
         plant->health = (plant->health < 8) ? 0 : plant->health - 8;
-        printf("Warning: Excessive fertilization! Health -8\n");
+        printf("Warning: %dExcessive fertilization! Health -8\n", plant->type);
         return;
     }
     
@@ -254,21 +255,21 @@ void fertilize(PlantState* plant) {
     if (plant->growth > 100) plant->growth = 100;
     plant->needs_fertilizer = false;
     plant->fertilize_count++;
-    printf("Applied fertilizer. Health +20, Growth +10%%\n");
+    printf("%dApplied fertilizer. Health +20, Growth +10%%\n", plant->type);
 }
 
 // 用户操作：浇水
 void watering(PlantState* plant) {
     if (plant->water_count >= 2) {
         plant->health = (plant->health < 5) ? 0 : plant->health - 5;
-        printf("Warning: Excessive watering! Health -5\n");
+        printf("Warning: %dExcessive watering! Health -5\n", plant->type);
         return;
     }
     
     plant->health = (plant->health + 15 > 100) ? 100 : plant->health + 15;
     plant->needs_water = false;
     plant->water_count++;
-    printf("Watered plant. Health +15\n");
+    printf("%dWatered plant. Health +15\n", plant->type);
 }
 
 // 获取提醒信息
@@ -284,7 +285,7 @@ void print_plant_state(const PlantState* plant) {
     printf("\nPlant: %s [Rarity: %u]\n", type_str[plant->type], plant->rarity);
     printf("Stage: %s (%u%%)\n", stage_str[plant->stage], plant->growth);
     printf("Health: %u/100, Age: %u days\n", plant->health, plant->age);
-    printf("Status: %s\n", get_plant_needs(plant));
+    printf("Status:%d, %s\n", plant->type, get_plant_needs(plant));
     printf("Actions today: Water(%d/2), Fertilize(%d/1), Pest Control(%d/1)\n\n",
            plant->water_count, plant->fertilize_count, plant->pest_control_count);
 }
@@ -296,7 +297,7 @@ void simulate_day(PlantState* plant, Environment* env) {
     plant->fertilize_count = 0;
     plant->pest_control_count = 0;
     // 生成新环境
-    generate_environment(env);
+    //generate_environment(env);
     
     // 更新植物健康（环境因素）
     update_plant_health(plant, env);

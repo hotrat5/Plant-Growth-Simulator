@@ -1140,7 +1140,7 @@ void ui_event_Insectremoval2(lv_event_t * e)
     if(event_code == LV_EVENT_CLICKED) {
         Insectremovalmove1_Animation(ui_Insectremoval2, 0);
         Insectremovalback1_Animation(ui_Insectremoval2, 2000);
-        plant_insert_removal(e);
+        plant_insert_removal2(e);
     }
 }
 void ui_event_fertilize2(lv_event_t * e)
@@ -1151,7 +1151,7 @@ void ui_event_fertilize2(lv_event_t * e)
         fertilizemove1_Animation(ui_fertilize2, 0);
         fertilizeback1_Animation(ui_fertilize2, 3000);
         imageangle1_Animation(ui_fertilize2, 1000);
-        plant_fertilize(e);
+        plant_fertilize2(e);
     }
 }
 void ui_event_watering2(lv_event_t * e)
@@ -1164,7 +1164,7 @@ void ui_event_watering2(lv_event_t * e)
         Opacityfull1_Animation(ui_droplets2, 1000);
         wateringback1_Animation(ui_watering2, 3000);
         Opacityzero1_Animation(ui_droplets2, 1000);
-        plant_watering(e);
+        plant_watering2(e);
     }
 }
 void ui_event_healthlabel2(lv_event_t * e)
@@ -1172,7 +1172,7 @@ void ui_event_healthlabel2(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        healthchange(e);
+        healthchange2(e);
     }
 }
 void ui_event_statelabel2(lv_event_t * e)
@@ -1180,7 +1180,7 @@ void ui_event_statelabel2(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        agechange(e);
+        agechange2(e);
     }
 }
 void ui_event_humiditylabel2(lv_event_t * e)
@@ -1351,7 +1351,7 @@ void ui_event_Insectremoval3(lv_event_t * e)
     if(event_code == LV_EVENT_CLICKED) {
         Insectremovalmove1_Animation(ui_Insectremoval3, 0);
         Insectremovalback1_Animation(ui_Insectremoval3, 2000);
-        plant_insert_removal(e);
+        plant_insert_removal3(e);
     }
 }
 void ui_event_fertilize3(lv_event_t * e)
@@ -1362,7 +1362,7 @@ void ui_event_fertilize3(lv_event_t * e)
         fertilizemove1_Animation(ui_fertilize3, 0);
         fertilizeback1_Animation(ui_fertilize3, 3000);
         imageangle1_Animation(ui_fertilize3, 1000);
-        plant_fertilize(e);
+        plant_fertilize3(e);
     }
 }
 void ui_event_watering3(lv_event_t * e)
@@ -1375,7 +1375,7 @@ void ui_event_watering3(lv_event_t * e)
         Opacityfull1_Animation(ui_droplets3, 1000);
         wateringback1_Animation(ui_watering3, 3000);
         Opacityzero1_Animation(ui_droplets3, 1000);
-        plant_watering(e);
+        plant_watering3(e);
     }
 }
 void ui_event_healthlabel3(lv_event_t * e)
@@ -1383,7 +1383,7 @@ void ui_event_healthlabel3(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        healthchange(e);
+        healthchange3(e);
     }
 }
 void ui_event_statelabel3(lv_event_t * e)
@@ -1391,7 +1391,7 @@ void ui_event_statelabel3(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        agechange(e);
+        agechange3(e);
     }
 }
 void ui_event_humiditylabel3(lv_event_t * e)
@@ -1570,7 +1570,7 @@ void ui_event_Insectremoval4(lv_event_t * e)
     if(event_code == LV_EVENT_CLICKED) {
         Insectremovalmove1_Animation(ui_Insectremoval4, 0);
         Insectremovalback1_Animation(ui_Insectremoval4, 2000);
-        plant_insert_removal(e);
+        plant_insert_removal4(e);
     }
 }
 void ui_event_fertilize4(lv_event_t * e)
@@ -1581,7 +1581,7 @@ void ui_event_fertilize4(lv_event_t * e)
         fertilizemove1_Animation(ui_fertilize4, 0);
         fertilizeback1_Animation(ui_fertilize4, 3000);
         imageangle1_Animation(ui_fertilize4, 1000);
-        plant_fertilize(e);
+        plant_fertilize4(e);
     }
 }
 void ui_event_watering4(lv_event_t * e)
@@ -1594,7 +1594,7 @@ void ui_event_watering4(lv_event_t * e)
         Opacityfull1_Animation(ui_droplets4, 1000);
         wateringback1_Animation(ui_watering4, 3000);
         Opacityzero1_Animation(ui_droplets4, 1000);
-        plant_watering(e);
+        plant_watering4(e);
     }
 }
 void ui_event_healthlabel4(lv_event_t * e)
@@ -1602,7 +1602,7 @@ void ui_event_healthlabel4(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        healthchange(e);
+        healthchange4(e);
     }
 }
 void ui_event_statelabel4(lv_event_t * e)
@@ -1610,7 +1610,7 @@ void ui_event_statelabel4(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        agechange(e);
+        agechange4(e);
     }
 }
 void ui_event_humiditylabel4(lv_event_t * e)
