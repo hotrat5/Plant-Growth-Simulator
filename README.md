@@ -162,11 +162,14 @@ static void handleSignal(int signal) {
 1. 依赖库：LVGL图形库
 2. 编译命令示例：
    ```bash
-   gcc main.c plant_simulation.c -llvgl -o plant_sim
+   cd build
+   cmake .. //模拟器（sdl）
+   cmake -DCMAKE_C_COMPILER=/usr/local/arm/5.4.0/usr/bin/arm-linux-gcc -DCMAKE_CXX_COMPILER=/usr/local/arm/5.4.0/usr/bin/arm-linux-g++ ..    //(arm平台)
+   make
    ```
 3. 运行：
    ```bash
-   ./plant_sim
+   ./lvgl-fb
    ```
 
 #### 九、注意事项
