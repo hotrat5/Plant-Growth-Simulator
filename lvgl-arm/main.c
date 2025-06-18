@@ -3,6 +3,7 @@
 #include "lvgl/lvgl.h"
 #include "lv_drivers/display/fbdev.h"
 #include "lv_drivers/indev/evdev.h"
+#include "lv_drivers/sdl/sdl.h"
 #include <sys/time.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -118,11 +119,11 @@ int main(void)
     
     printf("植物初始化成功！\n");
     
+
     plantstage[0] = sunflower->stage;
     plantstage[1] = tomato->stage;
     plantstage[2] = cactus->stage;
     plantstage[3] = cannibal_flower->stage;
-    
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
@@ -245,7 +246,7 @@ static void plant_update_timer(lv_timer_t *timer) {
     }
 //own_plant[1]
     if(user->plant_type[1]&&isplant[1]==true){
-        
+        printf("%d\n", user->plant_type[1]);
         if(plantstage[1] != tomato->stage){
         switch (tomato->stage)
         {
@@ -279,7 +280,8 @@ static void plant_update_timer(lv_timer_t *timer) {
        printf("user->plant_type[2]:%d\n", user->plant_type[2]);
        printf("isplant[2]: %d\n", isplant[2]);
        printf("plantstage[2]:%d\n", plantstage[2]);
-       printf("cactus->stage: &d\n", cactus->stage);
+       printf("cactus->stage: %d\n", cactus->stage);
+        printf("%d\n", user->plant_type[2]);
         if(plantstage[2] != cactus->stage){
         switch (cactus->stage)
         {
@@ -287,7 +289,7 @@ static void plant_update_timer(lv_timer_t *timer) {
             lv_event_send(ui_Cactus1, LV_EVENT_REFRESH, NULL);
             break;
         case 2:
-            lv_event_send(ui_Cactus3, LV_EVENT_REFRESH, NULL);
+            lv_event_send(ui_Cactus4, LV_EVENT_REFRESH, NULL);
             break;
         case 3:
             lv_event_send(ui_Cactus5, LV_EVENT_REFRESH, NULL);        
@@ -394,7 +396,6 @@ static void registerSignalHandlers() {
     //     handleSignal();
     // }
 }
-
 
 void lvgl_init_framebuffer_ts()
 {

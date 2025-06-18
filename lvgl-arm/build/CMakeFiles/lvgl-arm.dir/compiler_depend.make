@@ -257,6 +257,7 @@ CMakeFiles/lvgl-arm.dir/main.c.o: ../main.c \
   ../lv_conf.h \
   ../lvgl/lvgl.h \
   ../lv_drivers/indev/evdev.h \
+  ../lv_drivers/sdl/sdl.h \
   /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/sys/time.h \
   /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/time.h \
   /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/time.h \
@@ -416,6 +417,8 @@ CMakeFiles/lvgl-arm.dir/main.c.o: ../main.c \
 ../lvgl/src/misc/lv_anim_timeline.h:
 
 ../lvgl/src/draw/sw/lv_draw_sw_gradient.h:
+
+../lv_drivers/sdl/sdl.h:
 
 ../lvgl/src/extra/widgets/list/lv_list.h:
 

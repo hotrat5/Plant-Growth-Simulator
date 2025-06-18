@@ -1278,8 +1278,8 @@ void ui_event_growthstagelabel2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        growthstagechange(e);
+    if(event_code == LV_EVENT_REFRESH) {
+        growthstagechange2(e);
     }
 }
 void ui_event_back1(lv_event_t * e)
@@ -1342,8 +1342,8 @@ void ui_event_Label9(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        show_message(e);
+    if(event_code == LV_EVENT_REFRESH) {
+        show_message1(e);
     }
 }
 void ui_event_Insectremoval3(lv_event_t * e)
@@ -1490,8 +1490,8 @@ void ui_event_growthstagelabel3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        growthstagechange(e);
+    if(event_code == LV_EVENT_REFRESH) {
+        growthstagechange3(e);
     }
 }
 void ui_event_back2(lv_event_t * e)
@@ -1554,8 +1554,8 @@ void ui_event_Label10(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        show_message(e);
+    if(event_code == LV_EVENT_REFRESH) {
+        show_message2(e);
     }
 }
 void ui_event_cannibalscreen(lv_event_t * e)
@@ -1702,8 +1702,8 @@ void ui_event_growthstagelabel4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        growthstagechange(e);
+    if(event_code == LV_EVENT_REFRESH) {
+        growthstagechange4(e);
     }
 }
 void ui_event_back3(lv_event_t * e)
@@ -1766,8 +1766,8 @@ void ui_event_Label11(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        show_message(e);
+    if(event_code == LV_EVENT_REFRESH) {
+        show_message3(e);
     }
 }
 void ui_event_Button2(lv_event_t * e)

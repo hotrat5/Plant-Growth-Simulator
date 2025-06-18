@@ -1279,7 +1279,7 @@ void ui_event_growthstagelabel2(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        growthstagechange(e);
+        growthstagechange2(e);
     }
 }
 void ui_event_back1(lv_event_t * e)
@@ -1491,7 +1491,7 @@ void ui_event_growthstagelabel3(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        growthstagechange(e);
+        growthstagechange3(e);
     }
 }
 void ui_event_back2(lv_event_t * e)
@@ -1703,7 +1703,7 @@ void ui_event_growthstagelabel4(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_REFRESH) {
-        growthstagechange(e);
+        growthstagechange4(e);
     }
 }
 void ui_event_back3(lv_event_t * e)
