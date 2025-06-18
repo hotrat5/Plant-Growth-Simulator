@@ -939,9 +939,9 @@ void ui_event_Illustrated1(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
-        illu_change(e);
-        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
         switch2illustratedscreen(e);
+        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
+        
     }
 }
 void ui_event_next1(lv_event_t * e)
@@ -1229,8 +1229,9 @@ void ui_event_Illustrated2(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
         switch2illustratedscreen(e);
+        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
+        
     }
 }
 void ui_event_next2(lv_event_t * e)
@@ -1440,8 +1441,9 @@ void ui_event_Illustrated3(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
         switch2illustratedscreen(e);
+        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
+        
     }
 }
 void ui_event_next3(lv_event_t * e)
@@ -1659,8 +1661,9 @@ void ui_event_Illustrated4(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
         switch2illustratedscreen(e);
+        _ui_screen_change(&ui_IllustratedScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_IllustratedScreen_screen_init);
+        
     }
 }
 // void ui_event_getseed4(lv_event_t * e)

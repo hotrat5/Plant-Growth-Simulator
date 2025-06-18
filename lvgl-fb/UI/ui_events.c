@@ -399,40 +399,6 @@ void growthstagechange4(lv_event_t * e)
     lv_obj_invalidate(ui_growthstagelabel4);
 }
 
-void switch2illustratedscreen(lv_event_t * e)
-{
-	FILE* fp = fopen("sunflower.txt", "r");
-	if(fp == NULL) {
-        fp = fopen("sunflower.txt", "r");
-        if(fp == NULL) {
-            perror("无法打开文件");
-            
-            return;
-        }
-    }
-	char buffer[512] ;
-	// 读取一行
-    while(fgets(buffer, sizeof(buffer), fp) != NULL) {
-        // 添加到文本区域
-        lv_textarea_add_text(ui_illuTextArea, buffer);
-        
-        // 滚动到最新内容
-        lv_textarea_set_cursor_pos(ui_illuTextArea, LV_TEXTAREA_CURSOR_LAST);
-    } 
-
-    // 读取完毕或出错
-        if(feof(fp)) {
-            printf("--- 文件读取完毕 ---\n");
-        } else {
-            printf("Error: 读取文件失败\n");
-        }
-        fclose(fp);
-        fp = NULL;
-	
-
-	
-	// Your code here
-}
 
 
 void message_plantstage(lv_event_t * e)
@@ -522,19 +488,106 @@ void show_message(lv_event_t * e)
 }
 
 const char *get_obj_name(lv_obj_t *obj) {
-    return (const char *)lv_obj_get_user_data(obj);
+    if (obj == NULL) return "NULL_OBJECT";
+    return (const char *)lv_obj_get_user_data(obj); // 假设调用者已确保数据有效
 }
 
-void illu_change(lv_event_t * e)
-{
-    const char* screen_str[] = {"ui_sunflowerscreen", 
-        "ui_tomatoscreen", "ui_cactusscreen", "ui_cannibalscreen"};
-	
-	// Your code here
-    lv_obj_t* current_screen = lv_scr_act();
-    const char* screen_name = get_obj_name(current_screen);
-    printf("%s\n", screen_name);
+// 从文件中读取内容并显示在文本区域
+static void read_and_display(const char *filename) {
+    FILE *file = fopen(filename, "r"); // 以只读模式打开文件
+    if (!file) {
+        perror("Error opening file");
+        printf("Failed to open file: %s\n", filename);
+        return;
+    }
+    
+    // 清空文本区域
+    lv_textarea_set_text(ui_illuTextArea, "");
+    
+    char buffer[256]; // 行缓冲区
+    size_t totalChars = 0;
+    const size_t maxChars = 2048; // 设置最大字符限制，防止文件过大
+    
+    // 逐行读取文件内容
+    while (fgets(buffer, sizeof(buffer), file)) {
+        // 检查是否超过最大字符限制
+        size_t len = strlen(buffer);
+        if (totalChars + len >= maxChars) {
+            printf("Warning: File content exceeds maximum display limit\n");
+            break;
+        }
+        
+        // 追加到文本区域
+        lv_textarea_add_text(ui_illuTextArea, buffer);
+        totalChars += len;
+    }
+    
+    // 关闭文件
+    fclose(file);
+    
+    // 可选：滚动到顶部
+    lv_textarea_set_cursor_pos(ui_illuTextArea, 0);
 }
+
+
+void switch2illustratedscreen(lv_event_t * e) {
+    const char* screen_str[] = {
+        "ui_sunflowerscreen", "ui_tomatoscreen", 
+        "ui_cactusscreen", "ui_cannibalscreen"
+    };
+    const int screen_count = sizeof(screen_str) / sizeof(screen_str[0]);
+    
+    lv_obj_t* current_screen = lv_scr_act();
+    
+    if (current_screen == NULL) {
+        printf("Error: No active screen!\n");
+        return;
+    }
+
+    const char* screen_name = get_obj_name(current_screen);
+    
+    // 处理用户数据未设置的情况
+    if (screen_name == NULL) {
+        printf("Warning: User data not set for screen\n");
+        return;
+    }
+
+    printf("Current screen: %s\n", screen_name);
+    
+    // 根据屏幕名称选择对应的文件
+    const char *filename = NULL;
+    
+    if (strcmp(screen_name, "ui_sunflowerscreen") == 0) {
+        filename = "illu_sunflower.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_1692174141);
+        lv_label_set_text(ui_Label2, "向日葵");
+    } 
+    else if (strcmp(screen_name, "ui_tomatoscreen") == 0) {
+        filename = "illu_tomato.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_405436818);
+        lv_label_set_text(ui_Label2, "西红柿");
+    } 
+    else if (strcmp(screen_name, "ui_cactusscreen") == 0) {
+        filename = "illu_cactus.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_1437469183);
+        lv_label_set_text(ui_Label2, "仙人掌");
+    } 
+    else if (strcmp(screen_name, "ui_cannibalscreen") == 0) {
+        filename = "illu_cannibal.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_cannibal7_png);
+        lv_label_set_text(ui_Label2, "食人花");
+    }
+    
+    // 如果找到匹配的文件名，读取并显示内容
+    if (filename) {
+        printf("Loading file: %s\n", filename);
+        read_and_display(filename);
+    } else {
+        printf("Error: No matching file for screen '%s'\n", screen_name);
+    }
+}
+
+
 
 void illu_img_change(lv_event_t * e)
 {

@@ -8,6 +8,7 @@
 void ui_sunflowerscreen_screen_init(void)
 {
     ui_sunflowerscreen = lv_obj_create(NULL);
+    lv_obj_set_user_data(ui_sunflowerscreen, "ui_sunflowerscreen");
     lv_obj_clear_flag(ui_sunflowerscreen, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_img_src(ui_sunflowerscreen, &ui_img_1224826616, LV_PART_MAIN | LV_STATE_DEFAULT);
 

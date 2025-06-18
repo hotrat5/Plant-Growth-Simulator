@@ -8,6 +8,7 @@
 void ui_tomatoscreen_screen_init(void)
 {
     ui_tomatoscreen = lv_obj_create(NULL);
+    lv_obj_set_user_data(ui_tomatoscreen, "ui_tomatoscreen");
     lv_obj_clear_flag(ui_tomatoscreen, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_img_src(ui_tomatoscreen, &ui_img_145349238, LV_PART_MAIN | LV_STATE_DEFAULT);
 

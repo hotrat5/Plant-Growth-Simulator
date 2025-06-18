@@ -8,6 +8,7 @@
 void ui_cannibalscreen_screen_init(void)
 {
     ui_cannibalscreen = lv_obj_create(NULL);
+    lv_obj_set_user_data(ui_cannibalscreen, "ui_cannibalscreen");
     lv_obj_clear_flag(ui_cannibalscreen, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_img_src(ui_cannibalscreen, &ui_img_1664587152, LV_PART_MAIN | LV_STATE_DEFAULT);
 

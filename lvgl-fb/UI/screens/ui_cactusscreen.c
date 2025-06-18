@@ -8,6 +8,7 @@
 void ui_cactusscreen_screen_init(void)
 {
     ui_cactusscreen = lv_obj_create(NULL);
+    lv_obj_set_user_data(ui_cactusscreen, "ui_cactusscreen");
     lv_obj_clear_flag(ui_cactusscreen, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_bg_img_src(ui_cactusscreen, &ui_img_145351288, LV_PART_MAIN | LV_STATE_DEFAULT);
 
