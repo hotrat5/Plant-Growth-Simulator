@@ -356,13 +356,13 @@ void buy_plant(User* user, Commodity* commodity, PlantType plant_type) {
     commodity->ishave[found_index] = false;
     
     // 添加新植物到用户植物栏
-    int plant_index = user->plant_num;
-    user->plant[plant_index].type = plant_type;
-    user->plant[plant_index].rarity = 1;  // 默认稀有度为1
-    user->plant[plant_index].stage = SEEDLING; // 初始为幼苗阶段
-    user->plant[plant_index].health = 100; // 初始健康值100
-    user->plant[plant_index].age = 0;      // 初始年龄0天
-    user->plant[plant_index].growth = 0;   // 初始生长进度0%
+    int plant_index = (int)plant_type;
+    user->plant_type[plant_index] = 1;
+    // user->plant[plant_index].rarity = 1;  // 默认稀有度为1
+    // user->plant[plant_index].stage = SEEDLING; // 初始为幼苗阶段
+    // user->plant[plant_index].health = 100; // 初始健康值100
+    // user->plant[plant_index].age = 0;      // 初始年龄0天
+    // user->plant[plant_index].growth = 0;   // 初始生长进度0%
     
     // 增加用户植物数量
     user->plant_num++;
@@ -375,7 +375,11 @@ void load_user(User* user) {
 
     fscanf(file, "%u", &user->coins);
     fscanf(file, "%hhu", &user->plant_num);
-    
+    fscanf(file, "%hhu", &user->plant_type[0]);
+    fscanf(file, "%hhu", &user->plant_type[1]);
+    fscanf(file, "%hhu", &user->plant_type[2]);
+    fscanf(file, "%hhu", &user->plant_type[3]);
+
     // for (int i = 0; i < user->plant_num; i++) {
     //     int type, stage;
     //     fscanf(file, "%d", &type);
@@ -463,7 +467,11 @@ void save_user(User* user){
     }
 
     if (fprintf(file, "%d\n", user->coins) < 0 ||
-        fprintf(file, "%d\n", user->plant_num) < 0) {
+        fprintf(file, "%d\n", user->plant_num) < 0 ||
+        fprintf(file, "%d\n", user->plant_type[0]) < 0 ||
+        fprintf(file, "%d\n", user->plant_type[1]) < 0 ||
+        fprintf(file, "%d\n", user->plant_type[2]) < 0 ||
+        fprintf(file, "%d\n", user->plant_type[3]) < 0) {
         // 若写入失败，输出错误信息
         perror("写入文件失败");
         fclose(file);

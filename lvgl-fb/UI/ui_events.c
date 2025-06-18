@@ -18,7 +18,7 @@ extern User* user;
 extern Commodity* commodity;
 
 extern lv_obj_t * ui_temperaturelabel1;
-bool exist_plant = false;
+bool isplant[4] = {0};
 
 
 void plant_insert_removal(lv_event_t * e)
@@ -287,9 +287,15 @@ void weatherchange(lv_event_t * e)
     char temp_str[16];
     snprintf(temp_str, sizeof(temp_str), "%s", weather_str[weather]);
     lv_label_set_text(ui_weatherlabel1, temp_str);
+    lv_label_set_text(ui_weatherlabel2, temp_str);
+    lv_label_set_text(ui_weatherlabel3, temp_str);
+    lv_label_set_text(ui_weatherlabel4, temp_str);
     
     // 触发界面刷新
     lv_obj_invalidate(ui_weatherlabel1);
+    lv_obj_invalidate(ui_weatherlabel2);
+    lv_obj_invalidate(ui_weatherlabel3);
+    lv_obj_invalidate(ui_weatherlabel4);
     lv_obj_t *scr = lv_scr_act();
     switch(weather){
         case 0:
@@ -431,18 +437,18 @@ void switch2illustratedscreen(lv_event_t * e)
 
 void message_plantstage(lv_event_t * e)
 {
-    const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
-	GrowthStage stage = sunflower->stage; 
+    // const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	// GrowthStage stage = sunflower->stage; 
     
-    // 使用格式化字符串更新温度显示
-    char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "植物%s了", stage_str[stage]);
-    lv_label_set_text(ui_plantstagetextarea1, temp_str);
-    lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
-    // 触发界面刷新
-    lv_obj_invalidate(ui_plantstagetextarea1);
-	// Your code here
-    lv_obj_add_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
+    // // 使用格式化字符串更新温度显示
+    // char temp_str[16];
+    // snprintf(temp_str, sizeof(temp_str), "植物%s了", stage_str[stage]);
+    // lv_label_set_text(ui_plantstagetextarea1, temp_str);
+    // lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
+    // // 触发界面刷新
+    // lv_obj_invalidate(ui_plantstagetextarea1);
+	// // Your code here
+    // lv_obj_add_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
 }
 
 void show_sunflowerseed(lv_event_t * e)
@@ -452,7 +458,7 @@ void show_sunflowerseed(lv_event_t * e)
     if(sunflower->stage == SEED){
         init_plant(sunflower, SUNFLOWER, 2);
         lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
-        exist_plant = true;
+        isplant[0] = true;
  	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
         user->plant_num = 1;
     }
@@ -515,9 +521,24 @@ void show_message(lv_event_t * e)
     lv_obj_invalidate(ui_Label4);
 }
 
+const char *get_obj_name(lv_obj_t *obj) {
+    return (const char *)lv_obj_get_user_data(obj);
+}
+
+void illu_change(lv_event_t * e)
+{
+    const char* screen_str[] = {"ui_sunflowerscreen", 
+        "ui_tomatoscreen", "ui_cactusscreen", "ui_cannibalscreen"};
+	
+	// Your code here
+    lv_obj_t* current_screen = lv_scr_act();
+    const char* screen_name = get_obj_name(current_screen);
+    printf("%s\n", screen_name);
+}
+
 void illu_img_change(lv_event_t * e)
 {
-	// Your code here
+
 }
 
 void illu_label_change(lv_event_t * e)
@@ -528,6 +549,7 @@ void illu_label_change(lv_event_t * e)
 void buy_sunflower(lv_event_t * e)
 {
     buy_plant(user, commodity, SUNFLOWER);
+    init_plant(sunflower, SUNFLOWER, 1);
     lv_label_set_text(ui_Label3, "已购买");
     lv_obj_invalidate(ui_Label3);
 	// Your code here
@@ -536,6 +558,7 @@ void buy_sunflower(lv_event_t * e)
 void buy_tomato(lv_event_t * e)
 {
     buy_plant(user, commodity, TOMATO);
+    init_plant(tomato, TOMATO, 2);
     lv_label_set_text(ui_Label6, "已购买");
     lv_obj_invalidate(ui_Label6);
 	// Your code here
@@ -543,7 +566,9 @@ void buy_tomato(lv_event_t * e)
 
 void buy_catus(lv_event_t * e)
 {
+    
     buy_plant(user, commodity, CACTUS);
+    init_plant(cactus, CACTUS, 2);
     lv_label_set_text(ui_Label5, "已购买");
     lv_obj_invalidate(ui_Label7);
 	// Your code here
@@ -552,6 +577,7 @@ void buy_catus(lv_event_t * e)
 void buy_cannibal(lv_event_t * e)
 {
     buy_plant(user, commodity, CANNIBAL_FLOWERS);
+    init_plant(cannibal_flower, CANNIBAL_FLOWERS, 3);
     lv_label_set_text(ui_Label7, "已购买");
     lv_obj_invalidate(ui_Label3);
 	// Your code here
@@ -574,18 +600,11 @@ void show_money(lv_event_t * e)
 void show_tomatoseed(lv_event_t * e)
 {
 	// Your code here
-    if(tomato->stage == SEED){
-        init_plant(tomato, TOMATO, 2);
         lv_obj_clear_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
-        exist_plant = true;
+        isplant[1] = true;
  	    lv_obj_add_state(ui_plant2, LV_STATE_DISABLED);
         user->plant_num = 1;
-    }
-    else{
-        lv_obj_clear_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
- 	    lv_obj_add_state(ui_plant2, LV_STATE_DISABLED);
-    }
+    
 }
 
 void show_tomato2(lv_event_t * e)
@@ -597,14 +616,14 @@ void show_tomato2(lv_event_t * e)
 
 void show_tomato3(lv_event_t * e)
 {
-    lv_obj_add_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
-    lv_obj_clear_flag(ui_tomato3, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_add_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_tomato3, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_tomato4(lv_event_t * e)
 {
-    lv_obj_add_flag(ui_tomato3, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_add_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
     lv_obj_clear_flag(ui_tomato4, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
@@ -633,9 +652,9 @@ void show_tomato7(lv_event_t * e)
 void show_cactusseed(lv_event_t * e)
 {
     if(cactus->stage == SEED){
-        init_plant(cactus, CACTUS, 2);
+        
         lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
-        exist_plant = true;
+        isplant[2] = true;
  	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
         user->plant_num = 1;
     }
@@ -656,14 +675,14 @@ void show_cactus2(lv_event_t * e)
 
 void show_cactus3(lv_event_t * e)
 {
-    lv_obj_add_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
-    lv_obj_clear_flag(ui_Cactus3, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_add_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_Cactus3, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_cactus4(lv_event_t * e)
 {
-    lv_obj_add_flag(ui_Cactus3, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_add_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
     lv_obj_clear_flag(ui_Cactus4, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
@@ -692,9 +711,9 @@ void show_cactus7(lv_event_t * e)
 void show_cannibalseed(lv_event_t * e)
 {
     if(cannibal_flower->stage == SEED){
-        init_plant(cannibal_flower, CANNIBAL_FLOWERS, 2);
+        
         lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
-        exist_plant = true;
+        isplant[3] = true;
  	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
         user->plant_num = 1;
     }
@@ -715,14 +734,14 @@ void show_canniabl2(lv_event_t * e)
 
 void show_canniabl3(lv_event_t * e)
 {
-    lv_obj_add_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
-    lv_obj_clear_flag(ui_Cannibal3, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_add_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_Cannibal3, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }
 
 void show_canniabl4(lv_event_t * e)
 {
-    lv_obj_add_flag(ui_Cannibal3, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_add_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
     lv_obj_clear_flag(ui_Cannibal4, LV_OBJ_FLAG_HIDDEN);
 	// Your code here
 }

@@ -415,6 +415,8 @@ extern lv_obj_t * ui_Button6;
 extern lv_obj_t * ui_Label20;
 extern lv_obj_t * ui____initial_actions0;
 
+void illu_change(lv_event_t * e);
+
 LV_IMG_DECLARE(ui_img_background_png);
 LV_IMG_DECLARE(ui_img_background_png);    // assets/background.png
 LV_IMG_DECLARE(ui_img_876520695);    // assets/盆栽植物_1749862881.png

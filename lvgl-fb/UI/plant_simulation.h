@@ -67,8 +67,8 @@ typedef struct {
 typedef struct{
     uint32_t coins;
     uint8_t plant_num;
-    PlantType plant_type;
-    PlantState plant[4];
+    uint8_t plant_type[4];
+    //PlantState plant[4];
 }User;
 
 //商品
