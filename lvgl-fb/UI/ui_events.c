@@ -109,7 +109,7 @@ void healthchange(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    snprintf(temp_str, sizeof(temp_str), "健康:%d/100", health);
     lv_label_set_text(ui_healthlabel1, temp_str);
     
     // 触发界面刷新
@@ -122,7 +122,7 @@ void healthchange2(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    snprintf(temp_str, sizeof(temp_str), "健康:%d/100", health);
     lv_label_set_text(ui_healthlabel2, temp_str);
     
     // 触发界面刷新
@@ -136,7 +136,7 @@ void healthchange3(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    snprintf(temp_str, sizeof(temp_str), "健康:%d/100", health);
     lv_label_set_text(ui_healthlabel3, temp_str);
     
     // 触发界面刷新
@@ -149,7 +149,7 @@ void healthchange4(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    snprintf(temp_str, sizeof(temp_str), "健康:%d/100", health);
     lv_label_set_text(ui_healthlabel4, temp_str);
     
     // 触发界面刷新
@@ -164,7 +164,7 @@ void agechange(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    snprintf(temp_str, sizeof(temp_str), "年龄:%d天", age);
     lv_label_set_text(ui_statelabel1, temp_str);
     
     // 触发界面刷新
@@ -178,7 +178,7 @@ void agechange2(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    snprintf(temp_str, sizeof(temp_str), "年龄:%d天", age);
     lv_label_set_text(ui_statelabel2, temp_str);
     
     // 触发界面刷新
@@ -191,7 +191,7 @@ void agechange3(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    snprintf(temp_str, sizeof(temp_str), "年龄:%d天", age);
     lv_label_set_text(ui_statelabel3, temp_str);
     
     // 触发界面刷新
@@ -204,7 +204,7 @@ void agechange4(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    snprintf(temp_str, sizeof(temp_str), "年龄:%d天", age);
     lv_label_set_text(ui_statelabel4, temp_str);
     
     // 触发界面刷新
@@ -218,7 +218,7 @@ void humiditychange(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "湿度: %d", humidity);
+    snprintf(temp_str, sizeof(temp_str), "湿度:%d", humidity);
     lv_label_set_text(ui_humiditylabel1, temp_str);
     lv_label_set_text(ui_humiditylabel2, temp_str);
     lv_label_set_text(ui_humiditylabel3, temp_str);
@@ -242,7 +242,7 @@ void temperaturechange(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "温度: %d度", temperature);
+    snprintf(temp_str, sizeof(temp_str), "温度:%d度", temperature);
     lv_label_set_text(ui_temperaturelabel1, temp_str);
     lv_label_set_text(ui_temperaturelabel2, temp_str);
     lv_label_set_text(ui_temperaturelabel3, temp_str);
@@ -264,7 +264,7 @@ void lightchange(lv_event_t * e)
     
     // 使用格式化字符串更新温度显示
     char temp_str[16];
-    snprintf(temp_str, sizeof(temp_str), "光照: %d", light);
+    snprintf(temp_str, sizeof(temp_str), "光照:%d", light);
     lv_label_set_text(ui_lightlabel1, temp_str);
     lv_label_set_text(ui_lightlabel2, temp_str);
     lv_label_set_text(ui_lightlabel3, temp_str);
@@ -351,7 +351,7 @@ void growthstagechange(lv_event_t * e)
     lv_label_set_text(ui_growthstagelabel1, temp_str);
     
     // 触发界面刷新
-    lv_obj_invalidate(ui_growthstagelabel1);
+    //lv_obj_invalidate(ui_growthstagelabel1);
 }
 
 
@@ -486,6 +486,31 @@ void show_message(lv_event_t * e)
     lv_label_set_text(ui_Label4, buffer);
     lv_obj_invalidate(ui_Label4);
 }
+
+void show_message1(lv_event_t * e)
+{
+	// Your code here
+    const char* buffer = get_plant_needs(tomato);
+    lv_label_set_text(ui_Label9, buffer);
+    lv_obj_invalidate(ui_Label9);
+}
+
+void show_message2(lv_event_t * e)
+{
+	// Your code here
+    const char* buffer = get_plant_needs(cactus);
+    lv_label_set_text(ui_Label10, buffer);
+    lv_obj_invalidate(ui_Label10);
+}
+void show_message3(lv_event_t * e)
+{
+	// Your code here
+    const char* buffer = get_plant_needs(cannibal_flower);
+    lv_label_set_text(ui_Label10, buffer);
+    lv_obj_invalidate(ui_Label11);
+}
+
+
 
 const char *get_obj_name(lv_obj_t *obj) {
     if (obj == NULL) return "NULL_OBJECT";
