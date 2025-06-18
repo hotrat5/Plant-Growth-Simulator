@@ -501,6 +501,10 @@ static void read_and_display(const char *filename) {
         return;
     }
     
+    static lv_style_t style_textarea;
+    lv_style_init(&style_textarea);
+    lv_style_set_text_font(&style_textarea, &ui_font_Font1);
+    lv_obj_add_style(ui_illuTextArea, &style_textarea, 0);
     // 清空文本区域
     lv_textarea_set_text(ui_illuTextArea, "");
     

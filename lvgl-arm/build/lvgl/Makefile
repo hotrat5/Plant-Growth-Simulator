@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/lvgl/lvgl-arm
+CMAKE_SOURCE_DIR = /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/lvgl/lvgl-arm/build
+CMAKE_BINARY_DIR = /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/lvgl/lvgl-arm/build/CMakeFiles /mnt/hgfs/lvgl/lvgl-arm/build/lvgl//CMakeFiles/progress.marks
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/lvgl/lvgl-arm/build/CMakeFiles 0
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build/CMakeFiles /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build/lvgl//CMakeFiles/progress.marks
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/clean
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/preinstall
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/preinstall
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lvgl/CMakeFiles/lvgl.dir/rule:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/CMakeFiles/lvgl.dir/rule
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/CMakeFiles/lvgl.dir/rule
 .PHONY : lvgl/CMakeFiles/lvgl.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ lvgl: lvgl/CMakeFiles/lvgl.dir/rule
 
 # fast build rule for target.
 lvgl/fast:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/build
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/build
 .PHONY : lvgl/fast
 
 # Convenience name for target.
 lvgl/CMakeFiles/lvgl_examples.dir/rule:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/CMakeFiles/lvgl_examples.dir/rule
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/CMakeFiles/lvgl_examples.dir/rule
 .PHONY : lvgl/CMakeFiles/lvgl_examples.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ lvgl_examples: lvgl/CMakeFiles/lvgl_examples.dir/rule
 
 # fast build rule for target.
 lvgl_examples/fast:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/build
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/build
 .PHONY : lvgl_examples/fast
 
 # Convenience name for target.
 lvgl/CMakeFiles/lvgl_demos.dir/rule:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/CMakeFiles/lvgl_demos.dir/rule
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lvgl/CMakeFiles/lvgl_demos.dir/rule
 .PHONY : lvgl/CMakeFiles/lvgl_demos.dir/rule
 
 # Convenience name for target.
@@ -200,7 +200,7 @@ lvgl_demos: lvgl/CMakeFiles/lvgl_demos.dir/rule
 
 # fast build rule for target.
 lvgl_demos/fast:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/build
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/build
 .PHONY : lvgl_demos/fast
 
 demos/benchmark/assets/img_benchmark_cogwheel_alpha16.o: demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.o
@@ -208,7 +208,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_alpha16.o: demos/benchmark/assets/
 
 # target to build an object file
 demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.o
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.o
 
 demos/benchmark/assets/img_benchmark_cogwheel_alpha16.i: demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.i
@@ -216,7 +216,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_alpha16.i: demos/benchmark/assets/
 
 # target to preprocess a source file
 demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.i
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.i
 
 demos/benchmark/assets/img_benchmark_cogwheel_alpha16.s: demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.s
@@ -224,7 +224,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_alpha16.s: demos/benchmark/assets/
 
 # target to generate assembly for a file
 demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.s
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c.s
 
 demos/benchmark/assets/img_benchmark_cogwheel_argb.o: demos/benchmark/assets/img_benchmark_cogwheel_argb.c.o
@@ -232,7 +232,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_argb.o: demos/benchmark/assets/img
 
 # target to build an object file
 demos/benchmark/assets/img_benchmark_cogwheel_argb.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_argb.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_argb.c.o
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_argb.c.o
 
 demos/benchmark/assets/img_benchmark_cogwheel_argb.i: demos/benchmark/assets/img_benchmark_cogwheel_argb.c.i
@@ -240,7 +240,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_argb.i: demos/benchmark/assets/img
 
 # target to preprocess a source file
 demos/benchmark/assets/img_benchmark_cogwheel_argb.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_argb.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_argb.c.i
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_argb.c.i
 
 demos/benchmark/assets/img_benchmark_cogwheel_argb.s: demos/benchmark/assets/img_benchmark_cogwheel_argb.c.s
@@ -248,7 +248,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_argb.s: demos/benchmark/assets/img
 
 # target to generate assembly for a file
 demos/benchmark/assets/img_benchmark_cogwheel_argb.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_argb.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_argb.c.s
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_argb.c.s
 
 demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.o: demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.o
@@ -256,7 +256,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.o: demos/benchmark/as
 
 # target to build an object file
 demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.o
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.o
 
 demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.i: demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.i
@@ -264,7 +264,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.i: demos/benchmark/as
 
 # target to preprocess a source file
 demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.i
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.i
 
 demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.s: demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.s
@@ -272,7 +272,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.s: demos/benchmark/as
 
 # target to generate assembly for a file
 demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.s
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c.s
 
 demos/benchmark/assets/img_benchmark_cogwheel_indexed16.o: demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.o
@@ -280,7 +280,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_indexed16.o: demos/benchmark/asset
 
 # target to build an object file
 demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.o
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.o
 
 demos/benchmark/assets/img_benchmark_cogwheel_indexed16.i: demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.i
@@ -288,7 +288,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_indexed16.i: demos/benchmark/asset
 
 # target to preprocess a source file
 demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.i
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.i
 
 demos/benchmark/assets/img_benchmark_cogwheel_indexed16.s: demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.s
@@ -296,7 +296,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_indexed16.s: demos/benchmark/asset
 
 # target to generate assembly for a file
 demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.s
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c.s
 
 demos/benchmark/assets/img_benchmark_cogwheel_rgb.o: demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.o
@@ -304,7 +304,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_rgb.o: demos/benchmark/assets/img_
 
 # target to build an object file
 demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.o
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.o
 
 demos/benchmark/assets/img_benchmark_cogwheel_rgb.i: demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.i
@@ -312,7 +312,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_rgb.i: demos/benchmark/assets/img_
 
 # target to preprocess a source file
 demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.i
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.i
 
 demos/benchmark/assets/img_benchmark_cogwheel_rgb.s: demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.s
@@ -320,7 +320,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_rgb.s: demos/benchmark/assets/img_
 
 # target to generate assembly for a file
 demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.s
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_rgb.c.s
 
 demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.o: demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.o
@@ -328,7 +328,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.o: demos/benchmark/assets
 
 # target to build an object file
 demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.o
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.o
 
 demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.i: demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.i
@@ -336,7 +336,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.i: demos/benchmark/assets
 
 # target to preprocess a source file
 demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.i
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.i
 
 demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.s: demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.s
@@ -344,7 +344,7 @@ demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.s: demos/benchmark/assets
 
 # target to generate assembly for a file
 demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.s
 .PHONY : demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c.s
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.o: demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.o
@@ -352,7 +352,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.o: demos/benchm
 
 # target to build an object file
 demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.o
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.o
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.i: demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.i
@@ -360,7 +360,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.i: demos/benchm
 
 # target to preprocess a source file
 demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.i
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.i
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.s: demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.s
@@ -368,7 +368,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.s: demos/benchm
 
 # target to generate assembly for a file
 demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.s
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c.s
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.o: demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.o
@@ -376,7 +376,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.o: demos/benchm
 
 # target to build an object file
 demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.o
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.o
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.i: demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.i
@@ -384,7 +384,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.i: demos/benchm
 
 # target to preprocess a source file
 demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.i
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.i
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.s: demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.s
@@ -392,7 +392,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.s: demos/benchm
 
 # target to generate assembly for a file
 demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.s
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c.s
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.o: demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.o
@@ -400,7 +400,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.o: demos/benchm
 
 # target to build an object file
 demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.o
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.o
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.i: demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.i
@@ -408,7 +408,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.i: demos/benchm
 
 # target to preprocess a source file
 demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.i
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.i
 
 demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.s: demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.s
@@ -416,7 +416,7 @@ demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.s: demos/benchm
 
 # target to generate assembly for a file
 demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.s
 .PHONY : demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c.s
 
 demos/benchmark/lv_demo_benchmark.o: demos/benchmark/lv_demo_benchmark.c.o
@@ -424,7 +424,7 @@ demos/benchmark/lv_demo_benchmark.o: demos/benchmark/lv_demo_benchmark.c.o
 
 # target to build an object file
 demos/benchmark/lv_demo_benchmark.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/lv_demo_benchmark.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/lv_demo_benchmark.c.o
 .PHONY : demos/benchmark/lv_demo_benchmark.c.o
 
 demos/benchmark/lv_demo_benchmark.i: demos/benchmark/lv_demo_benchmark.c.i
@@ -432,7 +432,7 @@ demos/benchmark/lv_demo_benchmark.i: demos/benchmark/lv_demo_benchmark.c.i
 
 # target to preprocess a source file
 demos/benchmark/lv_demo_benchmark.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/lv_demo_benchmark.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/lv_demo_benchmark.c.i
 .PHONY : demos/benchmark/lv_demo_benchmark.c.i
 
 demos/benchmark/lv_demo_benchmark.s: demos/benchmark/lv_demo_benchmark.c.s
@@ -440,7 +440,7 @@ demos/benchmark/lv_demo_benchmark.s: demos/benchmark/lv_demo_benchmark.c.s
 
 # target to generate assembly for a file
 demos/benchmark/lv_demo_benchmark.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/lv_demo_benchmark.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/benchmark/lv_demo_benchmark.c.s
 .PHONY : demos/benchmark/lv_demo_benchmark.c.s
 
 demos/keypad_encoder/lv_demo_keypad_encoder.o: demos/keypad_encoder/lv_demo_keypad_encoder.c.o
@@ -448,7 +448,7 @@ demos/keypad_encoder/lv_demo_keypad_encoder.o: demos/keypad_encoder/lv_demo_keyp
 
 # target to build an object file
 demos/keypad_encoder/lv_demo_keypad_encoder.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/keypad_encoder/lv_demo_keypad_encoder.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/keypad_encoder/lv_demo_keypad_encoder.c.o
 .PHONY : demos/keypad_encoder/lv_demo_keypad_encoder.c.o
 
 demos/keypad_encoder/lv_demo_keypad_encoder.i: demos/keypad_encoder/lv_demo_keypad_encoder.c.i
@@ -456,7 +456,7 @@ demos/keypad_encoder/lv_demo_keypad_encoder.i: demos/keypad_encoder/lv_demo_keyp
 
 # target to preprocess a source file
 demos/keypad_encoder/lv_demo_keypad_encoder.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/keypad_encoder/lv_demo_keypad_encoder.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/keypad_encoder/lv_demo_keypad_encoder.c.i
 .PHONY : demos/keypad_encoder/lv_demo_keypad_encoder.c.i
 
 demos/keypad_encoder/lv_demo_keypad_encoder.s: demos/keypad_encoder/lv_demo_keypad_encoder.c.s
@@ -464,7 +464,7 @@ demos/keypad_encoder/lv_demo_keypad_encoder.s: demos/keypad_encoder/lv_demo_keyp
 
 # target to generate assembly for a file
 demos/keypad_encoder/lv_demo_keypad_encoder.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/keypad_encoder/lv_demo_keypad_encoder.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/keypad_encoder/lv_demo_keypad_encoder.c.s
 .PHONY : demos/keypad_encoder/lv_demo_keypad_encoder.c.s
 
 demos/music/assets/img_lv_demo_music_btn_corner_large.o: demos/music/assets/img_lv_demo_music_btn_corner_large.c.o
@@ -472,7 +472,7 @@ demos/music/assets/img_lv_demo_music_btn_corner_large.o: demos/music/assets/img_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_corner_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_corner_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_corner_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_corner_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_corner_large.i: demos/music/assets/img_lv_demo_music_btn_corner_large.c.i
@@ -480,7 +480,7 @@ demos/music/assets/img_lv_demo_music_btn_corner_large.i: demos/music/assets/img_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_corner_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_corner_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_corner_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_corner_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_corner_large.s: demos/music/assets/img_lv_demo_music_btn_corner_large.c.s
@@ -488,7 +488,7 @@ demos/music/assets/img_lv_demo_music_btn_corner_large.s: demos/music/assets/img_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_corner_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_corner_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_corner_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_corner_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_list_pause.o: demos/music/assets/img_lv_demo_music_btn_list_pause.c.o
@@ -496,7 +496,7 @@ demos/music/assets/img_lv_demo_music_btn_list_pause.o: demos/music/assets/img_lv
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_list_pause.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_pause.c.o
 
 demos/music/assets/img_lv_demo_music_btn_list_pause.i: demos/music/assets/img_lv_demo_music_btn_list_pause.c.i
@@ -504,7 +504,7 @@ demos/music/assets/img_lv_demo_music_btn_list_pause.i: demos/music/assets/img_lv
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_list_pause.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_pause.c.i
 
 demos/music/assets/img_lv_demo_music_btn_list_pause.s: demos/music/assets/img_lv_demo_music_btn_list_pause.c.s
@@ -512,7 +512,7 @@ demos/music/assets/img_lv_demo_music_btn_list_pause.s: demos/music/assets/img_lv
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_list_pause.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_pause.c.s
 
 demos/music/assets/img_lv_demo_music_btn_list_pause_large.o: demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o
@@ -520,7 +520,7 @@ demos/music/assets/img_lv_demo_music_btn_list_pause_large.o: demos/music/assets/
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_list_pause_large.i: demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.i
@@ -528,7 +528,7 @@ demos/music/assets/img_lv_demo_music_btn_list_pause_large.i: demos/music/assets/
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_list_pause_large.s: demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.s
@@ -536,7 +536,7 @@ demos/music/assets/img_lv_demo_music_btn_list_pause_large.s: demos/music/assets/
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_pause_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_list_play.o: demos/music/assets/img_lv_demo_music_btn_list_play.c.o
@@ -544,7 +544,7 @@ demos/music/assets/img_lv_demo_music_btn_list_play.o: demos/music/assets/img_lv_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_list_play.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_play.c.o
 
 demos/music/assets/img_lv_demo_music_btn_list_play.i: demos/music/assets/img_lv_demo_music_btn_list_play.c.i
@@ -552,7 +552,7 @@ demos/music/assets/img_lv_demo_music_btn_list_play.i: demos/music/assets/img_lv_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_list_play.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_play.c.i
 
 demos/music/assets/img_lv_demo_music_btn_list_play.s: demos/music/assets/img_lv_demo_music_btn_list_play.c.s
@@ -560,7 +560,7 @@ demos/music/assets/img_lv_demo_music_btn_list_play.s: demos/music/assets/img_lv_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_list_play.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_play.c.s
 
 demos/music/assets/img_lv_demo_music_btn_list_play_large.o: demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o
@@ -568,7 +568,7 @@ demos/music/assets/img_lv_demo_music_btn_list_play_large.o: demos/music/assets/i
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_play_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_list_play_large.i: demos/music/assets/img_lv_demo_music_btn_list_play_large.c.i
@@ -576,7 +576,7 @@ demos/music/assets/img_lv_demo_music_btn_list_play_large.i: demos/music/assets/i
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_list_play_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_play_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_list_play_large.s: demos/music/assets/img_lv_demo_music_btn_list_play_large.c.s
@@ -584,7 +584,7 @@ demos/music/assets/img_lv_demo_music_btn_list_play_large.s: demos/music/assets/i
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_list_play_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_list_play_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_list_play_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_loop.o: demos/music/assets/img_lv_demo_music_btn_loop.c.o
@@ -592,7 +592,7 @@ demos/music/assets/img_lv_demo_music_btn_loop.o: demos/music/assets/img_lv_demo_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_loop.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_loop.c.o
 
 demos/music/assets/img_lv_demo_music_btn_loop.i: demos/music/assets/img_lv_demo_music_btn_loop.c.i
@@ -600,7 +600,7 @@ demos/music/assets/img_lv_demo_music_btn_loop.i: demos/music/assets/img_lv_demo_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_loop.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_loop.c.i
 
 demos/music/assets/img_lv_demo_music_btn_loop.s: demos/music/assets/img_lv_demo_music_btn_loop.c.s
@@ -608,7 +608,7 @@ demos/music/assets/img_lv_demo_music_btn_loop.s: demos/music/assets/img_lv_demo_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_loop.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_loop.c.s
 
 demos/music/assets/img_lv_demo_music_btn_loop_large.o: demos/music/assets/img_lv_demo_music_btn_loop_large.c.o
@@ -616,7 +616,7 @@ demos/music/assets/img_lv_demo_music_btn_loop_large.o: demos/music/assets/img_lv
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_loop_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_loop_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_loop_large.i: demos/music/assets/img_lv_demo_music_btn_loop_large.c.i
@@ -624,7 +624,7 @@ demos/music/assets/img_lv_demo_music_btn_loop_large.i: demos/music/assets/img_lv
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_loop_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_loop_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_loop_large.s: demos/music/assets/img_lv_demo_music_btn_loop_large.c.s
@@ -632,7 +632,7 @@ demos/music/assets/img_lv_demo_music_btn_loop_large.s: demos/music/assets/img_lv
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_loop_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_loop_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_loop_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_next.o: demos/music/assets/img_lv_demo_music_btn_next.c.o
@@ -640,7 +640,7 @@ demos/music/assets/img_lv_demo_music_btn_next.o: demos/music/assets/img_lv_demo_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_next.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_next.c.o
 
 demos/music/assets/img_lv_demo_music_btn_next.i: demos/music/assets/img_lv_demo_music_btn_next.c.i
@@ -648,7 +648,7 @@ demos/music/assets/img_lv_demo_music_btn_next.i: demos/music/assets/img_lv_demo_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_next.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_next.c.i
 
 demos/music/assets/img_lv_demo_music_btn_next.s: demos/music/assets/img_lv_demo_music_btn_next.c.s
@@ -656,7 +656,7 @@ demos/music/assets/img_lv_demo_music_btn_next.s: demos/music/assets/img_lv_demo_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_next.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_next.c.s
 
 demos/music/assets/img_lv_demo_music_btn_next_large.o: demos/music/assets/img_lv_demo_music_btn_next_large.c.o
@@ -664,7 +664,7 @@ demos/music/assets/img_lv_demo_music_btn_next_large.o: demos/music/assets/img_lv
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_next_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_next_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_next_large.i: demos/music/assets/img_lv_demo_music_btn_next_large.c.i
@@ -672,7 +672,7 @@ demos/music/assets/img_lv_demo_music_btn_next_large.i: demos/music/assets/img_lv
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_next_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_next_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_next_large.s: demos/music/assets/img_lv_demo_music_btn_next_large.c.s
@@ -680,7 +680,7 @@ demos/music/assets/img_lv_demo_music_btn_next_large.s: demos/music/assets/img_lv
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_next_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_next_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_next_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_pause.o: demos/music/assets/img_lv_demo_music_btn_pause.c.o
@@ -688,7 +688,7 @@ demos/music/assets/img_lv_demo_music_btn_pause.o: demos/music/assets/img_lv_demo
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_pause.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_pause.c.o
 
 demos/music/assets/img_lv_demo_music_btn_pause.i: demos/music/assets/img_lv_demo_music_btn_pause.c.i
@@ -696,7 +696,7 @@ demos/music/assets/img_lv_demo_music_btn_pause.i: demos/music/assets/img_lv_demo
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_pause.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_pause.c.i
 
 demos/music/assets/img_lv_demo_music_btn_pause.s: demos/music/assets/img_lv_demo_music_btn_pause.c.s
@@ -704,7 +704,7 @@ demos/music/assets/img_lv_demo_music_btn_pause.s: demos/music/assets/img_lv_demo
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_pause.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_pause.c.s
 
 demos/music/assets/img_lv_demo_music_btn_pause_large.o: demos/music/assets/img_lv_demo_music_btn_pause_large.c.o
@@ -712,7 +712,7 @@ demos/music/assets/img_lv_demo_music_btn_pause_large.o: demos/music/assets/img_l
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_pause_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_pause_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_pause_large.i: demos/music/assets/img_lv_demo_music_btn_pause_large.c.i
@@ -720,7 +720,7 @@ demos/music/assets/img_lv_demo_music_btn_pause_large.i: demos/music/assets/img_l
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_pause_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_pause_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_pause_large.s: demos/music/assets/img_lv_demo_music_btn_pause_large.c.s
@@ -728,7 +728,7 @@ demos/music/assets/img_lv_demo_music_btn_pause_large.s: demos/music/assets/img_l
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_pause_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_pause_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_pause_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_play.o: demos/music/assets/img_lv_demo_music_btn_play.c.o
@@ -736,7 +736,7 @@ demos/music/assets/img_lv_demo_music_btn_play.o: demos/music/assets/img_lv_demo_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_play.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_play.c.o
 
 demos/music/assets/img_lv_demo_music_btn_play.i: demos/music/assets/img_lv_demo_music_btn_play.c.i
@@ -744,7 +744,7 @@ demos/music/assets/img_lv_demo_music_btn_play.i: demos/music/assets/img_lv_demo_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_play.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_play.c.i
 
 demos/music/assets/img_lv_demo_music_btn_play.s: demos/music/assets/img_lv_demo_music_btn_play.c.s
@@ -752,7 +752,7 @@ demos/music/assets/img_lv_demo_music_btn_play.s: demos/music/assets/img_lv_demo_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_play.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_play.c.s
 
 demos/music/assets/img_lv_demo_music_btn_play_large.o: demos/music/assets/img_lv_demo_music_btn_play_large.c.o
@@ -760,7 +760,7 @@ demos/music/assets/img_lv_demo_music_btn_play_large.o: demos/music/assets/img_lv
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_play_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_play_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_play_large.i: demos/music/assets/img_lv_demo_music_btn_play_large.c.i
@@ -768,7 +768,7 @@ demos/music/assets/img_lv_demo_music_btn_play_large.i: demos/music/assets/img_lv
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_play_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_play_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_play_large.s: demos/music/assets/img_lv_demo_music_btn_play_large.c.s
@@ -776,7 +776,7 @@ demos/music/assets/img_lv_demo_music_btn_play_large.s: demos/music/assets/img_lv
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_play_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_play_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_play_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_prev.o: demos/music/assets/img_lv_demo_music_btn_prev.c.o
@@ -784,7 +784,7 @@ demos/music/assets/img_lv_demo_music_btn_prev.o: demos/music/assets/img_lv_demo_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_prev.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_prev.c.o
 
 demos/music/assets/img_lv_demo_music_btn_prev.i: demos/music/assets/img_lv_demo_music_btn_prev.c.i
@@ -792,7 +792,7 @@ demos/music/assets/img_lv_demo_music_btn_prev.i: demos/music/assets/img_lv_demo_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_prev.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_prev.c.i
 
 demos/music/assets/img_lv_demo_music_btn_prev.s: demos/music/assets/img_lv_demo_music_btn_prev.c.s
@@ -800,7 +800,7 @@ demos/music/assets/img_lv_demo_music_btn_prev.s: demos/music/assets/img_lv_demo_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_prev.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_prev.c.s
 
 demos/music/assets/img_lv_demo_music_btn_prev_large.o: demos/music/assets/img_lv_demo_music_btn_prev_large.c.o
@@ -808,7 +808,7 @@ demos/music/assets/img_lv_demo_music_btn_prev_large.o: demos/music/assets/img_lv
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_prev_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_prev_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_prev_large.i: demos/music/assets/img_lv_demo_music_btn_prev_large.c.i
@@ -816,7 +816,7 @@ demos/music/assets/img_lv_demo_music_btn_prev_large.i: demos/music/assets/img_lv
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_prev_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_prev_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_prev_large.s: demos/music/assets/img_lv_demo_music_btn_prev_large.c.s
@@ -824,7 +824,7 @@ demos/music/assets/img_lv_demo_music_btn_prev_large.s: demos/music/assets/img_lv
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_prev_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_prev_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_prev_large.c.s
 
 demos/music/assets/img_lv_demo_music_btn_rnd.o: demos/music/assets/img_lv_demo_music_btn_rnd.c.o
@@ -832,7 +832,7 @@ demos/music/assets/img_lv_demo_music_btn_rnd.o: demos/music/assets/img_lv_demo_m
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_rnd.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_rnd.c.o
 
 demos/music/assets/img_lv_demo_music_btn_rnd.i: demos/music/assets/img_lv_demo_music_btn_rnd.c.i
@@ -840,7 +840,7 @@ demos/music/assets/img_lv_demo_music_btn_rnd.i: demos/music/assets/img_lv_demo_m
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_rnd.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_rnd.c.i
 
 demos/music/assets/img_lv_demo_music_btn_rnd.s: demos/music/assets/img_lv_demo_music_btn_rnd.c.s
@@ -848,7 +848,7 @@ demos/music/assets/img_lv_demo_music_btn_rnd.s: demos/music/assets/img_lv_demo_m
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_rnd.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_rnd.c.s
 
 demos/music/assets/img_lv_demo_music_btn_rnd_large.o: demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o
@@ -856,7 +856,7 @@ demos/music/assets/img_lv_demo_music_btn_rnd_large.o: demos/music/assets/img_lv_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_btn_rnd_large.c.o
 
 demos/music/assets/img_lv_demo_music_btn_rnd_large.i: demos/music/assets/img_lv_demo_music_btn_rnd_large.c.i
@@ -864,7 +864,7 @@ demos/music/assets/img_lv_demo_music_btn_rnd_large.i: demos/music/assets/img_lv_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_btn_rnd_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_btn_rnd_large.c.i
 
 demos/music/assets/img_lv_demo_music_btn_rnd_large.s: demos/music/assets/img_lv_demo_music_btn_rnd_large.c.s
@@ -872,7 +872,7 @@ demos/music/assets/img_lv_demo_music_btn_rnd_large.s: demos/music/assets/img_lv_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_btn_rnd_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_btn_rnd_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_btn_rnd_large.c.s
 
 demos/music/assets/img_lv_demo_music_corner_left.o: demos/music/assets/img_lv_demo_music_corner_left.c.o
@@ -880,7 +880,7 @@ demos/music/assets/img_lv_demo_music_corner_left.o: demos/music/assets/img_lv_de
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_corner_left.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_corner_left.c.o
 
 demos/music/assets/img_lv_demo_music_corner_left.i: demos/music/assets/img_lv_demo_music_corner_left.c.i
@@ -888,7 +888,7 @@ demos/music/assets/img_lv_demo_music_corner_left.i: demos/music/assets/img_lv_de
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_corner_left.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_corner_left.c.i
 
 demos/music/assets/img_lv_demo_music_corner_left.s: demos/music/assets/img_lv_demo_music_corner_left.c.s
@@ -896,7 +896,7 @@ demos/music/assets/img_lv_demo_music_corner_left.s: demos/music/assets/img_lv_de
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_corner_left.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_corner_left.c.s
 
 demos/music/assets/img_lv_demo_music_corner_left_large.o: demos/music/assets/img_lv_demo_music_corner_left_large.c.o
@@ -904,7 +904,7 @@ demos/music/assets/img_lv_demo_music_corner_left_large.o: demos/music/assets/img
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_corner_left_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_corner_left_large.c.o
 
 demos/music/assets/img_lv_demo_music_corner_left_large.i: demos/music/assets/img_lv_demo_music_corner_left_large.c.i
@@ -912,7 +912,7 @@ demos/music/assets/img_lv_demo_music_corner_left_large.i: demos/music/assets/img
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_corner_left_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_corner_left_large.c.i
 
 demos/music/assets/img_lv_demo_music_corner_left_large.s: demos/music/assets/img_lv_demo_music_corner_left_large.c.s
@@ -920,7 +920,7 @@ demos/music/assets/img_lv_demo_music_corner_left_large.s: demos/music/assets/img
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_corner_left_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_left_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_corner_left_large.c.s
 
 demos/music/assets/img_lv_demo_music_corner_right.o: demos/music/assets/img_lv_demo_music_corner_right.c.o
@@ -928,7 +928,7 @@ demos/music/assets/img_lv_demo_music_corner_right.o: demos/music/assets/img_lv_d
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_corner_right.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_corner_right.c.o
 
 demos/music/assets/img_lv_demo_music_corner_right.i: demos/music/assets/img_lv_demo_music_corner_right.c.i
@@ -936,7 +936,7 @@ demos/music/assets/img_lv_demo_music_corner_right.i: demos/music/assets/img_lv_d
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_corner_right.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_corner_right.c.i
 
 demos/music/assets/img_lv_demo_music_corner_right.s: demos/music/assets/img_lv_demo_music_corner_right.c.s
@@ -944,7 +944,7 @@ demos/music/assets/img_lv_demo_music_corner_right.s: demos/music/assets/img_lv_d
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_corner_right.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_corner_right.c.s
 
 demos/music/assets/img_lv_demo_music_corner_right_large.o: demos/music/assets/img_lv_demo_music_corner_right_large.c.o
@@ -952,7 +952,7 @@ demos/music/assets/img_lv_demo_music_corner_right_large.o: demos/music/assets/im
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_corner_right_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_corner_right_large.c.o
 
 demos/music/assets/img_lv_demo_music_corner_right_large.i: demos/music/assets/img_lv_demo_music_corner_right_large.c.i
@@ -960,7 +960,7 @@ demos/music/assets/img_lv_demo_music_corner_right_large.i: demos/music/assets/im
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_corner_right_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_corner_right_large.c.i
 
 demos/music/assets/img_lv_demo_music_corner_right_large.s: demos/music/assets/img_lv_demo_music_corner_right_large.c.s
@@ -968,7 +968,7 @@ demos/music/assets/img_lv_demo_music_corner_right_large.s: demos/music/assets/im
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_corner_right_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_corner_right_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_corner_right_large.c.s
 
 demos/music/assets/img_lv_demo_music_cover_1.o: demos/music/assets/img_lv_demo_music_cover_1.c.o
@@ -976,7 +976,7 @@ demos/music/assets/img_lv_demo_music_cover_1.o: demos/music/assets/img_lv_demo_m
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_cover_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_cover_1.c.o
 
 demos/music/assets/img_lv_demo_music_cover_1.i: demos/music/assets/img_lv_demo_music_cover_1.c.i
@@ -984,7 +984,7 @@ demos/music/assets/img_lv_demo_music_cover_1.i: demos/music/assets/img_lv_demo_m
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_cover_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_cover_1.c.i
 
 demos/music/assets/img_lv_demo_music_cover_1.s: demos/music/assets/img_lv_demo_music_cover_1.c.s
@@ -992,7 +992,7 @@ demos/music/assets/img_lv_demo_music_cover_1.s: demos/music/assets/img_lv_demo_m
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_cover_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_cover_1.c.s
 
 demos/music/assets/img_lv_demo_music_cover_1_large.o: demos/music/assets/img_lv_demo_music_cover_1_large.c.o
@@ -1000,7 +1000,7 @@ demos/music/assets/img_lv_demo_music_cover_1_large.o: demos/music/assets/img_lv_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_cover_1_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_cover_1_large.c.o
 
 demos/music/assets/img_lv_demo_music_cover_1_large.i: demos/music/assets/img_lv_demo_music_cover_1_large.c.i
@@ -1008,7 +1008,7 @@ demos/music/assets/img_lv_demo_music_cover_1_large.i: demos/music/assets/img_lv_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_cover_1_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_cover_1_large.c.i
 
 demos/music/assets/img_lv_demo_music_cover_1_large.s: demos/music/assets/img_lv_demo_music_cover_1_large.c.s
@@ -1016,7 +1016,7 @@ demos/music/assets/img_lv_demo_music_cover_1_large.s: demos/music/assets/img_lv_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_cover_1_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_1_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_cover_1_large.c.s
 
 demos/music/assets/img_lv_demo_music_cover_2.o: demos/music/assets/img_lv_demo_music_cover_2.c.o
@@ -1024,7 +1024,7 @@ demos/music/assets/img_lv_demo_music_cover_2.o: demos/music/assets/img_lv_demo_m
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_cover_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_cover_2.c.o
 
 demos/music/assets/img_lv_demo_music_cover_2.i: demos/music/assets/img_lv_demo_music_cover_2.c.i
@@ -1032,7 +1032,7 @@ demos/music/assets/img_lv_demo_music_cover_2.i: demos/music/assets/img_lv_demo_m
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_cover_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_cover_2.c.i
 
 demos/music/assets/img_lv_demo_music_cover_2.s: demos/music/assets/img_lv_demo_music_cover_2.c.s
@@ -1040,7 +1040,7 @@ demos/music/assets/img_lv_demo_music_cover_2.s: demos/music/assets/img_lv_demo_m
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_cover_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_cover_2.c.s
 
 demos/music/assets/img_lv_demo_music_cover_2_large.o: demos/music/assets/img_lv_demo_music_cover_2_large.c.o
@@ -1048,7 +1048,7 @@ demos/music/assets/img_lv_demo_music_cover_2_large.o: demos/music/assets/img_lv_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_cover_2_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_cover_2_large.c.o
 
 demos/music/assets/img_lv_demo_music_cover_2_large.i: demos/music/assets/img_lv_demo_music_cover_2_large.c.i
@@ -1056,7 +1056,7 @@ demos/music/assets/img_lv_demo_music_cover_2_large.i: demos/music/assets/img_lv_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_cover_2_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_cover_2_large.c.i
 
 demos/music/assets/img_lv_demo_music_cover_2_large.s: demos/music/assets/img_lv_demo_music_cover_2_large.c.s
@@ -1064,7 +1064,7 @@ demos/music/assets/img_lv_demo_music_cover_2_large.s: demos/music/assets/img_lv_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_cover_2_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_2_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_cover_2_large.c.s
 
 demos/music/assets/img_lv_demo_music_cover_3.o: demos/music/assets/img_lv_demo_music_cover_3.c.o
@@ -1072,7 +1072,7 @@ demos/music/assets/img_lv_demo_music_cover_3.o: demos/music/assets/img_lv_demo_m
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_cover_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_cover_3.c.o
 
 demos/music/assets/img_lv_demo_music_cover_3.i: demos/music/assets/img_lv_demo_music_cover_3.c.i
@@ -1080,7 +1080,7 @@ demos/music/assets/img_lv_demo_music_cover_3.i: demos/music/assets/img_lv_demo_m
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_cover_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_cover_3.c.i
 
 demos/music/assets/img_lv_demo_music_cover_3.s: demos/music/assets/img_lv_demo_music_cover_3.c.s
@@ -1088,7 +1088,7 @@ demos/music/assets/img_lv_demo_music_cover_3.s: demos/music/assets/img_lv_demo_m
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_cover_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_cover_3.c.s
 
 demos/music/assets/img_lv_demo_music_cover_3_large.o: demos/music/assets/img_lv_demo_music_cover_3_large.c.o
@@ -1096,7 +1096,7 @@ demos/music/assets/img_lv_demo_music_cover_3_large.o: demos/music/assets/img_lv_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_cover_3_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_cover_3_large.c.o
 
 demos/music/assets/img_lv_demo_music_cover_3_large.i: demos/music/assets/img_lv_demo_music_cover_3_large.c.i
@@ -1104,7 +1104,7 @@ demos/music/assets/img_lv_demo_music_cover_3_large.i: demos/music/assets/img_lv_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_cover_3_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_cover_3_large.c.i
 
 demos/music/assets/img_lv_demo_music_cover_3_large.s: demos/music/assets/img_lv_demo_music_cover_3_large.c.s
@@ -1112,7 +1112,7 @@ demos/music/assets/img_lv_demo_music_cover_3_large.s: demos/music/assets/img_lv_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_cover_3_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_cover_3_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_cover_3_large.c.s
 
 demos/music/assets/img_lv_demo_music_icon_1.o: demos/music/assets/img_lv_demo_music_icon_1.c.o
@@ -1120,7 +1120,7 @@ demos/music/assets/img_lv_demo_music_icon_1.o: demos/music/assets/img_lv_demo_mu
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_1.c.o
 
 demos/music/assets/img_lv_demo_music_icon_1.i: demos/music/assets/img_lv_demo_music_icon_1.c.i
@@ -1128,7 +1128,7 @@ demos/music/assets/img_lv_demo_music_icon_1.i: demos/music/assets/img_lv_demo_mu
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_1.c.i
 
 demos/music/assets/img_lv_demo_music_icon_1.s: demos/music/assets/img_lv_demo_music_icon_1.c.s
@@ -1136,7 +1136,7 @@ demos/music/assets/img_lv_demo_music_icon_1.s: demos/music/assets/img_lv_demo_mu
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_1.c.s
 
 demos/music/assets/img_lv_demo_music_icon_1_large.o: demos/music/assets/img_lv_demo_music_icon_1_large.c.o
@@ -1144,7 +1144,7 @@ demos/music/assets/img_lv_demo_music_icon_1_large.o: demos/music/assets/img_lv_d
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_1_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_1_large.c.o
 
 demos/music/assets/img_lv_demo_music_icon_1_large.i: demos/music/assets/img_lv_demo_music_icon_1_large.c.i
@@ -1152,7 +1152,7 @@ demos/music/assets/img_lv_demo_music_icon_1_large.i: demos/music/assets/img_lv_d
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_1_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_1_large.c.i
 
 demos/music/assets/img_lv_demo_music_icon_1_large.s: demos/music/assets/img_lv_demo_music_icon_1_large.c.s
@@ -1160,7 +1160,7 @@ demos/music/assets/img_lv_demo_music_icon_1_large.s: demos/music/assets/img_lv_d
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_1_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_1_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_1_large.c.s
 
 demos/music/assets/img_lv_demo_music_icon_2.o: demos/music/assets/img_lv_demo_music_icon_2.c.o
@@ -1168,7 +1168,7 @@ demos/music/assets/img_lv_demo_music_icon_2.o: demos/music/assets/img_lv_demo_mu
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_2.c.o
 
 demos/music/assets/img_lv_demo_music_icon_2.i: demos/music/assets/img_lv_demo_music_icon_2.c.i
@@ -1176,7 +1176,7 @@ demos/music/assets/img_lv_demo_music_icon_2.i: demos/music/assets/img_lv_demo_mu
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_2.c.i
 
 demos/music/assets/img_lv_demo_music_icon_2.s: demos/music/assets/img_lv_demo_music_icon_2.c.s
@@ -1184,7 +1184,7 @@ demos/music/assets/img_lv_demo_music_icon_2.s: demos/music/assets/img_lv_demo_mu
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_2.c.s
 
 demos/music/assets/img_lv_demo_music_icon_2_large.o: demos/music/assets/img_lv_demo_music_icon_2_large.c.o
@@ -1192,7 +1192,7 @@ demos/music/assets/img_lv_demo_music_icon_2_large.o: demos/music/assets/img_lv_d
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_2_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_2_large.c.o
 
 demos/music/assets/img_lv_demo_music_icon_2_large.i: demos/music/assets/img_lv_demo_music_icon_2_large.c.i
@@ -1200,7 +1200,7 @@ demos/music/assets/img_lv_demo_music_icon_2_large.i: demos/music/assets/img_lv_d
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_2_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_2_large.c.i
 
 demos/music/assets/img_lv_demo_music_icon_2_large.s: demos/music/assets/img_lv_demo_music_icon_2_large.c.s
@@ -1208,7 +1208,7 @@ demos/music/assets/img_lv_demo_music_icon_2_large.s: demos/music/assets/img_lv_d
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_2_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_2_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_2_large.c.s
 
 demos/music/assets/img_lv_demo_music_icon_3.o: demos/music/assets/img_lv_demo_music_icon_3.c.o
@@ -1216,7 +1216,7 @@ demos/music/assets/img_lv_demo_music_icon_3.o: demos/music/assets/img_lv_demo_mu
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_3.c.o
 
 demos/music/assets/img_lv_demo_music_icon_3.i: demos/music/assets/img_lv_demo_music_icon_3.c.i
@@ -1224,7 +1224,7 @@ demos/music/assets/img_lv_demo_music_icon_3.i: demos/music/assets/img_lv_demo_mu
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_3.c.i
 
 demos/music/assets/img_lv_demo_music_icon_3.s: demos/music/assets/img_lv_demo_music_icon_3.c.s
@@ -1232,7 +1232,7 @@ demos/music/assets/img_lv_demo_music_icon_3.s: demos/music/assets/img_lv_demo_mu
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_3.c.s
 
 demos/music/assets/img_lv_demo_music_icon_3_large.o: demos/music/assets/img_lv_demo_music_icon_3_large.c.o
@@ -1240,7 +1240,7 @@ demos/music/assets/img_lv_demo_music_icon_3_large.o: demos/music/assets/img_lv_d
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_3_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_3_large.c.o
 
 demos/music/assets/img_lv_demo_music_icon_3_large.i: demos/music/assets/img_lv_demo_music_icon_3_large.c.i
@@ -1248,7 +1248,7 @@ demos/music/assets/img_lv_demo_music_icon_3_large.i: demos/music/assets/img_lv_d
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_3_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_3_large.c.i
 
 demos/music/assets/img_lv_demo_music_icon_3_large.s: demos/music/assets/img_lv_demo_music_icon_3_large.c.s
@@ -1256,7 +1256,7 @@ demos/music/assets/img_lv_demo_music_icon_3_large.s: demos/music/assets/img_lv_d
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_3_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_3_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_3_large.c.s
 
 demos/music/assets/img_lv_demo_music_icon_4.o: demos/music/assets/img_lv_demo_music_icon_4.c.o
@@ -1264,7 +1264,7 @@ demos/music/assets/img_lv_demo_music_icon_4.o: demos/music/assets/img_lv_demo_mu
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_4.c.o
 
 demos/music/assets/img_lv_demo_music_icon_4.i: demos/music/assets/img_lv_demo_music_icon_4.c.i
@@ -1272,7 +1272,7 @@ demos/music/assets/img_lv_demo_music_icon_4.i: demos/music/assets/img_lv_demo_mu
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_4.c.i
 
 demos/music/assets/img_lv_demo_music_icon_4.s: demos/music/assets/img_lv_demo_music_icon_4.c.s
@@ -1280,7 +1280,7 @@ demos/music/assets/img_lv_demo_music_icon_4.s: demos/music/assets/img_lv_demo_mu
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_4.c.s
 
 demos/music/assets/img_lv_demo_music_icon_4_large.o: demos/music/assets/img_lv_demo_music_icon_4_large.c.o
@@ -1288,7 +1288,7 @@ demos/music/assets/img_lv_demo_music_icon_4_large.o: demos/music/assets/img_lv_d
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_icon_4_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_icon_4_large.c.o
 
 demos/music/assets/img_lv_demo_music_icon_4_large.i: demos/music/assets/img_lv_demo_music_icon_4_large.c.i
@@ -1296,7 +1296,7 @@ demos/music/assets/img_lv_demo_music_icon_4_large.i: demos/music/assets/img_lv_d
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_icon_4_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_icon_4_large.c.i
 
 demos/music/assets/img_lv_demo_music_icon_4_large.s: demos/music/assets/img_lv_demo_music_icon_4_large.c.s
@@ -1304,7 +1304,7 @@ demos/music/assets/img_lv_demo_music_icon_4_large.s: demos/music/assets/img_lv_d
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_icon_4_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_icon_4_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_icon_4_large.c.s
 
 demos/music/assets/img_lv_demo_music_list_border.o: demos/music/assets/img_lv_demo_music_list_border.c.o
@@ -1312,7 +1312,7 @@ demos/music/assets/img_lv_demo_music_list_border.o: demos/music/assets/img_lv_de
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_list_border.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_list_border.c.o
 
 demos/music/assets/img_lv_demo_music_list_border.i: demos/music/assets/img_lv_demo_music_list_border.c.i
@@ -1320,7 +1320,7 @@ demos/music/assets/img_lv_demo_music_list_border.i: demos/music/assets/img_lv_de
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_list_border.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_list_border.c.i
 
 demos/music/assets/img_lv_demo_music_list_border.s: demos/music/assets/img_lv_demo_music_list_border.c.s
@@ -1328,7 +1328,7 @@ demos/music/assets/img_lv_demo_music_list_border.s: demos/music/assets/img_lv_de
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_list_border.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_list_border.c.s
 
 demos/music/assets/img_lv_demo_music_list_border_large.o: demos/music/assets/img_lv_demo_music_list_border_large.c.o
@@ -1336,7 +1336,7 @@ demos/music/assets/img_lv_demo_music_list_border_large.o: demos/music/assets/img
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_list_border_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_list_border_large.c.o
 
 demos/music/assets/img_lv_demo_music_list_border_large.i: demos/music/assets/img_lv_demo_music_list_border_large.c.i
@@ -1344,7 +1344,7 @@ demos/music/assets/img_lv_demo_music_list_border_large.i: demos/music/assets/img
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_list_border_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_list_border_large.c.i
 
 demos/music/assets/img_lv_demo_music_list_border_large.s: demos/music/assets/img_lv_demo_music_list_border_large.c.s
@@ -1352,7 +1352,7 @@ demos/music/assets/img_lv_demo_music_list_border_large.s: demos/music/assets/img
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_list_border_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_list_border_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_list_border_large.c.s
 
 demos/music/assets/img_lv_demo_music_logo.o: demos/music/assets/img_lv_demo_music_logo.c.o
@@ -1360,7 +1360,7 @@ demos/music/assets/img_lv_demo_music_logo.o: demos/music/assets/img_lv_demo_musi
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_logo.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_logo.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_logo.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_logo.c.o
 
 demos/music/assets/img_lv_demo_music_logo.i: demos/music/assets/img_lv_demo_music_logo.c.i
@@ -1368,7 +1368,7 @@ demos/music/assets/img_lv_demo_music_logo.i: demos/music/assets/img_lv_demo_musi
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_logo.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_logo.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_logo.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_logo.c.i
 
 demos/music/assets/img_lv_demo_music_logo.s: demos/music/assets/img_lv_demo_music_logo.c.s
@@ -1376,7 +1376,7 @@ demos/music/assets/img_lv_demo_music_logo.s: demos/music/assets/img_lv_demo_musi
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_logo.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_logo.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_logo.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_logo.c.s
 
 demos/music/assets/img_lv_demo_music_slider_knob.o: demos/music/assets/img_lv_demo_music_slider_knob.c.o
@@ -1384,7 +1384,7 @@ demos/music/assets/img_lv_demo_music_slider_knob.o: demos/music/assets/img_lv_de
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_slider_knob.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_slider_knob.c.o
 
 demos/music/assets/img_lv_demo_music_slider_knob.i: demos/music/assets/img_lv_demo_music_slider_knob.c.i
@@ -1392,7 +1392,7 @@ demos/music/assets/img_lv_demo_music_slider_knob.i: demos/music/assets/img_lv_de
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_slider_knob.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_slider_knob.c.i
 
 demos/music/assets/img_lv_demo_music_slider_knob.s: demos/music/assets/img_lv_demo_music_slider_knob.c.s
@@ -1400,7 +1400,7 @@ demos/music/assets/img_lv_demo_music_slider_knob.s: demos/music/assets/img_lv_de
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_slider_knob.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_slider_knob.c.s
 
 demos/music/assets/img_lv_demo_music_slider_knob_large.o: demos/music/assets/img_lv_demo_music_slider_knob_large.c.o
@@ -1408,7 +1408,7 @@ demos/music/assets/img_lv_demo_music_slider_knob_large.o: demos/music/assets/img
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_slider_knob_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_slider_knob_large.c.o
 
 demos/music/assets/img_lv_demo_music_slider_knob_large.i: demos/music/assets/img_lv_demo_music_slider_knob_large.c.i
@@ -1416,7 +1416,7 @@ demos/music/assets/img_lv_demo_music_slider_knob_large.i: demos/music/assets/img
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_slider_knob_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_slider_knob_large.c.i
 
 demos/music/assets/img_lv_demo_music_slider_knob_large.s: demos/music/assets/img_lv_demo_music_slider_knob_large.c.s
@@ -1424,7 +1424,7 @@ demos/music/assets/img_lv_demo_music_slider_knob_large.s: demos/music/assets/img
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_slider_knob_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_slider_knob_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_slider_knob_large.c.s
 
 demos/music/assets/img_lv_demo_music_wave_bottom.o: demos/music/assets/img_lv_demo_music_wave_bottom.c.o
@@ -1432,7 +1432,7 @@ demos/music/assets/img_lv_demo_music_wave_bottom.o: demos/music/assets/img_lv_de
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_wave_bottom.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_wave_bottom.c.o
 
 demos/music/assets/img_lv_demo_music_wave_bottom.i: demos/music/assets/img_lv_demo_music_wave_bottom.c.i
@@ -1440,7 +1440,7 @@ demos/music/assets/img_lv_demo_music_wave_bottom.i: demos/music/assets/img_lv_de
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_wave_bottom.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_wave_bottom.c.i
 
 demos/music/assets/img_lv_demo_music_wave_bottom.s: demos/music/assets/img_lv_demo_music_wave_bottom.c.s
@@ -1448,7 +1448,7 @@ demos/music/assets/img_lv_demo_music_wave_bottom.s: demos/music/assets/img_lv_de
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_wave_bottom.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_wave_bottom.c.s
 
 demos/music/assets/img_lv_demo_music_wave_bottom_large.o: demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o
@@ -1456,7 +1456,7 @@ demos/music/assets/img_lv_demo_music_wave_bottom_large.o: demos/music/assets/img
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_wave_bottom_large.c.o
 
 demos/music/assets/img_lv_demo_music_wave_bottom_large.i: demos/music/assets/img_lv_demo_music_wave_bottom_large.c.i
@@ -1464,7 +1464,7 @@ demos/music/assets/img_lv_demo_music_wave_bottom_large.i: demos/music/assets/img
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_wave_bottom_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_wave_bottom_large.c.i
 
 demos/music/assets/img_lv_demo_music_wave_bottom_large.s: demos/music/assets/img_lv_demo_music_wave_bottom_large.c.s
@@ -1472,7 +1472,7 @@ demos/music/assets/img_lv_demo_music_wave_bottom_large.s: demos/music/assets/img
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_wave_bottom_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_bottom_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_wave_bottom_large.c.s
 
 demos/music/assets/img_lv_demo_music_wave_top.o: demos/music/assets/img_lv_demo_music_wave_top.c.o
@@ -1480,7 +1480,7 @@ demos/music/assets/img_lv_demo_music_wave_top.o: demos/music/assets/img_lv_demo_
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_wave_top.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_wave_top.c.o
 
 demos/music/assets/img_lv_demo_music_wave_top.i: demos/music/assets/img_lv_demo_music_wave_top.c.i
@@ -1488,7 +1488,7 @@ demos/music/assets/img_lv_demo_music_wave_top.i: demos/music/assets/img_lv_demo_
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_wave_top.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_wave_top.c.i
 
 demos/music/assets/img_lv_demo_music_wave_top.s: demos/music/assets/img_lv_demo_music_wave_top.c.s
@@ -1496,7 +1496,7 @@ demos/music/assets/img_lv_demo_music_wave_top.s: demos/music/assets/img_lv_demo_
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_wave_top.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_wave_top.c.s
 
 demos/music/assets/img_lv_demo_music_wave_top_large.o: demos/music/assets/img_lv_demo_music_wave_top_large.c.o
@@ -1504,7 +1504,7 @@ demos/music/assets/img_lv_demo_music_wave_top_large.o: demos/music/assets/img_lv
 
 # target to build an object file
 demos/music/assets/img_lv_demo_music_wave_top_large.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top_large.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top_large.c.o
 .PHONY : demos/music/assets/img_lv_demo_music_wave_top_large.c.o
 
 demos/music/assets/img_lv_demo_music_wave_top_large.i: demos/music/assets/img_lv_demo_music_wave_top_large.c.i
@@ -1512,7 +1512,7 @@ demos/music/assets/img_lv_demo_music_wave_top_large.i: demos/music/assets/img_lv
 
 # target to preprocess a source file
 demos/music/assets/img_lv_demo_music_wave_top_large.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top_large.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top_large.c.i
 .PHONY : demos/music/assets/img_lv_demo_music_wave_top_large.c.i
 
 demos/music/assets/img_lv_demo_music_wave_top_large.s: demos/music/assets/img_lv_demo_music_wave_top_large.c.s
@@ -1520,7 +1520,7 @@ demos/music/assets/img_lv_demo_music_wave_top_large.s: demos/music/assets/img_lv
 
 # target to generate assembly for a file
 demos/music/assets/img_lv_demo_music_wave_top_large.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top_large.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/assets/img_lv_demo_music_wave_top_large.c.s
 .PHONY : demos/music/assets/img_lv_demo_music_wave_top_large.c.s
 
 demos/music/lv_demo_music.o: demos/music/lv_demo_music.c.o
@@ -1528,7 +1528,7 @@ demos/music/lv_demo_music.o: demos/music/lv_demo_music.c.o
 
 # target to build an object file
 demos/music/lv_demo_music.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music.c.o
 .PHONY : demos/music/lv_demo_music.c.o
 
 demos/music/lv_demo_music.i: demos/music/lv_demo_music.c.i
@@ -1536,7 +1536,7 @@ demos/music/lv_demo_music.i: demos/music/lv_demo_music.c.i
 
 # target to preprocess a source file
 demos/music/lv_demo_music.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music.c.i
 .PHONY : demos/music/lv_demo_music.c.i
 
 demos/music/lv_demo_music.s: demos/music/lv_demo_music.c.s
@@ -1544,7 +1544,7 @@ demos/music/lv_demo_music.s: demos/music/lv_demo_music.c.s
 
 # target to generate assembly for a file
 demos/music/lv_demo_music.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music.c.s
 .PHONY : demos/music/lv_demo_music.c.s
 
 demos/music/lv_demo_music_list.o: demos/music/lv_demo_music_list.c.o
@@ -1552,7 +1552,7 @@ demos/music/lv_demo_music_list.o: demos/music/lv_demo_music_list.c.o
 
 # target to build an object file
 demos/music/lv_demo_music_list.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_list.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_list.c.o
 .PHONY : demos/music/lv_demo_music_list.c.o
 
 demos/music/lv_demo_music_list.i: demos/music/lv_demo_music_list.c.i
@@ -1560,7 +1560,7 @@ demos/music/lv_demo_music_list.i: demos/music/lv_demo_music_list.c.i
 
 # target to preprocess a source file
 demos/music/lv_demo_music_list.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_list.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_list.c.i
 .PHONY : demos/music/lv_demo_music_list.c.i
 
 demos/music/lv_demo_music_list.s: demos/music/lv_demo_music_list.c.s
@@ -1568,7 +1568,7 @@ demos/music/lv_demo_music_list.s: demos/music/lv_demo_music_list.c.s
 
 # target to generate assembly for a file
 demos/music/lv_demo_music_list.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_list.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_list.c.s
 .PHONY : demos/music/lv_demo_music_list.c.s
 
 demos/music/lv_demo_music_main.o: demos/music/lv_demo_music_main.c.o
@@ -1576,7 +1576,7 @@ demos/music/lv_demo_music_main.o: demos/music/lv_demo_music_main.c.o
 
 # target to build an object file
 demos/music/lv_demo_music_main.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_main.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_main.c.o
 .PHONY : demos/music/lv_demo_music_main.c.o
 
 demos/music/lv_demo_music_main.i: demos/music/lv_demo_music_main.c.i
@@ -1584,7 +1584,7 @@ demos/music/lv_demo_music_main.i: demos/music/lv_demo_music_main.c.i
 
 # target to preprocess a source file
 demos/music/lv_demo_music_main.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_main.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_main.c.i
 .PHONY : demos/music/lv_demo_music_main.c.i
 
 demos/music/lv_demo_music_main.s: demos/music/lv_demo_music_main.c.s
@@ -1592,7 +1592,7 @@ demos/music/lv_demo_music_main.s: demos/music/lv_demo_music_main.c.s
 
 # target to generate assembly for a file
 demos/music/lv_demo_music_main.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_main.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/music/lv_demo_music_main.c.s
 .PHONY : demos/music/lv_demo_music_main.c.s
 
 demos/stress/lv_demo_stress.o: demos/stress/lv_demo_stress.c.o
@@ -1600,7 +1600,7 @@ demos/stress/lv_demo_stress.o: demos/stress/lv_demo_stress.c.o
 
 # target to build an object file
 demos/stress/lv_demo_stress.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/stress/lv_demo_stress.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/stress/lv_demo_stress.c.o
 .PHONY : demos/stress/lv_demo_stress.c.o
 
 demos/stress/lv_demo_stress.i: demos/stress/lv_demo_stress.c.i
@@ -1608,7 +1608,7 @@ demos/stress/lv_demo_stress.i: demos/stress/lv_demo_stress.c.i
 
 # target to preprocess a source file
 demos/stress/lv_demo_stress.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/stress/lv_demo_stress.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/stress/lv_demo_stress.c.i
 .PHONY : demos/stress/lv_demo_stress.c.i
 
 demos/stress/lv_demo_stress.s: demos/stress/lv_demo_stress.c.s
@@ -1616,7 +1616,7 @@ demos/stress/lv_demo_stress.s: demos/stress/lv_demo_stress.c.s
 
 # target to generate assembly for a file
 demos/stress/lv_demo_stress.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/stress/lv_demo_stress.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/stress/lv_demo_stress.c.s
 .PHONY : demos/stress/lv_demo_stress.c.s
 
 demos/widgets/assets/img_clothes.o: demos/widgets/assets/img_clothes.c.o
@@ -1624,7 +1624,7 @@ demos/widgets/assets/img_clothes.o: demos/widgets/assets/img_clothes.c.o
 
 # target to build an object file
 demos/widgets/assets/img_clothes.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_clothes.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_clothes.c.o
 .PHONY : demos/widgets/assets/img_clothes.c.o
 
 demos/widgets/assets/img_clothes.i: demos/widgets/assets/img_clothes.c.i
@@ -1632,7 +1632,7 @@ demos/widgets/assets/img_clothes.i: demos/widgets/assets/img_clothes.c.i
 
 # target to preprocess a source file
 demos/widgets/assets/img_clothes.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_clothes.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_clothes.c.i
 .PHONY : demos/widgets/assets/img_clothes.c.i
 
 demos/widgets/assets/img_clothes.s: demos/widgets/assets/img_clothes.c.s
@@ -1640,7 +1640,7 @@ demos/widgets/assets/img_clothes.s: demos/widgets/assets/img_clothes.c.s
 
 # target to generate assembly for a file
 demos/widgets/assets/img_clothes.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_clothes.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_clothes.c.s
 .PHONY : demos/widgets/assets/img_clothes.c.s
 
 demos/widgets/assets/img_demo_widgets_avatar.o: demos/widgets/assets/img_demo_widgets_avatar.c.o
@@ -1648,7 +1648,7 @@ demos/widgets/assets/img_demo_widgets_avatar.o: demos/widgets/assets/img_demo_wi
 
 # target to build an object file
 demos/widgets/assets/img_demo_widgets_avatar.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_demo_widgets_avatar.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_demo_widgets_avatar.c.o
 .PHONY : demos/widgets/assets/img_demo_widgets_avatar.c.o
 
 demos/widgets/assets/img_demo_widgets_avatar.i: demos/widgets/assets/img_demo_widgets_avatar.c.i
@@ -1656,7 +1656,7 @@ demos/widgets/assets/img_demo_widgets_avatar.i: demos/widgets/assets/img_demo_wi
 
 # target to preprocess a source file
 demos/widgets/assets/img_demo_widgets_avatar.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_demo_widgets_avatar.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_demo_widgets_avatar.c.i
 .PHONY : demos/widgets/assets/img_demo_widgets_avatar.c.i
 
 demos/widgets/assets/img_demo_widgets_avatar.s: demos/widgets/assets/img_demo_widgets_avatar.c.s
@@ -1664,7 +1664,7 @@ demos/widgets/assets/img_demo_widgets_avatar.s: demos/widgets/assets/img_demo_wi
 
 # target to generate assembly for a file
 demos/widgets/assets/img_demo_widgets_avatar.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_demo_widgets_avatar.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_demo_widgets_avatar.c.s
 .PHONY : demos/widgets/assets/img_demo_widgets_avatar.c.s
 
 demos/widgets/assets/img_lvgl_logo.o: demos/widgets/assets/img_lvgl_logo.c.o
@@ -1672,7 +1672,7 @@ demos/widgets/assets/img_lvgl_logo.o: demos/widgets/assets/img_lvgl_logo.c.o
 
 # target to build an object file
 demos/widgets/assets/img_lvgl_logo.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_lvgl_logo.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_lvgl_logo.c.o
 .PHONY : demos/widgets/assets/img_lvgl_logo.c.o
 
 demos/widgets/assets/img_lvgl_logo.i: demos/widgets/assets/img_lvgl_logo.c.i
@@ -1680,7 +1680,7 @@ demos/widgets/assets/img_lvgl_logo.i: demos/widgets/assets/img_lvgl_logo.c.i
 
 # target to preprocess a source file
 demos/widgets/assets/img_lvgl_logo.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_lvgl_logo.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_lvgl_logo.c.i
 .PHONY : demos/widgets/assets/img_lvgl_logo.c.i
 
 demos/widgets/assets/img_lvgl_logo.s: demos/widgets/assets/img_lvgl_logo.c.s
@@ -1688,7 +1688,7 @@ demos/widgets/assets/img_lvgl_logo.s: demos/widgets/assets/img_lvgl_logo.c.s
 
 # target to generate assembly for a file
 demos/widgets/assets/img_lvgl_logo.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_lvgl_logo.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/assets/img_lvgl_logo.c.s
 .PHONY : demos/widgets/assets/img_lvgl_logo.c.s
 
 demos/widgets/lv_demo_widgets.o: demos/widgets/lv_demo_widgets.c.o
@@ -1696,7 +1696,7 @@ demos/widgets/lv_demo_widgets.o: demos/widgets/lv_demo_widgets.c.o
 
 # target to build an object file
 demos/widgets/lv_demo_widgets.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/lv_demo_widgets.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/lv_demo_widgets.c.o
 .PHONY : demos/widgets/lv_demo_widgets.c.o
 
 demos/widgets/lv_demo_widgets.i: demos/widgets/lv_demo_widgets.c.i
@@ -1704,7 +1704,7 @@ demos/widgets/lv_demo_widgets.i: demos/widgets/lv_demo_widgets.c.i
 
 # target to preprocess a source file
 demos/widgets/lv_demo_widgets.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/lv_demo_widgets.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/lv_demo_widgets.c.i
 .PHONY : demos/widgets/lv_demo_widgets.c.i
 
 demos/widgets/lv_demo_widgets.s: demos/widgets/lv_demo_widgets.c.s
@@ -1712,7 +1712,7 @@ demos/widgets/lv_demo_widgets.s: demos/widgets/lv_demo_widgets.c.s
 
 # target to generate assembly for a file
 demos/widgets/lv_demo_widgets.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/lv_demo_widgets.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_demos.dir/build.make lvgl/CMakeFiles/lvgl_demos.dir/demos/widgets/lv_demo_widgets.c.s
 .PHONY : demos/widgets/lv_demo_widgets.c.s
 
 examples/anim/lv_example_anim_1.o: examples/anim/lv_example_anim_1.c.o
@@ -1720,7 +1720,7 @@ examples/anim/lv_example_anim_1.o: examples/anim/lv_example_anim_1.c.o
 
 # target to build an object file
 examples/anim/lv_example_anim_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_1.c.o
 .PHONY : examples/anim/lv_example_anim_1.c.o
 
 examples/anim/lv_example_anim_1.i: examples/anim/lv_example_anim_1.c.i
@@ -1728,7 +1728,7 @@ examples/anim/lv_example_anim_1.i: examples/anim/lv_example_anim_1.c.i
 
 # target to preprocess a source file
 examples/anim/lv_example_anim_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_1.c.i
 .PHONY : examples/anim/lv_example_anim_1.c.i
 
 examples/anim/lv_example_anim_1.s: examples/anim/lv_example_anim_1.c.s
@@ -1736,7 +1736,7 @@ examples/anim/lv_example_anim_1.s: examples/anim/lv_example_anim_1.c.s
 
 # target to generate assembly for a file
 examples/anim/lv_example_anim_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_1.c.s
 .PHONY : examples/anim/lv_example_anim_1.c.s
 
 examples/anim/lv_example_anim_2.o: examples/anim/lv_example_anim_2.c.o
@@ -1744,7 +1744,7 @@ examples/anim/lv_example_anim_2.o: examples/anim/lv_example_anim_2.c.o
 
 # target to build an object file
 examples/anim/lv_example_anim_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_2.c.o
 .PHONY : examples/anim/lv_example_anim_2.c.o
 
 examples/anim/lv_example_anim_2.i: examples/anim/lv_example_anim_2.c.i
@@ -1752,7 +1752,7 @@ examples/anim/lv_example_anim_2.i: examples/anim/lv_example_anim_2.c.i
 
 # target to preprocess a source file
 examples/anim/lv_example_anim_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_2.c.i
 .PHONY : examples/anim/lv_example_anim_2.c.i
 
 examples/anim/lv_example_anim_2.s: examples/anim/lv_example_anim_2.c.s
@@ -1760,7 +1760,7 @@ examples/anim/lv_example_anim_2.s: examples/anim/lv_example_anim_2.c.s
 
 # target to generate assembly for a file
 examples/anim/lv_example_anim_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_2.c.s
 .PHONY : examples/anim/lv_example_anim_2.c.s
 
 examples/anim/lv_example_anim_3.o: examples/anim/lv_example_anim_3.c.o
@@ -1768,7 +1768,7 @@ examples/anim/lv_example_anim_3.o: examples/anim/lv_example_anim_3.c.o
 
 # target to build an object file
 examples/anim/lv_example_anim_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_3.c.o
 .PHONY : examples/anim/lv_example_anim_3.c.o
 
 examples/anim/lv_example_anim_3.i: examples/anim/lv_example_anim_3.c.i
@@ -1776,7 +1776,7 @@ examples/anim/lv_example_anim_3.i: examples/anim/lv_example_anim_3.c.i
 
 # target to preprocess a source file
 examples/anim/lv_example_anim_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_3.c.i
 .PHONY : examples/anim/lv_example_anim_3.c.i
 
 examples/anim/lv_example_anim_3.s: examples/anim/lv_example_anim_3.c.s
@@ -1784,7 +1784,7 @@ examples/anim/lv_example_anim_3.s: examples/anim/lv_example_anim_3.c.s
 
 # target to generate assembly for a file
 examples/anim/lv_example_anim_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_3.c.s
 .PHONY : examples/anim/lv_example_anim_3.c.s
 
 examples/anim/lv_example_anim_timeline_1.o: examples/anim/lv_example_anim_timeline_1.c.o
@@ -1792,7 +1792,7 @@ examples/anim/lv_example_anim_timeline_1.o: examples/anim/lv_example_anim_timeli
 
 # target to build an object file
 examples/anim/lv_example_anim_timeline_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_timeline_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_timeline_1.c.o
 .PHONY : examples/anim/lv_example_anim_timeline_1.c.o
 
 examples/anim/lv_example_anim_timeline_1.i: examples/anim/lv_example_anim_timeline_1.c.i
@@ -1800,7 +1800,7 @@ examples/anim/lv_example_anim_timeline_1.i: examples/anim/lv_example_anim_timeli
 
 # target to preprocess a source file
 examples/anim/lv_example_anim_timeline_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_timeline_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_timeline_1.c.i
 .PHONY : examples/anim/lv_example_anim_timeline_1.c.i
 
 examples/anim/lv_example_anim_timeline_1.s: examples/anim/lv_example_anim_timeline_1.c.s
@@ -1808,7 +1808,7 @@ examples/anim/lv_example_anim_timeline_1.s: examples/anim/lv_example_anim_timeli
 
 # target to generate assembly for a file
 examples/anim/lv_example_anim_timeline_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_timeline_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/anim/lv_example_anim_timeline_1.c.s
 .PHONY : examples/anim/lv_example_anim_timeline_1.c.s
 
 examples/assets/animimg001.o: examples/assets/animimg001.c.o
@@ -1816,7 +1816,7 @@ examples/assets/animimg001.o: examples/assets/animimg001.c.o
 
 # target to build an object file
 examples/assets/animimg001.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg001.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg001.c.o
 .PHONY : examples/assets/animimg001.c.o
 
 examples/assets/animimg001.i: examples/assets/animimg001.c.i
@@ -1824,7 +1824,7 @@ examples/assets/animimg001.i: examples/assets/animimg001.c.i
 
 # target to preprocess a source file
 examples/assets/animimg001.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg001.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg001.c.i
 .PHONY : examples/assets/animimg001.c.i
 
 examples/assets/animimg001.s: examples/assets/animimg001.c.s
@@ -1832,7 +1832,7 @@ examples/assets/animimg001.s: examples/assets/animimg001.c.s
 
 # target to generate assembly for a file
 examples/assets/animimg001.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg001.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg001.c.s
 .PHONY : examples/assets/animimg001.c.s
 
 examples/assets/animimg002.o: examples/assets/animimg002.c.o
@@ -1840,7 +1840,7 @@ examples/assets/animimg002.o: examples/assets/animimg002.c.o
 
 # target to build an object file
 examples/assets/animimg002.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg002.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg002.c.o
 .PHONY : examples/assets/animimg002.c.o
 
 examples/assets/animimg002.i: examples/assets/animimg002.c.i
@@ -1848,7 +1848,7 @@ examples/assets/animimg002.i: examples/assets/animimg002.c.i
 
 # target to preprocess a source file
 examples/assets/animimg002.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg002.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg002.c.i
 .PHONY : examples/assets/animimg002.c.i
 
 examples/assets/animimg002.s: examples/assets/animimg002.c.s
@@ -1856,7 +1856,7 @@ examples/assets/animimg002.s: examples/assets/animimg002.c.s
 
 # target to generate assembly for a file
 examples/assets/animimg002.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg002.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg002.c.s
 .PHONY : examples/assets/animimg002.c.s
 
 examples/assets/animimg003.o: examples/assets/animimg003.c.o
@@ -1864,7 +1864,7 @@ examples/assets/animimg003.o: examples/assets/animimg003.c.o
 
 # target to build an object file
 examples/assets/animimg003.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg003.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg003.c.o
 .PHONY : examples/assets/animimg003.c.o
 
 examples/assets/animimg003.i: examples/assets/animimg003.c.i
@@ -1872,7 +1872,7 @@ examples/assets/animimg003.i: examples/assets/animimg003.c.i
 
 # target to preprocess a source file
 examples/assets/animimg003.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg003.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg003.c.i
 .PHONY : examples/assets/animimg003.c.i
 
 examples/assets/animimg003.s: examples/assets/animimg003.c.s
@@ -1880,7 +1880,7 @@ examples/assets/animimg003.s: examples/assets/animimg003.c.s
 
 # target to generate assembly for a file
 examples/assets/animimg003.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg003.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/animimg003.c.s
 .PHONY : examples/assets/animimg003.c.s
 
 examples/assets/emoji/img_emoji_F617.o: examples/assets/emoji/img_emoji_F617.c.o
@@ -1888,7 +1888,7 @@ examples/assets/emoji/img_emoji_F617.o: examples/assets/emoji/img_emoji_F617.c.o
 
 # target to build an object file
 examples/assets/emoji/img_emoji_F617.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/emoji/img_emoji_F617.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/emoji/img_emoji_F617.c.o
 .PHONY : examples/assets/emoji/img_emoji_F617.c.o
 
 examples/assets/emoji/img_emoji_F617.i: examples/assets/emoji/img_emoji_F617.c.i
@@ -1896,7 +1896,7 @@ examples/assets/emoji/img_emoji_F617.i: examples/assets/emoji/img_emoji_F617.c.i
 
 # target to preprocess a source file
 examples/assets/emoji/img_emoji_F617.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/emoji/img_emoji_F617.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/emoji/img_emoji_F617.c.i
 .PHONY : examples/assets/emoji/img_emoji_F617.c.i
 
 examples/assets/emoji/img_emoji_F617.s: examples/assets/emoji/img_emoji_F617.c.s
@@ -1904,7 +1904,7 @@ examples/assets/emoji/img_emoji_F617.s: examples/assets/emoji/img_emoji_F617.c.s
 
 # target to generate assembly for a file
 examples/assets/emoji/img_emoji_F617.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/emoji/img_emoji_F617.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/emoji/img_emoji_F617.c.s
 .PHONY : examples/assets/emoji/img_emoji_F617.c.s
 
 examples/assets/img_caret_down.o: examples/assets/img_caret_down.c.o
@@ -1912,7 +1912,7 @@ examples/assets/img_caret_down.o: examples/assets/img_caret_down.c.o
 
 # target to build an object file
 examples/assets/img_caret_down.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_caret_down.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_caret_down.c.o
 .PHONY : examples/assets/img_caret_down.c.o
 
 examples/assets/img_caret_down.i: examples/assets/img_caret_down.c.i
@@ -1920,7 +1920,7 @@ examples/assets/img_caret_down.i: examples/assets/img_caret_down.c.i
 
 # target to preprocess a source file
 examples/assets/img_caret_down.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_caret_down.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_caret_down.c.i
 .PHONY : examples/assets/img_caret_down.c.i
 
 examples/assets/img_caret_down.s: examples/assets/img_caret_down.c.s
@@ -1928,7 +1928,7 @@ examples/assets/img_caret_down.s: examples/assets/img_caret_down.c.s
 
 # target to generate assembly for a file
 examples/assets/img_caret_down.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_caret_down.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_caret_down.c.s
 .PHONY : examples/assets/img_caret_down.c.s
 
 examples/assets/img_cogwheel_alpha16.o: examples/assets/img_cogwheel_alpha16.c.o
@@ -1936,7 +1936,7 @@ examples/assets/img_cogwheel_alpha16.o: examples/assets/img_cogwheel_alpha16.c.o
 
 # target to build an object file
 examples/assets/img_cogwheel_alpha16.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_alpha16.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_alpha16.c.o
 .PHONY : examples/assets/img_cogwheel_alpha16.c.o
 
 examples/assets/img_cogwheel_alpha16.i: examples/assets/img_cogwheel_alpha16.c.i
@@ -1944,7 +1944,7 @@ examples/assets/img_cogwheel_alpha16.i: examples/assets/img_cogwheel_alpha16.c.i
 
 # target to preprocess a source file
 examples/assets/img_cogwheel_alpha16.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_alpha16.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_alpha16.c.i
 .PHONY : examples/assets/img_cogwheel_alpha16.c.i
 
 examples/assets/img_cogwheel_alpha16.s: examples/assets/img_cogwheel_alpha16.c.s
@@ -1952,7 +1952,7 @@ examples/assets/img_cogwheel_alpha16.s: examples/assets/img_cogwheel_alpha16.c.s
 
 # target to generate assembly for a file
 examples/assets/img_cogwheel_alpha16.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_alpha16.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_alpha16.c.s
 .PHONY : examples/assets/img_cogwheel_alpha16.c.s
 
 examples/assets/img_cogwheel_argb.o: examples/assets/img_cogwheel_argb.c.o
@@ -1960,7 +1960,7 @@ examples/assets/img_cogwheel_argb.o: examples/assets/img_cogwheel_argb.c.o
 
 # target to build an object file
 examples/assets/img_cogwheel_argb.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_argb.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_argb.c.o
 .PHONY : examples/assets/img_cogwheel_argb.c.o
 
 examples/assets/img_cogwheel_argb.i: examples/assets/img_cogwheel_argb.c.i
@@ -1968,7 +1968,7 @@ examples/assets/img_cogwheel_argb.i: examples/assets/img_cogwheel_argb.c.i
 
 # target to preprocess a source file
 examples/assets/img_cogwheel_argb.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_argb.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_argb.c.i
 .PHONY : examples/assets/img_cogwheel_argb.c.i
 
 examples/assets/img_cogwheel_argb.s: examples/assets/img_cogwheel_argb.c.s
@@ -1976,7 +1976,7 @@ examples/assets/img_cogwheel_argb.s: examples/assets/img_cogwheel_argb.c.s
 
 # target to generate assembly for a file
 examples/assets/img_cogwheel_argb.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_argb.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_argb.c.s
 .PHONY : examples/assets/img_cogwheel_argb.c.s
 
 examples/assets/img_cogwheel_chroma_keyed.o: examples/assets/img_cogwheel_chroma_keyed.c.o
@@ -1984,7 +1984,7 @@ examples/assets/img_cogwheel_chroma_keyed.o: examples/assets/img_cogwheel_chroma
 
 # target to build an object file
 examples/assets/img_cogwheel_chroma_keyed.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_chroma_keyed.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_chroma_keyed.c.o
 .PHONY : examples/assets/img_cogwheel_chroma_keyed.c.o
 
 examples/assets/img_cogwheel_chroma_keyed.i: examples/assets/img_cogwheel_chroma_keyed.c.i
@@ -1992,7 +1992,7 @@ examples/assets/img_cogwheel_chroma_keyed.i: examples/assets/img_cogwheel_chroma
 
 # target to preprocess a source file
 examples/assets/img_cogwheel_chroma_keyed.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_chroma_keyed.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_chroma_keyed.c.i
 .PHONY : examples/assets/img_cogwheel_chroma_keyed.c.i
 
 examples/assets/img_cogwheel_chroma_keyed.s: examples/assets/img_cogwheel_chroma_keyed.c.s
@@ -2000,7 +2000,7 @@ examples/assets/img_cogwheel_chroma_keyed.s: examples/assets/img_cogwheel_chroma
 
 # target to generate assembly for a file
 examples/assets/img_cogwheel_chroma_keyed.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_chroma_keyed.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_chroma_keyed.c.s
 .PHONY : examples/assets/img_cogwheel_chroma_keyed.c.s
 
 examples/assets/img_cogwheel_indexed16.o: examples/assets/img_cogwheel_indexed16.c.o
@@ -2008,7 +2008,7 @@ examples/assets/img_cogwheel_indexed16.o: examples/assets/img_cogwheel_indexed16
 
 # target to build an object file
 examples/assets/img_cogwheel_indexed16.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_indexed16.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_indexed16.c.o
 .PHONY : examples/assets/img_cogwheel_indexed16.c.o
 
 examples/assets/img_cogwheel_indexed16.i: examples/assets/img_cogwheel_indexed16.c.i
@@ -2016,7 +2016,7 @@ examples/assets/img_cogwheel_indexed16.i: examples/assets/img_cogwheel_indexed16
 
 # target to preprocess a source file
 examples/assets/img_cogwheel_indexed16.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_indexed16.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_indexed16.c.i
 .PHONY : examples/assets/img_cogwheel_indexed16.c.i
 
 examples/assets/img_cogwheel_indexed16.s: examples/assets/img_cogwheel_indexed16.c.s
@@ -2024,7 +2024,7 @@ examples/assets/img_cogwheel_indexed16.s: examples/assets/img_cogwheel_indexed16
 
 # target to generate assembly for a file
 examples/assets/img_cogwheel_indexed16.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_indexed16.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_indexed16.c.s
 .PHONY : examples/assets/img_cogwheel_indexed16.c.s
 
 examples/assets/img_cogwheel_rgb.o: examples/assets/img_cogwheel_rgb.c.o
@@ -2032,7 +2032,7 @@ examples/assets/img_cogwheel_rgb.o: examples/assets/img_cogwheel_rgb.c.o
 
 # target to build an object file
 examples/assets/img_cogwheel_rgb.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_rgb.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_rgb.c.o
 .PHONY : examples/assets/img_cogwheel_rgb.c.o
 
 examples/assets/img_cogwheel_rgb.i: examples/assets/img_cogwheel_rgb.c.i
@@ -2040,7 +2040,7 @@ examples/assets/img_cogwheel_rgb.i: examples/assets/img_cogwheel_rgb.c.i
 
 # target to preprocess a source file
 examples/assets/img_cogwheel_rgb.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_rgb.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_rgb.c.i
 .PHONY : examples/assets/img_cogwheel_rgb.c.i
 
 examples/assets/img_cogwheel_rgb.s: examples/assets/img_cogwheel_rgb.c.s
@@ -2048,7 +2048,7 @@ examples/assets/img_cogwheel_rgb.s: examples/assets/img_cogwheel_rgb.c.s
 
 # target to generate assembly for a file
 examples/assets/img_cogwheel_rgb.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_rgb.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_cogwheel_rgb.c.s
 .PHONY : examples/assets/img_cogwheel_rgb.c.s
 
 examples/assets/img_hand.o: examples/assets/img_hand.c.o
@@ -2056,7 +2056,7 @@ examples/assets/img_hand.o: examples/assets/img_hand.c.o
 
 # target to build an object file
 examples/assets/img_hand.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_hand.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_hand.c.o
 .PHONY : examples/assets/img_hand.c.o
 
 examples/assets/img_hand.i: examples/assets/img_hand.c.i
@@ -2064,7 +2064,7 @@ examples/assets/img_hand.i: examples/assets/img_hand.c.i
 
 # target to preprocess a source file
 examples/assets/img_hand.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_hand.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_hand.c.i
 .PHONY : examples/assets/img_hand.c.i
 
 examples/assets/img_hand.s: examples/assets/img_hand.c.s
@@ -2072,7 +2072,7 @@ examples/assets/img_hand.s: examples/assets/img_hand.c.s
 
 # target to generate assembly for a file
 examples/assets/img_hand.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_hand.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_hand.c.s
 .PHONY : examples/assets/img_hand.c.s
 
 examples/assets/img_skew_strip.o: examples/assets/img_skew_strip.c.o
@@ -2080,7 +2080,7 @@ examples/assets/img_skew_strip.o: examples/assets/img_skew_strip.c.o
 
 # target to build an object file
 examples/assets/img_skew_strip.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_skew_strip.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_skew_strip.c.o
 .PHONY : examples/assets/img_skew_strip.c.o
 
 examples/assets/img_skew_strip.i: examples/assets/img_skew_strip.c.i
@@ -2088,7 +2088,7 @@ examples/assets/img_skew_strip.i: examples/assets/img_skew_strip.c.i
 
 # target to preprocess a source file
 examples/assets/img_skew_strip.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_skew_strip.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_skew_strip.c.i
 .PHONY : examples/assets/img_skew_strip.c.i
 
 examples/assets/img_skew_strip.s: examples/assets/img_skew_strip.c.s
@@ -2096,7 +2096,7 @@ examples/assets/img_skew_strip.s: examples/assets/img_skew_strip.c.s
 
 # target to generate assembly for a file
 examples/assets/img_skew_strip.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_skew_strip.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_skew_strip.c.s
 .PHONY : examples/assets/img_skew_strip.c.s
 
 examples/assets/img_star.o: examples/assets/img_star.c.o
@@ -2104,7 +2104,7 @@ examples/assets/img_star.o: examples/assets/img_star.c.o
 
 # target to build an object file
 examples/assets/img_star.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_star.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_star.c.o
 .PHONY : examples/assets/img_star.c.o
 
 examples/assets/img_star.i: examples/assets/img_star.c.i
@@ -2112,7 +2112,7 @@ examples/assets/img_star.i: examples/assets/img_star.c.i
 
 # target to preprocess a source file
 examples/assets/img_star.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_star.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_star.c.i
 .PHONY : examples/assets/img_star.c.i
 
 examples/assets/img_star.s: examples/assets/img_star.c.s
@@ -2120,7 +2120,7 @@ examples/assets/img_star.s: examples/assets/img_star.c.s
 
 # target to generate assembly for a file
 examples/assets/img_star.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_star.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/img_star.c.s
 .PHONY : examples/assets/img_star.c.s
 
 examples/assets/imgbtn_left.o: examples/assets/imgbtn_left.c.o
@@ -2128,7 +2128,7 @@ examples/assets/imgbtn_left.o: examples/assets/imgbtn_left.c.o
 
 # target to build an object file
 examples/assets/imgbtn_left.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_left.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_left.c.o
 .PHONY : examples/assets/imgbtn_left.c.o
 
 examples/assets/imgbtn_left.i: examples/assets/imgbtn_left.c.i
@@ -2136,7 +2136,7 @@ examples/assets/imgbtn_left.i: examples/assets/imgbtn_left.c.i
 
 # target to preprocess a source file
 examples/assets/imgbtn_left.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_left.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_left.c.i
 .PHONY : examples/assets/imgbtn_left.c.i
 
 examples/assets/imgbtn_left.s: examples/assets/imgbtn_left.c.s
@@ -2144,7 +2144,7 @@ examples/assets/imgbtn_left.s: examples/assets/imgbtn_left.c.s
 
 # target to generate assembly for a file
 examples/assets/imgbtn_left.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_left.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_left.c.s
 .PHONY : examples/assets/imgbtn_left.c.s
 
 examples/assets/imgbtn_mid.o: examples/assets/imgbtn_mid.c.o
@@ -2152,7 +2152,7 @@ examples/assets/imgbtn_mid.o: examples/assets/imgbtn_mid.c.o
 
 # target to build an object file
 examples/assets/imgbtn_mid.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_mid.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_mid.c.o
 .PHONY : examples/assets/imgbtn_mid.c.o
 
 examples/assets/imgbtn_mid.i: examples/assets/imgbtn_mid.c.i
@@ -2160,7 +2160,7 @@ examples/assets/imgbtn_mid.i: examples/assets/imgbtn_mid.c.i
 
 # target to preprocess a source file
 examples/assets/imgbtn_mid.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_mid.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_mid.c.i
 .PHONY : examples/assets/imgbtn_mid.c.i
 
 examples/assets/imgbtn_mid.s: examples/assets/imgbtn_mid.c.s
@@ -2168,7 +2168,7 @@ examples/assets/imgbtn_mid.s: examples/assets/imgbtn_mid.c.s
 
 # target to generate assembly for a file
 examples/assets/imgbtn_mid.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_mid.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_mid.c.s
 .PHONY : examples/assets/imgbtn_mid.c.s
 
 examples/assets/imgbtn_right.o: examples/assets/imgbtn_right.c.o
@@ -2176,7 +2176,7 @@ examples/assets/imgbtn_right.o: examples/assets/imgbtn_right.c.o
 
 # target to build an object file
 examples/assets/imgbtn_right.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_right.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_right.c.o
 .PHONY : examples/assets/imgbtn_right.c.o
 
 examples/assets/imgbtn_right.i: examples/assets/imgbtn_right.c.i
@@ -2184,7 +2184,7 @@ examples/assets/imgbtn_right.i: examples/assets/imgbtn_right.c.i
 
 # target to preprocess a source file
 examples/assets/imgbtn_right.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_right.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_right.c.i
 .PHONY : examples/assets/imgbtn_right.c.i
 
 examples/assets/imgbtn_right.s: examples/assets/imgbtn_right.c.s
@@ -2192,7 +2192,7 @@ examples/assets/imgbtn_right.s: examples/assets/imgbtn_right.c.s
 
 # target to generate assembly for a file
 examples/assets/imgbtn_right.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_right.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/assets/imgbtn_right.c.s
 .PHONY : examples/assets/imgbtn_right.c.s
 
 examples/event/lv_example_event_1.o: examples/event/lv_example_event_1.c.o
@@ -2200,7 +2200,7 @@ examples/event/lv_example_event_1.o: examples/event/lv_example_event_1.c.o
 
 # target to build an object file
 examples/event/lv_example_event_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_1.c.o
 .PHONY : examples/event/lv_example_event_1.c.o
 
 examples/event/lv_example_event_1.i: examples/event/lv_example_event_1.c.i
@@ -2208,7 +2208,7 @@ examples/event/lv_example_event_1.i: examples/event/lv_example_event_1.c.i
 
 # target to preprocess a source file
 examples/event/lv_example_event_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_1.c.i
 .PHONY : examples/event/lv_example_event_1.c.i
 
 examples/event/lv_example_event_1.s: examples/event/lv_example_event_1.c.s
@@ -2216,7 +2216,7 @@ examples/event/lv_example_event_1.s: examples/event/lv_example_event_1.c.s
 
 # target to generate assembly for a file
 examples/event/lv_example_event_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_1.c.s
 .PHONY : examples/event/lv_example_event_1.c.s
 
 examples/event/lv_example_event_2.o: examples/event/lv_example_event_2.c.o
@@ -2224,7 +2224,7 @@ examples/event/lv_example_event_2.o: examples/event/lv_example_event_2.c.o
 
 # target to build an object file
 examples/event/lv_example_event_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_2.c.o
 .PHONY : examples/event/lv_example_event_2.c.o
 
 examples/event/lv_example_event_2.i: examples/event/lv_example_event_2.c.i
@@ -2232,7 +2232,7 @@ examples/event/lv_example_event_2.i: examples/event/lv_example_event_2.c.i
 
 # target to preprocess a source file
 examples/event/lv_example_event_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_2.c.i
 .PHONY : examples/event/lv_example_event_2.c.i
 
 examples/event/lv_example_event_2.s: examples/event/lv_example_event_2.c.s
@@ -2240,7 +2240,7 @@ examples/event/lv_example_event_2.s: examples/event/lv_example_event_2.c.s
 
 # target to generate assembly for a file
 examples/event/lv_example_event_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_2.c.s
 .PHONY : examples/event/lv_example_event_2.c.s
 
 examples/event/lv_example_event_3.o: examples/event/lv_example_event_3.c.o
@@ -2248,7 +2248,7 @@ examples/event/lv_example_event_3.o: examples/event/lv_example_event_3.c.o
 
 # target to build an object file
 examples/event/lv_example_event_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_3.c.o
 .PHONY : examples/event/lv_example_event_3.c.o
 
 examples/event/lv_example_event_3.i: examples/event/lv_example_event_3.c.i
@@ -2256,7 +2256,7 @@ examples/event/lv_example_event_3.i: examples/event/lv_example_event_3.c.i
 
 # target to preprocess a source file
 examples/event/lv_example_event_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_3.c.i
 .PHONY : examples/event/lv_example_event_3.c.i
 
 examples/event/lv_example_event_3.s: examples/event/lv_example_event_3.c.s
@@ -2264,7 +2264,7 @@ examples/event/lv_example_event_3.s: examples/event/lv_example_event_3.c.s
 
 # target to generate assembly for a file
 examples/event/lv_example_event_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_3.c.s
 .PHONY : examples/event/lv_example_event_3.c.s
 
 examples/event/lv_example_event_4.o: examples/event/lv_example_event_4.c.o
@@ -2272,7 +2272,7 @@ examples/event/lv_example_event_4.o: examples/event/lv_example_event_4.c.o
 
 # target to build an object file
 examples/event/lv_example_event_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_4.c.o
 .PHONY : examples/event/lv_example_event_4.c.o
 
 examples/event/lv_example_event_4.i: examples/event/lv_example_event_4.c.i
@@ -2280,7 +2280,7 @@ examples/event/lv_example_event_4.i: examples/event/lv_example_event_4.c.i
 
 # target to preprocess a source file
 examples/event/lv_example_event_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_4.c.i
 .PHONY : examples/event/lv_example_event_4.c.i
 
 examples/event/lv_example_event_4.s: examples/event/lv_example_event_4.c.s
@@ -2288,7 +2288,7 @@ examples/event/lv_example_event_4.s: examples/event/lv_example_event_4.c.s
 
 # target to generate assembly for a file
 examples/event/lv_example_event_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/event/lv_example_event_4.c.s
 .PHONY : examples/event/lv_example_event_4.c.s
 
 examples/get_started/lv_example_get_started_1.o: examples/get_started/lv_example_get_started_1.c.o
@@ -2296,7 +2296,7 @@ examples/get_started/lv_example_get_started_1.o: examples/get_started/lv_example
 
 # target to build an object file
 examples/get_started/lv_example_get_started_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_1.c.o
 .PHONY : examples/get_started/lv_example_get_started_1.c.o
 
 examples/get_started/lv_example_get_started_1.i: examples/get_started/lv_example_get_started_1.c.i
@@ -2304,7 +2304,7 @@ examples/get_started/lv_example_get_started_1.i: examples/get_started/lv_example
 
 # target to preprocess a source file
 examples/get_started/lv_example_get_started_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_1.c.i
 .PHONY : examples/get_started/lv_example_get_started_1.c.i
 
 examples/get_started/lv_example_get_started_1.s: examples/get_started/lv_example_get_started_1.c.s
@@ -2312,7 +2312,7 @@ examples/get_started/lv_example_get_started_1.s: examples/get_started/lv_example
 
 # target to generate assembly for a file
 examples/get_started/lv_example_get_started_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_1.c.s
 .PHONY : examples/get_started/lv_example_get_started_1.c.s
 
 examples/get_started/lv_example_get_started_2.o: examples/get_started/lv_example_get_started_2.c.o
@@ -2320,7 +2320,7 @@ examples/get_started/lv_example_get_started_2.o: examples/get_started/lv_example
 
 # target to build an object file
 examples/get_started/lv_example_get_started_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_2.c.o
 .PHONY : examples/get_started/lv_example_get_started_2.c.o
 
 examples/get_started/lv_example_get_started_2.i: examples/get_started/lv_example_get_started_2.c.i
@@ -2328,7 +2328,7 @@ examples/get_started/lv_example_get_started_2.i: examples/get_started/lv_example
 
 # target to preprocess a source file
 examples/get_started/lv_example_get_started_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_2.c.i
 .PHONY : examples/get_started/lv_example_get_started_2.c.i
 
 examples/get_started/lv_example_get_started_2.s: examples/get_started/lv_example_get_started_2.c.s
@@ -2336,7 +2336,7 @@ examples/get_started/lv_example_get_started_2.s: examples/get_started/lv_example
 
 # target to generate assembly for a file
 examples/get_started/lv_example_get_started_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_2.c.s
 .PHONY : examples/get_started/lv_example_get_started_2.c.s
 
 examples/get_started/lv_example_get_started_3.o: examples/get_started/lv_example_get_started_3.c.o
@@ -2344,7 +2344,7 @@ examples/get_started/lv_example_get_started_3.o: examples/get_started/lv_example
 
 # target to build an object file
 examples/get_started/lv_example_get_started_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_3.c.o
 .PHONY : examples/get_started/lv_example_get_started_3.c.o
 
 examples/get_started/lv_example_get_started_3.i: examples/get_started/lv_example_get_started_3.c.i
@@ -2352,7 +2352,7 @@ examples/get_started/lv_example_get_started_3.i: examples/get_started/lv_example
 
 # target to preprocess a source file
 examples/get_started/lv_example_get_started_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_3.c.i
 .PHONY : examples/get_started/lv_example_get_started_3.c.i
 
 examples/get_started/lv_example_get_started_3.s: examples/get_started/lv_example_get_started_3.c.s
@@ -2360,7 +2360,7 @@ examples/get_started/lv_example_get_started_3.s: examples/get_started/lv_example
 
 # target to generate assembly for a file
 examples/get_started/lv_example_get_started_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/get_started/lv_example_get_started_3.c.s
 .PHONY : examples/get_started/lv_example_get_started_3.c.s
 
 examples/layouts/flex/lv_example_flex_1.o: examples/layouts/flex/lv_example_flex_1.c.o
@@ -2368,7 +2368,7 @@ examples/layouts/flex/lv_example_flex_1.o: examples/layouts/flex/lv_example_flex
 
 # target to build an object file
 examples/layouts/flex/lv_example_flex_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_1.c.o
 .PHONY : examples/layouts/flex/lv_example_flex_1.c.o
 
 examples/layouts/flex/lv_example_flex_1.i: examples/layouts/flex/lv_example_flex_1.c.i
@@ -2376,7 +2376,7 @@ examples/layouts/flex/lv_example_flex_1.i: examples/layouts/flex/lv_example_flex
 
 # target to preprocess a source file
 examples/layouts/flex/lv_example_flex_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_1.c.i
 .PHONY : examples/layouts/flex/lv_example_flex_1.c.i
 
 examples/layouts/flex/lv_example_flex_1.s: examples/layouts/flex/lv_example_flex_1.c.s
@@ -2384,7 +2384,7 @@ examples/layouts/flex/lv_example_flex_1.s: examples/layouts/flex/lv_example_flex
 
 # target to generate assembly for a file
 examples/layouts/flex/lv_example_flex_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_1.c.s
 .PHONY : examples/layouts/flex/lv_example_flex_1.c.s
 
 examples/layouts/flex/lv_example_flex_2.o: examples/layouts/flex/lv_example_flex_2.c.o
@@ -2392,7 +2392,7 @@ examples/layouts/flex/lv_example_flex_2.o: examples/layouts/flex/lv_example_flex
 
 # target to build an object file
 examples/layouts/flex/lv_example_flex_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_2.c.o
 .PHONY : examples/layouts/flex/lv_example_flex_2.c.o
 
 examples/layouts/flex/lv_example_flex_2.i: examples/layouts/flex/lv_example_flex_2.c.i
@@ -2400,7 +2400,7 @@ examples/layouts/flex/lv_example_flex_2.i: examples/layouts/flex/lv_example_flex
 
 # target to preprocess a source file
 examples/layouts/flex/lv_example_flex_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_2.c.i
 .PHONY : examples/layouts/flex/lv_example_flex_2.c.i
 
 examples/layouts/flex/lv_example_flex_2.s: examples/layouts/flex/lv_example_flex_2.c.s
@@ -2408,7 +2408,7 @@ examples/layouts/flex/lv_example_flex_2.s: examples/layouts/flex/lv_example_flex
 
 # target to generate assembly for a file
 examples/layouts/flex/lv_example_flex_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_2.c.s
 .PHONY : examples/layouts/flex/lv_example_flex_2.c.s
 
 examples/layouts/flex/lv_example_flex_3.o: examples/layouts/flex/lv_example_flex_3.c.o
@@ -2416,7 +2416,7 @@ examples/layouts/flex/lv_example_flex_3.o: examples/layouts/flex/lv_example_flex
 
 # target to build an object file
 examples/layouts/flex/lv_example_flex_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_3.c.o
 .PHONY : examples/layouts/flex/lv_example_flex_3.c.o
 
 examples/layouts/flex/lv_example_flex_3.i: examples/layouts/flex/lv_example_flex_3.c.i
@@ -2424,7 +2424,7 @@ examples/layouts/flex/lv_example_flex_3.i: examples/layouts/flex/lv_example_flex
 
 # target to preprocess a source file
 examples/layouts/flex/lv_example_flex_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_3.c.i
 .PHONY : examples/layouts/flex/lv_example_flex_3.c.i
 
 examples/layouts/flex/lv_example_flex_3.s: examples/layouts/flex/lv_example_flex_3.c.s
@@ -2432,7 +2432,7 @@ examples/layouts/flex/lv_example_flex_3.s: examples/layouts/flex/lv_example_flex
 
 # target to generate assembly for a file
 examples/layouts/flex/lv_example_flex_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_3.c.s
 .PHONY : examples/layouts/flex/lv_example_flex_3.c.s
 
 examples/layouts/flex/lv_example_flex_4.o: examples/layouts/flex/lv_example_flex_4.c.o
@@ -2440,7 +2440,7 @@ examples/layouts/flex/lv_example_flex_4.o: examples/layouts/flex/lv_example_flex
 
 # target to build an object file
 examples/layouts/flex/lv_example_flex_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_4.c.o
 .PHONY : examples/layouts/flex/lv_example_flex_4.c.o
 
 examples/layouts/flex/lv_example_flex_4.i: examples/layouts/flex/lv_example_flex_4.c.i
@@ -2448,7 +2448,7 @@ examples/layouts/flex/lv_example_flex_4.i: examples/layouts/flex/lv_example_flex
 
 # target to preprocess a source file
 examples/layouts/flex/lv_example_flex_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_4.c.i
 .PHONY : examples/layouts/flex/lv_example_flex_4.c.i
 
 examples/layouts/flex/lv_example_flex_4.s: examples/layouts/flex/lv_example_flex_4.c.s
@@ -2456,7 +2456,7 @@ examples/layouts/flex/lv_example_flex_4.s: examples/layouts/flex/lv_example_flex
 
 # target to generate assembly for a file
 examples/layouts/flex/lv_example_flex_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_4.c.s
 .PHONY : examples/layouts/flex/lv_example_flex_4.c.s
 
 examples/layouts/flex/lv_example_flex_5.o: examples/layouts/flex/lv_example_flex_5.c.o
@@ -2464,7 +2464,7 @@ examples/layouts/flex/lv_example_flex_5.o: examples/layouts/flex/lv_example_flex
 
 # target to build an object file
 examples/layouts/flex/lv_example_flex_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_5.c.o
 .PHONY : examples/layouts/flex/lv_example_flex_5.c.o
 
 examples/layouts/flex/lv_example_flex_5.i: examples/layouts/flex/lv_example_flex_5.c.i
@@ -2472,7 +2472,7 @@ examples/layouts/flex/lv_example_flex_5.i: examples/layouts/flex/lv_example_flex
 
 # target to preprocess a source file
 examples/layouts/flex/lv_example_flex_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_5.c.i
 .PHONY : examples/layouts/flex/lv_example_flex_5.c.i
 
 examples/layouts/flex/lv_example_flex_5.s: examples/layouts/flex/lv_example_flex_5.c.s
@@ -2480,7 +2480,7 @@ examples/layouts/flex/lv_example_flex_5.s: examples/layouts/flex/lv_example_flex
 
 # target to generate assembly for a file
 examples/layouts/flex/lv_example_flex_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_5.c.s
 .PHONY : examples/layouts/flex/lv_example_flex_5.c.s
 
 examples/layouts/flex/lv_example_flex_6.o: examples/layouts/flex/lv_example_flex_6.c.o
@@ -2488,7 +2488,7 @@ examples/layouts/flex/lv_example_flex_6.o: examples/layouts/flex/lv_example_flex
 
 # target to build an object file
 examples/layouts/flex/lv_example_flex_6.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_6.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_6.c.o
 .PHONY : examples/layouts/flex/lv_example_flex_6.c.o
 
 examples/layouts/flex/lv_example_flex_6.i: examples/layouts/flex/lv_example_flex_6.c.i
@@ -2496,7 +2496,7 @@ examples/layouts/flex/lv_example_flex_6.i: examples/layouts/flex/lv_example_flex
 
 # target to preprocess a source file
 examples/layouts/flex/lv_example_flex_6.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_6.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_6.c.i
 .PHONY : examples/layouts/flex/lv_example_flex_6.c.i
 
 examples/layouts/flex/lv_example_flex_6.s: examples/layouts/flex/lv_example_flex_6.c.s
@@ -2504,7 +2504,7 @@ examples/layouts/flex/lv_example_flex_6.s: examples/layouts/flex/lv_example_flex
 
 # target to generate assembly for a file
 examples/layouts/flex/lv_example_flex_6.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_6.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/flex/lv_example_flex_6.c.s
 .PHONY : examples/layouts/flex/lv_example_flex_6.c.s
 
 examples/layouts/grid/lv_example_grid_1.o: examples/layouts/grid/lv_example_grid_1.c.o
@@ -2512,7 +2512,7 @@ examples/layouts/grid/lv_example_grid_1.o: examples/layouts/grid/lv_example_grid
 
 # target to build an object file
 examples/layouts/grid/lv_example_grid_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_1.c.o
 .PHONY : examples/layouts/grid/lv_example_grid_1.c.o
 
 examples/layouts/grid/lv_example_grid_1.i: examples/layouts/grid/lv_example_grid_1.c.i
@@ -2520,7 +2520,7 @@ examples/layouts/grid/lv_example_grid_1.i: examples/layouts/grid/lv_example_grid
 
 # target to preprocess a source file
 examples/layouts/grid/lv_example_grid_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_1.c.i
 .PHONY : examples/layouts/grid/lv_example_grid_1.c.i
 
 examples/layouts/grid/lv_example_grid_1.s: examples/layouts/grid/lv_example_grid_1.c.s
@@ -2528,7 +2528,7 @@ examples/layouts/grid/lv_example_grid_1.s: examples/layouts/grid/lv_example_grid
 
 # target to generate assembly for a file
 examples/layouts/grid/lv_example_grid_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_1.c.s
 .PHONY : examples/layouts/grid/lv_example_grid_1.c.s
 
 examples/layouts/grid/lv_example_grid_2.o: examples/layouts/grid/lv_example_grid_2.c.o
@@ -2536,7 +2536,7 @@ examples/layouts/grid/lv_example_grid_2.o: examples/layouts/grid/lv_example_grid
 
 # target to build an object file
 examples/layouts/grid/lv_example_grid_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_2.c.o
 .PHONY : examples/layouts/grid/lv_example_grid_2.c.o
 
 examples/layouts/grid/lv_example_grid_2.i: examples/layouts/grid/lv_example_grid_2.c.i
@@ -2544,7 +2544,7 @@ examples/layouts/grid/lv_example_grid_2.i: examples/layouts/grid/lv_example_grid
 
 # target to preprocess a source file
 examples/layouts/grid/lv_example_grid_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_2.c.i
 .PHONY : examples/layouts/grid/lv_example_grid_2.c.i
 
 examples/layouts/grid/lv_example_grid_2.s: examples/layouts/grid/lv_example_grid_2.c.s
@@ -2552,7 +2552,7 @@ examples/layouts/grid/lv_example_grid_2.s: examples/layouts/grid/lv_example_grid
 
 # target to generate assembly for a file
 examples/layouts/grid/lv_example_grid_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_2.c.s
 .PHONY : examples/layouts/grid/lv_example_grid_2.c.s
 
 examples/layouts/grid/lv_example_grid_3.o: examples/layouts/grid/lv_example_grid_3.c.o
@@ -2560,7 +2560,7 @@ examples/layouts/grid/lv_example_grid_3.o: examples/layouts/grid/lv_example_grid
 
 # target to build an object file
 examples/layouts/grid/lv_example_grid_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_3.c.o
 .PHONY : examples/layouts/grid/lv_example_grid_3.c.o
 
 examples/layouts/grid/lv_example_grid_3.i: examples/layouts/grid/lv_example_grid_3.c.i
@@ -2568,7 +2568,7 @@ examples/layouts/grid/lv_example_grid_3.i: examples/layouts/grid/lv_example_grid
 
 # target to preprocess a source file
 examples/layouts/grid/lv_example_grid_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_3.c.i
 .PHONY : examples/layouts/grid/lv_example_grid_3.c.i
 
 examples/layouts/grid/lv_example_grid_3.s: examples/layouts/grid/lv_example_grid_3.c.s
@@ -2576,7 +2576,7 @@ examples/layouts/grid/lv_example_grid_3.s: examples/layouts/grid/lv_example_grid
 
 # target to generate assembly for a file
 examples/layouts/grid/lv_example_grid_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_3.c.s
 .PHONY : examples/layouts/grid/lv_example_grid_3.c.s
 
 examples/layouts/grid/lv_example_grid_4.o: examples/layouts/grid/lv_example_grid_4.c.o
@@ -2584,7 +2584,7 @@ examples/layouts/grid/lv_example_grid_4.o: examples/layouts/grid/lv_example_grid
 
 # target to build an object file
 examples/layouts/grid/lv_example_grid_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_4.c.o
 .PHONY : examples/layouts/grid/lv_example_grid_4.c.o
 
 examples/layouts/grid/lv_example_grid_4.i: examples/layouts/grid/lv_example_grid_4.c.i
@@ -2592,7 +2592,7 @@ examples/layouts/grid/lv_example_grid_4.i: examples/layouts/grid/lv_example_grid
 
 # target to preprocess a source file
 examples/layouts/grid/lv_example_grid_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_4.c.i
 .PHONY : examples/layouts/grid/lv_example_grid_4.c.i
 
 examples/layouts/grid/lv_example_grid_4.s: examples/layouts/grid/lv_example_grid_4.c.s
@@ -2600,7 +2600,7 @@ examples/layouts/grid/lv_example_grid_4.s: examples/layouts/grid/lv_example_grid
 
 # target to generate assembly for a file
 examples/layouts/grid/lv_example_grid_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_4.c.s
 .PHONY : examples/layouts/grid/lv_example_grid_4.c.s
 
 examples/layouts/grid/lv_example_grid_5.o: examples/layouts/grid/lv_example_grid_5.c.o
@@ -2608,7 +2608,7 @@ examples/layouts/grid/lv_example_grid_5.o: examples/layouts/grid/lv_example_grid
 
 # target to build an object file
 examples/layouts/grid/lv_example_grid_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_5.c.o
 .PHONY : examples/layouts/grid/lv_example_grid_5.c.o
 
 examples/layouts/grid/lv_example_grid_5.i: examples/layouts/grid/lv_example_grid_5.c.i
@@ -2616,7 +2616,7 @@ examples/layouts/grid/lv_example_grid_5.i: examples/layouts/grid/lv_example_grid
 
 # target to preprocess a source file
 examples/layouts/grid/lv_example_grid_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_5.c.i
 .PHONY : examples/layouts/grid/lv_example_grid_5.c.i
 
 examples/layouts/grid/lv_example_grid_5.s: examples/layouts/grid/lv_example_grid_5.c.s
@@ -2624,7 +2624,7 @@ examples/layouts/grid/lv_example_grid_5.s: examples/layouts/grid/lv_example_grid
 
 # target to generate assembly for a file
 examples/layouts/grid/lv_example_grid_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_5.c.s
 .PHONY : examples/layouts/grid/lv_example_grid_5.c.s
 
 examples/layouts/grid/lv_example_grid_6.o: examples/layouts/grid/lv_example_grid_6.c.o
@@ -2632,7 +2632,7 @@ examples/layouts/grid/lv_example_grid_6.o: examples/layouts/grid/lv_example_grid
 
 # target to build an object file
 examples/layouts/grid/lv_example_grid_6.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_6.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_6.c.o
 .PHONY : examples/layouts/grid/lv_example_grid_6.c.o
 
 examples/layouts/grid/lv_example_grid_6.i: examples/layouts/grid/lv_example_grid_6.c.i
@@ -2640,7 +2640,7 @@ examples/layouts/grid/lv_example_grid_6.i: examples/layouts/grid/lv_example_grid
 
 # target to preprocess a source file
 examples/layouts/grid/lv_example_grid_6.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_6.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_6.c.i
 .PHONY : examples/layouts/grid/lv_example_grid_6.c.i
 
 examples/layouts/grid/lv_example_grid_6.s: examples/layouts/grid/lv_example_grid_6.c.s
@@ -2648,7 +2648,7 @@ examples/layouts/grid/lv_example_grid_6.s: examples/layouts/grid/lv_example_grid
 
 # target to generate assembly for a file
 examples/layouts/grid/lv_example_grid_6.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_6.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/layouts/grid/lv_example_grid_6.c.s
 .PHONY : examples/layouts/grid/lv_example_grid_6.c.s
 
 examples/libs/bmp/lv_example_bmp_1.o: examples/libs/bmp/lv_example_bmp_1.c.o
@@ -2656,7 +2656,7 @@ examples/libs/bmp/lv_example_bmp_1.o: examples/libs/bmp/lv_example_bmp_1.c.o
 
 # target to build an object file
 examples/libs/bmp/lv_example_bmp_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/bmp/lv_example_bmp_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/bmp/lv_example_bmp_1.c.o
 .PHONY : examples/libs/bmp/lv_example_bmp_1.c.o
 
 examples/libs/bmp/lv_example_bmp_1.i: examples/libs/bmp/lv_example_bmp_1.c.i
@@ -2664,7 +2664,7 @@ examples/libs/bmp/lv_example_bmp_1.i: examples/libs/bmp/lv_example_bmp_1.c.i
 
 # target to preprocess a source file
 examples/libs/bmp/lv_example_bmp_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/bmp/lv_example_bmp_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/bmp/lv_example_bmp_1.c.i
 .PHONY : examples/libs/bmp/lv_example_bmp_1.c.i
 
 examples/libs/bmp/lv_example_bmp_1.s: examples/libs/bmp/lv_example_bmp_1.c.s
@@ -2672,7 +2672,7 @@ examples/libs/bmp/lv_example_bmp_1.s: examples/libs/bmp/lv_example_bmp_1.c.s
 
 # target to generate assembly for a file
 examples/libs/bmp/lv_example_bmp_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/bmp/lv_example_bmp_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/bmp/lv_example_bmp_1.c.s
 .PHONY : examples/libs/bmp/lv_example_bmp_1.c.s
 
 examples/libs/ffmpeg/lv_example_ffmpeg_1.o: examples/libs/ffmpeg/lv_example_ffmpeg_1.c.o
@@ -2680,7 +2680,7 @@ examples/libs/ffmpeg/lv_example_ffmpeg_1.o: examples/libs/ffmpeg/lv_example_ffmp
 
 # target to build an object file
 examples/libs/ffmpeg/lv_example_ffmpeg_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_1.c.o
 .PHONY : examples/libs/ffmpeg/lv_example_ffmpeg_1.c.o
 
 examples/libs/ffmpeg/lv_example_ffmpeg_1.i: examples/libs/ffmpeg/lv_example_ffmpeg_1.c.i
@@ -2688,7 +2688,7 @@ examples/libs/ffmpeg/lv_example_ffmpeg_1.i: examples/libs/ffmpeg/lv_example_ffmp
 
 # target to preprocess a source file
 examples/libs/ffmpeg/lv_example_ffmpeg_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_1.c.i
 .PHONY : examples/libs/ffmpeg/lv_example_ffmpeg_1.c.i
 
 examples/libs/ffmpeg/lv_example_ffmpeg_1.s: examples/libs/ffmpeg/lv_example_ffmpeg_1.c.s
@@ -2696,7 +2696,7 @@ examples/libs/ffmpeg/lv_example_ffmpeg_1.s: examples/libs/ffmpeg/lv_example_ffmp
 
 # target to generate assembly for a file
 examples/libs/ffmpeg/lv_example_ffmpeg_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_1.c.s
 .PHONY : examples/libs/ffmpeg/lv_example_ffmpeg_1.c.s
 
 examples/libs/ffmpeg/lv_example_ffmpeg_2.o: examples/libs/ffmpeg/lv_example_ffmpeg_2.c.o
@@ -2704,7 +2704,7 @@ examples/libs/ffmpeg/lv_example_ffmpeg_2.o: examples/libs/ffmpeg/lv_example_ffmp
 
 # target to build an object file
 examples/libs/ffmpeg/lv_example_ffmpeg_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_2.c.o
 .PHONY : examples/libs/ffmpeg/lv_example_ffmpeg_2.c.o
 
 examples/libs/ffmpeg/lv_example_ffmpeg_2.i: examples/libs/ffmpeg/lv_example_ffmpeg_2.c.i
@@ -2712,7 +2712,7 @@ examples/libs/ffmpeg/lv_example_ffmpeg_2.i: examples/libs/ffmpeg/lv_example_ffmp
 
 # target to preprocess a source file
 examples/libs/ffmpeg/lv_example_ffmpeg_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_2.c.i
 .PHONY : examples/libs/ffmpeg/lv_example_ffmpeg_2.c.i
 
 examples/libs/ffmpeg/lv_example_ffmpeg_2.s: examples/libs/ffmpeg/lv_example_ffmpeg_2.c.s
@@ -2720,7 +2720,7 @@ examples/libs/ffmpeg/lv_example_ffmpeg_2.s: examples/libs/ffmpeg/lv_example_ffmp
 
 # target to generate assembly for a file
 examples/libs/ffmpeg/lv_example_ffmpeg_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/ffmpeg/lv_example_ffmpeg_2.c.s
 .PHONY : examples/libs/ffmpeg/lv_example_ffmpeg_2.c.s
 
 examples/libs/freetype/lv_example_freetype_1.o: examples/libs/freetype/lv_example_freetype_1.c.o
@@ -2728,7 +2728,7 @@ examples/libs/freetype/lv_example_freetype_1.o: examples/libs/freetype/lv_exampl
 
 # target to build an object file
 examples/libs/freetype/lv_example_freetype_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/freetype/lv_example_freetype_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/freetype/lv_example_freetype_1.c.o
 .PHONY : examples/libs/freetype/lv_example_freetype_1.c.o
 
 examples/libs/freetype/lv_example_freetype_1.i: examples/libs/freetype/lv_example_freetype_1.c.i
@@ -2736,7 +2736,7 @@ examples/libs/freetype/lv_example_freetype_1.i: examples/libs/freetype/lv_exampl
 
 # target to preprocess a source file
 examples/libs/freetype/lv_example_freetype_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/freetype/lv_example_freetype_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/freetype/lv_example_freetype_1.c.i
 .PHONY : examples/libs/freetype/lv_example_freetype_1.c.i
 
 examples/libs/freetype/lv_example_freetype_1.s: examples/libs/freetype/lv_example_freetype_1.c.s
@@ -2744,7 +2744,7 @@ examples/libs/freetype/lv_example_freetype_1.s: examples/libs/freetype/lv_exampl
 
 # target to generate assembly for a file
 examples/libs/freetype/lv_example_freetype_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/freetype/lv_example_freetype_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/freetype/lv_example_freetype_1.c.s
 .PHONY : examples/libs/freetype/lv_example_freetype_1.c.s
 
 examples/libs/gif/img_bulb_gif.o: examples/libs/gif/img_bulb_gif.c.o
@@ -2752,7 +2752,7 @@ examples/libs/gif/img_bulb_gif.o: examples/libs/gif/img_bulb_gif.c.o
 
 # target to build an object file
 examples/libs/gif/img_bulb_gif.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/img_bulb_gif.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/img_bulb_gif.c.o
 .PHONY : examples/libs/gif/img_bulb_gif.c.o
 
 examples/libs/gif/img_bulb_gif.i: examples/libs/gif/img_bulb_gif.c.i
@@ -2760,7 +2760,7 @@ examples/libs/gif/img_bulb_gif.i: examples/libs/gif/img_bulb_gif.c.i
 
 # target to preprocess a source file
 examples/libs/gif/img_bulb_gif.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/img_bulb_gif.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/img_bulb_gif.c.i
 .PHONY : examples/libs/gif/img_bulb_gif.c.i
 
 examples/libs/gif/img_bulb_gif.s: examples/libs/gif/img_bulb_gif.c.s
@@ -2768,7 +2768,7 @@ examples/libs/gif/img_bulb_gif.s: examples/libs/gif/img_bulb_gif.c.s
 
 # target to generate assembly for a file
 examples/libs/gif/img_bulb_gif.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/img_bulb_gif.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/img_bulb_gif.c.s
 .PHONY : examples/libs/gif/img_bulb_gif.c.s
 
 examples/libs/gif/lv_example_gif_1.o: examples/libs/gif/lv_example_gif_1.c.o
@@ -2776,7 +2776,7 @@ examples/libs/gif/lv_example_gif_1.o: examples/libs/gif/lv_example_gif_1.c.o
 
 # target to build an object file
 examples/libs/gif/lv_example_gif_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/lv_example_gif_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/lv_example_gif_1.c.o
 .PHONY : examples/libs/gif/lv_example_gif_1.c.o
 
 examples/libs/gif/lv_example_gif_1.i: examples/libs/gif/lv_example_gif_1.c.i
@@ -2784,7 +2784,7 @@ examples/libs/gif/lv_example_gif_1.i: examples/libs/gif/lv_example_gif_1.c.i
 
 # target to preprocess a source file
 examples/libs/gif/lv_example_gif_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/lv_example_gif_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/lv_example_gif_1.c.i
 .PHONY : examples/libs/gif/lv_example_gif_1.c.i
 
 examples/libs/gif/lv_example_gif_1.s: examples/libs/gif/lv_example_gif_1.c.s
@@ -2792,7 +2792,7 @@ examples/libs/gif/lv_example_gif_1.s: examples/libs/gif/lv_example_gif_1.c.s
 
 # target to generate assembly for a file
 examples/libs/gif/lv_example_gif_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/lv_example_gif_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/gif/lv_example_gif_1.c.s
 .PHONY : examples/libs/gif/lv_example_gif_1.c.s
 
 examples/libs/png/img_wink_png.o: examples/libs/png/img_wink_png.c.o
@@ -2800,7 +2800,7 @@ examples/libs/png/img_wink_png.o: examples/libs/png/img_wink_png.c.o
 
 # target to build an object file
 examples/libs/png/img_wink_png.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/img_wink_png.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/img_wink_png.c.o
 .PHONY : examples/libs/png/img_wink_png.c.o
 
 examples/libs/png/img_wink_png.i: examples/libs/png/img_wink_png.c.i
@@ -2808,7 +2808,7 @@ examples/libs/png/img_wink_png.i: examples/libs/png/img_wink_png.c.i
 
 # target to preprocess a source file
 examples/libs/png/img_wink_png.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/img_wink_png.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/img_wink_png.c.i
 .PHONY : examples/libs/png/img_wink_png.c.i
 
 examples/libs/png/img_wink_png.s: examples/libs/png/img_wink_png.c.s
@@ -2816,7 +2816,7 @@ examples/libs/png/img_wink_png.s: examples/libs/png/img_wink_png.c.s
 
 # target to generate assembly for a file
 examples/libs/png/img_wink_png.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/img_wink_png.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/img_wink_png.c.s
 .PHONY : examples/libs/png/img_wink_png.c.s
 
 examples/libs/png/lv_example_png_1.o: examples/libs/png/lv_example_png_1.c.o
@@ -2824,7 +2824,7 @@ examples/libs/png/lv_example_png_1.o: examples/libs/png/lv_example_png_1.c.o
 
 # target to build an object file
 examples/libs/png/lv_example_png_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/lv_example_png_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/lv_example_png_1.c.o
 .PHONY : examples/libs/png/lv_example_png_1.c.o
 
 examples/libs/png/lv_example_png_1.i: examples/libs/png/lv_example_png_1.c.i
@@ -2832,7 +2832,7 @@ examples/libs/png/lv_example_png_1.i: examples/libs/png/lv_example_png_1.c.i
 
 # target to preprocess a source file
 examples/libs/png/lv_example_png_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/lv_example_png_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/lv_example_png_1.c.i
 .PHONY : examples/libs/png/lv_example_png_1.c.i
 
 examples/libs/png/lv_example_png_1.s: examples/libs/png/lv_example_png_1.c.s
@@ -2840,7 +2840,7 @@ examples/libs/png/lv_example_png_1.s: examples/libs/png/lv_example_png_1.c.s
 
 # target to generate assembly for a file
 examples/libs/png/lv_example_png_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/lv_example_png_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/png/lv_example_png_1.c.s
 .PHONY : examples/libs/png/lv_example_png_1.c.s
 
 examples/libs/qrcode/lv_example_qrcode_1.o: examples/libs/qrcode/lv_example_qrcode_1.c.o
@@ -2848,7 +2848,7 @@ examples/libs/qrcode/lv_example_qrcode_1.o: examples/libs/qrcode/lv_example_qrco
 
 # target to build an object file
 examples/libs/qrcode/lv_example_qrcode_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/qrcode/lv_example_qrcode_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/qrcode/lv_example_qrcode_1.c.o
 .PHONY : examples/libs/qrcode/lv_example_qrcode_1.c.o
 
 examples/libs/qrcode/lv_example_qrcode_1.i: examples/libs/qrcode/lv_example_qrcode_1.c.i
@@ -2856,7 +2856,7 @@ examples/libs/qrcode/lv_example_qrcode_1.i: examples/libs/qrcode/lv_example_qrco
 
 # target to preprocess a source file
 examples/libs/qrcode/lv_example_qrcode_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/qrcode/lv_example_qrcode_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/qrcode/lv_example_qrcode_1.c.i
 .PHONY : examples/libs/qrcode/lv_example_qrcode_1.c.i
 
 examples/libs/qrcode/lv_example_qrcode_1.s: examples/libs/qrcode/lv_example_qrcode_1.c.s
@@ -2864,7 +2864,7 @@ examples/libs/qrcode/lv_example_qrcode_1.s: examples/libs/qrcode/lv_example_qrco
 
 # target to generate assembly for a file
 examples/libs/qrcode/lv_example_qrcode_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/qrcode/lv_example_qrcode_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/qrcode/lv_example_qrcode_1.c.s
 .PHONY : examples/libs/qrcode/lv_example_qrcode_1.c.s
 
 examples/libs/rlottie/lv_example_rlottie_1.o: examples/libs/rlottie/lv_example_rlottie_1.c.o
@@ -2872,7 +2872,7 @@ examples/libs/rlottie/lv_example_rlottie_1.o: examples/libs/rlottie/lv_example_r
 
 # target to build an object file
 examples/libs/rlottie/lv_example_rlottie_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_1.c.o
 .PHONY : examples/libs/rlottie/lv_example_rlottie_1.c.o
 
 examples/libs/rlottie/lv_example_rlottie_1.i: examples/libs/rlottie/lv_example_rlottie_1.c.i
@@ -2880,7 +2880,7 @@ examples/libs/rlottie/lv_example_rlottie_1.i: examples/libs/rlottie/lv_example_r
 
 # target to preprocess a source file
 examples/libs/rlottie/lv_example_rlottie_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_1.c.i
 .PHONY : examples/libs/rlottie/lv_example_rlottie_1.c.i
 
 examples/libs/rlottie/lv_example_rlottie_1.s: examples/libs/rlottie/lv_example_rlottie_1.c.s
@@ -2888,7 +2888,7 @@ examples/libs/rlottie/lv_example_rlottie_1.s: examples/libs/rlottie/lv_example_r
 
 # target to generate assembly for a file
 examples/libs/rlottie/lv_example_rlottie_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_1.c.s
 .PHONY : examples/libs/rlottie/lv_example_rlottie_1.c.s
 
 examples/libs/rlottie/lv_example_rlottie_2.o: examples/libs/rlottie/lv_example_rlottie_2.c.o
@@ -2896,7 +2896,7 @@ examples/libs/rlottie/lv_example_rlottie_2.o: examples/libs/rlottie/lv_example_r
 
 # target to build an object file
 examples/libs/rlottie/lv_example_rlottie_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_2.c.o
 .PHONY : examples/libs/rlottie/lv_example_rlottie_2.c.o
 
 examples/libs/rlottie/lv_example_rlottie_2.i: examples/libs/rlottie/lv_example_rlottie_2.c.i
@@ -2904,7 +2904,7 @@ examples/libs/rlottie/lv_example_rlottie_2.i: examples/libs/rlottie/lv_example_r
 
 # target to preprocess a source file
 examples/libs/rlottie/lv_example_rlottie_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_2.c.i
 .PHONY : examples/libs/rlottie/lv_example_rlottie_2.c.i
 
 examples/libs/rlottie/lv_example_rlottie_2.s: examples/libs/rlottie/lv_example_rlottie_2.c.s
@@ -2912,7 +2912,7 @@ examples/libs/rlottie/lv_example_rlottie_2.s: examples/libs/rlottie/lv_example_r
 
 # target to generate assembly for a file
 examples/libs/rlottie/lv_example_rlottie_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_2.c.s
 .PHONY : examples/libs/rlottie/lv_example_rlottie_2.c.s
 
 examples/libs/rlottie/lv_example_rlottie_approve.o: examples/libs/rlottie/lv_example_rlottie_approve.c.o
@@ -2920,7 +2920,7 @@ examples/libs/rlottie/lv_example_rlottie_approve.o: examples/libs/rlottie/lv_exa
 
 # target to build an object file
 examples/libs/rlottie/lv_example_rlottie_approve.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_approve.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_approve.c.o
 .PHONY : examples/libs/rlottie/lv_example_rlottie_approve.c.o
 
 examples/libs/rlottie/lv_example_rlottie_approve.i: examples/libs/rlottie/lv_example_rlottie_approve.c.i
@@ -2928,7 +2928,7 @@ examples/libs/rlottie/lv_example_rlottie_approve.i: examples/libs/rlottie/lv_exa
 
 # target to preprocess a source file
 examples/libs/rlottie/lv_example_rlottie_approve.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_approve.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_approve.c.i
 .PHONY : examples/libs/rlottie/lv_example_rlottie_approve.c.i
 
 examples/libs/rlottie/lv_example_rlottie_approve.s: examples/libs/rlottie/lv_example_rlottie_approve.c.s
@@ -2936,7 +2936,7 @@ examples/libs/rlottie/lv_example_rlottie_approve.s: examples/libs/rlottie/lv_exa
 
 # target to generate assembly for a file
 examples/libs/rlottie/lv_example_rlottie_approve.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_approve.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/rlottie/lv_example_rlottie_approve.c.s
 .PHONY : examples/libs/rlottie/lv_example_rlottie_approve.c.s
 
 examples/libs/sjpg/lv_example_sjpg_1.o: examples/libs/sjpg/lv_example_sjpg_1.c.o
@@ -2944,7 +2944,7 @@ examples/libs/sjpg/lv_example_sjpg_1.o: examples/libs/sjpg/lv_example_sjpg_1.c.o
 
 # target to build an object file
 examples/libs/sjpg/lv_example_sjpg_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/sjpg/lv_example_sjpg_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/sjpg/lv_example_sjpg_1.c.o
 .PHONY : examples/libs/sjpg/lv_example_sjpg_1.c.o
 
 examples/libs/sjpg/lv_example_sjpg_1.i: examples/libs/sjpg/lv_example_sjpg_1.c.i
@@ -2952,7 +2952,7 @@ examples/libs/sjpg/lv_example_sjpg_1.i: examples/libs/sjpg/lv_example_sjpg_1.c.i
 
 # target to preprocess a source file
 examples/libs/sjpg/lv_example_sjpg_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/sjpg/lv_example_sjpg_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/sjpg/lv_example_sjpg_1.c.i
 .PHONY : examples/libs/sjpg/lv_example_sjpg_1.c.i
 
 examples/libs/sjpg/lv_example_sjpg_1.s: examples/libs/sjpg/lv_example_sjpg_1.c.s
@@ -2960,7 +2960,7 @@ examples/libs/sjpg/lv_example_sjpg_1.s: examples/libs/sjpg/lv_example_sjpg_1.c.s
 
 # target to generate assembly for a file
 examples/libs/sjpg/lv_example_sjpg_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/sjpg/lv_example_sjpg_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/libs/sjpg/lv_example_sjpg_1.c.s
 .PHONY : examples/libs/sjpg/lv_example_sjpg_1.c.s
 
 examples/others/fragment/lv_example_fragment_1.o: examples/others/fragment/lv_example_fragment_1.c.o
@@ -2968,7 +2968,7 @@ examples/others/fragment/lv_example_fragment_1.o: examples/others/fragment/lv_ex
 
 # target to build an object file
 examples/others/fragment/lv_example_fragment_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_1.c.o
 .PHONY : examples/others/fragment/lv_example_fragment_1.c.o
 
 examples/others/fragment/lv_example_fragment_1.i: examples/others/fragment/lv_example_fragment_1.c.i
@@ -2976,7 +2976,7 @@ examples/others/fragment/lv_example_fragment_1.i: examples/others/fragment/lv_ex
 
 # target to preprocess a source file
 examples/others/fragment/lv_example_fragment_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_1.c.i
 .PHONY : examples/others/fragment/lv_example_fragment_1.c.i
 
 examples/others/fragment/lv_example_fragment_1.s: examples/others/fragment/lv_example_fragment_1.c.s
@@ -2984,7 +2984,7 @@ examples/others/fragment/lv_example_fragment_1.s: examples/others/fragment/lv_ex
 
 # target to generate assembly for a file
 examples/others/fragment/lv_example_fragment_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_1.c.s
 .PHONY : examples/others/fragment/lv_example_fragment_1.c.s
 
 examples/others/fragment/lv_example_fragment_2.o: examples/others/fragment/lv_example_fragment_2.c.o
@@ -2992,7 +2992,7 @@ examples/others/fragment/lv_example_fragment_2.o: examples/others/fragment/lv_ex
 
 # target to build an object file
 examples/others/fragment/lv_example_fragment_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_2.c.o
 .PHONY : examples/others/fragment/lv_example_fragment_2.c.o
 
 examples/others/fragment/lv_example_fragment_2.i: examples/others/fragment/lv_example_fragment_2.c.i
@@ -3000,7 +3000,7 @@ examples/others/fragment/lv_example_fragment_2.i: examples/others/fragment/lv_ex
 
 # target to preprocess a source file
 examples/others/fragment/lv_example_fragment_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_2.c.i
 .PHONY : examples/others/fragment/lv_example_fragment_2.c.i
 
 examples/others/fragment/lv_example_fragment_2.s: examples/others/fragment/lv_example_fragment_2.c.s
@@ -3008,7 +3008,7 @@ examples/others/fragment/lv_example_fragment_2.s: examples/others/fragment/lv_ex
 
 # target to generate assembly for a file
 examples/others/fragment/lv_example_fragment_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/fragment/lv_example_fragment_2.c.s
 .PHONY : examples/others/fragment/lv_example_fragment_2.c.s
 
 examples/others/gridnav/lv_example_gridnav_1.o: examples/others/gridnav/lv_example_gridnav_1.c.o
@@ -3016,7 +3016,7 @@ examples/others/gridnav/lv_example_gridnav_1.o: examples/others/gridnav/lv_examp
 
 # target to build an object file
 examples/others/gridnav/lv_example_gridnav_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_1.c.o
 .PHONY : examples/others/gridnav/lv_example_gridnav_1.c.o
 
 examples/others/gridnav/lv_example_gridnav_1.i: examples/others/gridnav/lv_example_gridnav_1.c.i
@@ -3024,7 +3024,7 @@ examples/others/gridnav/lv_example_gridnav_1.i: examples/others/gridnav/lv_examp
 
 # target to preprocess a source file
 examples/others/gridnav/lv_example_gridnav_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_1.c.i
 .PHONY : examples/others/gridnav/lv_example_gridnav_1.c.i
 
 examples/others/gridnav/lv_example_gridnav_1.s: examples/others/gridnav/lv_example_gridnav_1.c.s
@@ -3032,7 +3032,7 @@ examples/others/gridnav/lv_example_gridnav_1.s: examples/others/gridnav/lv_examp
 
 # target to generate assembly for a file
 examples/others/gridnav/lv_example_gridnav_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_1.c.s
 .PHONY : examples/others/gridnav/lv_example_gridnav_1.c.s
 
 examples/others/gridnav/lv_example_gridnav_2.o: examples/others/gridnav/lv_example_gridnav_2.c.o
@@ -3040,7 +3040,7 @@ examples/others/gridnav/lv_example_gridnav_2.o: examples/others/gridnav/lv_examp
 
 # target to build an object file
 examples/others/gridnav/lv_example_gridnav_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_2.c.o
 .PHONY : examples/others/gridnav/lv_example_gridnav_2.c.o
 
 examples/others/gridnav/lv_example_gridnav_2.i: examples/others/gridnav/lv_example_gridnav_2.c.i
@@ -3048,7 +3048,7 @@ examples/others/gridnav/lv_example_gridnav_2.i: examples/others/gridnav/lv_examp
 
 # target to preprocess a source file
 examples/others/gridnav/lv_example_gridnav_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_2.c.i
 .PHONY : examples/others/gridnav/lv_example_gridnav_2.c.i
 
 examples/others/gridnav/lv_example_gridnav_2.s: examples/others/gridnav/lv_example_gridnav_2.c.s
@@ -3056,7 +3056,7 @@ examples/others/gridnav/lv_example_gridnav_2.s: examples/others/gridnav/lv_examp
 
 # target to generate assembly for a file
 examples/others/gridnav/lv_example_gridnav_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_2.c.s
 .PHONY : examples/others/gridnav/lv_example_gridnav_2.c.s
 
 examples/others/gridnav/lv_example_gridnav_3.o: examples/others/gridnav/lv_example_gridnav_3.c.o
@@ -3064,7 +3064,7 @@ examples/others/gridnav/lv_example_gridnav_3.o: examples/others/gridnav/lv_examp
 
 # target to build an object file
 examples/others/gridnav/lv_example_gridnav_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_3.c.o
 .PHONY : examples/others/gridnav/lv_example_gridnav_3.c.o
 
 examples/others/gridnav/lv_example_gridnav_3.i: examples/others/gridnav/lv_example_gridnav_3.c.i
@@ -3072,7 +3072,7 @@ examples/others/gridnav/lv_example_gridnav_3.i: examples/others/gridnav/lv_examp
 
 # target to preprocess a source file
 examples/others/gridnav/lv_example_gridnav_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_3.c.i
 .PHONY : examples/others/gridnav/lv_example_gridnav_3.c.i
 
 examples/others/gridnav/lv_example_gridnav_3.s: examples/others/gridnav/lv_example_gridnav_3.c.s
@@ -3080,7 +3080,7 @@ examples/others/gridnav/lv_example_gridnav_3.s: examples/others/gridnav/lv_examp
 
 # target to generate assembly for a file
 examples/others/gridnav/lv_example_gridnav_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_3.c.s
 .PHONY : examples/others/gridnav/lv_example_gridnav_3.c.s
 
 examples/others/gridnav/lv_example_gridnav_4.o: examples/others/gridnav/lv_example_gridnav_4.c.o
@@ -3088,7 +3088,7 @@ examples/others/gridnav/lv_example_gridnav_4.o: examples/others/gridnav/lv_examp
 
 # target to build an object file
 examples/others/gridnav/lv_example_gridnav_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_4.c.o
 .PHONY : examples/others/gridnav/lv_example_gridnav_4.c.o
 
 examples/others/gridnav/lv_example_gridnav_4.i: examples/others/gridnav/lv_example_gridnav_4.c.i
@@ -3096,7 +3096,7 @@ examples/others/gridnav/lv_example_gridnav_4.i: examples/others/gridnav/lv_examp
 
 # target to preprocess a source file
 examples/others/gridnav/lv_example_gridnav_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_4.c.i
 .PHONY : examples/others/gridnav/lv_example_gridnav_4.c.i
 
 examples/others/gridnav/lv_example_gridnav_4.s: examples/others/gridnav/lv_example_gridnav_4.c.s
@@ -3104,7 +3104,7 @@ examples/others/gridnav/lv_example_gridnav_4.s: examples/others/gridnav/lv_examp
 
 # target to generate assembly for a file
 examples/others/gridnav/lv_example_gridnav_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/gridnav/lv_example_gridnav_4.c.s
 .PHONY : examples/others/gridnav/lv_example_gridnav_4.c.s
 
 examples/others/ime/lv_example_ime_pinyin_1.o: examples/others/ime/lv_example_ime_pinyin_1.c.o
@@ -3112,7 +3112,7 @@ examples/others/ime/lv_example_ime_pinyin_1.o: examples/others/ime/lv_example_im
 
 # target to build an object file
 examples/others/ime/lv_example_ime_pinyin_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_1.c.o
 .PHONY : examples/others/ime/lv_example_ime_pinyin_1.c.o
 
 examples/others/ime/lv_example_ime_pinyin_1.i: examples/others/ime/lv_example_ime_pinyin_1.c.i
@@ -3120,7 +3120,7 @@ examples/others/ime/lv_example_ime_pinyin_1.i: examples/others/ime/lv_example_im
 
 # target to preprocess a source file
 examples/others/ime/lv_example_ime_pinyin_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_1.c.i
 .PHONY : examples/others/ime/lv_example_ime_pinyin_1.c.i
 
 examples/others/ime/lv_example_ime_pinyin_1.s: examples/others/ime/lv_example_ime_pinyin_1.c.s
@@ -3128,7 +3128,7 @@ examples/others/ime/lv_example_ime_pinyin_1.s: examples/others/ime/lv_example_im
 
 # target to generate assembly for a file
 examples/others/ime/lv_example_ime_pinyin_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_1.c.s
 .PHONY : examples/others/ime/lv_example_ime_pinyin_1.c.s
 
 examples/others/ime/lv_example_ime_pinyin_2.o: examples/others/ime/lv_example_ime_pinyin_2.c.o
@@ -3136,7 +3136,7 @@ examples/others/ime/lv_example_ime_pinyin_2.o: examples/others/ime/lv_example_im
 
 # target to build an object file
 examples/others/ime/lv_example_ime_pinyin_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_2.c.o
 .PHONY : examples/others/ime/lv_example_ime_pinyin_2.c.o
 
 examples/others/ime/lv_example_ime_pinyin_2.i: examples/others/ime/lv_example_ime_pinyin_2.c.i
@@ -3144,7 +3144,7 @@ examples/others/ime/lv_example_ime_pinyin_2.i: examples/others/ime/lv_example_im
 
 # target to preprocess a source file
 examples/others/ime/lv_example_ime_pinyin_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_2.c.i
 .PHONY : examples/others/ime/lv_example_ime_pinyin_2.c.i
 
 examples/others/ime/lv_example_ime_pinyin_2.s: examples/others/ime/lv_example_ime_pinyin_2.c.s
@@ -3152,7 +3152,7 @@ examples/others/ime/lv_example_ime_pinyin_2.s: examples/others/ime/lv_example_im
 
 # target to generate assembly for a file
 examples/others/ime/lv_example_ime_pinyin_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/ime/lv_example_ime_pinyin_2.c.s
 .PHONY : examples/others/ime/lv_example_ime_pinyin_2.c.s
 
 examples/others/imgfont/lv_example_imgfont_1.o: examples/others/imgfont/lv_example_imgfont_1.c.o
@@ -3160,7 +3160,7 @@ examples/others/imgfont/lv_example_imgfont_1.o: examples/others/imgfont/lv_examp
 
 # target to build an object file
 examples/others/imgfont/lv_example_imgfont_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/imgfont/lv_example_imgfont_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/imgfont/lv_example_imgfont_1.c.o
 .PHONY : examples/others/imgfont/lv_example_imgfont_1.c.o
 
 examples/others/imgfont/lv_example_imgfont_1.i: examples/others/imgfont/lv_example_imgfont_1.c.i
@@ -3168,7 +3168,7 @@ examples/others/imgfont/lv_example_imgfont_1.i: examples/others/imgfont/lv_examp
 
 # target to preprocess a source file
 examples/others/imgfont/lv_example_imgfont_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/imgfont/lv_example_imgfont_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/imgfont/lv_example_imgfont_1.c.i
 .PHONY : examples/others/imgfont/lv_example_imgfont_1.c.i
 
 examples/others/imgfont/lv_example_imgfont_1.s: examples/others/imgfont/lv_example_imgfont_1.c.s
@@ -3176,7 +3176,7 @@ examples/others/imgfont/lv_example_imgfont_1.s: examples/others/imgfont/lv_examp
 
 # target to generate assembly for a file
 examples/others/imgfont/lv_example_imgfont_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/imgfont/lv_example_imgfont_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/imgfont/lv_example_imgfont_1.c.s
 .PHONY : examples/others/imgfont/lv_example_imgfont_1.c.s
 
 examples/others/monkey/lv_example_monkey_1.o: examples/others/monkey/lv_example_monkey_1.c.o
@@ -3184,7 +3184,7 @@ examples/others/monkey/lv_example_monkey_1.o: examples/others/monkey/lv_example_
 
 # target to build an object file
 examples/others/monkey/lv_example_monkey_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_1.c.o
 .PHONY : examples/others/monkey/lv_example_monkey_1.c.o
 
 examples/others/monkey/lv_example_monkey_1.i: examples/others/monkey/lv_example_monkey_1.c.i
@@ -3192,7 +3192,7 @@ examples/others/monkey/lv_example_monkey_1.i: examples/others/monkey/lv_example_
 
 # target to preprocess a source file
 examples/others/monkey/lv_example_monkey_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_1.c.i
 .PHONY : examples/others/monkey/lv_example_monkey_1.c.i
 
 examples/others/monkey/lv_example_monkey_1.s: examples/others/monkey/lv_example_monkey_1.c.s
@@ -3200,7 +3200,7 @@ examples/others/monkey/lv_example_monkey_1.s: examples/others/monkey/lv_example_
 
 # target to generate assembly for a file
 examples/others/monkey/lv_example_monkey_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_1.c.s
 .PHONY : examples/others/monkey/lv_example_monkey_1.c.s
 
 examples/others/monkey/lv_example_monkey_2.o: examples/others/monkey/lv_example_monkey_2.c.o
@@ -3208,7 +3208,7 @@ examples/others/monkey/lv_example_monkey_2.o: examples/others/monkey/lv_example_
 
 # target to build an object file
 examples/others/monkey/lv_example_monkey_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_2.c.o
 .PHONY : examples/others/monkey/lv_example_monkey_2.c.o
 
 examples/others/monkey/lv_example_monkey_2.i: examples/others/monkey/lv_example_monkey_2.c.i
@@ -3216,7 +3216,7 @@ examples/others/monkey/lv_example_monkey_2.i: examples/others/monkey/lv_example_
 
 # target to preprocess a source file
 examples/others/monkey/lv_example_monkey_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_2.c.i
 .PHONY : examples/others/monkey/lv_example_monkey_2.c.i
 
 examples/others/monkey/lv_example_monkey_2.s: examples/others/monkey/lv_example_monkey_2.c.s
@@ -3224,7 +3224,7 @@ examples/others/monkey/lv_example_monkey_2.s: examples/others/monkey/lv_example_
 
 # target to generate assembly for a file
 examples/others/monkey/lv_example_monkey_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_2.c.s
 .PHONY : examples/others/monkey/lv_example_monkey_2.c.s
 
 examples/others/monkey/lv_example_monkey_3.o: examples/others/monkey/lv_example_monkey_3.c.o
@@ -3232,7 +3232,7 @@ examples/others/monkey/lv_example_monkey_3.o: examples/others/monkey/lv_example_
 
 # target to build an object file
 examples/others/monkey/lv_example_monkey_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_3.c.o
 .PHONY : examples/others/monkey/lv_example_monkey_3.c.o
 
 examples/others/monkey/lv_example_monkey_3.i: examples/others/monkey/lv_example_monkey_3.c.i
@@ -3240,7 +3240,7 @@ examples/others/monkey/lv_example_monkey_3.i: examples/others/monkey/lv_example_
 
 # target to preprocess a source file
 examples/others/monkey/lv_example_monkey_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_3.c.i
 .PHONY : examples/others/monkey/lv_example_monkey_3.c.i
 
 examples/others/monkey/lv_example_monkey_3.s: examples/others/monkey/lv_example_monkey_3.c.s
@@ -3248,7 +3248,7 @@ examples/others/monkey/lv_example_monkey_3.s: examples/others/monkey/lv_example_
 
 # target to generate assembly for a file
 examples/others/monkey/lv_example_monkey_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/monkey/lv_example_monkey_3.c.s
 .PHONY : examples/others/monkey/lv_example_monkey_3.c.s
 
 examples/others/msg/lv_example_msg_1.o: examples/others/msg/lv_example_msg_1.c.o
@@ -3256,7 +3256,7 @@ examples/others/msg/lv_example_msg_1.o: examples/others/msg/lv_example_msg_1.c.o
 
 # target to build an object file
 examples/others/msg/lv_example_msg_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_1.c.o
 .PHONY : examples/others/msg/lv_example_msg_1.c.o
 
 examples/others/msg/lv_example_msg_1.i: examples/others/msg/lv_example_msg_1.c.i
@@ -3264,7 +3264,7 @@ examples/others/msg/lv_example_msg_1.i: examples/others/msg/lv_example_msg_1.c.i
 
 # target to preprocess a source file
 examples/others/msg/lv_example_msg_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_1.c.i
 .PHONY : examples/others/msg/lv_example_msg_1.c.i
 
 examples/others/msg/lv_example_msg_1.s: examples/others/msg/lv_example_msg_1.c.s
@@ -3272,7 +3272,7 @@ examples/others/msg/lv_example_msg_1.s: examples/others/msg/lv_example_msg_1.c.s
 
 # target to generate assembly for a file
 examples/others/msg/lv_example_msg_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_1.c.s
 .PHONY : examples/others/msg/lv_example_msg_1.c.s
 
 examples/others/msg/lv_example_msg_2.o: examples/others/msg/lv_example_msg_2.c.o
@@ -3280,7 +3280,7 @@ examples/others/msg/lv_example_msg_2.o: examples/others/msg/lv_example_msg_2.c.o
 
 # target to build an object file
 examples/others/msg/lv_example_msg_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_2.c.o
 .PHONY : examples/others/msg/lv_example_msg_2.c.o
 
 examples/others/msg/lv_example_msg_2.i: examples/others/msg/lv_example_msg_2.c.i
@@ -3288,7 +3288,7 @@ examples/others/msg/lv_example_msg_2.i: examples/others/msg/lv_example_msg_2.c.i
 
 # target to preprocess a source file
 examples/others/msg/lv_example_msg_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_2.c.i
 .PHONY : examples/others/msg/lv_example_msg_2.c.i
 
 examples/others/msg/lv_example_msg_2.s: examples/others/msg/lv_example_msg_2.c.s
@@ -3296,7 +3296,7 @@ examples/others/msg/lv_example_msg_2.s: examples/others/msg/lv_example_msg_2.c.s
 
 # target to generate assembly for a file
 examples/others/msg/lv_example_msg_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_2.c.s
 .PHONY : examples/others/msg/lv_example_msg_2.c.s
 
 examples/others/msg/lv_example_msg_3.o: examples/others/msg/lv_example_msg_3.c.o
@@ -3304,7 +3304,7 @@ examples/others/msg/lv_example_msg_3.o: examples/others/msg/lv_example_msg_3.c.o
 
 # target to build an object file
 examples/others/msg/lv_example_msg_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_3.c.o
 .PHONY : examples/others/msg/lv_example_msg_3.c.o
 
 examples/others/msg/lv_example_msg_3.i: examples/others/msg/lv_example_msg_3.c.i
@@ -3312,7 +3312,7 @@ examples/others/msg/lv_example_msg_3.i: examples/others/msg/lv_example_msg_3.c.i
 
 # target to preprocess a source file
 examples/others/msg/lv_example_msg_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_3.c.i
 .PHONY : examples/others/msg/lv_example_msg_3.c.i
 
 examples/others/msg/lv_example_msg_3.s: examples/others/msg/lv_example_msg_3.c.s
@@ -3320,7 +3320,7 @@ examples/others/msg/lv_example_msg_3.s: examples/others/msg/lv_example_msg_3.c.s
 
 # target to generate assembly for a file
 examples/others/msg/lv_example_msg_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/msg/lv_example_msg_3.c.s
 .PHONY : examples/others/msg/lv_example_msg_3.c.s
 
 examples/others/snapshot/lv_example_snapshot_1.o: examples/others/snapshot/lv_example_snapshot_1.c.o
@@ -3328,7 +3328,7 @@ examples/others/snapshot/lv_example_snapshot_1.o: examples/others/snapshot/lv_ex
 
 # target to build an object file
 examples/others/snapshot/lv_example_snapshot_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/snapshot/lv_example_snapshot_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/snapshot/lv_example_snapshot_1.c.o
 .PHONY : examples/others/snapshot/lv_example_snapshot_1.c.o
 
 examples/others/snapshot/lv_example_snapshot_1.i: examples/others/snapshot/lv_example_snapshot_1.c.i
@@ -3336,7 +3336,7 @@ examples/others/snapshot/lv_example_snapshot_1.i: examples/others/snapshot/lv_ex
 
 # target to preprocess a source file
 examples/others/snapshot/lv_example_snapshot_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/snapshot/lv_example_snapshot_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/snapshot/lv_example_snapshot_1.c.i
 .PHONY : examples/others/snapshot/lv_example_snapshot_1.c.i
 
 examples/others/snapshot/lv_example_snapshot_1.s: examples/others/snapshot/lv_example_snapshot_1.c.s
@@ -3344,7 +3344,7 @@ examples/others/snapshot/lv_example_snapshot_1.s: examples/others/snapshot/lv_ex
 
 # target to generate assembly for a file
 examples/others/snapshot/lv_example_snapshot_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/snapshot/lv_example_snapshot_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/others/snapshot/lv_example_snapshot_1.c.s
 .PHONY : examples/others/snapshot/lv_example_snapshot_1.c.s
 
 examples/porting/lv_port_disp_template.o: examples/porting/lv_port_disp_template.c.o
@@ -3352,7 +3352,7 @@ examples/porting/lv_port_disp_template.o: examples/porting/lv_port_disp_template
 
 # target to build an object file
 examples/porting/lv_port_disp_template.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_disp_template.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_disp_template.c.o
 .PHONY : examples/porting/lv_port_disp_template.c.o
 
 examples/porting/lv_port_disp_template.i: examples/porting/lv_port_disp_template.c.i
@@ -3360,7 +3360,7 @@ examples/porting/lv_port_disp_template.i: examples/porting/lv_port_disp_template
 
 # target to preprocess a source file
 examples/porting/lv_port_disp_template.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_disp_template.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_disp_template.c.i
 .PHONY : examples/porting/lv_port_disp_template.c.i
 
 examples/porting/lv_port_disp_template.s: examples/porting/lv_port_disp_template.c.s
@@ -3368,7 +3368,7 @@ examples/porting/lv_port_disp_template.s: examples/porting/lv_port_disp_template
 
 # target to generate assembly for a file
 examples/porting/lv_port_disp_template.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_disp_template.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_disp_template.c.s
 .PHONY : examples/porting/lv_port_disp_template.c.s
 
 examples/porting/lv_port_fs_template.o: examples/porting/lv_port_fs_template.c.o
@@ -3376,7 +3376,7 @@ examples/porting/lv_port_fs_template.o: examples/porting/lv_port_fs_template.c.o
 
 # target to build an object file
 examples/porting/lv_port_fs_template.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_fs_template.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_fs_template.c.o
 .PHONY : examples/porting/lv_port_fs_template.c.o
 
 examples/porting/lv_port_fs_template.i: examples/porting/lv_port_fs_template.c.i
@@ -3384,7 +3384,7 @@ examples/porting/lv_port_fs_template.i: examples/porting/lv_port_fs_template.c.i
 
 # target to preprocess a source file
 examples/porting/lv_port_fs_template.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_fs_template.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_fs_template.c.i
 .PHONY : examples/porting/lv_port_fs_template.c.i
 
 examples/porting/lv_port_fs_template.s: examples/porting/lv_port_fs_template.c.s
@@ -3392,7 +3392,7 @@ examples/porting/lv_port_fs_template.s: examples/porting/lv_port_fs_template.c.s
 
 # target to generate assembly for a file
 examples/porting/lv_port_fs_template.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_fs_template.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_fs_template.c.s
 .PHONY : examples/porting/lv_port_fs_template.c.s
 
 examples/porting/lv_port_indev_template.o: examples/porting/lv_port_indev_template.c.o
@@ -3400,7 +3400,7 @@ examples/porting/lv_port_indev_template.o: examples/porting/lv_port_indev_templa
 
 # target to build an object file
 examples/porting/lv_port_indev_template.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_indev_template.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_indev_template.c.o
 .PHONY : examples/porting/lv_port_indev_template.c.o
 
 examples/porting/lv_port_indev_template.i: examples/porting/lv_port_indev_template.c.i
@@ -3408,7 +3408,7 @@ examples/porting/lv_port_indev_template.i: examples/porting/lv_port_indev_templa
 
 # target to preprocess a source file
 examples/porting/lv_port_indev_template.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_indev_template.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_indev_template.c.i
 .PHONY : examples/porting/lv_port_indev_template.c.i
 
 examples/porting/lv_port_indev_template.s: examples/porting/lv_port_indev_template.c.s
@@ -3416,7 +3416,7 @@ examples/porting/lv_port_indev_template.s: examples/porting/lv_port_indev_templa
 
 # target to generate assembly for a file
 examples/porting/lv_port_indev_template.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_indev_template.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/porting/lv_port_indev_template.c.s
 .PHONY : examples/porting/lv_port_indev_template.c.s
 
 examples/scroll/lv_example_scroll_1.o: examples/scroll/lv_example_scroll_1.c.o
@@ -3424,7 +3424,7 @@ examples/scroll/lv_example_scroll_1.o: examples/scroll/lv_example_scroll_1.c.o
 
 # target to build an object file
 examples/scroll/lv_example_scroll_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_1.c.o
 .PHONY : examples/scroll/lv_example_scroll_1.c.o
 
 examples/scroll/lv_example_scroll_1.i: examples/scroll/lv_example_scroll_1.c.i
@@ -3432,7 +3432,7 @@ examples/scroll/lv_example_scroll_1.i: examples/scroll/lv_example_scroll_1.c.i
 
 # target to preprocess a source file
 examples/scroll/lv_example_scroll_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_1.c.i
 .PHONY : examples/scroll/lv_example_scroll_1.c.i
 
 examples/scroll/lv_example_scroll_1.s: examples/scroll/lv_example_scroll_1.c.s
@@ -3440,7 +3440,7 @@ examples/scroll/lv_example_scroll_1.s: examples/scroll/lv_example_scroll_1.c.s
 
 # target to generate assembly for a file
 examples/scroll/lv_example_scroll_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_1.c.s
 .PHONY : examples/scroll/lv_example_scroll_1.c.s
 
 examples/scroll/lv_example_scroll_2.o: examples/scroll/lv_example_scroll_2.c.o
@@ -3448,7 +3448,7 @@ examples/scroll/lv_example_scroll_2.o: examples/scroll/lv_example_scroll_2.c.o
 
 # target to build an object file
 examples/scroll/lv_example_scroll_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_2.c.o
 .PHONY : examples/scroll/lv_example_scroll_2.c.o
 
 examples/scroll/lv_example_scroll_2.i: examples/scroll/lv_example_scroll_2.c.i
@@ -3456,7 +3456,7 @@ examples/scroll/lv_example_scroll_2.i: examples/scroll/lv_example_scroll_2.c.i
 
 # target to preprocess a source file
 examples/scroll/lv_example_scroll_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_2.c.i
 .PHONY : examples/scroll/lv_example_scroll_2.c.i
 
 examples/scroll/lv_example_scroll_2.s: examples/scroll/lv_example_scroll_2.c.s
@@ -3464,7 +3464,7 @@ examples/scroll/lv_example_scroll_2.s: examples/scroll/lv_example_scroll_2.c.s
 
 # target to generate assembly for a file
 examples/scroll/lv_example_scroll_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_2.c.s
 .PHONY : examples/scroll/lv_example_scroll_2.c.s
 
 examples/scroll/lv_example_scroll_3.o: examples/scroll/lv_example_scroll_3.c.o
@@ -3472,7 +3472,7 @@ examples/scroll/lv_example_scroll_3.o: examples/scroll/lv_example_scroll_3.c.o
 
 # target to build an object file
 examples/scroll/lv_example_scroll_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_3.c.o
 .PHONY : examples/scroll/lv_example_scroll_3.c.o
 
 examples/scroll/lv_example_scroll_3.i: examples/scroll/lv_example_scroll_3.c.i
@@ -3480,7 +3480,7 @@ examples/scroll/lv_example_scroll_3.i: examples/scroll/lv_example_scroll_3.c.i
 
 # target to preprocess a source file
 examples/scroll/lv_example_scroll_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_3.c.i
 .PHONY : examples/scroll/lv_example_scroll_3.c.i
 
 examples/scroll/lv_example_scroll_3.s: examples/scroll/lv_example_scroll_3.c.s
@@ -3488,7 +3488,7 @@ examples/scroll/lv_example_scroll_3.s: examples/scroll/lv_example_scroll_3.c.s
 
 # target to generate assembly for a file
 examples/scroll/lv_example_scroll_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_3.c.s
 .PHONY : examples/scroll/lv_example_scroll_3.c.s
 
 examples/scroll/lv_example_scroll_4.o: examples/scroll/lv_example_scroll_4.c.o
@@ -3496,7 +3496,7 @@ examples/scroll/lv_example_scroll_4.o: examples/scroll/lv_example_scroll_4.c.o
 
 # target to build an object file
 examples/scroll/lv_example_scroll_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_4.c.o
 .PHONY : examples/scroll/lv_example_scroll_4.c.o
 
 examples/scroll/lv_example_scroll_4.i: examples/scroll/lv_example_scroll_4.c.i
@@ -3504,7 +3504,7 @@ examples/scroll/lv_example_scroll_4.i: examples/scroll/lv_example_scroll_4.c.i
 
 # target to preprocess a source file
 examples/scroll/lv_example_scroll_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_4.c.i
 .PHONY : examples/scroll/lv_example_scroll_4.c.i
 
 examples/scroll/lv_example_scroll_4.s: examples/scroll/lv_example_scroll_4.c.s
@@ -3512,7 +3512,7 @@ examples/scroll/lv_example_scroll_4.s: examples/scroll/lv_example_scroll_4.c.s
 
 # target to generate assembly for a file
 examples/scroll/lv_example_scroll_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_4.c.s
 .PHONY : examples/scroll/lv_example_scroll_4.c.s
 
 examples/scroll/lv_example_scroll_5.o: examples/scroll/lv_example_scroll_5.c.o
@@ -3520,7 +3520,7 @@ examples/scroll/lv_example_scroll_5.o: examples/scroll/lv_example_scroll_5.c.o
 
 # target to build an object file
 examples/scroll/lv_example_scroll_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_5.c.o
 .PHONY : examples/scroll/lv_example_scroll_5.c.o
 
 examples/scroll/lv_example_scroll_5.i: examples/scroll/lv_example_scroll_5.c.i
@@ -3528,7 +3528,7 @@ examples/scroll/lv_example_scroll_5.i: examples/scroll/lv_example_scroll_5.c.i
 
 # target to preprocess a source file
 examples/scroll/lv_example_scroll_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_5.c.i
 .PHONY : examples/scroll/lv_example_scroll_5.c.i
 
 examples/scroll/lv_example_scroll_5.s: examples/scroll/lv_example_scroll_5.c.s
@@ -3536,7 +3536,7 @@ examples/scroll/lv_example_scroll_5.s: examples/scroll/lv_example_scroll_5.c.s
 
 # target to generate assembly for a file
 examples/scroll/lv_example_scroll_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_5.c.s
 .PHONY : examples/scroll/lv_example_scroll_5.c.s
 
 examples/scroll/lv_example_scroll_6.o: examples/scroll/lv_example_scroll_6.c.o
@@ -3544,7 +3544,7 @@ examples/scroll/lv_example_scroll_6.o: examples/scroll/lv_example_scroll_6.c.o
 
 # target to build an object file
 examples/scroll/lv_example_scroll_6.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_6.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_6.c.o
 .PHONY : examples/scroll/lv_example_scroll_6.c.o
 
 examples/scroll/lv_example_scroll_6.i: examples/scroll/lv_example_scroll_6.c.i
@@ -3552,7 +3552,7 @@ examples/scroll/lv_example_scroll_6.i: examples/scroll/lv_example_scroll_6.c.i
 
 # target to preprocess a source file
 examples/scroll/lv_example_scroll_6.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_6.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_6.c.i
 .PHONY : examples/scroll/lv_example_scroll_6.c.i
 
 examples/scroll/lv_example_scroll_6.s: examples/scroll/lv_example_scroll_6.c.s
@@ -3560,7 +3560,7 @@ examples/scroll/lv_example_scroll_6.s: examples/scroll/lv_example_scroll_6.c.s
 
 # target to generate assembly for a file
 examples/scroll/lv_example_scroll_6.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_6.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/scroll/lv_example_scroll_6.c.s
 .PHONY : examples/scroll/lv_example_scroll_6.c.s
 
 examples/styles/lv_example_style_1.o: examples/styles/lv_example_style_1.c.o
@@ -3568,7 +3568,7 @@ examples/styles/lv_example_style_1.o: examples/styles/lv_example_style_1.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_1.c.o
 .PHONY : examples/styles/lv_example_style_1.c.o
 
 examples/styles/lv_example_style_1.i: examples/styles/lv_example_style_1.c.i
@@ -3576,7 +3576,7 @@ examples/styles/lv_example_style_1.i: examples/styles/lv_example_style_1.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_1.c.i
 .PHONY : examples/styles/lv_example_style_1.c.i
 
 examples/styles/lv_example_style_1.s: examples/styles/lv_example_style_1.c.s
@@ -3584,7 +3584,7 @@ examples/styles/lv_example_style_1.s: examples/styles/lv_example_style_1.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_1.c.s
 .PHONY : examples/styles/lv_example_style_1.c.s
 
 examples/styles/lv_example_style_10.o: examples/styles/lv_example_style_10.c.o
@@ -3592,7 +3592,7 @@ examples/styles/lv_example_style_10.o: examples/styles/lv_example_style_10.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_10.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_10.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_10.c.o
 .PHONY : examples/styles/lv_example_style_10.c.o
 
 examples/styles/lv_example_style_10.i: examples/styles/lv_example_style_10.c.i
@@ -3600,7 +3600,7 @@ examples/styles/lv_example_style_10.i: examples/styles/lv_example_style_10.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_10.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_10.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_10.c.i
 .PHONY : examples/styles/lv_example_style_10.c.i
 
 examples/styles/lv_example_style_10.s: examples/styles/lv_example_style_10.c.s
@@ -3608,7 +3608,7 @@ examples/styles/lv_example_style_10.s: examples/styles/lv_example_style_10.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_10.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_10.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_10.c.s
 .PHONY : examples/styles/lv_example_style_10.c.s
 
 examples/styles/lv_example_style_11.o: examples/styles/lv_example_style_11.c.o
@@ -3616,7 +3616,7 @@ examples/styles/lv_example_style_11.o: examples/styles/lv_example_style_11.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_11.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_11.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_11.c.o
 .PHONY : examples/styles/lv_example_style_11.c.o
 
 examples/styles/lv_example_style_11.i: examples/styles/lv_example_style_11.c.i
@@ -3624,7 +3624,7 @@ examples/styles/lv_example_style_11.i: examples/styles/lv_example_style_11.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_11.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_11.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_11.c.i
 .PHONY : examples/styles/lv_example_style_11.c.i
 
 examples/styles/lv_example_style_11.s: examples/styles/lv_example_style_11.c.s
@@ -3632,7 +3632,7 @@ examples/styles/lv_example_style_11.s: examples/styles/lv_example_style_11.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_11.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_11.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_11.c.s
 .PHONY : examples/styles/lv_example_style_11.c.s
 
 examples/styles/lv_example_style_12.o: examples/styles/lv_example_style_12.c.o
@@ -3640,7 +3640,7 @@ examples/styles/lv_example_style_12.o: examples/styles/lv_example_style_12.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_12.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_12.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_12.c.o
 .PHONY : examples/styles/lv_example_style_12.c.o
 
 examples/styles/lv_example_style_12.i: examples/styles/lv_example_style_12.c.i
@@ -3648,7 +3648,7 @@ examples/styles/lv_example_style_12.i: examples/styles/lv_example_style_12.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_12.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_12.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_12.c.i
 .PHONY : examples/styles/lv_example_style_12.c.i
 
 examples/styles/lv_example_style_12.s: examples/styles/lv_example_style_12.c.s
@@ -3656,7 +3656,7 @@ examples/styles/lv_example_style_12.s: examples/styles/lv_example_style_12.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_12.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_12.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_12.c.s
 .PHONY : examples/styles/lv_example_style_12.c.s
 
 examples/styles/lv_example_style_13.o: examples/styles/lv_example_style_13.c.o
@@ -3664,7 +3664,7 @@ examples/styles/lv_example_style_13.o: examples/styles/lv_example_style_13.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_13.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_13.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_13.c.o
 .PHONY : examples/styles/lv_example_style_13.c.o
 
 examples/styles/lv_example_style_13.i: examples/styles/lv_example_style_13.c.i
@@ -3672,7 +3672,7 @@ examples/styles/lv_example_style_13.i: examples/styles/lv_example_style_13.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_13.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_13.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_13.c.i
 .PHONY : examples/styles/lv_example_style_13.c.i
 
 examples/styles/lv_example_style_13.s: examples/styles/lv_example_style_13.c.s
@@ -3680,7 +3680,7 @@ examples/styles/lv_example_style_13.s: examples/styles/lv_example_style_13.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_13.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_13.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_13.c.s
 .PHONY : examples/styles/lv_example_style_13.c.s
 
 examples/styles/lv_example_style_14.o: examples/styles/lv_example_style_14.c.o
@@ -3688,7 +3688,7 @@ examples/styles/lv_example_style_14.o: examples/styles/lv_example_style_14.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_14.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_14.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_14.c.o
 .PHONY : examples/styles/lv_example_style_14.c.o
 
 examples/styles/lv_example_style_14.i: examples/styles/lv_example_style_14.c.i
@@ -3696,7 +3696,7 @@ examples/styles/lv_example_style_14.i: examples/styles/lv_example_style_14.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_14.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_14.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_14.c.i
 .PHONY : examples/styles/lv_example_style_14.c.i
 
 examples/styles/lv_example_style_14.s: examples/styles/lv_example_style_14.c.s
@@ -3704,7 +3704,7 @@ examples/styles/lv_example_style_14.s: examples/styles/lv_example_style_14.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_14.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_14.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_14.c.s
 .PHONY : examples/styles/lv_example_style_14.c.s
 
 examples/styles/lv_example_style_15.o: examples/styles/lv_example_style_15.c.o
@@ -3712,7 +3712,7 @@ examples/styles/lv_example_style_15.o: examples/styles/lv_example_style_15.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_15.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_15.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_15.c.o
 .PHONY : examples/styles/lv_example_style_15.c.o
 
 examples/styles/lv_example_style_15.i: examples/styles/lv_example_style_15.c.i
@@ -3720,7 +3720,7 @@ examples/styles/lv_example_style_15.i: examples/styles/lv_example_style_15.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_15.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_15.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_15.c.i
 .PHONY : examples/styles/lv_example_style_15.c.i
 
 examples/styles/lv_example_style_15.s: examples/styles/lv_example_style_15.c.s
@@ -3728,7 +3728,7 @@ examples/styles/lv_example_style_15.s: examples/styles/lv_example_style_15.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_15.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_15.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_15.c.s
 .PHONY : examples/styles/lv_example_style_15.c.s
 
 examples/styles/lv_example_style_2.o: examples/styles/lv_example_style_2.c.o
@@ -3736,7 +3736,7 @@ examples/styles/lv_example_style_2.o: examples/styles/lv_example_style_2.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_2.c.o
 .PHONY : examples/styles/lv_example_style_2.c.o
 
 examples/styles/lv_example_style_2.i: examples/styles/lv_example_style_2.c.i
@@ -3744,7 +3744,7 @@ examples/styles/lv_example_style_2.i: examples/styles/lv_example_style_2.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_2.c.i
 .PHONY : examples/styles/lv_example_style_2.c.i
 
 examples/styles/lv_example_style_2.s: examples/styles/lv_example_style_2.c.s
@@ -3752,7 +3752,7 @@ examples/styles/lv_example_style_2.s: examples/styles/lv_example_style_2.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_2.c.s
 .PHONY : examples/styles/lv_example_style_2.c.s
 
 examples/styles/lv_example_style_3.o: examples/styles/lv_example_style_3.c.o
@@ -3760,7 +3760,7 @@ examples/styles/lv_example_style_3.o: examples/styles/lv_example_style_3.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_3.c.o
 .PHONY : examples/styles/lv_example_style_3.c.o
 
 examples/styles/lv_example_style_3.i: examples/styles/lv_example_style_3.c.i
@@ -3768,7 +3768,7 @@ examples/styles/lv_example_style_3.i: examples/styles/lv_example_style_3.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_3.c.i
 .PHONY : examples/styles/lv_example_style_3.c.i
 
 examples/styles/lv_example_style_3.s: examples/styles/lv_example_style_3.c.s
@@ -3776,7 +3776,7 @@ examples/styles/lv_example_style_3.s: examples/styles/lv_example_style_3.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_3.c.s
 .PHONY : examples/styles/lv_example_style_3.c.s
 
 examples/styles/lv_example_style_4.o: examples/styles/lv_example_style_4.c.o
@@ -3784,7 +3784,7 @@ examples/styles/lv_example_style_4.o: examples/styles/lv_example_style_4.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_4.c.o
 .PHONY : examples/styles/lv_example_style_4.c.o
 
 examples/styles/lv_example_style_4.i: examples/styles/lv_example_style_4.c.i
@@ -3792,7 +3792,7 @@ examples/styles/lv_example_style_4.i: examples/styles/lv_example_style_4.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_4.c.i
 .PHONY : examples/styles/lv_example_style_4.c.i
 
 examples/styles/lv_example_style_4.s: examples/styles/lv_example_style_4.c.s
@@ -3800,7 +3800,7 @@ examples/styles/lv_example_style_4.s: examples/styles/lv_example_style_4.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_4.c.s
 .PHONY : examples/styles/lv_example_style_4.c.s
 
 examples/styles/lv_example_style_5.o: examples/styles/lv_example_style_5.c.o
@@ -3808,7 +3808,7 @@ examples/styles/lv_example_style_5.o: examples/styles/lv_example_style_5.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_5.c.o
 .PHONY : examples/styles/lv_example_style_5.c.o
 
 examples/styles/lv_example_style_5.i: examples/styles/lv_example_style_5.c.i
@@ -3816,7 +3816,7 @@ examples/styles/lv_example_style_5.i: examples/styles/lv_example_style_5.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_5.c.i
 .PHONY : examples/styles/lv_example_style_5.c.i
 
 examples/styles/lv_example_style_5.s: examples/styles/lv_example_style_5.c.s
@@ -3824,7 +3824,7 @@ examples/styles/lv_example_style_5.s: examples/styles/lv_example_style_5.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_5.c.s
 .PHONY : examples/styles/lv_example_style_5.c.s
 
 examples/styles/lv_example_style_6.o: examples/styles/lv_example_style_6.c.o
@@ -3832,7 +3832,7 @@ examples/styles/lv_example_style_6.o: examples/styles/lv_example_style_6.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_6.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_6.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_6.c.o
 .PHONY : examples/styles/lv_example_style_6.c.o
 
 examples/styles/lv_example_style_6.i: examples/styles/lv_example_style_6.c.i
@@ -3840,7 +3840,7 @@ examples/styles/lv_example_style_6.i: examples/styles/lv_example_style_6.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_6.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_6.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_6.c.i
 .PHONY : examples/styles/lv_example_style_6.c.i
 
 examples/styles/lv_example_style_6.s: examples/styles/lv_example_style_6.c.s
@@ -3848,7 +3848,7 @@ examples/styles/lv_example_style_6.s: examples/styles/lv_example_style_6.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_6.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_6.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_6.c.s
 .PHONY : examples/styles/lv_example_style_6.c.s
 
 examples/styles/lv_example_style_7.o: examples/styles/lv_example_style_7.c.o
@@ -3856,7 +3856,7 @@ examples/styles/lv_example_style_7.o: examples/styles/lv_example_style_7.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_7.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_7.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_7.c.o
 .PHONY : examples/styles/lv_example_style_7.c.o
 
 examples/styles/lv_example_style_7.i: examples/styles/lv_example_style_7.c.i
@@ -3864,7 +3864,7 @@ examples/styles/lv_example_style_7.i: examples/styles/lv_example_style_7.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_7.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_7.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_7.c.i
 .PHONY : examples/styles/lv_example_style_7.c.i
 
 examples/styles/lv_example_style_7.s: examples/styles/lv_example_style_7.c.s
@@ -3872,7 +3872,7 @@ examples/styles/lv_example_style_7.s: examples/styles/lv_example_style_7.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_7.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_7.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_7.c.s
 .PHONY : examples/styles/lv_example_style_7.c.s
 
 examples/styles/lv_example_style_8.o: examples/styles/lv_example_style_8.c.o
@@ -3880,7 +3880,7 @@ examples/styles/lv_example_style_8.o: examples/styles/lv_example_style_8.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_8.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_8.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_8.c.o
 .PHONY : examples/styles/lv_example_style_8.c.o
 
 examples/styles/lv_example_style_8.i: examples/styles/lv_example_style_8.c.i
@@ -3888,7 +3888,7 @@ examples/styles/lv_example_style_8.i: examples/styles/lv_example_style_8.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_8.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_8.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_8.c.i
 .PHONY : examples/styles/lv_example_style_8.c.i
 
 examples/styles/lv_example_style_8.s: examples/styles/lv_example_style_8.c.s
@@ -3896,7 +3896,7 @@ examples/styles/lv_example_style_8.s: examples/styles/lv_example_style_8.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_8.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_8.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_8.c.s
 .PHONY : examples/styles/lv_example_style_8.c.s
 
 examples/styles/lv_example_style_9.o: examples/styles/lv_example_style_9.c.o
@@ -3904,7 +3904,7 @@ examples/styles/lv_example_style_9.o: examples/styles/lv_example_style_9.c.o
 
 # target to build an object file
 examples/styles/lv_example_style_9.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_9.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_9.c.o
 .PHONY : examples/styles/lv_example_style_9.c.o
 
 examples/styles/lv_example_style_9.i: examples/styles/lv_example_style_9.c.i
@@ -3912,7 +3912,7 @@ examples/styles/lv_example_style_9.i: examples/styles/lv_example_style_9.c.i
 
 # target to preprocess a source file
 examples/styles/lv_example_style_9.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_9.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_9.c.i
 .PHONY : examples/styles/lv_example_style_9.c.i
 
 examples/styles/lv_example_style_9.s: examples/styles/lv_example_style_9.c.s
@@ -3920,7 +3920,7 @@ examples/styles/lv_example_style_9.s: examples/styles/lv_example_style_9.c.s
 
 # target to generate assembly for a file
 examples/styles/lv_example_style_9.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_9.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/styles/lv_example_style_9.c.s
 .PHONY : examples/styles/lv_example_style_9.c.s
 
 examples/widgets/animimg/lv_example_animimg_1.o: examples/widgets/animimg/lv_example_animimg_1.c.o
@@ -3928,7 +3928,7 @@ examples/widgets/animimg/lv_example_animimg_1.o: examples/widgets/animimg/lv_exa
 
 # target to build an object file
 examples/widgets/animimg/lv_example_animimg_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/animimg/lv_example_animimg_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/animimg/lv_example_animimg_1.c.o
 .PHONY : examples/widgets/animimg/lv_example_animimg_1.c.o
 
 examples/widgets/animimg/lv_example_animimg_1.i: examples/widgets/animimg/lv_example_animimg_1.c.i
@@ -3936,7 +3936,7 @@ examples/widgets/animimg/lv_example_animimg_1.i: examples/widgets/animimg/lv_exa
 
 # target to preprocess a source file
 examples/widgets/animimg/lv_example_animimg_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/animimg/lv_example_animimg_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/animimg/lv_example_animimg_1.c.i
 .PHONY : examples/widgets/animimg/lv_example_animimg_1.c.i
 
 examples/widgets/animimg/lv_example_animimg_1.s: examples/widgets/animimg/lv_example_animimg_1.c.s
@@ -3944,7 +3944,7 @@ examples/widgets/animimg/lv_example_animimg_1.s: examples/widgets/animimg/lv_exa
 
 # target to generate assembly for a file
 examples/widgets/animimg/lv_example_animimg_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/animimg/lv_example_animimg_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/animimg/lv_example_animimg_1.c.s
 .PHONY : examples/widgets/animimg/lv_example_animimg_1.c.s
 
 examples/widgets/arc/lv_example_arc_1.o: examples/widgets/arc/lv_example_arc_1.c.o
@@ -3952,7 +3952,7 @@ examples/widgets/arc/lv_example_arc_1.o: examples/widgets/arc/lv_example_arc_1.c
 
 # target to build an object file
 examples/widgets/arc/lv_example_arc_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_1.c.o
 .PHONY : examples/widgets/arc/lv_example_arc_1.c.o
 
 examples/widgets/arc/lv_example_arc_1.i: examples/widgets/arc/lv_example_arc_1.c.i
@@ -3960,7 +3960,7 @@ examples/widgets/arc/lv_example_arc_1.i: examples/widgets/arc/lv_example_arc_1.c
 
 # target to preprocess a source file
 examples/widgets/arc/lv_example_arc_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_1.c.i
 .PHONY : examples/widgets/arc/lv_example_arc_1.c.i
 
 examples/widgets/arc/lv_example_arc_1.s: examples/widgets/arc/lv_example_arc_1.c.s
@@ -3968,7 +3968,7 @@ examples/widgets/arc/lv_example_arc_1.s: examples/widgets/arc/lv_example_arc_1.c
 
 # target to generate assembly for a file
 examples/widgets/arc/lv_example_arc_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_1.c.s
 .PHONY : examples/widgets/arc/lv_example_arc_1.c.s
 
 examples/widgets/arc/lv_example_arc_2.o: examples/widgets/arc/lv_example_arc_2.c.o
@@ -3976,7 +3976,7 @@ examples/widgets/arc/lv_example_arc_2.o: examples/widgets/arc/lv_example_arc_2.c
 
 # target to build an object file
 examples/widgets/arc/lv_example_arc_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_2.c.o
 .PHONY : examples/widgets/arc/lv_example_arc_2.c.o
 
 examples/widgets/arc/lv_example_arc_2.i: examples/widgets/arc/lv_example_arc_2.c.i
@@ -3984,7 +3984,7 @@ examples/widgets/arc/lv_example_arc_2.i: examples/widgets/arc/lv_example_arc_2.c
 
 # target to preprocess a source file
 examples/widgets/arc/lv_example_arc_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_2.c.i
 .PHONY : examples/widgets/arc/lv_example_arc_2.c.i
 
 examples/widgets/arc/lv_example_arc_2.s: examples/widgets/arc/lv_example_arc_2.c.s
@@ -3992,7 +3992,7 @@ examples/widgets/arc/lv_example_arc_2.s: examples/widgets/arc/lv_example_arc_2.c
 
 # target to generate assembly for a file
 examples/widgets/arc/lv_example_arc_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/arc/lv_example_arc_2.c.s
 .PHONY : examples/widgets/arc/lv_example_arc_2.c.s
 
 examples/widgets/bar/lv_example_bar_1.o: examples/widgets/bar/lv_example_bar_1.c.o
@@ -4000,7 +4000,7 @@ examples/widgets/bar/lv_example_bar_1.o: examples/widgets/bar/lv_example_bar_1.c
 
 # target to build an object file
 examples/widgets/bar/lv_example_bar_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_1.c.o
 .PHONY : examples/widgets/bar/lv_example_bar_1.c.o
 
 examples/widgets/bar/lv_example_bar_1.i: examples/widgets/bar/lv_example_bar_1.c.i
@@ -4008,7 +4008,7 @@ examples/widgets/bar/lv_example_bar_1.i: examples/widgets/bar/lv_example_bar_1.c
 
 # target to preprocess a source file
 examples/widgets/bar/lv_example_bar_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_1.c.i
 .PHONY : examples/widgets/bar/lv_example_bar_1.c.i
 
 examples/widgets/bar/lv_example_bar_1.s: examples/widgets/bar/lv_example_bar_1.c.s
@@ -4016,7 +4016,7 @@ examples/widgets/bar/lv_example_bar_1.s: examples/widgets/bar/lv_example_bar_1.c
 
 # target to generate assembly for a file
 examples/widgets/bar/lv_example_bar_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_1.c.s
 .PHONY : examples/widgets/bar/lv_example_bar_1.c.s
 
 examples/widgets/bar/lv_example_bar_2.o: examples/widgets/bar/lv_example_bar_2.c.o
@@ -4024,7 +4024,7 @@ examples/widgets/bar/lv_example_bar_2.o: examples/widgets/bar/lv_example_bar_2.c
 
 # target to build an object file
 examples/widgets/bar/lv_example_bar_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_2.c.o
 .PHONY : examples/widgets/bar/lv_example_bar_2.c.o
 
 examples/widgets/bar/lv_example_bar_2.i: examples/widgets/bar/lv_example_bar_2.c.i
@@ -4032,7 +4032,7 @@ examples/widgets/bar/lv_example_bar_2.i: examples/widgets/bar/lv_example_bar_2.c
 
 # target to preprocess a source file
 examples/widgets/bar/lv_example_bar_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_2.c.i
 .PHONY : examples/widgets/bar/lv_example_bar_2.c.i
 
 examples/widgets/bar/lv_example_bar_2.s: examples/widgets/bar/lv_example_bar_2.c.s
@@ -4040,7 +4040,7 @@ examples/widgets/bar/lv_example_bar_2.s: examples/widgets/bar/lv_example_bar_2.c
 
 # target to generate assembly for a file
 examples/widgets/bar/lv_example_bar_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_2.c.s
 .PHONY : examples/widgets/bar/lv_example_bar_2.c.s
 
 examples/widgets/bar/lv_example_bar_3.o: examples/widgets/bar/lv_example_bar_3.c.o
@@ -4048,7 +4048,7 @@ examples/widgets/bar/lv_example_bar_3.o: examples/widgets/bar/lv_example_bar_3.c
 
 # target to build an object file
 examples/widgets/bar/lv_example_bar_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_3.c.o
 .PHONY : examples/widgets/bar/lv_example_bar_3.c.o
 
 examples/widgets/bar/lv_example_bar_3.i: examples/widgets/bar/lv_example_bar_3.c.i
@@ -4056,7 +4056,7 @@ examples/widgets/bar/lv_example_bar_3.i: examples/widgets/bar/lv_example_bar_3.c
 
 # target to preprocess a source file
 examples/widgets/bar/lv_example_bar_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_3.c.i
 .PHONY : examples/widgets/bar/lv_example_bar_3.c.i
 
 examples/widgets/bar/lv_example_bar_3.s: examples/widgets/bar/lv_example_bar_3.c.s
@@ -4064,7 +4064,7 @@ examples/widgets/bar/lv_example_bar_3.s: examples/widgets/bar/lv_example_bar_3.c
 
 # target to generate assembly for a file
 examples/widgets/bar/lv_example_bar_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_3.c.s
 .PHONY : examples/widgets/bar/lv_example_bar_3.c.s
 
 examples/widgets/bar/lv_example_bar_4.o: examples/widgets/bar/lv_example_bar_4.c.o
@@ -4072,7 +4072,7 @@ examples/widgets/bar/lv_example_bar_4.o: examples/widgets/bar/lv_example_bar_4.c
 
 # target to build an object file
 examples/widgets/bar/lv_example_bar_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_4.c.o
 .PHONY : examples/widgets/bar/lv_example_bar_4.c.o
 
 examples/widgets/bar/lv_example_bar_4.i: examples/widgets/bar/lv_example_bar_4.c.i
@@ -4080,7 +4080,7 @@ examples/widgets/bar/lv_example_bar_4.i: examples/widgets/bar/lv_example_bar_4.c
 
 # target to preprocess a source file
 examples/widgets/bar/lv_example_bar_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_4.c.i
 .PHONY : examples/widgets/bar/lv_example_bar_4.c.i
 
 examples/widgets/bar/lv_example_bar_4.s: examples/widgets/bar/lv_example_bar_4.c.s
@@ -4088,7 +4088,7 @@ examples/widgets/bar/lv_example_bar_4.s: examples/widgets/bar/lv_example_bar_4.c
 
 # target to generate assembly for a file
 examples/widgets/bar/lv_example_bar_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_4.c.s
 .PHONY : examples/widgets/bar/lv_example_bar_4.c.s
 
 examples/widgets/bar/lv_example_bar_5.o: examples/widgets/bar/lv_example_bar_5.c.o
@@ -4096,7 +4096,7 @@ examples/widgets/bar/lv_example_bar_5.o: examples/widgets/bar/lv_example_bar_5.c
 
 # target to build an object file
 examples/widgets/bar/lv_example_bar_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_5.c.o
 .PHONY : examples/widgets/bar/lv_example_bar_5.c.o
 
 examples/widgets/bar/lv_example_bar_5.i: examples/widgets/bar/lv_example_bar_5.c.i
@@ -4104,7 +4104,7 @@ examples/widgets/bar/lv_example_bar_5.i: examples/widgets/bar/lv_example_bar_5.c
 
 # target to preprocess a source file
 examples/widgets/bar/lv_example_bar_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_5.c.i
 .PHONY : examples/widgets/bar/lv_example_bar_5.c.i
 
 examples/widgets/bar/lv_example_bar_5.s: examples/widgets/bar/lv_example_bar_5.c.s
@@ -4112,7 +4112,7 @@ examples/widgets/bar/lv_example_bar_5.s: examples/widgets/bar/lv_example_bar_5.c
 
 # target to generate assembly for a file
 examples/widgets/bar/lv_example_bar_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_5.c.s
 .PHONY : examples/widgets/bar/lv_example_bar_5.c.s
 
 examples/widgets/bar/lv_example_bar_6.o: examples/widgets/bar/lv_example_bar_6.c.o
@@ -4120,7 +4120,7 @@ examples/widgets/bar/lv_example_bar_6.o: examples/widgets/bar/lv_example_bar_6.c
 
 # target to build an object file
 examples/widgets/bar/lv_example_bar_6.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_6.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_6.c.o
 .PHONY : examples/widgets/bar/lv_example_bar_6.c.o
 
 examples/widgets/bar/lv_example_bar_6.i: examples/widgets/bar/lv_example_bar_6.c.i
@@ -4128,7 +4128,7 @@ examples/widgets/bar/lv_example_bar_6.i: examples/widgets/bar/lv_example_bar_6.c
 
 # target to preprocess a source file
 examples/widgets/bar/lv_example_bar_6.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_6.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_6.c.i
 .PHONY : examples/widgets/bar/lv_example_bar_6.c.i
 
 examples/widgets/bar/lv_example_bar_6.s: examples/widgets/bar/lv_example_bar_6.c.s
@@ -4136,7 +4136,7 @@ examples/widgets/bar/lv_example_bar_6.s: examples/widgets/bar/lv_example_bar_6.c
 
 # target to generate assembly for a file
 examples/widgets/bar/lv_example_bar_6.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_6.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/bar/lv_example_bar_6.c.s
 .PHONY : examples/widgets/bar/lv_example_bar_6.c.s
 
 examples/widgets/btn/lv_example_btn_1.o: examples/widgets/btn/lv_example_btn_1.c.o
@@ -4144,7 +4144,7 @@ examples/widgets/btn/lv_example_btn_1.o: examples/widgets/btn/lv_example_btn_1.c
 
 # target to build an object file
 examples/widgets/btn/lv_example_btn_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_1.c.o
 .PHONY : examples/widgets/btn/lv_example_btn_1.c.o
 
 examples/widgets/btn/lv_example_btn_1.i: examples/widgets/btn/lv_example_btn_1.c.i
@@ -4152,7 +4152,7 @@ examples/widgets/btn/lv_example_btn_1.i: examples/widgets/btn/lv_example_btn_1.c
 
 # target to preprocess a source file
 examples/widgets/btn/lv_example_btn_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_1.c.i
 .PHONY : examples/widgets/btn/lv_example_btn_1.c.i
 
 examples/widgets/btn/lv_example_btn_1.s: examples/widgets/btn/lv_example_btn_1.c.s
@@ -4160,7 +4160,7 @@ examples/widgets/btn/lv_example_btn_1.s: examples/widgets/btn/lv_example_btn_1.c
 
 # target to generate assembly for a file
 examples/widgets/btn/lv_example_btn_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_1.c.s
 .PHONY : examples/widgets/btn/lv_example_btn_1.c.s
 
 examples/widgets/btn/lv_example_btn_2.o: examples/widgets/btn/lv_example_btn_2.c.o
@@ -4168,7 +4168,7 @@ examples/widgets/btn/lv_example_btn_2.o: examples/widgets/btn/lv_example_btn_2.c
 
 # target to build an object file
 examples/widgets/btn/lv_example_btn_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_2.c.o
 .PHONY : examples/widgets/btn/lv_example_btn_2.c.o
 
 examples/widgets/btn/lv_example_btn_2.i: examples/widgets/btn/lv_example_btn_2.c.i
@@ -4176,7 +4176,7 @@ examples/widgets/btn/lv_example_btn_2.i: examples/widgets/btn/lv_example_btn_2.c
 
 # target to preprocess a source file
 examples/widgets/btn/lv_example_btn_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_2.c.i
 .PHONY : examples/widgets/btn/lv_example_btn_2.c.i
 
 examples/widgets/btn/lv_example_btn_2.s: examples/widgets/btn/lv_example_btn_2.c.s
@@ -4184,7 +4184,7 @@ examples/widgets/btn/lv_example_btn_2.s: examples/widgets/btn/lv_example_btn_2.c
 
 # target to generate assembly for a file
 examples/widgets/btn/lv_example_btn_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_2.c.s
 .PHONY : examples/widgets/btn/lv_example_btn_2.c.s
 
 examples/widgets/btn/lv_example_btn_3.o: examples/widgets/btn/lv_example_btn_3.c.o
@@ -4192,7 +4192,7 @@ examples/widgets/btn/lv_example_btn_3.o: examples/widgets/btn/lv_example_btn_3.c
 
 # target to build an object file
 examples/widgets/btn/lv_example_btn_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_3.c.o
 .PHONY : examples/widgets/btn/lv_example_btn_3.c.o
 
 examples/widgets/btn/lv_example_btn_3.i: examples/widgets/btn/lv_example_btn_3.c.i
@@ -4200,7 +4200,7 @@ examples/widgets/btn/lv_example_btn_3.i: examples/widgets/btn/lv_example_btn_3.c
 
 # target to preprocess a source file
 examples/widgets/btn/lv_example_btn_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_3.c.i
 .PHONY : examples/widgets/btn/lv_example_btn_3.c.i
 
 examples/widgets/btn/lv_example_btn_3.s: examples/widgets/btn/lv_example_btn_3.c.s
@@ -4208,7 +4208,7 @@ examples/widgets/btn/lv_example_btn_3.s: examples/widgets/btn/lv_example_btn_3.c
 
 # target to generate assembly for a file
 examples/widgets/btn/lv_example_btn_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btn/lv_example_btn_3.c.s
 .PHONY : examples/widgets/btn/lv_example_btn_3.c.s
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_1.o: examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.o
@@ -4216,7 +4216,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_1.o: examples/widgets/btnmatrix/
 
 # target to build an object file
 examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.o
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.o
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_1.i: examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.i
@@ -4224,7 +4224,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_1.i: examples/widgets/btnmatrix/
 
 # target to preprocess a source file
 examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.i
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.i
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_1.s: examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.s
@@ -4232,7 +4232,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_1.s: examples/widgets/btnmatrix/
 
 # target to generate assembly for a file
 examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.s
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_1.c.s
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_2.o: examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.o
@@ -4240,7 +4240,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_2.o: examples/widgets/btnmatrix/
 
 # target to build an object file
 examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.o
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.o
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_2.i: examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.i
@@ -4248,7 +4248,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_2.i: examples/widgets/btnmatrix/
 
 # target to preprocess a source file
 examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.i
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.i
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_2.s: examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.s
@@ -4256,7 +4256,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_2.s: examples/widgets/btnmatrix/
 
 # target to generate assembly for a file
 examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.s
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_2.c.s
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_3.o: examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.o
@@ -4264,7 +4264,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_3.o: examples/widgets/btnmatrix/
 
 # target to build an object file
 examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.o
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.o
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_3.i: examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.i
@@ -4272,7 +4272,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_3.i: examples/widgets/btnmatrix/
 
 # target to preprocess a source file
 examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.i
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.i
 
 examples/widgets/btnmatrix/lv_example_btnmatrix_3.s: examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.s
@@ -4280,7 +4280,7 @@ examples/widgets/btnmatrix/lv_example_btnmatrix_3.s: examples/widgets/btnmatrix/
 
 # target to generate assembly for a file
 examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.s
 .PHONY : examples/widgets/btnmatrix/lv_example_btnmatrix_3.c.s
 
 examples/widgets/calendar/lv_example_calendar_1.o: examples/widgets/calendar/lv_example_calendar_1.c.o
@@ -4288,7 +4288,7 @@ examples/widgets/calendar/lv_example_calendar_1.o: examples/widgets/calendar/lv_
 
 # target to build an object file
 examples/widgets/calendar/lv_example_calendar_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/calendar/lv_example_calendar_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/calendar/lv_example_calendar_1.c.o
 .PHONY : examples/widgets/calendar/lv_example_calendar_1.c.o
 
 examples/widgets/calendar/lv_example_calendar_1.i: examples/widgets/calendar/lv_example_calendar_1.c.i
@@ -4296,7 +4296,7 @@ examples/widgets/calendar/lv_example_calendar_1.i: examples/widgets/calendar/lv_
 
 # target to preprocess a source file
 examples/widgets/calendar/lv_example_calendar_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/calendar/lv_example_calendar_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/calendar/lv_example_calendar_1.c.i
 .PHONY : examples/widgets/calendar/lv_example_calendar_1.c.i
 
 examples/widgets/calendar/lv_example_calendar_1.s: examples/widgets/calendar/lv_example_calendar_1.c.s
@@ -4304,7 +4304,7 @@ examples/widgets/calendar/lv_example_calendar_1.s: examples/widgets/calendar/lv_
 
 # target to generate assembly for a file
 examples/widgets/calendar/lv_example_calendar_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/calendar/lv_example_calendar_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/calendar/lv_example_calendar_1.c.s
 .PHONY : examples/widgets/calendar/lv_example_calendar_1.c.s
 
 examples/widgets/canvas/lv_example_canvas_1.o: examples/widgets/canvas/lv_example_canvas_1.c.o
@@ -4312,7 +4312,7 @@ examples/widgets/canvas/lv_example_canvas_1.o: examples/widgets/canvas/lv_exampl
 
 # target to build an object file
 examples/widgets/canvas/lv_example_canvas_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_1.c.o
 .PHONY : examples/widgets/canvas/lv_example_canvas_1.c.o
 
 examples/widgets/canvas/lv_example_canvas_1.i: examples/widgets/canvas/lv_example_canvas_1.c.i
@@ -4320,7 +4320,7 @@ examples/widgets/canvas/lv_example_canvas_1.i: examples/widgets/canvas/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/canvas/lv_example_canvas_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_1.c.i
 .PHONY : examples/widgets/canvas/lv_example_canvas_1.c.i
 
 examples/widgets/canvas/lv_example_canvas_1.s: examples/widgets/canvas/lv_example_canvas_1.c.s
@@ -4328,7 +4328,7 @@ examples/widgets/canvas/lv_example_canvas_1.s: examples/widgets/canvas/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/canvas/lv_example_canvas_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_1.c.s
 .PHONY : examples/widgets/canvas/lv_example_canvas_1.c.s
 
 examples/widgets/canvas/lv_example_canvas_2.o: examples/widgets/canvas/lv_example_canvas_2.c.o
@@ -4336,7 +4336,7 @@ examples/widgets/canvas/lv_example_canvas_2.o: examples/widgets/canvas/lv_exampl
 
 # target to build an object file
 examples/widgets/canvas/lv_example_canvas_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_2.c.o
 .PHONY : examples/widgets/canvas/lv_example_canvas_2.c.o
 
 examples/widgets/canvas/lv_example_canvas_2.i: examples/widgets/canvas/lv_example_canvas_2.c.i
@@ -4344,7 +4344,7 @@ examples/widgets/canvas/lv_example_canvas_2.i: examples/widgets/canvas/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/canvas/lv_example_canvas_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_2.c.i
 .PHONY : examples/widgets/canvas/lv_example_canvas_2.c.i
 
 examples/widgets/canvas/lv_example_canvas_2.s: examples/widgets/canvas/lv_example_canvas_2.c.s
@@ -4352,7 +4352,7 @@ examples/widgets/canvas/lv_example_canvas_2.s: examples/widgets/canvas/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/canvas/lv_example_canvas_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/canvas/lv_example_canvas_2.c.s
 .PHONY : examples/widgets/canvas/lv_example_canvas_2.c.s
 
 examples/widgets/chart/lv_example_chart_1.o: examples/widgets/chart/lv_example_chart_1.c.o
@@ -4360,7 +4360,7 @@ examples/widgets/chart/lv_example_chart_1.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_1.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_1.c.o
 
 examples/widgets/chart/lv_example_chart_1.i: examples/widgets/chart/lv_example_chart_1.c.i
@@ -4368,7 +4368,7 @@ examples/widgets/chart/lv_example_chart_1.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_1.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_1.c.i
 
 examples/widgets/chart/lv_example_chart_1.s: examples/widgets/chart/lv_example_chart_1.c.s
@@ -4376,7 +4376,7 @@ examples/widgets/chart/lv_example_chart_1.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_1.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_1.c.s
 
 examples/widgets/chart/lv_example_chart_2.o: examples/widgets/chart/lv_example_chart_2.c.o
@@ -4384,7 +4384,7 @@ examples/widgets/chart/lv_example_chart_2.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_2.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_2.c.o
 
 examples/widgets/chart/lv_example_chart_2.i: examples/widgets/chart/lv_example_chart_2.c.i
@@ -4392,7 +4392,7 @@ examples/widgets/chart/lv_example_chart_2.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_2.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_2.c.i
 
 examples/widgets/chart/lv_example_chart_2.s: examples/widgets/chart/lv_example_chart_2.c.s
@@ -4400,7 +4400,7 @@ examples/widgets/chart/lv_example_chart_2.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_2.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_2.c.s
 
 examples/widgets/chart/lv_example_chart_3.o: examples/widgets/chart/lv_example_chart_3.c.o
@@ -4408,7 +4408,7 @@ examples/widgets/chart/lv_example_chart_3.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_3.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_3.c.o
 
 examples/widgets/chart/lv_example_chart_3.i: examples/widgets/chart/lv_example_chart_3.c.i
@@ -4416,7 +4416,7 @@ examples/widgets/chart/lv_example_chart_3.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_3.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_3.c.i
 
 examples/widgets/chart/lv_example_chart_3.s: examples/widgets/chart/lv_example_chart_3.c.s
@@ -4424,7 +4424,7 @@ examples/widgets/chart/lv_example_chart_3.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_3.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_3.c.s
 
 examples/widgets/chart/lv_example_chart_4.o: examples/widgets/chart/lv_example_chart_4.c.o
@@ -4432,7 +4432,7 @@ examples/widgets/chart/lv_example_chart_4.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_4.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_4.c.o
 
 examples/widgets/chart/lv_example_chart_4.i: examples/widgets/chart/lv_example_chart_4.c.i
@@ -4440,7 +4440,7 @@ examples/widgets/chart/lv_example_chart_4.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_4.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_4.c.i
 
 examples/widgets/chart/lv_example_chart_4.s: examples/widgets/chart/lv_example_chart_4.c.s
@@ -4448,7 +4448,7 @@ examples/widgets/chart/lv_example_chart_4.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_4.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_4.c.s
 
 examples/widgets/chart/lv_example_chart_5.o: examples/widgets/chart/lv_example_chart_5.c.o
@@ -4456,7 +4456,7 @@ examples/widgets/chart/lv_example_chart_5.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_5.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_5.c.o
 
 examples/widgets/chart/lv_example_chart_5.i: examples/widgets/chart/lv_example_chart_5.c.i
@@ -4464,7 +4464,7 @@ examples/widgets/chart/lv_example_chart_5.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_5.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_5.c.i
 
 examples/widgets/chart/lv_example_chart_5.s: examples/widgets/chart/lv_example_chart_5.c.s
@@ -4472,7 +4472,7 @@ examples/widgets/chart/lv_example_chart_5.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_5.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_5.c.s
 
 examples/widgets/chart/lv_example_chart_6.o: examples/widgets/chart/lv_example_chart_6.c.o
@@ -4480,7 +4480,7 @@ examples/widgets/chart/lv_example_chart_6.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_6.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_6.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_6.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_6.c.o
 
 examples/widgets/chart/lv_example_chart_6.i: examples/widgets/chart/lv_example_chart_6.c.i
@@ -4488,7 +4488,7 @@ examples/widgets/chart/lv_example_chart_6.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_6.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_6.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_6.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_6.c.i
 
 examples/widgets/chart/lv_example_chart_6.s: examples/widgets/chart/lv_example_chart_6.c.s
@@ -4496,7 +4496,7 @@ examples/widgets/chart/lv_example_chart_6.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_6.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_6.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_6.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_6.c.s
 
 examples/widgets/chart/lv_example_chart_7.o: examples/widgets/chart/lv_example_chart_7.c.o
@@ -4504,7 +4504,7 @@ examples/widgets/chart/lv_example_chart_7.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_7.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_7.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_7.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_7.c.o
 
 examples/widgets/chart/lv_example_chart_7.i: examples/widgets/chart/lv_example_chart_7.c.i
@@ -4512,7 +4512,7 @@ examples/widgets/chart/lv_example_chart_7.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_7.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_7.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_7.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_7.c.i
 
 examples/widgets/chart/lv_example_chart_7.s: examples/widgets/chart/lv_example_chart_7.c.s
@@ -4520,7 +4520,7 @@ examples/widgets/chart/lv_example_chart_7.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_7.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_7.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_7.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_7.c.s
 
 examples/widgets/chart/lv_example_chart_8.o: examples/widgets/chart/lv_example_chart_8.c.o
@@ -4528,7 +4528,7 @@ examples/widgets/chart/lv_example_chart_8.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_8.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_8.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_8.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_8.c.o
 
 examples/widgets/chart/lv_example_chart_8.i: examples/widgets/chart/lv_example_chart_8.c.i
@@ -4536,7 +4536,7 @@ examples/widgets/chart/lv_example_chart_8.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_8.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_8.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_8.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_8.c.i
 
 examples/widgets/chart/lv_example_chart_8.s: examples/widgets/chart/lv_example_chart_8.c.s
@@ -4544,7 +4544,7 @@ examples/widgets/chart/lv_example_chart_8.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_8.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_8.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_8.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_8.c.s
 
 examples/widgets/chart/lv_example_chart_9.o: examples/widgets/chart/lv_example_chart_9.c.o
@@ -4552,7 +4552,7 @@ examples/widgets/chart/lv_example_chart_9.o: examples/widgets/chart/lv_example_c
 
 # target to build an object file
 examples/widgets/chart/lv_example_chart_9.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_9.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_9.c.o
 .PHONY : examples/widgets/chart/lv_example_chart_9.c.o
 
 examples/widgets/chart/lv_example_chart_9.i: examples/widgets/chart/lv_example_chart_9.c.i
@@ -4560,7 +4560,7 @@ examples/widgets/chart/lv_example_chart_9.i: examples/widgets/chart/lv_example_c
 
 # target to preprocess a source file
 examples/widgets/chart/lv_example_chart_9.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_9.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_9.c.i
 .PHONY : examples/widgets/chart/lv_example_chart_9.c.i
 
 examples/widgets/chart/lv_example_chart_9.s: examples/widgets/chart/lv_example_chart_9.c.s
@@ -4568,7 +4568,7 @@ examples/widgets/chart/lv_example_chart_9.s: examples/widgets/chart/lv_example_c
 
 # target to generate assembly for a file
 examples/widgets/chart/lv_example_chart_9.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_9.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/chart/lv_example_chart_9.c.s
 .PHONY : examples/widgets/chart/lv_example_chart_9.c.s
 
 examples/widgets/checkbox/lv_example_checkbox_1.o: examples/widgets/checkbox/lv_example_checkbox_1.c.o
@@ -4576,7 +4576,7 @@ examples/widgets/checkbox/lv_example_checkbox_1.o: examples/widgets/checkbox/lv_
 
 # target to build an object file
 examples/widgets/checkbox/lv_example_checkbox_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_1.c.o
 .PHONY : examples/widgets/checkbox/lv_example_checkbox_1.c.o
 
 examples/widgets/checkbox/lv_example_checkbox_1.i: examples/widgets/checkbox/lv_example_checkbox_1.c.i
@@ -4584,7 +4584,7 @@ examples/widgets/checkbox/lv_example_checkbox_1.i: examples/widgets/checkbox/lv_
 
 # target to preprocess a source file
 examples/widgets/checkbox/lv_example_checkbox_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_1.c.i
 .PHONY : examples/widgets/checkbox/lv_example_checkbox_1.c.i
 
 examples/widgets/checkbox/lv_example_checkbox_1.s: examples/widgets/checkbox/lv_example_checkbox_1.c.s
@@ -4592,7 +4592,7 @@ examples/widgets/checkbox/lv_example_checkbox_1.s: examples/widgets/checkbox/lv_
 
 # target to generate assembly for a file
 examples/widgets/checkbox/lv_example_checkbox_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_1.c.s
 .PHONY : examples/widgets/checkbox/lv_example_checkbox_1.c.s
 
 examples/widgets/checkbox/lv_example_checkbox_2.o: examples/widgets/checkbox/lv_example_checkbox_2.c.o
@@ -4600,7 +4600,7 @@ examples/widgets/checkbox/lv_example_checkbox_2.o: examples/widgets/checkbox/lv_
 
 # target to build an object file
 examples/widgets/checkbox/lv_example_checkbox_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_2.c.o
 .PHONY : examples/widgets/checkbox/lv_example_checkbox_2.c.o
 
 examples/widgets/checkbox/lv_example_checkbox_2.i: examples/widgets/checkbox/lv_example_checkbox_2.c.i
@@ -4608,7 +4608,7 @@ examples/widgets/checkbox/lv_example_checkbox_2.i: examples/widgets/checkbox/lv_
 
 # target to preprocess a source file
 examples/widgets/checkbox/lv_example_checkbox_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_2.c.i
 .PHONY : examples/widgets/checkbox/lv_example_checkbox_2.c.i
 
 examples/widgets/checkbox/lv_example_checkbox_2.s: examples/widgets/checkbox/lv_example_checkbox_2.c.s
@@ -4616,7 +4616,7 @@ examples/widgets/checkbox/lv_example_checkbox_2.s: examples/widgets/checkbox/lv_
 
 # target to generate assembly for a file
 examples/widgets/checkbox/lv_example_checkbox_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/checkbox/lv_example_checkbox_2.c.s
 .PHONY : examples/widgets/checkbox/lv_example_checkbox_2.c.s
 
 examples/widgets/colorwheel/lv_example_colorwheel_1.o: examples/widgets/colorwheel/lv_example_colorwheel_1.c.o
@@ -4624,7 +4624,7 @@ examples/widgets/colorwheel/lv_example_colorwheel_1.o: examples/widgets/colorwhe
 
 # target to build an object file
 examples/widgets/colorwheel/lv_example_colorwheel_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/colorwheel/lv_example_colorwheel_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/colorwheel/lv_example_colorwheel_1.c.o
 .PHONY : examples/widgets/colorwheel/lv_example_colorwheel_1.c.o
 
 examples/widgets/colorwheel/lv_example_colorwheel_1.i: examples/widgets/colorwheel/lv_example_colorwheel_1.c.i
@@ -4632,7 +4632,7 @@ examples/widgets/colorwheel/lv_example_colorwheel_1.i: examples/widgets/colorwhe
 
 # target to preprocess a source file
 examples/widgets/colorwheel/lv_example_colorwheel_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/colorwheel/lv_example_colorwheel_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/colorwheel/lv_example_colorwheel_1.c.i
 .PHONY : examples/widgets/colorwheel/lv_example_colorwheel_1.c.i
 
 examples/widgets/colorwheel/lv_example_colorwheel_1.s: examples/widgets/colorwheel/lv_example_colorwheel_1.c.s
@@ -4640,7 +4640,7 @@ examples/widgets/colorwheel/lv_example_colorwheel_1.s: examples/widgets/colorwhe
 
 # target to generate assembly for a file
 examples/widgets/colorwheel/lv_example_colorwheel_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/colorwheel/lv_example_colorwheel_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/colorwheel/lv_example_colorwheel_1.c.s
 .PHONY : examples/widgets/colorwheel/lv_example_colorwheel_1.c.s
 
 examples/widgets/dropdown/lv_example_dropdown_1.o: examples/widgets/dropdown/lv_example_dropdown_1.c.o
@@ -4648,7 +4648,7 @@ examples/widgets/dropdown/lv_example_dropdown_1.o: examples/widgets/dropdown/lv_
 
 # target to build an object file
 examples/widgets/dropdown/lv_example_dropdown_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_1.c.o
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_1.c.o
 
 examples/widgets/dropdown/lv_example_dropdown_1.i: examples/widgets/dropdown/lv_example_dropdown_1.c.i
@@ -4656,7 +4656,7 @@ examples/widgets/dropdown/lv_example_dropdown_1.i: examples/widgets/dropdown/lv_
 
 # target to preprocess a source file
 examples/widgets/dropdown/lv_example_dropdown_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_1.c.i
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_1.c.i
 
 examples/widgets/dropdown/lv_example_dropdown_1.s: examples/widgets/dropdown/lv_example_dropdown_1.c.s
@@ -4664,7 +4664,7 @@ examples/widgets/dropdown/lv_example_dropdown_1.s: examples/widgets/dropdown/lv_
 
 # target to generate assembly for a file
 examples/widgets/dropdown/lv_example_dropdown_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_1.c.s
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_1.c.s
 
 examples/widgets/dropdown/lv_example_dropdown_2.o: examples/widgets/dropdown/lv_example_dropdown_2.c.o
@@ -4672,7 +4672,7 @@ examples/widgets/dropdown/lv_example_dropdown_2.o: examples/widgets/dropdown/lv_
 
 # target to build an object file
 examples/widgets/dropdown/lv_example_dropdown_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_2.c.o
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_2.c.o
 
 examples/widgets/dropdown/lv_example_dropdown_2.i: examples/widgets/dropdown/lv_example_dropdown_2.c.i
@@ -4680,7 +4680,7 @@ examples/widgets/dropdown/lv_example_dropdown_2.i: examples/widgets/dropdown/lv_
 
 # target to preprocess a source file
 examples/widgets/dropdown/lv_example_dropdown_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_2.c.i
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_2.c.i
 
 examples/widgets/dropdown/lv_example_dropdown_2.s: examples/widgets/dropdown/lv_example_dropdown_2.c.s
@@ -4688,7 +4688,7 @@ examples/widgets/dropdown/lv_example_dropdown_2.s: examples/widgets/dropdown/lv_
 
 # target to generate assembly for a file
 examples/widgets/dropdown/lv_example_dropdown_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_2.c.s
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_2.c.s
 
 examples/widgets/dropdown/lv_example_dropdown_3.o: examples/widgets/dropdown/lv_example_dropdown_3.c.o
@@ -4696,7 +4696,7 @@ examples/widgets/dropdown/lv_example_dropdown_3.o: examples/widgets/dropdown/lv_
 
 # target to build an object file
 examples/widgets/dropdown/lv_example_dropdown_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_3.c.o
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_3.c.o
 
 examples/widgets/dropdown/lv_example_dropdown_3.i: examples/widgets/dropdown/lv_example_dropdown_3.c.i
@@ -4704,7 +4704,7 @@ examples/widgets/dropdown/lv_example_dropdown_3.i: examples/widgets/dropdown/lv_
 
 # target to preprocess a source file
 examples/widgets/dropdown/lv_example_dropdown_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_3.c.i
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_3.c.i
 
 examples/widgets/dropdown/lv_example_dropdown_3.s: examples/widgets/dropdown/lv_example_dropdown_3.c.s
@@ -4712,7 +4712,7 @@ examples/widgets/dropdown/lv_example_dropdown_3.s: examples/widgets/dropdown/lv_
 
 # target to generate assembly for a file
 examples/widgets/dropdown/lv_example_dropdown_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/dropdown/lv_example_dropdown_3.c.s
 .PHONY : examples/widgets/dropdown/lv_example_dropdown_3.c.s
 
 examples/widgets/img/lv_example_img_1.o: examples/widgets/img/lv_example_img_1.c.o
@@ -4720,7 +4720,7 @@ examples/widgets/img/lv_example_img_1.o: examples/widgets/img/lv_example_img_1.c
 
 # target to build an object file
 examples/widgets/img/lv_example_img_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_1.c.o
 .PHONY : examples/widgets/img/lv_example_img_1.c.o
 
 examples/widgets/img/lv_example_img_1.i: examples/widgets/img/lv_example_img_1.c.i
@@ -4728,7 +4728,7 @@ examples/widgets/img/lv_example_img_1.i: examples/widgets/img/lv_example_img_1.c
 
 # target to preprocess a source file
 examples/widgets/img/lv_example_img_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_1.c.i
 .PHONY : examples/widgets/img/lv_example_img_1.c.i
 
 examples/widgets/img/lv_example_img_1.s: examples/widgets/img/lv_example_img_1.c.s
@@ -4736,7 +4736,7 @@ examples/widgets/img/lv_example_img_1.s: examples/widgets/img/lv_example_img_1.c
 
 # target to generate assembly for a file
 examples/widgets/img/lv_example_img_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_1.c.s
 .PHONY : examples/widgets/img/lv_example_img_1.c.s
 
 examples/widgets/img/lv_example_img_2.o: examples/widgets/img/lv_example_img_2.c.o
@@ -4744,7 +4744,7 @@ examples/widgets/img/lv_example_img_2.o: examples/widgets/img/lv_example_img_2.c
 
 # target to build an object file
 examples/widgets/img/lv_example_img_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_2.c.o
 .PHONY : examples/widgets/img/lv_example_img_2.c.o
 
 examples/widgets/img/lv_example_img_2.i: examples/widgets/img/lv_example_img_2.c.i
@@ -4752,7 +4752,7 @@ examples/widgets/img/lv_example_img_2.i: examples/widgets/img/lv_example_img_2.c
 
 # target to preprocess a source file
 examples/widgets/img/lv_example_img_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_2.c.i
 .PHONY : examples/widgets/img/lv_example_img_2.c.i
 
 examples/widgets/img/lv_example_img_2.s: examples/widgets/img/lv_example_img_2.c.s
@@ -4760,7 +4760,7 @@ examples/widgets/img/lv_example_img_2.s: examples/widgets/img/lv_example_img_2.c
 
 # target to generate assembly for a file
 examples/widgets/img/lv_example_img_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_2.c.s
 .PHONY : examples/widgets/img/lv_example_img_2.c.s
 
 examples/widgets/img/lv_example_img_3.o: examples/widgets/img/lv_example_img_3.c.o
@@ -4768,7 +4768,7 @@ examples/widgets/img/lv_example_img_3.o: examples/widgets/img/lv_example_img_3.c
 
 # target to build an object file
 examples/widgets/img/lv_example_img_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_3.c.o
 .PHONY : examples/widgets/img/lv_example_img_3.c.o
 
 examples/widgets/img/lv_example_img_3.i: examples/widgets/img/lv_example_img_3.c.i
@@ -4776,7 +4776,7 @@ examples/widgets/img/lv_example_img_3.i: examples/widgets/img/lv_example_img_3.c
 
 # target to preprocess a source file
 examples/widgets/img/lv_example_img_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_3.c.i
 .PHONY : examples/widgets/img/lv_example_img_3.c.i
 
 examples/widgets/img/lv_example_img_3.s: examples/widgets/img/lv_example_img_3.c.s
@@ -4784,7 +4784,7 @@ examples/widgets/img/lv_example_img_3.s: examples/widgets/img/lv_example_img_3.c
 
 # target to generate assembly for a file
 examples/widgets/img/lv_example_img_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_3.c.s
 .PHONY : examples/widgets/img/lv_example_img_3.c.s
 
 examples/widgets/img/lv_example_img_4.o: examples/widgets/img/lv_example_img_4.c.o
@@ -4792,7 +4792,7 @@ examples/widgets/img/lv_example_img_4.o: examples/widgets/img/lv_example_img_4.c
 
 # target to build an object file
 examples/widgets/img/lv_example_img_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_4.c.o
 .PHONY : examples/widgets/img/lv_example_img_4.c.o
 
 examples/widgets/img/lv_example_img_4.i: examples/widgets/img/lv_example_img_4.c.i
@@ -4800,7 +4800,7 @@ examples/widgets/img/lv_example_img_4.i: examples/widgets/img/lv_example_img_4.c
 
 # target to preprocess a source file
 examples/widgets/img/lv_example_img_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_4.c.i
 .PHONY : examples/widgets/img/lv_example_img_4.c.i
 
 examples/widgets/img/lv_example_img_4.s: examples/widgets/img/lv_example_img_4.c.s
@@ -4808,7 +4808,7 @@ examples/widgets/img/lv_example_img_4.s: examples/widgets/img/lv_example_img_4.c
 
 # target to generate assembly for a file
 examples/widgets/img/lv_example_img_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/img/lv_example_img_4.c.s
 .PHONY : examples/widgets/img/lv_example_img_4.c.s
 
 examples/widgets/imgbtn/lv_example_imgbtn_1.o: examples/widgets/imgbtn/lv_example_imgbtn_1.c.o
@@ -4816,7 +4816,7 @@ examples/widgets/imgbtn/lv_example_imgbtn_1.o: examples/widgets/imgbtn/lv_exampl
 
 # target to build an object file
 examples/widgets/imgbtn/lv_example_imgbtn_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/imgbtn/lv_example_imgbtn_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/imgbtn/lv_example_imgbtn_1.c.o
 .PHONY : examples/widgets/imgbtn/lv_example_imgbtn_1.c.o
 
 examples/widgets/imgbtn/lv_example_imgbtn_1.i: examples/widgets/imgbtn/lv_example_imgbtn_1.c.i
@@ -4824,7 +4824,7 @@ examples/widgets/imgbtn/lv_example_imgbtn_1.i: examples/widgets/imgbtn/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/imgbtn/lv_example_imgbtn_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/imgbtn/lv_example_imgbtn_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/imgbtn/lv_example_imgbtn_1.c.i
 .PHONY : examples/widgets/imgbtn/lv_example_imgbtn_1.c.i
 
 examples/widgets/imgbtn/lv_example_imgbtn_1.s: examples/widgets/imgbtn/lv_example_imgbtn_1.c.s
@@ -4832,7 +4832,7 @@ examples/widgets/imgbtn/lv_example_imgbtn_1.s: examples/widgets/imgbtn/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/imgbtn/lv_example_imgbtn_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/imgbtn/lv_example_imgbtn_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/imgbtn/lv_example_imgbtn_1.c.s
 .PHONY : examples/widgets/imgbtn/lv_example_imgbtn_1.c.s
 
 examples/widgets/keyboard/lv_example_keyboard_1.o: examples/widgets/keyboard/lv_example_keyboard_1.c.o
@@ -4840,7 +4840,7 @@ examples/widgets/keyboard/lv_example_keyboard_1.o: examples/widgets/keyboard/lv_
 
 # target to build an object file
 examples/widgets/keyboard/lv_example_keyboard_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/keyboard/lv_example_keyboard_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/keyboard/lv_example_keyboard_1.c.o
 .PHONY : examples/widgets/keyboard/lv_example_keyboard_1.c.o
 
 examples/widgets/keyboard/lv_example_keyboard_1.i: examples/widgets/keyboard/lv_example_keyboard_1.c.i
@@ -4848,7 +4848,7 @@ examples/widgets/keyboard/lv_example_keyboard_1.i: examples/widgets/keyboard/lv_
 
 # target to preprocess a source file
 examples/widgets/keyboard/lv_example_keyboard_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/keyboard/lv_example_keyboard_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/keyboard/lv_example_keyboard_1.c.i
 .PHONY : examples/widgets/keyboard/lv_example_keyboard_1.c.i
 
 examples/widgets/keyboard/lv_example_keyboard_1.s: examples/widgets/keyboard/lv_example_keyboard_1.c.s
@@ -4856,7 +4856,7 @@ examples/widgets/keyboard/lv_example_keyboard_1.s: examples/widgets/keyboard/lv_
 
 # target to generate assembly for a file
 examples/widgets/keyboard/lv_example_keyboard_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/keyboard/lv_example_keyboard_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/keyboard/lv_example_keyboard_1.c.s
 .PHONY : examples/widgets/keyboard/lv_example_keyboard_1.c.s
 
 examples/widgets/label/lv_example_label_1.o: examples/widgets/label/lv_example_label_1.c.o
@@ -4864,7 +4864,7 @@ examples/widgets/label/lv_example_label_1.o: examples/widgets/label/lv_example_l
 
 # target to build an object file
 examples/widgets/label/lv_example_label_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_1.c.o
 .PHONY : examples/widgets/label/lv_example_label_1.c.o
 
 examples/widgets/label/lv_example_label_1.i: examples/widgets/label/lv_example_label_1.c.i
@@ -4872,7 +4872,7 @@ examples/widgets/label/lv_example_label_1.i: examples/widgets/label/lv_example_l
 
 # target to preprocess a source file
 examples/widgets/label/lv_example_label_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_1.c.i
 .PHONY : examples/widgets/label/lv_example_label_1.c.i
 
 examples/widgets/label/lv_example_label_1.s: examples/widgets/label/lv_example_label_1.c.s
@@ -4880,7 +4880,7 @@ examples/widgets/label/lv_example_label_1.s: examples/widgets/label/lv_example_l
 
 # target to generate assembly for a file
 examples/widgets/label/lv_example_label_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_1.c.s
 .PHONY : examples/widgets/label/lv_example_label_1.c.s
 
 examples/widgets/label/lv_example_label_2.o: examples/widgets/label/lv_example_label_2.c.o
@@ -4888,7 +4888,7 @@ examples/widgets/label/lv_example_label_2.o: examples/widgets/label/lv_example_l
 
 # target to build an object file
 examples/widgets/label/lv_example_label_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_2.c.o
 .PHONY : examples/widgets/label/lv_example_label_2.c.o
 
 examples/widgets/label/lv_example_label_2.i: examples/widgets/label/lv_example_label_2.c.i
@@ -4896,7 +4896,7 @@ examples/widgets/label/lv_example_label_2.i: examples/widgets/label/lv_example_l
 
 # target to preprocess a source file
 examples/widgets/label/lv_example_label_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_2.c.i
 .PHONY : examples/widgets/label/lv_example_label_2.c.i
 
 examples/widgets/label/lv_example_label_2.s: examples/widgets/label/lv_example_label_2.c.s
@@ -4904,7 +4904,7 @@ examples/widgets/label/lv_example_label_2.s: examples/widgets/label/lv_example_l
 
 # target to generate assembly for a file
 examples/widgets/label/lv_example_label_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_2.c.s
 .PHONY : examples/widgets/label/lv_example_label_2.c.s
 
 examples/widgets/label/lv_example_label_3.o: examples/widgets/label/lv_example_label_3.c.o
@@ -4912,7 +4912,7 @@ examples/widgets/label/lv_example_label_3.o: examples/widgets/label/lv_example_l
 
 # target to build an object file
 examples/widgets/label/lv_example_label_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_3.c.o
 .PHONY : examples/widgets/label/lv_example_label_3.c.o
 
 examples/widgets/label/lv_example_label_3.i: examples/widgets/label/lv_example_label_3.c.i
@@ -4920,7 +4920,7 @@ examples/widgets/label/lv_example_label_3.i: examples/widgets/label/lv_example_l
 
 # target to preprocess a source file
 examples/widgets/label/lv_example_label_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_3.c.i
 .PHONY : examples/widgets/label/lv_example_label_3.c.i
 
 examples/widgets/label/lv_example_label_3.s: examples/widgets/label/lv_example_label_3.c.s
@@ -4928,7 +4928,7 @@ examples/widgets/label/lv_example_label_3.s: examples/widgets/label/lv_example_l
 
 # target to generate assembly for a file
 examples/widgets/label/lv_example_label_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_3.c.s
 .PHONY : examples/widgets/label/lv_example_label_3.c.s
 
 examples/widgets/label/lv_example_label_4.o: examples/widgets/label/lv_example_label_4.c.o
@@ -4936,7 +4936,7 @@ examples/widgets/label/lv_example_label_4.o: examples/widgets/label/lv_example_l
 
 # target to build an object file
 examples/widgets/label/lv_example_label_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_4.c.o
 .PHONY : examples/widgets/label/lv_example_label_4.c.o
 
 examples/widgets/label/lv_example_label_4.i: examples/widgets/label/lv_example_label_4.c.i
@@ -4944,7 +4944,7 @@ examples/widgets/label/lv_example_label_4.i: examples/widgets/label/lv_example_l
 
 # target to preprocess a source file
 examples/widgets/label/lv_example_label_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_4.c.i
 .PHONY : examples/widgets/label/lv_example_label_4.c.i
 
 examples/widgets/label/lv_example_label_4.s: examples/widgets/label/lv_example_label_4.c.s
@@ -4952,7 +4952,7 @@ examples/widgets/label/lv_example_label_4.s: examples/widgets/label/lv_example_l
 
 # target to generate assembly for a file
 examples/widgets/label/lv_example_label_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_4.c.s
 .PHONY : examples/widgets/label/lv_example_label_4.c.s
 
 examples/widgets/label/lv_example_label_5.o: examples/widgets/label/lv_example_label_5.c.o
@@ -4960,7 +4960,7 @@ examples/widgets/label/lv_example_label_5.o: examples/widgets/label/lv_example_l
 
 # target to build an object file
 examples/widgets/label/lv_example_label_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_5.c.o
 .PHONY : examples/widgets/label/lv_example_label_5.c.o
 
 examples/widgets/label/lv_example_label_5.i: examples/widgets/label/lv_example_label_5.c.i
@@ -4968,7 +4968,7 @@ examples/widgets/label/lv_example_label_5.i: examples/widgets/label/lv_example_l
 
 # target to preprocess a source file
 examples/widgets/label/lv_example_label_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_5.c.i
 .PHONY : examples/widgets/label/lv_example_label_5.c.i
 
 examples/widgets/label/lv_example_label_5.s: examples/widgets/label/lv_example_label_5.c.s
@@ -4976,7 +4976,7 @@ examples/widgets/label/lv_example_label_5.s: examples/widgets/label/lv_example_l
 
 # target to generate assembly for a file
 examples/widgets/label/lv_example_label_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/label/lv_example_label_5.c.s
 .PHONY : examples/widgets/label/lv_example_label_5.c.s
 
 examples/widgets/led/lv_example_led_1.o: examples/widgets/led/lv_example_led_1.c.o
@@ -4984,7 +4984,7 @@ examples/widgets/led/lv_example_led_1.o: examples/widgets/led/lv_example_led_1.c
 
 # target to build an object file
 examples/widgets/led/lv_example_led_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/led/lv_example_led_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/led/lv_example_led_1.c.o
 .PHONY : examples/widgets/led/lv_example_led_1.c.o
 
 examples/widgets/led/lv_example_led_1.i: examples/widgets/led/lv_example_led_1.c.i
@@ -4992,7 +4992,7 @@ examples/widgets/led/lv_example_led_1.i: examples/widgets/led/lv_example_led_1.c
 
 # target to preprocess a source file
 examples/widgets/led/lv_example_led_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/led/lv_example_led_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/led/lv_example_led_1.c.i
 .PHONY : examples/widgets/led/lv_example_led_1.c.i
 
 examples/widgets/led/lv_example_led_1.s: examples/widgets/led/lv_example_led_1.c.s
@@ -5000,7 +5000,7 @@ examples/widgets/led/lv_example_led_1.s: examples/widgets/led/lv_example_led_1.c
 
 # target to generate assembly for a file
 examples/widgets/led/lv_example_led_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/led/lv_example_led_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/led/lv_example_led_1.c.s
 .PHONY : examples/widgets/led/lv_example_led_1.c.s
 
 examples/widgets/line/lv_example_line_1.o: examples/widgets/line/lv_example_line_1.c.o
@@ -5008,7 +5008,7 @@ examples/widgets/line/lv_example_line_1.o: examples/widgets/line/lv_example_line
 
 # target to build an object file
 examples/widgets/line/lv_example_line_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/line/lv_example_line_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/line/lv_example_line_1.c.o
 .PHONY : examples/widgets/line/lv_example_line_1.c.o
 
 examples/widgets/line/lv_example_line_1.i: examples/widgets/line/lv_example_line_1.c.i
@@ -5016,7 +5016,7 @@ examples/widgets/line/lv_example_line_1.i: examples/widgets/line/lv_example_line
 
 # target to preprocess a source file
 examples/widgets/line/lv_example_line_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/line/lv_example_line_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/line/lv_example_line_1.c.i
 .PHONY : examples/widgets/line/lv_example_line_1.c.i
 
 examples/widgets/line/lv_example_line_1.s: examples/widgets/line/lv_example_line_1.c.s
@@ -5024,7 +5024,7 @@ examples/widgets/line/lv_example_line_1.s: examples/widgets/line/lv_example_line
 
 # target to generate assembly for a file
 examples/widgets/line/lv_example_line_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/line/lv_example_line_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/line/lv_example_line_1.c.s
 .PHONY : examples/widgets/line/lv_example_line_1.c.s
 
 examples/widgets/list/lv_example_list_1.o: examples/widgets/list/lv_example_list_1.c.o
@@ -5032,7 +5032,7 @@ examples/widgets/list/lv_example_list_1.o: examples/widgets/list/lv_example_list
 
 # target to build an object file
 examples/widgets/list/lv_example_list_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_1.c.o
 .PHONY : examples/widgets/list/lv_example_list_1.c.o
 
 examples/widgets/list/lv_example_list_1.i: examples/widgets/list/lv_example_list_1.c.i
@@ -5040,7 +5040,7 @@ examples/widgets/list/lv_example_list_1.i: examples/widgets/list/lv_example_list
 
 # target to preprocess a source file
 examples/widgets/list/lv_example_list_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_1.c.i
 .PHONY : examples/widgets/list/lv_example_list_1.c.i
 
 examples/widgets/list/lv_example_list_1.s: examples/widgets/list/lv_example_list_1.c.s
@@ -5048,7 +5048,7 @@ examples/widgets/list/lv_example_list_1.s: examples/widgets/list/lv_example_list
 
 # target to generate assembly for a file
 examples/widgets/list/lv_example_list_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_1.c.s
 .PHONY : examples/widgets/list/lv_example_list_1.c.s
 
 examples/widgets/list/lv_example_list_2.o: examples/widgets/list/lv_example_list_2.c.o
@@ -5056,7 +5056,7 @@ examples/widgets/list/lv_example_list_2.o: examples/widgets/list/lv_example_list
 
 # target to build an object file
 examples/widgets/list/lv_example_list_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_2.c.o
 .PHONY : examples/widgets/list/lv_example_list_2.c.o
 
 examples/widgets/list/lv_example_list_2.i: examples/widgets/list/lv_example_list_2.c.i
@@ -5064,7 +5064,7 @@ examples/widgets/list/lv_example_list_2.i: examples/widgets/list/lv_example_list
 
 # target to preprocess a source file
 examples/widgets/list/lv_example_list_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_2.c.i
 .PHONY : examples/widgets/list/lv_example_list_2.c.i
 
 examples/widgets/list/lv_example_list_2.s: examples/widgets/list/lv_example_list_2.c.s
@@ -5072,7 +5072,7 @@ examples/widgets/list/lv_example_list_2.s: examples/widgets/list/lv_example_list
 
 # target to generate assembly for a file
 examples/widgets/list/lv_example_list_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/list/lv_example_list_2.c.s
 .PHONY : examples/widgets/list/lv_example_list_2.c.s
 
 examples/widgets/menu/lv_example_menu_1.o: examples/widgets/menu/lv_example_menu_1.c.o
@@ -5080,7 +5080,7 @@ examples/widgets/menu/lv_example_menu_1.o: examples/widgets/menu/lv_example_menu
 
 # target to build an object file
 examples/widgets/menu/lv_example_menu_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_1.c.o
 .PHONY : examples/widgets/menu/lv_example_menu_1.c.o
 
 examples/widgets/menu/lv_example_menu_1.i: examples/widgets/menu/lv_example_menu_1.c.i
@@ -5088,7 +5088,7 @@ examples/widgets/menu/lv_example_menu_1.i: examples/widgets/menu/lv_example_menu
 
 # target to preprocess a source file
 examples/widgets/menu/lv_example_menu_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_1.c.i
 .PHONY : examples/widgets/menu/lv_example_menu_1.c.i
 
 examples/widgets/menu/lv_example_menu_1.s: examples/widgets/menu/lv_example_menu_1.c.s
@@ -5096,7 +5096,7 @@ examples/widgets/menu/lv_example_menu_1.s: examples/widgets/menu/lv_example_menu
 
 # target to generate assembly for a file
 examples/widgets/menu/lv_example_menu_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_1.c.s
 .PHONY : examples/widgets/menu/lv_example_menu_1.c.s
 
 examples/widgets/menu/lv_example_menu_2.o: examples/widgets/menu/lv_example_menu_2.c.o
@@ -5104,7 +5104,7 @@ examples/widgets/menu/lv_example_menu_2.o: examples/widgets/menu/lv_example_menu
 
 # target to build an object file
 examples/widgets/menu/lv_example_menu_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_2.c.o
 .PHONY : examples/widgets/menu/lv_example_menu_2.c.o
 
 examples/widgets/menu/lv_example_menu_2.i: examples/widgets/menu/lv_example_menu_2.c.i
@@ -5112,7 +5112,7 @@ examples/widgets/menu/lv_example_menu_2.i: examples/widgets/menu/lv_example_menu
 
 # target to preprocess a source file
 examples/widgets/menu/lv_example_menu_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_2.c.i
 .PHONY : examples/widgets/menu/lv_example_menu_2.c.i
 
 examples/widgets/menu/lv_example_menu_2.s: examples/widgets/menu/lv_example_menu_2.c.s
@@ -5120,7 +5120,7 @@ examples/widgets/menu/lv_example_menu_2.s: examples/widgets/menu/lv_example_menu
 
 # target to generate assembly for a file
 examples/widgets/menu/lv_example_menu_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_2.c.s
 .PHONY : examples/widgets/menu/lv_example_menu_2.c.s
 
 examples/widgets/menu/lv_example_menu_3.o: examples/widgets/menu/lv_example_menu_3.c.o
@@ -5128,7 +5128,7 @@ examples/widgets/menu/lv_example_menu_3.o: examples/widgets/menu/lv_example_menu
 
 # target to build an object file
 examples/widgets/menu/lv_example_menu_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_3.c.o
 .PHONY : examples/widgets/menu/lv_example_menu_3.c.o
 
 examples/widgets/menu/lv_example_menu_3.i: examples/widgets/menu/lv_example_menu_3.c.i
@@ -5136,7 +5136,7 @@ examples/widgets/menu/lv_example_menu_3.i: examples/widgets/menu/lv_example_menu
 
 # target to preprocess a source file
 examples/widgets/menu/lv_example_menu_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_3.c.i
 .PHONY : examples/widgets/menu/lv_example_menu_3.c.i
 
 examples/widgets/menu/lv_example_menu_3.s: examples/widgets/menu/lv_example_menu_3.c.s
@@ -5144,7 +5144,7 @@ examples/widgets/menu/lv_example_menu_3.s: examples/widgets/menu/lv_example_menu
 
 # target to generate assembly for a file
 examples/widgets/menu/lv_example_menu_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_3.c.s
 .PHONY : examples/widgets/menu/lv_example_menu_3.c.s
 
 examples/widgets/menu/lv_example_menu_4.o: examples/widgets/menu/lv_example_menu_4.c.o
@@ -5152,7 +5152,7 @@ examples/widgets/menu/lv_example_menu_4.o: examples/widgets/menu/lv_example_menu
 
 # target to build an object file
 examples/widgets/menu/lv_example_menu_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_4.c.o
 .PHONY : examples/widgets/menu/lv_example_menu_4.c.o
 
 examples/widgets/menu/lv_example_menu_4.i: examples/widgets/menu/lv_example_menu_4.c.i
@@ -5160,7 +5160,7 @@ examples/widgets/menu/lv_example_menu_4.i: examples/widgets/menu/lv_example_menu
 
 # target to preprocess a source file
 examples/widgets/menu/lv_example_menu_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_4.c.i
 .PHONY : examples/widgets/menu/lv_example_menu_4.c.i
 
 examples/widgets/menu/lv_example_menu_4.s: examples/widgets/menu/lv_example_menu_4.c.s
@@ -5168,7 +5168,7 @@ examples/widgets/menu/lv_example_menu_4.s: examples/widgets/menu/lv_example_menu
 
 # target to generate assembly for a file
 examples/widgets/menu/lv_example_menu_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_4.c.s
 .PHONY : examples/widgets/menu/lv_example_menu_4.c.s
 
 examples/widgets/menu/lv_example_menu_5.o: examples/widgets/menu/lv_example_menu_5.c.o
@@ -5176,7 +5176,7 @@ examples/widgets/menu/lv_example_menu_5.o: examples/widgets/menu/lv_example_menu
 
 # target to build an object file
 examples/widgets/menu/lv_example_menu_5.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_5.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_5.c.o
 .PHONY : examples/widgets/menu/lv_example_menu_5.c.o
 
 examples/widgets/menu/lv_example_menu_5.i: examples/widgets/menu/lv_example_menu_5.c.i
@@ -5184,7 +5184,7 @@ examples/widgets/menu/lv_example_menu_5.i: examples/widgets/menu/lv_example_menu
 
 # target to preprocess a source file
 examples/widgets/menu/lv_example_menu_5.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_5.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_5.c.i
 .PHONY : examples/widgets/menu/lv_example_menu_5.c.i
 
 examples/widgets/menu/lv_example_menu_5.s: examples/widgets/menu/lv_example_menu_5.c.s
@@ -5192,7 +5192,7 @@ examples/widgets/menu/lv_example_menu_5.s: examples/widgets/menu/lv_example_menu
 
 # target to generate assembly for a file
 examples/widgets/menu/lv_example_menu_5.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_5.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/menu/lv_example_menu_5.c.s
 .PHONY : examples/widgets/menu/lv_example_menu_5.c.s
 
 examples/widgets/meter/lv_example_meter_1.o: examples/widgets/meter/lv_example_meter_1.c.o
@@ -5200,7 +5200,7 @@ examples/widgets/meter/lv_example_meter_1.o: examples/widgets/meter/lv_example_m
 
 # target to build an object file
 examples/widgets/meter/lv_example_meter_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_1.c.o
 .PHONY : examples/widgets/meter/lv_example_meter_1.c.o
 
 examples/widgets/meter/lv_example_meter_1.i: examples/widgets/meter/lv_example_meter_1.c.i
@@ -5208,7 +5208,7 @@ examples/widgets/meter/lv_example_meter_1.i: examples/widgets/meter/lv_example_m
 
 # target to preprocess a source file
 examples/widgets/meter/lv_example_meter_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_1.c.i
 .PHONY : examples/widgets/meter/lv_example_meter_1.c.i
 
 examples/widgets/meter/lv_example_meter_1.s: examples/widgets/meter/lv_example_meter_1.c.s
@@ -5216,7 +5216,7 @@ examples/widgets/meter/lv_example_meter_1.s: examples/widgets/meter/lv_example_m
 
 # target to generate assembly for a file
 examples/widgets/meter/lv_example_meter_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_1.c.s
 .PHONY : examples/widgets/meter/lv_example_meter_1.c.s
 
 examples/widgets/meter/lv_example_meter_2.o: examples/widgets/meter/lv_example_meter_2.c.o
@@ -5224,7 +5224,7 @@ examples/widgets/meter/lv_example_meter_2.o: examples/widgets/meter/lv_example_m
 
 # target to build an object file
 examples/widgets/meter/lv_example_meter_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_2.c.o
 .PHONY : examples/widgets/meter/lv_example_meter_2.c.o
 
 examples/widgets/meter/lv_example_meter_2.i: examples/widgets/meter/lv_example_meter_2.c.i
@@ -5232,7 +5232,7 @@ examples/widgets/meter/lv_example_meter_2.i: examples/widgets/meter/lv_example_m
 
 # target to preprocess a source file
 examples/widgets/meter/lv_example_meter_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_2.c.i
 .PHONY : examples/widgets/meter/lv_example_meter_2.c.i
 
 examples/widgets/meter/lv_example_meter_2.s: examples/widgets/meter/lv_example_meter_2.c.s
@@ -5240,7 +5240,7 @@ examples/widgets/meter/lv_example_meter_2.s: examples/widgets/meter/lv_example_m
 
 # target to generate assembly for a file
 examples/widgets/meter/lv_example_meter_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_2.c.s
 .PHONY : examples/widgets/meter/lv_example_meter_2.c.s
 
 examples/widgets/meter/lv_example_meter_3.o: examples/widgets/meter/lv_example_meter_3.c.o
@@ -5248,7 +5248,7 @@ examples/widgets/meter/lv_example_meter_3.o: examples/widgets/meter/lv_example_m
 
 # target to build an object file
 examples/widgets/meter/lv_example_meter_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_3.c.o
 .PHONY : examples/widgets/meter/lv_example_meter_3.c.o
 
 examples/widgets/meter/lv_example_meter_3.i: examples/widgets/meter/lv_example_meter_3.c.i
@@ -5256,7 +5256,7 @@ examples/widgets/meter/lv_example_meter_3.i: examples/widgets/meter/lv_example_m
 
 # target to preprocess a source file
 examples/widgets/meter/lv_example_meter_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_3.c.i
 .PHONY : examples/widgets/meter/lv_example_meter_3.c.i
 
 examples/widgets/meter/lv_example_meter_3.s: examples/widgets/meter/lv_example_meter_3.c.s
@@ -5264,7 +5264,7 @@ examples/widgets/meter/lv_example_meter_3.s: examples/widgets/meter/lv_example_m
 
 # target to generate assembly for a file
 examples/widgets/meter/lv_example_meter_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_3.c.s
 .PHONY : examples/widgets/meter/lv_example_meter_3.c.s
 
 examples/widgets/meter/lv_example_meter_4.o: examples/widgets/meter/lv_example_meter_4.c.o
@@ -5272,7 +5272,7 @@ examples/widgets/meter/lv_example_meter_4.o: examples/widgets/meter/lv_example_m
 
 # target to build an object file
 examples/widgets/meter/lv_example_meter_4.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_4.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_4.c.o
 .PHONY : examples/widgets/meter/lv_example_meter_4.c.o
 
 examples/widgets/meter/lv_example_meter_4.i: examples/widgets/meter/lv_example_meter_4.c.i
@@ -5280,7 +5280,7 @@ examples/widgets/meter/lv_example_meter_4.i: examples/widgets/meter/lv_example_m
 
 # target to preprocess a source file
 examples/widgets/meter/lv_example_meter_4.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_4.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_4.c.i
 .PHONY : examples/widgets/meter/lv_example_meter_4.c.i
 
 examples/widgets/meter/lv_example_meter_4.s: examples/widgets/meter/lv_example_meter_4.c.s
@@ -5288,7 +5288,7 @@ examples/widgets/meter/lv_example_meter_4.s: examples/widgets/meter/lv_example_m
 
 # target to generate assembly for a file
 examples/widgets/meter/lv_example_meter_4.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_4.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/meter/lv_example_meter_4.c.s
 .PHONY : examples/widgets/meter/lv_example_meter_4.c.s
 
 examples/widgets/msgbox/lv_example_msgbox_1.o: examples/widgets/msgbox/lv_example_msgbox_1.c.o
@@ -5296,7 +5296,7 @@ examples/widgets/msgbox/lv_example_msgbox_1.o: examples/widgets/msgbox/lv_exampl
 
 # target to build an object file
 examples/widgets/msgbox/lv_example_msgbox_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/msgbox/lv_example_msgbox_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/msgbox/lv_example_msgbox_1.c.o
 .PHONY : examples/widgets/msgbox/lv_example_msgbox_1.c.o
 
 examples/widgets/msgbox/lv_example_msgbox_1.i: examples/widgets/msgbox/lv_example_msgbox_1.c.i
@@ -5304,7 +5304,7 @@ examples/widgets/msgbox/lv_example_msgbox_1.i: examples/widgets/msgbox/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/msgbox/lv_example_msgbox_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/msgbox/lv_example_msgbox_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/msgbox/lv_example_msgbox_1.c.i
 .PHONY : examples/widgets/msgbox/lv_example_msgbox_1.c.i
 
 examples/widgets/msgbox/lv_example_msgbox_1.s: examples/widgets/msgbox/lv_example_msgbox_1.c.s
@@ -5312,7 +5312,7 @@ examples/widgets/msgbox/lv_example_msgbox_1.s: examples/widgets/msgbox/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/msgbox/lv_example_msgbox_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/msgbox/lv_example_msgbox_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/msgbox/lv_example_msgbox_1.c.s
 .PHONY : examples/widgets/msgbox/lv_example_msgbox_1.c.s
 
 examples/widgets/obj/lv_example_obj_1.o: examples/widgets/obj/lv_example_obj_1.c.o
@@ -5320,7 +5320,7 @@ examples/widgets/obj/lv_example_obj_1.o: examples/widgets/obj/lv_example_obj_1.c
 
 # target to build an object file
 examples/widgets/obj/lv_example_obj_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_1.c.o
 .PHONY : examples/widgets/obj/lv_example_obj_1.c.o
 
 examples/widgets/obj/lv_example_obj_1.i: examples/widgets/obj/lv_example_obj_1.c.i
@@ -5328,7 +5328,7 @@ examples/widgets/obj/lv_example_obj_1.i: examples/widgets/obj/lv_example_obj_1.c
 
 # target to preprocess a source file
 examples/widgets/obj/lv_example_obj_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_1.c.i
 .PHONY : examples/widgets/obj/lv_example_obj_1.c.i
 
 examples/widgets/obj/lv_example_obj_1.s: examples/widgets/obj/lv_example_obj_1.c.s
@@ -5336,7 +5336,7 @@ examples/widgets/obj/lv_example_obj_1.s: examples/widgets/obj/lv_example_obj_1.c
 
 # target to generate assembly for a file
 examples/widgets/obj/lv_example_obj_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_1.c.s
 .PHONY : examples/widgets/obj/lv_example_obj_1.c.s
 
 examples/widgets/obj/lv_example_obj_2.o: examples/widgets/obj/lv_example_obj_2.c.o
@@ -5344,7 +5344,7 @@ examples/widgets/obj/lv_example_obj_2.o: examples/widgets/obj/lv_example_obj_2.c
 
 # target to build an object file
 examples/widgets/obj/lv_example_obj_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_2.c.o
 .PHONY : examples/widgets/obj/lv_example_obj_2.c.o
 
 examples/widgets/obj/lv_example_obj_2.i: examples/widgets/obj/lv_example_obj_2.c.i
@@ -5352,7 +5352,7 @@ examples/widgets/obj/lv_example_obj_2.i: examples/widgets/obj/lv_example_obj_2.c
 
 # target to preprocess a source file
 examples/widgets/obj/lv_example_obj_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_2.c.i
 .PHONY : examples/widgets/obj/lv_example_obj_2.c.i
 
 examples/widgets/obj/lv_example_obj_2.s: examples/widgets/obj/lv_example_obj_2.c.s
@@ -5360,7 +5360,7 @@ examples/widgets/obj/lv_example_obj_2.s: examples/widgets/obj/lv_example_obj_2.c
 
 # target to generate assembly for a file
 examples/widgets/obj/lv_example_obj_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/obj/lv_example_obj_2.c.s
 .PHONY : examples/widgets/obj/lv_example_obj_2.c.s
 
 examples/widgets/roller/lv_example_roller_1.o: examples/widgets/roller/lv_example_roller_1.c.o
@@ -5368,7 +5368,7 @@ examples/widgets/roller/lv_example_roller_1.o: examples/widgets/roller/lv_exampl
 
 # target to build an object file
 examples/widgets/roller/lv_example_roller_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_1.c.o
 .PHONY : examples/widgets/roller/lv_example_roller_1.c.o
 
 examples/widgets/roller/lv_example_roller_1.i: examples/widgets/roller/lv_example_roller_1.c.i
@@ -5376,7 +5376,7 @@ examples/widgets/roller/lv_example_roller_1.i: examples/widgets/roller/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/roller/lv_example_roller_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_1.c.i
 .PHONY : examples/widgets/roller/lv_example_roller_1.c.i
 
 examples/widgets/roller/lv_example_roller_1.s: examples/widgets/roller/lv_example_roller_1.c.s
@@ -5384,7 +5384,7 @@ examples/widgets/roller/lv_example_roller_1.s: examples/widgets/roller/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/roller/lv_example_roller_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_1.c.s
 .PHONY : examples/widgets/roller/lv_example_roller_1.c.s
 
 examples/widgets/roller/lv_example_roller_2.o: examples/widgets/roller/lv_example_roller_2.c.o
@@ -5392,7 +5392,7 @@ examples/widgets/roller/lv_example_roller_2.o: examples/widgets/roller/lv_exampl
 
 # target to build an object file
 examples/widgets/roller/lv_example_roller_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_2.c.o
 .PHONY : examples/widgets/roller/lv_example_roller_2.c.o
 
 examples/widgets/roller/lv_example_roller_2.i: examples/widgets/roller/lv_example_roller_2.c.i
@@ -5400,7 +5400,7 @@ examples/widgets/roller/lv_example_roller_2.i: examples/widgets/roller/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/roller/lv_example_roller_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_2.c.i
 .PHONY : examples/widgets/roller/lv_example_roller_2.c.i
 
 examples/widgets/roller/lv_example_roller_2.s: examples/widgets/roller/lv_example_roller_2.c.s
@@ -5408,7 +5408,7 @@ examples/widgets/roller/lv_example_roller_2.s: examples/widgets/roller/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/roller/lv_example_roller_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_2.c.s
 .PHONY : examples/widgets/roller/lv_example_roller_2.c.s
 
 examples/widgets/roller/lv_example_roller_3.o: examples/widgets/roller/lv_example_roller_3.c.o
@@ -5416,7 +5416,7 @@ examples/widgets/roller/lv_example_roller_3.o: examples/widgets/roller/lv_exampl
 
 # target to build an object file
 examples/widgets/roller/lv_example_roller_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_3.c.o
 .PHONY : examples/widgets/roller/lv_example_roller_3.c.o
 
 examples/widgets/roller/lv_example_roller_3.i: examples/widgets/roller/lv_example_roller_3.c.i
@@ -5424,7 +5424,7 @@ examples/widgets/roller/lv_example_roller_3.i: examples/widgets/roller/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/roller/lv_example_roller_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_3.c.i
 .PHONY : examples/widgets/roller/lv_example_roller_3.c.i
 
 examples/widgets/roller/lv_example_roller_3.s: examples/widgets/roller/lv_example_roller_3.c.s
@@ -5432,7 +5432,7 @@ examples/widgets/roller/lv_example_roller_3.s: examples/widgets/roller/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/roller/lv_example_roller_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/roller/lv_example_roller_3.c.s
 .PHONY : examples/widgets/roller/lv_example_roller_3.c.s
 
 examples/widgets/slider/lv_example_slider_1.o: examples/widgets/slider/lv_example_slider_1.c.o
@@ -5440,7 +5440,7 @@ examples/widgets/slider/lv_example_slider_1.o: examples/widgets/slider/lv_exampl
 
 # target to build an object file
 examples/widgets/slider/lv_example_slider_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_1.c.o
 .PHONY : examples/widgets/slider/lv_example_slider_1.c.o
 
 examples/widgets/slider/lv_example_slider_1.i: examples/widgets/slider/lv_example_slider_1.c.i
@@ -5448,7 +5448,7 @@ examples/widgets/slider/lv_example_slider_1.i: examples/widgets/slider/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/slider/lv_example_slider_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_1.c.i
 .PHONY : examples/widgets/slider/lv_example_slider_1.c.i
 
 examples/widgets/slider/lv_example_slider_1.s: examples/widgets/slider/lv_example_slider_1.c.s
@@ -5456,7 +5456,7 @@ examples/widgets/slider/lv_example_slider_1.s: examples/widgets/slider/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/slider/lv_example_slider_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_1.c.s
 .PHONY : examples/widgets/slider/lv_example_slider_1.c.s
 
 examples/widgets/slider/lv_example_slider_2.o: examples/widgets/slider/lv_example_slider_2.c.o
@@ -5464,7 +5464,7 @@ examples/widgets/slider/lv_example_slider_2.o: examples/widgets/slider/lv_exampl
 
 # target to build an object file
 examples/widgets/slider/lv_example_slider_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_2.c.o
 .PHONY : examples/widgets/slider/lv_example_slider_2.c.o
 
 examples/widgets/slider/lv_example_slider_2.i: examples/widgets/slider/lv_example_slider_2.c.i
@@ -5472,7 +5472,7 @@ examples/widgets/slider/lv_example_slider_2.i: examples/widgets/slider/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/slider/lv_example_slider_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_2.c.i
 .PHONY : examples/widgets/slider/lv_example_slider_2.c.i
 
 examples/widgets/slider/lv_example_slider_2.s: examples/widgets/slider/lv_example_slider_2.c.s
@@ -5480,7 +5480,7 @@ examples/widgets/slider/lv_example_slider_2.s: examples/widgets/slider/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/slider/lv_example_slider_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_2.c.s
 .PHONY : examples/widgets/slider/lv_example_slider_2.c.s
 
 examples/widgets/slider/lv_example_slider_3.o: examples/widgets/slider/lv_example_slider_3.c.o
@@ -5488,7 +5488,7 @@ examples/widgets/slider/lv_example_slider_3.o: examples/widgets/slider/lv_exampl
 
 # target to build an object file
 examples/widgets/slider/lv_example_slider_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_3.c.o
 .PHONY : examples/widgets/slider/lv_example_slider_3.c.o
 
 examples/widgets/slider/lv_example_slider_3.i: examples/widgets/slider/lv_example_slider_3.c.i
@@ -5496,7 +5496,7 @@ examples/widgets/slider/lv_example_slider_3.i: examples/widgets/slider/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/slider/lv_example_slider_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_3.c.i
 .PHONY : examples/widgets/slider/lv_example_slider_3.c.i
 
 examples/widgets/slider/lv_example_slider_3.s: examples/widgets/slider/lv_example_slider_3.c.s
@@ -5504,7 +5504,7 @@ examples/widgets/slider/lv_example_slider_3.s: examples/widgets/slider/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/slider/lv_example_slider_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/slider/lv_example_slider_3.c.s
 .PHONY : examples/widgets/slider/lv_example_slider_3.c.s
 
 examples/widgets/span/lv_example_span_1.o: examples/widgets/span/lv_example_span_1.c.o
@@ -5512,7 +5512,7 @@ examples/widgets/span/lv_example_span_1.o: examples/widgets/span/lv_example_span
 
 # target to build an object file
 examples/widgets/span/lv_example_span_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/span/lv_example_span_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/span/lv_example_span_1.c.o
 .PHONY : examples/widgets/span/lv_example_span_1.c.o
 
 examples/widgets/span/lv_example_span_1.i: examples/widgets/span/lv_example_span_1.c.i
@@ -5520,7 +5520,7 @@ examples/widgets/span/lv_example_span_1.i: examples/widgets/span/lv_example_span
 
 # target to preprocess a source file
 examples/widgets/span/lv_example_span_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/span/lv_example_span_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/span/lv_example_span_1.c.i
 .PHONY : examples/widgets/span/lv_example_span_1.c.i
 
 examples/widgets/span/lv_example_span_1.s: examples/widgets/span/lv_example_span_1.c.s
@@ -5528,7 +5528,7 @@ examples/widgets/span/lv_example_span_1.s: examples/widgets/span/lv_example_span
 
 # target to generate assembly for a file
 examples/widgets/span/lv_example_span_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/span/lv_example_span_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/span/lv_example_span_1.c.s
 .PHONY : examples/widgets/span/lv_example_span_1.c.s
 
 examples/widgets/spinbox/lv_example_spinbox_1.o: examples/widgets/spinbox/lv_example_spinbox_1.c.o
@@ -5536,7 +5536,7 @@ examples/widgets/spinbox/lv_example_spinbox_1.o: examples/widgets/spinbox/lv_exa
 
 # target to build an object file
 examples/widgets/spinbox/lv_example_spinbox_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinbox/lv_example_spinbox_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinbox/lv_example_spinbox_1.c.o
 .PHONY : examples/widgets/spinbox/lv_example_spinbox_1.c.o
 
 examples/widgets/spinbox/lv_example_spinbox_1.i: examples/widgets/spinbox/lv_example_spinbox_1.c.i
@@ -5544,7 +5544,7 @@ examples/widgets/spinbox/lv_example_spinbox_1.i: examples/widgets/spinbox/lv_exa
 
 # target to preprocess a source file
 examples/widgets/spinbox/lv_example_spinbox_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinbox/lv_example_spinbox_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinbox/lv_example_spinbox_1.c.i
 .PHONY : examples/widgets/spinbox/lv_example_spinbox_1.c.i
 
 examples/widgets/spinbox/lv_example_spinbox_1.s: examples/widgets/spinbox/lv_example_spinbox_1.c.s
@@ -5552,7 +5552,7 @@ examples/widgets/spinbox/lv_example_spinbox_1.s: examples/widgets/spinbox/lv_exa
 
 # target to generate assembly for a file
 examples/widgets/spinbox/lv_example_spinbox_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinbox/lv_example_spinbox_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinbox/lv_example_spinbox_1.c.s
 .PHONY : examples/widgets/spinbox/lv_example_spinbox_1.c.s
 
 examples/widgets/spinner/lv_example_spinner_1.o: examples/widgets/spinner/lv_example_spinner_1.c.o
@@ -5560,7 +5560,7 @@ examples/widgets/spinner/lv_example_spinner_1.o: examples/widgets/spinner/lv_exa
 
 # target to build an object file
 examples/widgets/spinner/lv_example_spinner_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinner/lv_example_spinner_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinner/lv_example_spinner_1.c.o
 .PHONY : examples/widgets/spinner/lv_example_spinner_1.c.o
 
 examples/widgets/spinner/lv_example_spinner_1.i: examples/widgets/spinner/lv_example_spinner_1.c.i
@@ -5568,7 +5568,7 @@ examples/widgets/spinner/lv_example_spinner_1.i: examples/widgets/spinner/lv_exa
 
 # target to preprocess a source file
 examples/widgets/spinner/lv_example_spinner_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinner/lv_example_spinner_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinner/lv_example_spinner_1.c.i
 .PHONY : examples/widgets/spinner/lv_example_spinner_1.c.i
 
 examples/widgets/spinner/lv_example_spinner_1.s: examples/widgets/spinner/lv_example_spinner_1.c.s
@@ -5576,7 +5576,7 @@ examples/widgets/spinner/lv_example_spinner_1.s: examples/widgets/spinner/lv_exa
 
 # target to generate assembly for a file
 examples/widgets/spinner/lv_example_spinner_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinner/lv_example_spinner_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/spinner/lv_example_spinner_1.c.s
 .PHONY : examples/widgets/spinner/lv_example_spinner_1.c.s
 
 examples/widgets/switch/lv_example_switch_1.o: examples/widgets/switch/lv_example_switch_1.c.o
@@ -5584,7 +5584,7 @@ examples/widgets/switch/lv_example_switch_1.o: examples/widgets/switch/lv_exampl
 
 # target to build an object file
 examples/widgets/switch/lv_example_switch_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/switch/lv_example_switch_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/switch/lv_example_switch_1.c.o
 .PHONY : examples/widgets/switch/lv_example_switch_1.c.o
 
 examples/widgets/switch/lv_example_switch_1.i: examples/widgets/switch/lv_example_switch_1.c.i
@@ -5592,7 +5592,7 @@ examples/widgets/switch/lv_example_switch_1.i: examples/widgets/switch/lv_exampl
 
 # target to preprocess a source file
 examples/widgets/switch/lv_example_switch_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/switch/lv_example_switch_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/switch/lv_example_switch_1.c.i
 .PHONY : examples/widgets/switch/lv_example_switch_1.c.i
 
 examples/widgets/switch/lv_example_switch_1.s: examples/widgets/switch/lv_example_switch_1.c.s
@@ -5600,7 +5600,7 @@ examples/widgets/switch/lv_example_switch_1.s: examples/widgets/switch/lv_exampl
 
 # target to generate assembly for a file
 examples/widgets/switch/lv_example_switch_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/switch/lv_example_switch_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/switch/lv_example_switch_1.c.s
 .PHONY : examples/widgets/switch/lv_example_switch_1.c.s
 
 examples/widgets/table/lv_example_table_1.o: examples/widgets/table/lv_example_table_1.c.o
@@ -5608,7 +5608,7 @@ examples/widgets/table/lv_example_table_1.o: examples/widgets/table/lv_example_t
 
 # target to build an object file
 examples/widgets/table/lv_example_table_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_1.c.o
 .PHONY : examples/widgets/table/lv_example_table_1.c.o
 
 examples/widgets/table/lv_example_table_1.i: examples/widgets/table/lv_example_table_1.c.i
@@ -5616,7 +5616,7 @@ examples/widgets/table/lv_example_table_1.i: examples/widgets/table/lv_example_t
 
 # target to preprocess a source file
 examples/widgets/table/lv_example_table_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_1.c.i
 .PHONY : examples/widgets/table/lv_example_table_1.c.i
 
 examples/widgets/table/lv_example_table_1.s: examples/widgets/table/lv_example_table_1.c.s
@@ -5624,7 +5624,7 @@ examples/widgets/table/lv_example_table_1.s: examples/widgets/table/lv_example_t
 
 # target to generate assembly for a file
 examples/widgets/table/lv_example_table_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_1.c.s
 .PHONY : examples/widgets/table/lv_example_table_1.c.s
 
 examples/widgets/table/lv_example_table_2.o: examples/widgets/table/lv_example_table_2.c.o
@@ -5632,7 +5632,7 @@ examples/widgets/table/lv_example_table_2.o: examples/widgets/table/lv_example_t
 
 # target to build an object file
 examples/widgets/table/lv_example_table_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_2.c.o
 .PHONY : examples/widgets/table/lv_example_table_2.c.o
 
 examples/widgets/table/lv_example_table_2.i: examples/widgets/table/lv_example_table_2.c.i
@@ -5640,7 +5640,7 @@ examples/widgets/table/lv_example_table_2.i: examples/widgets/table/lv_example_t
 
 # target to preprocess a source file
 examples/widgets/table/lv_example_table_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_2.c.i
 .PHONY : examples/widgets/table/lv_example_table_2.c.i
 
 examples/widgets/table/lv_example_table_2.s: examples/widgets/table/lv_example_table_2.c.s
@@ -5648,7 +5648,7 @@ examples/widgets/table/lv_example_table_2.s: examples/widgets/table/lv_example_t
 
 # target to generate assembly for a file
 examples/widgets/table/lv_example_table_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/table/lv_example_table_2.c.s
 .PHONY : examples/widgets/table/lv_example_table_2.c.s
 
 examples/widgets/tabview/lv_example_tabview_1.o: examples/widgets/tabview/lv_example_tabview_1.c.o
@@ -5656,7 +5656,7 @@ examples/widgets/tabview/lv_example_tabview_1.o: examples/widgets/tabview/lv_exa
 
 # target to build an object file
 examples/widgets/tabview/lv_example_tabview_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_1.c.o
 .PHONY : examples/widgets/tabview/lv_example_tabview_1.c.o
 
 examples/widgets/tabview/lv_example_tabview_1.i: examples/widgets/tabview/lv_example_tabview_1.c.i
@@ -5664,7 +5664,7 @@ examples/widgets/tabview/lv_example_tabview_1.i: examples/widgets/tabview/lv_exa
 
 # target to preprocess a source file
 examples/widgets/tabview/lv_example_tabview_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_1.c.i
 .PHONY : examples/widgets/tabview/lv_example_tabview_1.c.i
 
 examples/widgets/tabview/lv_example_tabview_1.s: examples/widgets/tabview/lv_example_tabview_1.c.s
@@ -5672,7 +5672,7 @@ examples/widgets/tabview/lv_example_tabview_1.s: examples/widgets/tabview/lv_exa
 
 # target to generate assembly for a file
 examples/widgets/tabview/lv_example_tabview_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_1.c.s
 .PHONY : examples/widgets/tabview/lv_example_tabview_1.c.s
 
 examples/widgets/tabview/lv_example_tabview_2.o: examples/widgets/tabview/lv_example_tabview_2.c.o
@@ -5680,7 +5680,7 @@ examples/widgets/tabview/lv_example_tabview_2.o: examples/widgets/tabview/lv_exa
 
 # target to build an object file
 examples/widgets/tabview/lv_example_tabview_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_2.c.o
 .PHONY : examples/widgets/tabview/lv_example_tabview_2.c.o
 
 examples/widgets/tabview/lv_example_tabview_2.i: examples/widgets/tabview/lv_example_tabview_2.c.i
@@ -5688,7 +5688,7 @@ examples/widgets/tabview/lv_example_tabview_2.i: examples/widgets/tabview/lv_exa
 
 # target to preprocess a source file
 examples/widgets/tabview/lv_example_tabview_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_2.c.i
 .PHONY : examples/widgets/tabview/lv_example_tabview_2.c.i
 
 examples/widgets/tabview/lv_example_tabview_2.s: examples/widgets/tabview/lv_example_tabview_2.c.s
@@ -5696,7 +5696,7 @@ examples/widgets/tabview/lv_example_tabview_2.s: examples/widgets/tabview/lv_exa
 
 # target to generate assembly for a file
 examples/widgets/tabview/lv_example_tabview_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tabview/lv_example_tabview_2.c.s
 .PHONY : examples/widgets/tabview/lv_example_tabview_2.c.s
 
 examples/widgets/textarea/lv_example_textarea_1.o: examples/widgets/textarea/lv_example_textarea_1.c.o
@@ -5704,7 +5704,7 @@ examples/widgets/textarea/lv_example_textarea_1.o: examples/widgets/textarea/lv_
 
 # target to build an object file
 examples/widgets/textarea/lv_example_textarea_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_1.c.o
 .PHONY : examples/widgets/textarea/lv_example_textarea_1.c.o
 
 examples/widgets/textarea/lv_example_textarea_1.i: examples/widgets/textarea/lv_example_textarea_1.c.i
@@ -5712,7 +5712,7 @@ examples/widgets/textarea/lv_example_textarea_1.i: examples/widgets/textarea/lv_
 
 # target to preprocess a source file
 examples/widgets/textarea/lv_example_textarea_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_1.c.i
 .PHONY : examples/widgets/textarea/lv_example_textarea_1.c.i
 
 examples/widgets/textarea/lv_example_textarea_1.s: examples/widgets/textarea/lv_example_textarea_1.c.s
@@ -5720,7 +5720,7 @@ examples/widgets/textarea/lv_example_textarea_1.s: examples/widgets/textarea/lv_
 
 # target to generate assembly for a file
 examples/widgets/textarea/lv_example_textarea_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_1.c.s
 .PHONY : examples/widgets/textarea/lv_example_textarea_1.c.s
 
 examples/widgets/textarea/lv_example_textarea_2.o: examples/widgets/textarea/lv_example_textarea_2.c.o
@@ -5728,7 +5728,7 @@ examples/widgets/textarea/lv_example_textarea_2.o: examples/widgets/textarea/lv_
 
 # target to build an object file
 examples/widgets/textarea/lv_example_textarea_2.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_2.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_2.c.o
 .PHONY : examples/widgets/textarea/lv_example_textarea_2.c.o
 
 examples/widgets/textarea/lv_example_textarea_2.i: examples/widgets/textarea/lv_example_textarea_2.c.i
@@ -5736,7 +5736,7 @@ examples/widgets/textarea/lv_example_textarea_2.i: examples/widgets/textarea/lv_
 
 # target to preprocess a source file
 examples/widgets/textarea/lv_example_textarea_2.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_2.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_2.c.i
 .PHONY : examples/widgets/textarea/lv_example_textarea_2.c.i
 
 examples/widgets/textarea/lv_example_textarea_2.s: examples/widgets/textarea/lv_example_textarea_2.c.s
@@ -5744,7 +5744,7 @@ examples/widgets/textarea/lv_example_textarea_2.s: examples/widgets/textarea/lv_
 
 # target to generate assembly for a file
 examples/widgets/textarea/lv_example_textarea_2.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_2.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_2.c.s
 .PHONY : examples/widgets/textarea/lv_example_textarea_2.c.s
 
 examples/widgets/textarea/lv_example_textarea_3.o: examples/widgets/textarea/lv_example_textarea_3.c.o
@@ -5752,7 +5752,7 @@ examples/widgets/textarea/lv_example_textarea_3.o: examples/widgets/textarea/lv_
 
 # target to build an object file
 examples/widgets/textarea/lv_example_textarea_3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_3.c.o
 .PHONY : examples/widgets/textarea/lv_example_textarea_3.c.o
 
 examples/widgets/textarea/lv_example_textarea_3.i: examples/widgets/textarea/lv_example_textarea_3.c.i
@@ -5760,7 +5760,7 @@ examples/widgets/textarea/lv_example_textarea_3.i: examples/widgets/textarea/lv_
 
 # target to preprocess a source file
 examples/widgets/textarea/lv_example_textarea_3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_3.c.i
 .PHONY : examples/widgets/textarea/lv_example_textarea_3.c.i
 
 examples/widgets/textarea/lv_example_textarea_3.s: examples/widgets/textarea/lv_example_textarea_3.c.s
@@ -5768,7 +5768,7 @@ examples/widgets/textarea/lv_example_textarea_3.s: examples/widgets/textarea/lv_
 
 # target to generate assembly for a file
 examples/widgets/textarea/lv_example_textarea_3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/textarea/lv_example_textarea_3.c.s
 .PHONY : examples/widgets/textarea/lv_example_textarea_3.c.s
 
 examples/widgets/tileview/lv_example_tileview_1.o: examples/widgets/tileview/lv_example_tileview_1.c.o
@@ -5776,7 +5776,7 @@ examples/widgets/tileview/lv_example_tileview_1.o: examples/widgets/tileview/lv_
 
 # target to build an object file
 examples/widgets/tileview/lv_example_tileview_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tileview/lv_example_tileview_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tileview/lv_example_tileview_1.c.o
 .PHONY : examples/widgets/tileview/lv_example_tileview_1.c.o
 
 examples/widgets/tileview/lv_example_tileview_1.i: examples/widgets/tileview/lv_example_tileview_1.c.i
@@ -5784,7 +5784,7 @@ examples/widgets/tileview/lv_example_tileview_1.i: examples/widgets/tileview/lv_
 
 # target to preprocess a source file
 examples/widgets/tileview/lv_example_tileview_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tileview/lv_example_tileview_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tileview/lv_example_tileview_1.c.i
 .PHONY : examples/widgets/tileview/lv_example_tileview_1.c.i
 
 examples/widgets/tileview/lv_example_tileview_1.s: examples/widgets/tileview/lv_example_tileview_1.c.s
@@ -5792,7 +5792,7 @@ examples/widgets/tileview/lv_example_tileview_1.s: examples/widgets/tileview/lv_
 
 # target to generate assembly for a file
 examples/widgets/tileview/lv_example_tileview_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tileview/lv_example_tileview_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/tileview/lv_example_tileview_1.c.s
 .PHONY : examples/widgets/tileview/lv_example_tileview_1.c.s
 
 examples/widgets/win/lv_example_win_1.o: examples/widgets/win/lv_example_win_1.c.o
@@ -5800,7 +5800,7 @@ examples/widgets/win/lv_example_win_1.o: examples/widgets/win/lv_example_win_1.c
 
 # target to build an object file
 examples/widgets/win/lv_example_win_1.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/win/lv_example_win_1.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/win/lv_example_win_1.c.o
 .PHONY : examples/widgets/win/lv_example_win_1.c.o
 
 examples/widgets/win/lv_example_win_1.i: examples/widgets/win/lv_example_win_1.c.i
@@ -5808,7 +5808,7 @@ examples/widgets/win/lv_example_win_1.i: examples/widgets/win/lv_example_win_1.c
 
 # target to preprocess a source file
 examples/widgets/win/lv_example_win_1.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/win/lv_example_win_1.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/win/lv_example_win_1.c.i
 .PHONY : examples/widgets/win/lv_example_win_1.c.i
 
 examples/widgets/win/lv_example_win_1.s: examples/widgets/win/lv_example_win_1.c.s
@@ -5816,7 +5816,7 @@ examples/widgets/win/lv_example_win_1.s: examples/widgets/win/lv_example_win_1.c
 
 # target to generate assembly for a file
 examples/widgets/win/lv_example_win_1.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/win/lv_example_win_1.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl_examples.dir/build.make lvgl/CMakeFiles/lvgl_examples.dir/examples/widgets/win/lv_example_win_1.c.s
 .PHONY : examples/widgets/win/lv_example_win_1.c.s
 
 src/core/lv_disp.o: src/core/lv_disp.c.o
@@ -5824,7 +5824,7 @@ src/core/lv_disp.o: src/core/lv_disp.c.o
 
 # target to build an object file
 src/core/lv_disp.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_disp.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_disp.c.o
 .PHONY : src/core/lv_disp.c.o
 
 src/core/lv_disp.i: src/core/lv_disp.c.i
@@ -5832,7 +5832,7 @@ src/core/lv_disp.i: src/core/lv_disp.c.i
 
 # target to preprocess a source file
 src/core/lv_disp.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_disp.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_disp.c.i
 .PHONY : src/core/lv_disp.c.i
 
 src/core/lv_disp.s: src/core/lv_disp.c.s
@@ -5840,7 +5840,7 @@ src/core/lv_disp.s: src/core/lv_disp.c.s
 
 # target to generate assembly for a file
 src/core/lv_disp.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_disp.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_disp.c.s
 .PHONY : src/core/lv_disp.c.s
 
 src/core/lv_event.o: src/core/lv_event.c.o
@@ -5848,7 +5848,7 @@ src/core/lv_event.o: src/core/lv_event.c.o
 
 # target to build an object file
 src/core/lv_event.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_event.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_event.c.o
 .PHONY : src/core/lv_event.c.o
 
 src/core/lv_event.i: src/core/lv_event.c.i
@@ -5856,7 +5856,7 @@ src/core/lv_event.i: src/core/lv_event.c.i
 
 # target to preprocess a source file
 src/core/lv_event.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_event.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_event.c.i
 .PHONY : src/core/lv_event.c.i
 
 src/core/lv_event.s: src/core/lv_event.c.s
@@ -5864,7 +5864,7 @@ src/core/lv_event.s: src/core/lv_event.c.s
 
 # target to generate assembly for a file
 src/core/lv_event.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_event.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_event.c.s
 .PHONY : src/core/lv_event.c.s
 
 src/core/lv_group.o: src/core/lv_group.c.o
@@ -5872,7 +5872,7 @@ src/core/lv_group.o: src/core/lv_group.c.o
 
 # target to build an object file
 src/core/lv_group.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_group.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_group.c.o
 .PHONY : src/core/lv_group.c.o
 
 src/core/lv_group.i: src/core/lv_group.c.i
@@ -5880,7 +5880,7 @@ src/core/lv_group.i: src/core/lv_group.c.i
 
 # target to preprocess a source file
 src/core/lv_group.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_group.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_group.c.i
 .PHONY : src/core/lv_group.c.i
 
 src/core/lv_group.s: src/core/lv_group.c.s
@@ -5888,7 +5888,7 @@ src/core/lv_group.s: src/core/lv_group.c.s
 
 # target to generate assembly for a file
 src/core/lv_group.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_group.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_group.c.s
 .PHONY : src/core/lv_group.c.s
 
 src/core/lv_indev.o: src/core/lv_indev.c.o
@@ -5896,7 +5896,7 @@ src/core/lv_indev.o: src/core/lv_indev.c.o
 
 # target to build an object file
 src/core/lv_indev.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev.c.o
 .PHONY : src/core/lv_indev.c.o
 
 src/core/lv_indev.i: src/core/lv_indev.c.i
@@ -5904,7 +5904,7 @@ src/core/lv_indev.i: src/core/lv_indev.c.i
 
 # target to preprocess a source file
 src/core/lv_indev.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev.c.i
 .PHONY : src/core/lv_indev.c.i
 
 src/core/lv_indev.s: src/core/lv_indev.c.s
@@ -5912,7 +5912,7 @@ src/core/lv_indev.s: src/core/lv_indev.c.s
 
 # target to generate assembly for a file
 src/core/lv_indev.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev.c.s
 .PHONY : src/core/lv_indev.c.s
 
 src/core/lv_indev_scroll.o: src/core/lv_indev_scroll.c.o
@@ -5920,7 +5920,7 @@ src/core/lv_indev_scroll.o: src/core/lv_indev_scroll.c.o
 
 # target to build an object file
 src/core/lv_indev_scroll.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev_scroll.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev_scroll.c.o
 .PHONY : src/core/lv_indev_scroll.c.o
 
 src/core/lv_indev_scroll.i: src/core/lv_indev_scroll.c.i
@@ -5928,7 +5928,7 @@ src/core/lv_indev_scroll.i: src/core/lv_indev_scroll.c.i
 
 # target to preprocess a source file
 src/core/lv_indev_scroll.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev_scroll.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev_scroll.c.i
 .PHONY : src/core/lv_indev_scroll.c.i
 
 src/core/lv_indev_scroll.s: src/core/lv_indev_scroll.c.s
@@ -5936,7 +5936,7 @@ src/core/lv_indev_scroll.s: src/core/lv_indev_scroll.c.s
 
 # target to generate assembly for a file
 src/core/lv_indev_scroll.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev_scroll.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_indev_scroll.c.s
 .PHONY : src/core/lv_indev_scroll.c.s
 
 src/core/lv_obj.o: src/core/lv_obj.c.o
@@ -5944,7 +5944,7 @@ src/core/lv_obj.o: src/core/lv_obj.c.o
 
 # target to build an object file
 src/core/lv_obj.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj.c.o
 .PHONY : src/core/lv_obj.c.o
 
 src/core/lv_obj.i: src/core/lv_obj.c.i
@@ -5952,7 +5952,7 @@ src/core/lv_obj.i: src/core/lv_obj.c.i
 
 # target to preprocess a source file
 src/core/lv_obj.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj.c.i
 .PHONY : src/core/lv_obj.c.i
 
 src/core/lv_obj.s: src/core/lv_obj.c.s
@@ -5960,7 +5960,7 @@ src/core/lv_obj.s: src/core/lv_obj.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj.c.s
 .PHONY : src/core/lv_obj.c.s
 
 src/core/lv_obj_class.o: src/core/lv_obj_class.c.o
@@ -5968,7 +5968,7 @@ src/core/lv_obj_class.o: src/core/lv_obj_class.c.o
 
 # target to build an object file
 src/core/lv_obj_class.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_class.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_class.c.o
 .PHONY : src/core/lv_obj_class.c.o
 
 src/core/lv_obj_class.i: src/core/lv_obj_class.c.i
@@ -5976,7 +5976,7 @@ src/core/lv_obj_class.i: src/core/lv_obj_class.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_class.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_class.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_class.c.i
 .PHONY : src/core/lv_obj_class.c.i
 
 src/core/lv_obj_class.s: src/core/lv_obj_class.c.s
@@ -5984,7 +5984,7 @@ src/core/lv_obj_class.s: src/core/lv_obj_class.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_class.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_class.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_class.c.s
 .PHONY : src/core/lv_obj_class.c.s
 
 src/core/lv_obj_draw.o: src/core/lv_obj_draw.c.o
@@ -5992,7 +5992,7 @@ src/core/lv_obj_draw.o: src/core/lv_obj_draw.c.o
 
 # target to build an object file
 src/core/lv_obj_draw.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_draw.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_draw.c.o
 .PHONY : src/core/lv_obj_draw.c.o
 
 src/core/lv_obj_draw.i: src/core/lv_obj_draw.c.i
@@ -6000,7 +6000,7 @@ src/core/lv_obj_draw.i: src/core/lv_obj_draw.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_draw.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_draw.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_draw.c.i
 .PHONY : src/core/lv_obj_draw.c.i
 
 src/core/lv_obj_draw.s: src/core/lv_obj_draw.c.s
@@ -6008,7 +6008,7 @@ src/core/lv_obj_draw.s: src/core/lv_obj_draw.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_draw.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_draw.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_draw.c.s
 .PHONY : src/core/lv_obj_draw.c.s
 
 src/core/lv_obj_pos.o: src/core/lv_obj_pos.c.o
@@ -6016,7 +6016,7 @@ src/core/lv_obj_pos.o: src/core/lv_obj_pos.c.o
 
 # target to build an object file
 src/core/lv_obj_pos.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_pos.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_pos.c.o
 .PHONY : src/core/lv_obj_pos.c.o
 
 src/core/lv_obj_pos.i: src/core/lv_obj_pos.c.i
@@ -6024,7 +6024,7 @@ src/core/lv_obj_pos.i: src/core/lv_obj_pos.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_pos.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_pos.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_pos.c.i
 .PHONY : src/core/lv_obj_pos.c.i
 
 src/core/lv_obj_pos.s: src/core/lv_obj_pos.c.s
@@ -6032,7 +6032,7 @@ src/core/lv_obj_pos.s: src/core/lv_obj_pos.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_pos.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_pos.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_pos.c.s
 .PHONY : src/core/lv_obj_pos.c.s
 
 src/core/lv_obj_scroll.o: src/core/lv_obj_scroll.c.o
@@ -6040,7 +6040,7 @@ src/core/lv_obj_scroll.o: src/core/lv_obj_scroll.c.o
 
 # target to build an object file
 src/core/lv_obj_scroll.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_scroll.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_scroll.c.o
 .PHONY : src/core/lv_obj_scroll.c.o
 
 src/core/lv_obj_scroll.i: src/core/lv_obj_scroll.c.i
@@ -6048,7 +6048,7 @@ src/core/lv_obj_scroll.i: src/core/lv_obj_scroll.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_scroll.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_scroll.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_scroll.c.i
 .PHONY : src/core/lv_obj_scroll.c.i
 
 src/core/lv_obj_scroll.s: src/core/lv_obj_scroll.c.s
@@ -6056,7 +6056,7 @@ src/core/lv_obj_scroll.s: src/core/lv_obj_scroll.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_scroll.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_scroll.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_scroll.c.s
 .PHONY : src/core/lv_obj_scroll.c.s
 
 src/core/lv_obj_style.o: src/core/lv_obj_style.c.o
@@ -6064,7 +6064,7 @@ src/core/lv_obj_style.o: src/core/lv_obj_style.c.o
 
 # target to build an object file
 src/core/lv_obj_style.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style.c.o
 .PHONY : src/core/lv_obj_style.c.o
 
 src/core/lv_obj_style.i: src/core/lv_obj_style.c.i
@@ -6072,7 +6072,7 @@ src/core/lv_obj_style.i: src/core/lv_obj_style.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_style.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style.c.i
 .PHONY : src/core/lv_obj_style.c.i
 
 src/core/lv_obj_style.s: src/core/lv_obj_style.c.s
@@ -6080,7 +6080,7 @@ src/core/lv_obj_style.s: src/core/lv_obj_style.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_style.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style.c.s
 .PHONY : src/core/lv_obj_style.c.s
 
 src/core/lv_obj_style_gen.o: src/core/lv_obj_style_gen.c.o
@@ -6088,7 +6088,7 @@ src/core/lv_obj_style_gen.o: src/core/lv_obj_style_gen.c.o
 
 # target to build an object file
 src/core/lv_obj_style_gen.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style_gen.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style_gen.c.o
 .PHONY : src/core/lv_obj_style_gen.c.o
 
 src/core/lv_obj_style_gen.i: src/core/lv_obj_style_gen.c.i
@@ -6096,7 +6096,7 @@ src/core/lv_obj_style_gen.i: src/core/lv_obj_style_gen.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_style_gen.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style_gen.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style_gen.c.i
 .PHONY : src/core/lv_obj_style_gen.c.i
 
 src/core/lv_obj_style_gen.s: src/core/lv_obj_style_gen.c.s
@@ -6104,7 +6104,7 @@ src/core/lv_obj_style_gen.s: src/core/lv_obj_style_gen.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_style_gen.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style_gen.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_style_gen.c.s
 .PHONY : src/core/lv_obj_style_gen.c.s
 
 src/core/lv_obj_tree.o: src/core/lv_obj_tree.c.o
@@ -6112,7 +6112,7 @@ src/core/lv_obj_tree.o: src/core/lv_obj_tree.c.o
 
 # target to build an object file
 src/core/lv_obj_tree.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_tree.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_tree.c.o
 .PHONY : src/core/lv_obj_tree.c.o
 
 src/core/lv_obj_tree.i: src/core/lv_obj_tree.c.i
@@ -6120,7 +6120,7 @@ src/core/lv_obj_tree.i: src/core/lv_obj_tree.c.i
 
 # target to preprocess a source file
 src/core/lv_obj_tree.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_tree.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_tree.c.i
 .PHONY : src/core/lv_obj_tree.c.i
 
 src/core/lv_obj_tree.s: src/core/lv_obj_tree.c.s
@@ -6128,7 +6128,7 @@ src/core/lv_obj_tree.s: src/core/lv_obj_tree.c.s
 
 # target to generate assembly for a file
 src/core/lv_obj_tree.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_tree.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_obj_tree.c.s
 .PHONY : src/core/lv_obj_tree.c.s
 
 src/core/lv_refr.o: src/core/lv_refr.c.o
@@ -6136,7 +6136,7 @@ src/core/lv_refr.o: src/core/lv_refr.c.o
 
 # target to build an object file
 src/core/lv_refr.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_refr.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_refr.c.o
 .PHONY : src/core/lv_refr.c.o
 
 src/core/lv_refr.i: src/core/lv_refr.c.i
@@ -6144,7 +6144,7 @@ src/core/lv_refr.i: src/core/lv_refr.c.i
 
 # target to preprocess a source file
 src/core/lv_refr.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_refr.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_refr.c.i
 .PHONY : src/core/lv_refr.c.i
 
 src/core/lv_refr.s: src/core/lv_refr.c.s
@@ -6152,7 +6152,7 @@ src/core/lv_refr.s: src/core/lv_refr.c.s
 
 # target to generate assembly for a file
 src/core/lv_refr.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_refr.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_refr.c.s
 .PHONY : src/core/lv_refr.c.s
 
 src/core/lv_theme.o: src/core/lv_theme.c.o
@@ -6160,7 +6160,7 @@ src/core/lv_theme.o: src/core/lv_theme.c.o
 
 # target to build an object file
 src/core/lv_theme.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_theme.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_theme.c.o
 .PHONY : src/core/lv_theme.c.o
 
 src/core/lv_theme.i: src/core/lv_theme.c.i
@@ -6168,7 +6168,7 @@ src/core/lv_theme.i: src/core/lv_theme.c.i
 
 # target to preprocess a source file
 src/core/lv_theme.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_theme.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_theme.c.i
 .PHONY : src/core/lv_theme.c.i
 
 src/core/lv_theme.s: src/core/lv_theme.c.s
@@ -6176,7 +6176,7 @@ src/core/lv_theme.s: src/core/lv_theme.c.s
 
 # target to generate assembly for a file
 src/core/lv_theme.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_theme.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/core/lv_theme.c.s
 .PHONY : src/core/lv_theme.c.s
 
 src/draw/arm2d/lv_gpu_arm2d.o: src/draw/arm2d/lv_gpu_arm2d.c.o
@@ -6184,7 +6184,7 @@ src/draw/arm2d/lv_gpu_arm2d.o: src/draw/arm2d/lv_gpu_arm2d.c.o
 
 # target to build an object file
 src/draw/arm2d/lv_gpu_arm2d.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/arm2d/lv_gpu_arm2d.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/arm2d/lv_gpu_arm2d.c.o
 .PHONY : src/draw/arm2d/lv_gpu_arm2d.c.o
 
 src/draw/arm2d/lv_gpu_arm2d.i: src/draw/arm2d/lv_gpu_arm2d.c.i
@@ -6192,7 +6192,7 @@ src/draw/arm2d/lv_gpu_arm2d.i: src/draw/arm2d/lv_gpu_arm2d.c.i
 
 # target to preprocess a source file
 src/draw/arm2d/lv_gpu_arm2d.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/arm2d/lv_gpu_arm2d.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/arm2d/lv_gpu_arm2d.c.i
 .PHONY : src/draw/arm2d/lv_gpu_arm2d.c.i
 
 src/draw/arm2d/lv_gpu_arm2d.s: src/draw/arm2d/lv_gpu_arm2d.c.s
@@ -6200,7 +6200,7 @@ src/draw/arm2d/lv_gpu_arm2d.s: src/draw/arm2d/lv_gpu_arm2d.c.s
 
 # target to generate assembly for a file
 src/draw/arm2d/lv_gpu_arm2d.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/arm2d/lv_gpu_arm2d.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/arm2d/lv_gpu_arm2d.c.s
 .PHONY : src/draw/arm2d/lv_gpu_arm2d.c.s
 
 src/draw/lv_draw.o: src/draw/lv_draw.c.o
@@ -6208,7 +6208,7 @@ src/draw/lv_draw.o: src/draw/lv_draw.c.o
 
 # target to build an object file
 src/draw/lv_draw.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw.c.o
 .PHONY : src/draw/lv_draw.c.o
 
 src/draw/lv_draw.i: src/draw/lv_draw.c.i
@@ -6216,7 +6216,7 @@ src/draw/lv_draw.i: src/draw/lv_draw.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw.c.i
 .PHONY : src/draw/lv_draw.c.i
 
 src/draw/lv_draw.s: src/draw/lv_draw.c.s
@@ -6224,7 +6224,7 @@ src/draw/lv_draw.s: src/draw/lv_draw.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw.c.s
 .PHONY : src/draw/lv_draw.c.s
 
 src/draw/lv_draw_arc.o: src/draw/lv_draw_arc.c.o
@@ -6232,7 +6232,7 @@ src/draw/lv_draw_arc.o: src/draw/lv_draw_arc.c.o
 
 # target to build an object file
 src/draw/lv_draw_arc.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_arc.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_arc.c.o
 .PHONY : src/draw/lv_draw_arc.c.o
 
 src/draw/lv_draw_arc.i: src/draw/lv_draw_arc.c.i
@@ -6240,7 +6240,7 @@ src/draw/lv_draw_arc.i: src/draw/lv_draw_arc.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_arc.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_arc.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_arc.c.i
 .PHONY : src/draw/lv_draw_arc.c.i
 
 src/draw/lv_draw_arc.s: src/draw/lv_draw_arc.c.s
@@ -6248,7 +6248,7 @@ src/draw/lv_draw_arc.s: src/draw/lv_draw_arc.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_arc.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_arc.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_arc.c.s
 .PHONY : src/draw/lv_draw_arc.c.s
 
 src/draw/lv_draw_img.o: src/draw/lv_draw_img.c.o
@@ -6256,7 +6256,7 @@ src/draw/lv_draw_img.o: src/draw/lv_draw_img.c.o
 
 # target to build an object file
 src/draw/lv_draw_img.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_img.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_img.c.o
 .PHONY : src/draw/lv_draw_img.c.o
 
 src/draw/lv_draw_img.i: src/draw/lv_draw_img.c.i
@@ -6264,7 +6264,7 @@ src/draw/lv_draw_img.i: src/draw/lv_draw_img.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_img.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_img.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_img.c.i
 .PHONY : src/draw/lv_draw_img.c.i
 
 src/draw/lv_draw_img.s: src/draw/lv_draw_img.c.s
@@ -6272,7 +6272,7 @@ src/draw/lv_draw_img.s: src/draw/lv_draw_img.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_img.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_img.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_img.c.s
 .PHONY : src/draw/lv_draw_img.c.s
 
 src/draw/lv_draw_label.o: src/draw/lv_draw_label.c.o
@@ -6280,7 +6280,7 @@ src/draw/lv_draw_label.o: src/draw/lv_draw_label.c.o
 
 # target to build an object file
 src/draw/lv_draw_label.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_label.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_label.c.o
 .PHONY : src/draw/lv_draw_label.c.o
 
 src/draw/lv_draw_label.i: src/draw/lv_draw_label.c.i
@@ -6288,7 +6288,7 @@ src/draw/lv_draw_label.i: src/draw/lv_draw_label.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_label.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_label.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_label.c.i
 .PHONY : src/draw/lv_draw_label.c.i
 
 src/draw/lv_draw_label.s: src/draw/lv_draw_label.c.s
@@ -6296,7 +6296,7 @@ src/draw/lv_draw_label.s: src/draw/lv_draw_label.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_label.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_label.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_label.c.s
 .PHONY : src/draw/lv_draw_label.c.s
 
 src/draw/lv_draw_layer.o: src/draw/lv_draw_layer.c.o
@@ -6304,7 +6304,7 @@ src/draw/lv_draw_layer.o: src/draw/lv_draw_layer.c.o
 
 # target to build an object file
 src/draw/lv_draw_layer.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_layer.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_layer.c.o
 .PHONY : src/draw/lv_draw_layer.c.o
 
 src/draw/lv_draw_layer.i: src/draw/lv_draw_layer.c.i
@@ -6312,7 +6312,7 @@ src/draw/lv_draw_layer.i: src/draw/lv_draw_layer.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_layer.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_layer.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_layer.c.i
 .PHONY : src/draw/lv_draw_layer.c.i
 
 src/draw/lv_draw_layer.s: src/draw/lv_draw_layer.c.s
@@ -6320,7 +6320,7 @@ src/draw/lv_draw_layer.s: src/draw/lv_draw_layer.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_layer.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_layer.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_layer.c.s
 .PHONY : src/draw/lv_draw_layer.c.s
 
 src/draw/lv_draw_line.o: src/draw/lv_draw_line.c.o
@@ -6328,7 +6328,7 @@ src/draw/lv_draw_line.o: src/draw/lv_draw_line.c.o
 
 # target to build an object file
 src/draw/lv_draw_line.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_line.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_line.c.o
 .PHONY : src/draw/lv_draw_line.c.o
 
 src/draw/lv_draw_line.i: src/draw/lv_draw_line.c.i
@@ -6336,7 +6336,7 @@ src/draw/lv_draw_line.i: src/draw/lv_draw_line.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_line.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_line.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_line.c.i
 .PHONY : src/draw/lv_draw_line.c.i
 
 src/draw/lv_draw_line.s: src/draw/lv_draw_line.c.s
@@ -6344,7 +6344,7 @@ src/draw/lv_draw_line.s: src/draw/lv_draw_line.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_line.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_line.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_line.c.s
 .PHONY : src/draw/lv_draw_line.c.s
 
 src/draw/lv_draw_mask.o: src/draw/lv_draw_mask.c.o
@@ -6352,7 +6352,7 @@ src/draw/lv_draw_mask.o: src/draw/lv_draw_mask.c.o
 
 # target to build an object file
 src/draw/lv_draw_mask.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_mask.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_mask.c.o
 .PHONY : src/draw/lv_draw_mask.c.o
 
 src/draw/lv_draw_mask.i: src/draw/lv_draw_mask.c.i
@@ -6360,7 +6360,7 @@ src/draw/lv_draw_mask.i: src/draw/lv_draw_mask.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_mask.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_mask.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_mask.c.i
 .PHONY : src/draw/lv_draw_mask.c.i
 
 src/draw/lv_draw_mask.s: src/draw/lv_draw_mask.c.s
@@ -6368,7 +6368,7 @@ src/draw/lv_draw_mask.s: src/draw/lv_draw_mask.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_mask.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_mask.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_mask.c.s
 .PHONY : src/draw/lv_draw_mask.c.s
 
 src/draw/lv_draw_rect.o: src/draw/lv_draw_rect.c.o
@@ -6376,7 +6376,7 @@ src/draw/lv_draw_rect.o: src/draw/lv_draw_rect.c.o
 
 # target to build an object file
 src/draw/lv_draw_rect.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_rect.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_rect.c.o
 .PHONY : src/draw/lv_draw_rect.c.o
 
 src/draw/lv_draw_rect.i: src/draw/lv_draw_rect.c.i
@@ -6384,7 +6384,7 @@ src/draw/lv_draw_rect.i: src/draw/lv_draw_rect.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_rect.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_rect.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_rect.c.i
 .PHONY : src/draw/lv_draw_rect.c.i
 
 src/draw/lv_draw_rect.s: src/draw/lv_draw_rect.c.s
@@ -6392,7 +6392,7 @@ src/draw/lv_draw_rect.s: src/draw/lv_draw_rect.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_rect.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_rect.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_rect.c.s
 .PHONY : src/draw/lv_draw_rect.c.s
 
 src/draw/lv_draw_transform.o: src/draw/lv_draw_transform.c.o
@@ -6400,7 +6400,7 @@ src/draw/lv_draw_transform.o: src/draw/lv_draw_transform.c.o
 
 # target to build an object file
 src/draw/lv_draw_transform.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_transform.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_transform.c.o
 .PHONY : src/draw/lv_draw_transform.c.o
 
 src/draw/lv_draw_transform.i: src/draw/lv_draw_transform.c.i
@@ -6408,7 +6408,7 @@ src/draw/lv_draw_transform.i: src/draw/lv_draw_transform.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_transform.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_transform.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_transform.c.i
 .PHONY : src/draw/lv_draw_transform.c.i
 
 src/draw/lv_draw_transform.s: src/draw/lv_draw_transform.c.s
@@ -6416,7 +6416,7 @@ src/draw/lv_draw_transform.s: src/draw/lv_draw_transform.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_transform.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_transform.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_transform.c.s
 .PHONY : src/draw/lv_draw_transform.c.s
 
 src/draw/lv_draw_triangle.o: src/draw/lv_draw_triangle.c.o
@@ -6424,7 +6424,7 @@ src/draw/lv_draw_triangle.o: src/draw/lv_draw_triangle.c.o
 
 # target to build an object file
 src/draw/lv_draw_triangle.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_triangle.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_triangle.c.o
 .PHONY : src/draw/lv_draw_triangle.c.o
 
 src/draw/lv_draw_triangle.i: src/draw/lv_draw_triangle.c.i
@@ -6432,7 +6432,7 @@ src/draw/lv_draw_triangle.i: src/draw/lv_draw_triangle.c.i
 
 # target to preprocess a source file
 src/draw/lv_draw_triangle.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_triangle.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_triangle.c.i
 .PHONY : src/draw/lv_draw_triangle.c.i
 
 src/draw/lv_draw_triangle.s: src/draw/lv_draw_triangle.c.s
@@ -6440,7 +6440,7 @@ src/draw/lv_draw_triangle.s: src/draw/lv_draw_triangle.c.s
 
 # target to generate assembly for a file
 src/draw/lv_draw_triangle.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_triangle.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_draw_triangle.c.s
 .PHONY : src/draw/lv_draw_triangle.c.s
 
 src/draw/lv_img_buf.o: src/draw/lv_img_buf.c.o
@@ -6448,7 +6448,7 @@ src/draw/lv_img_buf.o: src/draw/lv_img_buf.c.o
 
 # target to build an object file
 src/draw/lv_img_buf.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_buf.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_buf.c.o
 .PHONY : src/draw/lv_img_buf.c.o
 
 src/draw/lv_img_buf.i: src/draw/lv_img_buf.c.i
@@ -6456,7 +6456,7 @@ src/draw/lv_img_buf.i: src/draw/lv_img_buf.c.i
 
 # target to preprocess a source file
 src/draw/lv_img_buf.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_buf.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_buf.c.i
 .PHONY : src/draw/lv_img_buf.c.i
 
 src/draw/lv_img_buf.s: src/draw/lv_img_buf.c.s
@@ -6464,7 +6464,7 @@ src/draw/lv_img_buf.s: src/draw/lv_img_buf.c.s
 
 # target to generate assembly for a file
 src/draw/lv_img_buf.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_buf.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_buf.c.s
 .PHONY : src/draw/lv_img_buf.c.s
 
 src/draw/lv_img_cache.o: src/draw/lv_img_cache.c.o
@@ -6472,7 +6472,7 @@ src/draw/lv_img_cache.o: src/draw/lv_img_cache.c.o
 
 # target to build an object file
 src/draw/lv_img_cache.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_cache.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_cache.c.o
 .PHONY : src/draw/lv_img_cache.c.o
 
 src/draw/lv_img_cache.i: src/draw/lv_img_cache.c.i
@@ -6480,7 +6480,7 @@ src/draw/lv_img_cache.i: src/draw/lv_img_cache.c.i
 
 # target to preprocess a source file
 src/draw/lv_img_cache.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_cache.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_cache.c.i
 .PHONY : src/draw/lv_img_cache.c.i
 
 src/draw/lv_img_cache.s: src/draw/lv_img_cache.c.s
@@ -6488,7 +6488,7 @@ src/draw/lv_img_cache.s: src/draw/lv_img_cache.c.s
 
 # target to generate assembly for a file
 src/draw/lv_img_cache.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_cache.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_cache.c.s
 .PHONY : src/draw/lv_img_cache.c.s
 
 src/draw/lv_img_decoder.o: src/draw/lv_img_decoder.c.o
@@ -6496,7 +6496,7 @@ src/draw/lv_img_decoder.o: src/draw/lv_img_decoder.c.o
 
 # target to build an object file
 src/draw/lv_img_decoder.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_decoder.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_decoder.c.o
 .PHONY : src/draw/lv_img_decoder.c.o
 
 src/draw/lv_img_decoder.i: src/draw/lv_img_decoder.c.i
@@ -6504,7 +6504,7 @@ src/draw/lv_img_decoder.i: src/draw/lv_img_decoder.c.i
 
 # target to preprocess a source file
 src/draw/lv_img_decoder.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_decoder.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_decoder.c.i
 .PHONY : src/draw/lv_img_decoder.c.i
 
 src/draw/lv_img_decoder.s: src/draw/lv_img_decoder.c.s
@@ -6512,7 +6512,7 @@ src/draw/lv_img_decoder.s: src/draw/lv_img_decoder.c.s
 
 # target to generate assembly for a file
 src/draw/lv_img_decoder.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_decoder.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/lv_img_decoder.c.s
 .PHONY : src/draw/lv_img_decoder.c.s
 
 src/draw/nxp/pxp/lv_draw_pxp.o: src/draw/nxp/pxp/lv_draw_pxp.c.o
@@ -6520,7 +6520,7 @@ src/draw/nxp/pxp/lv_draw_pxp.o: src/draw/nxp/pxp/lv_draw_pxp.c.o
 
 # target to build an object file
 src/draw/nxp/pxp/lv_draw_pxp.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp.c.o
 .PHONY : src/draw/nxp/pxp/lv_draw_pxp.c.o
 
 src/draw/nxp/pxp/lv_draw_pxp.i: src/draw/nxp/pxp/lv_draw_pxp.c.i
@@ -6528,7 +6528,7 @@ src/draw/nxp/pxp/lv_draw_pxp.i: src/draw/nxp/pxp/lv_draw_pxp.c.i
 
 # target to preprocess a source file
 src/draw/nxp/pxp/lv_draw_pxp.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp.c.i
 .PHONY : src/draw/nxp/pxp/lv_draw_pxp.c.i
 
 src/draw/nxp/pxp/lv_draw_pxp.s: src/draw/nxp/pxp/lv_draw_pxp.c.s
@@ -6536,7 +6536,7 @@ src/draw/nxp/pxp/lv_draw_pxp.s: src/draw/nxp/pxp/lv_draw_pxp.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/pxp/lv_draw_pxp.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp.c.s
 .PHONY : src/draw/nxp/pxp/lv_draw_pxp.c.s
 
 src/draw/nxp/pxp/lv_draw_pxp_blend.o: src/draw/nxp/pxp/lv_draw_pxp_blend.c.o
@@ -6544,7 +6544,7 @@ src/draw/nxp/pxp/lv_draw_pxp_blend.o: src/draw/nxp/pxp/lv_draw_pxp_blend.c.o
 
 # target to build an object file
 src/draw/nxp/pxp/lv_draw_pxp_blend.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp_blend.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp_blend.c.o
 .PHONY : src/draw/nxp/pxp/lv_draw_pxp_blend.c.o
 
 src/draw/nxp/pxp/lv_draw_pxp_blend.i: src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
@@ -6552,7 +6552,7 @@ src/draw/nxp/pxp/lv_draw_pxp_blend.i: src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
 
 # target to preprocess a source file
 src/draw/nxp/pxp/lv_draw_pxp_blend.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
 .PHONY : src/draw/nxp/pxp/lv_draw_pxp_blend.c.i
 
 src/draw/nxp/pxp/lv_draw_pxp_blend.s: src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
@@ -6560,7 +6560,7 @@ src/draw/nxp/pxp/lv_draw_pxp_blend.s: src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/pxp/lv_draw_pxp_blend.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
 .PHONY : src/draw/nxp/pxp/lv_draw_pxp_blend.c.s
 
 src/draw/nxp/pxp/lv_gpu_nxp_pxp.o: src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.o
@@ -6568,7 +6568,7 @@ src/draw/nxp/pxp/lv_gpu_nxp_pxp.o: src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.o
 
 # target to build an object file
 src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.o
 .PHONY : src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.o
 
 src/draw/nxp/pxp/lv_gpu_nxp_pxp.i: src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
@@ -6576,7 +6576,7 @@ src/draw/nxp/pxp/lv_gpu_nxp_pxp.i: src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
 
 # target to preprocess a source file
 src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
 .PHONY : src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.i
 
 src/draw/nxp/pxp/lv_gpu_nxp_pxp.s: src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
@@ -6584,7 +6584,7 @@ src/draw/nxp/pxp/lv_gpu_nxp_pxp.s: src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
 .PHONY : src/draw/nxp/pxp/lv_gpu_nxp_pxp.c.s
 
 src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.o: src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.o
@@ -6592,7 +6592,7 @@ src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.o: src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.o
 
 # target to build an object file
 src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.o
 .PHONY : src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.o
 
 src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.i: src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
@@ -6600,7 +6600,7 @@ src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.i: src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
 
 # target to preprocess a source file
 src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
 .PHONY : src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.i
 
 src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.s: src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
@@ -6608,7 +6608,7 @@ src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.s: src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
 .PHONY : src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c.s
 
 src/draw/nxp/vglite/lv_draw_vglite.o: src/draw/nxp/vglite/lv_draw_vglite.c.o
@@ -6616,7 +6616,7 @@ src/draw/nxp/vglite/lv_draw_vglite.o: src/draw/nxp/vglite/lv_draw_vglite.c.o
 
 # target to build an object file
 src/draw/nxp/vglite/lv_draw_vglite.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite.c.o
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite.c.o
 
 src/draw/nxp/vglite/lv_draw_vglite.i: src/draw/nxp/vglite/lv_draw_vglite.c.i
@@ -6624,7 +6624,7 @@ src/draw/nxp/vglite/lv_draw_vglite.i: src/draw/nxp/vglite/lv_draw_vglite.c.i
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_draw_vglite.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite.c.i
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite.c.i
 
 src/draw/nxp/vglite/lv_draw_vglite.s: src/draw/nxp/vglite/lv_draw_vglite.c.s
@@ -6632,7 +6632,7 @@ src/draw/nxp/vglite/lv_draw_vglite.s: src/draw/nxp/vglite/lv_draw_vglite.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_draw_vglite.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite.c.s
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite.c.s
 
 src/draw/nxp/vglite/lv_draw_vglite_arc.o: src/draw/nxp/vglite/lv_draw_vglite_arc.c.o
@@ -6640,7 +6640,7 @@ src/draw/nxp/vglite/lv_draw_vglite_arc.o: src/draw/nxp/vglite/lv_draw_vglite_arc
 
 # target to build an object file
 src/draw/nxp/vglite/lv_draw_vglite_arc.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_arc.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_arc.c.o
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_arc.c.o
 
 src/draw/nxp/vglite/lv_draw_vglite_arc.i: src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
@@ -6648,7 +6648,7 @@ src/draw/nxp/vglite/lv_draw_vglite_arc.i: src/draw/nxp/vglite/lv_draw_vglite_arc
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_draw_vglite_arc.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_arc.c.i
 
 src/draw/nxp/vglite/lv_draw_vglite_arc.s: src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
@@ -6656,7 +6656,7 @@ src/draw/nxp/vglite/lv_draw_vglite_arc.s: src/draw/nxp/vglite/lv_draw_vglite_arc
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_draw_vglite_arc.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_arc.c.s
 
 src/draw/nxp/vglite/lv_draw_vglite_blend.o: src/draw/nxp/vglite/lv_draw_vglite_blend.c.o
@@ -6664,7 +6664,7 @@ src/draw/nxp/vglite/lv_draw_vglite_blend.o: src/draw/nxp/vglite/lv_draw_vglite_b
 
 # target to build an object file
 src/draw/nxp/vglite/lv_draw_vglite_blend.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_blend.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_blend.c.o
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_blend.c.o
 
 src/draw/nxp/vglite/lv_draw_vglite_blend.i: src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
@@ -6672,7 +6672,7 @@ src/draw/nxp/vglite/lv_draw_vglite_blend.i: src/draw/nxp/vglite/lv_draw_vglite_b
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_draw_vglite_blend.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_blend.c.i
 
 src/draw/nxp/vglite/lv_draw_vglite_blend.s: src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
@@ -6680,7 +6680,7 @@ src/draw/nxp/vglite/lv_draw_vglite_blend.s: src/draw/nxp/vglite/lv_draw_vglite_b
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_draw_vglite_blend.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_blend.c.s
 
 src/draw/nxp/vglite/lv_draw_vglite_line.o: src/draw/nxp/vglite/lv_draw_vglite_line.c.o
@@ -6688,7 +6688,7 @@ src/draw/nxp/vglite/lv_draw_vglite_line.o: src/draw/nxp/vglite/lv_draw_vglite_li
 
 # target to build an object file
 src/draw/nxp/vglite/lv_draw_vglite_line.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_line.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_line.c.o
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_line.c.o
 
 src/draw/nxp/vglite/lv_draw_vglite_line.i: src/draw/nxp/vglite/lv_draw_vglite_line.c.i
@@ -6696,7 +6696,7 @@ src/draw/nxp/vglite/lv_draw_vglite_line.i: src/draw/nxp/vglite/lv_draw_vglite_li
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_draw_vglite_line.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_line.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_line.c.i
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_line.c.i
 
 src/draw/nxp/vglite/lv_draw_vglite_line.s: src/draw/nxp/vglite/lv_draw_vglite_line.c.s
@@ -6704,7 +6704,7 @@ src/draw/nxp/vglite/lv_draw_vglite_line.s: src/draw/nxp/vglite/lv_draw_vglite_li
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_draw_vglite_line.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_line.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_line.c.s
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_line.c.s
 
 src/draw/nxp/vglite/lv_draw_vglite_rect.o: src/draw/nxp/vglite/lv_draw_vglite_rect.c.o
@@ -6712,7 +6712,7 @@ src/draw/nxp/vglite/lv_draw_vglite_rect.o: src/draw/nxp/vglite/lv_draw_vglite_re
 
 # target to build an object file
 src/draw/nxp/vglite/lv_draw_vglite_rect.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_rect.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_rect.c.o
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_rect.c.o
 
 src/draw/nxp/vglite/lv_draw_vglite_rect.i: src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
@@ -6720,7 +6720,7 @@ src/draw/nxp/vglite/lv_draw_vglite_rect.i: src/draw/nxp/vglite/lv_draw_vglite_re
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_draw_vglite_rect.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_rect.c.i
 
 src/draw/nxp/vglite/lv_draw_vglite_rect.s: src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
@@ -6728,7 +6728,7 @@ src/draw/nxp/vglite/lv_draw_vglite_rect.s: src/draw/nxp/vglite/lv_draw_vglite_re
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_draw_vglite_rect.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
 .PHONY : src/draw/nxp/vglite/lv_draw_vglite_rect.c.s
 
 src/draw/nxp/vglite/lv_vglite_buf.o: src/draw/nxp/vglite/lv_vglite_buf.c.o
@@ -6736,7 +6736,7 @@ src/draw/nxp/vglite/lv_vglite_buf.o: src/draw/nxp/vglite/lv_vglite_buf.c.o
 
 # target to build an object file
 src/draw/nxp/vglite/lv_vglite_buf.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_buf.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_buf.c.o
 .PHONY : src/draw/nxp/vglite/lv_vglite_buf.c.o
 
 src/draw/nxp/vglite/lv_vglite_buf.i: src/draw/nxp/vglite/lv_vglite_buf.c.i
@@ -6744,7 +6744,7 @@ src/draw/nxp/vglite/lv_vglite_buf.i: src/draw/nxp/vglite/lv_vglite_buf.c.i
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_vglite_buf.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_buf.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_buf.c.i
 .PHONY : src/draw/nxp/vglite/lv_vglite_buf.c.i
 
 src/draw/nxp/vglite/lv_vglite_buf.s: src/draw/nxp/vglite/lv_vglite_buf.c.s
@@ -6752,7 +6752,7 @@ src/draw/nxp/vglite/lv_vglite_buf.s: src/draw/nxp/vglite/lv_vglite_buf.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_vglite_buf.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_buf.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_buf.c.s
 .PHONY : src/draw/nxp/vglite/lv_vglite_buf.c.s
 
 src/draw/nxp/vglite/lv_vglite_utils.o: src/draw/nxp/vglite/lv_vglite_utils.c.o
@@ -6760,7 +6760,7 @@ src/draw/nxp/vglite/lv_vglite_utils.o: src/draw/nxp/vglite/lv_vglite_utils.c.o
 
 # target to build an object file
 src/draw/nxp/vglite/lv_vglite_utils.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_utils.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_utils.c.o
 .PHONY : src/draw/nxp/vglite/lv_vglite_utils.c.o
 
 src/draw/nxp/vglite/lv_vglite_utils.i: src/draw/nxp/vglite/lv_vglite_utils.c.i
@@ -6768,7 +6768,7 @@ src/draw/nxp/vglite/lv_vglite_utils.i: src/draw/nxp/vglite/lv_vglite_utils.c.i
 
 # target to preprocess a source file
 src/draw/nxp/vglite/lv_vglite_utils.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_utils.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_utils.c.i
 .PHONY : src/draw/nxp/vglite/lv_vglite_utils.c.i
 
 src/draw/nxp/vglite/lv_vglite_utils.s: src/draw/nxp/vglite/lv_vglite_utils.c.s
@@ -6776,7 +6776,7 @@ src/draw/nxp/vglite/lv_vglite_utils.s: src/draw/nxp/vglite/lv_vglite_utils.c.s
 
 # target to generate assembly for a file
 src/draw/nxp/vglite/lv_vglite_utils.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_utils.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/nxp/vglite/lv_vglite_utils.c.s
 .PHONY : src/draw/nxp/vglite/lv_vglite_utils.c.s
 
 src/draw/renesas/lv_gpu_d2_draw_label.o: src/draw/renesas/lv_gpu_d2_draw_label.c.o
@@ -6784,7 +6784,7 @@ src/draw/renesas/lv_gpu_d2_draw_label.o: src/draw/renesas/lv_gpu_d2_draw_label.c
 
 # target to build an object file
 src/draw/renesas/lv_gpu_d2_draw_label.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_draw_label.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_draw_label.c.o
 .PHONY : src/draw/renesas/lv_gpu_d2_draw_label.c.o
 
 src/draw/renesas/lv_gpu_d2_draw_label.i: src/draw/renesas/lv_gpu_d2_draw_label.c.i
@@ -6792,7 +6792,7 @@ src/draw/renesas/lv_gpu_d2_draw_label.i: src/draw/renesas/lv_gpu_d2_draw_label.c
 
 # target to preprocess a source file
 src/draw/renesas/lv_gpu_d2_draw_label.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_draw_label.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_draw_label.c.i
 .PHONY : src/draw/renesas/lv_gpu_d2_draw_label.c.i
 
 src/draw/renesas/lv_gpu_d2_draw_label.s: src/draw/renesas/lv_gpu_d2_draw_label.c.s
@@ -6800,7 +6800,7 @@ src/draw/renesas/lv_gpu_d2_draw_label.s: src/draw/renesas/lv_gpu_d2_draw_label.c
 
 # target to generate assembly for a file
 src/draw/renesas/lv_gpu_d2_draw_label.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_draw_label.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_draw_label.c.s
 .PHONY : src/draw/renesas/lv_gpu_d2_draw_label.c.s
 
 src/draw/renesas/lv_gpu_d2_ra6m3.o: src/draw/renesas/lv_gpu_d2_ra6m3.c.o
@@ -6808,7 +6808,7 @@ src/draw/renesas/lv_gpu_d2_ra6m3.o: src/draw/renesas/lv_gpu_d2_ra6m3.c.o
 
 # target to build an object file
 src/draw/renesas/lv_gpu_d2_ra6m3.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_ra6m3.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_ra6m3.c.o
 .PHONY : src/draw/renesas/lv_gpu_d2_ra6m3.c.o
 
 src/draw/renesas/lv_gpu_d2_ra6m3.i: src/draw/renesas/lv_gpu_d2_ra6m3.c.i
@@ -6816,7 +6816,7 @@ src/draw/renesas/lv_gpu_d2_ra6m3.i: src/draw/renesas/lv_gpu_d2_ra6m3.c.i
 
 # target to preprocess a source file
 src/draw/renesas/lv_gpu_d2_ra6m3.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_ra6m3.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_ra6m3.c.i
 .PHONY : src/draw/renesas/lv_gpu_d2_ra6m3.c.i
 
 src/draw/renesas/lv_gpu_d2_ra6m3.s: src/draw/renesas/lv_gpu_d2_ra6m3.c.s
@@ -6824,7 +6824,7 @@ src/draw/renesas/lv_gpu_d2_ra6m3.s: src/draw/renesas/lv_gpu_d2_ra6m3.c.s
 
 # target to generate assembly for a file
 src/draw/renesas/lv_gpu_d2_ra6m3.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_ra6m3.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/renesas/lv_gpu_d2_ra6m3.c.s
 .PHONY : src/draw/renesas/lv_gpu_d2_ra6m3.c.s
 
 src/draw/sdl/lv_draw_sdl.o: src/draw/sdl/lv_draw_sdl.c.o
@@ -6832,7 +6832,7 @@ src/draw/sdl/lv_draw_sdl.o: src/draw/sdl/lv_draw_sdl.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl.c.o
 
 src/draw/sdl/lv_draw_sdl.i: src/draw/sdl/lv_draw_sdl.c.i
@@ -6840,7 +6840,7 @@ src/draw/sdl/lv_draw_sdl.i: src/draw/sdl/lv_draw_sdl.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl.c.i
 
 src/draw/sdl/lv_draw_sdl.s: src/draw/sdl/lv_draw_sdl.c.s
@@ -6848,7 +6848,7 @@ src/draw/sdl/lv_draw_sdl.s: src/draw/sdl/lv_draw_sdl.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl.c.s
 
 src/draw/sdl/lv_draw_sdl_arc.o: src/draw/sdl/lv_draw_sdl_arc.c.o
@@ -6856,7 +6856,7 @@ src/draw/sdl/lv_draw_sdl_arc.o: src/draw/sdl/lv_draw_sdl_arc.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_arc.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_arc.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_arc.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_arc.c.o
 
 src/draw/sdl/lv_draw_sdl_arc.i: src/draw/sdl/lv_draw_sdl_arc.c.i
@@ -6864,7 +6864,7 @@ src/draw/sdl/lv_draw_sdl_arc.i: src/draw/sdl/lv_draw_sdl_arc.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_arc.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_arc.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_arc.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_arc.c.i
 
 src/draw/sdl/lv_draw_sdl_arc.s: src/draw/sdl/lv_draw_sdl_arc.c.s
@@ -6872,7 +6872,7 @@ src/draw/sdl/lv_draw_sdl_arc.s: src/draw/sdl/lv_draw_sdl_arc.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_arc.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_arc.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_arc.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_arc.c.s
 
 src/draw/sdl/lv_draw_sdl_bg.o: src/draw/sdl/lv_draw_sdl_bg.c.o
@@ -6880,7 +6880,7 @@ src/draw/sdl/lv_draw_sdl_bg.o: src/draw/sdl/lv_draw_sdl_bg.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_bg.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_bg.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_bg.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_bg.c.o
 
 src/draw/sdl/lv_draw_sdl_bg.i: src/draw/sdl/lv_draw_sdl_bg.c.i
@@ -6888,7 +6888,7 @@ src/draw/sdl/lv_draw_sdl_bg.i: src/draw/sdl/lv_draw_sdl_bg.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_bg.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_bg.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_bg.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_bg.c.i
 
 src/draw/sdl/lv_draw_sdl_bg.s: src/draw/sdl/lv_draw_sdl_bg.c.s
@@ -6896,7 +6896,7 @@ src/draw/sdl/lv_draw_sdl_bg.s: src/draw/sdl/lv_draw_sdl_bg.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_bg.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_bg.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_bg.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_bg.c.s
 
 src/draw/sdl/lv_draw_sdl_composite.o: src/draw/sdl/lv_draw_sdl_composite.c.o
@@ -6904,7 +6904,7 @@ src/draw/sdl/lv_draw_sdl_composite.o: src/draw/sdl/lv_draw_sdl_composite.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_composite.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_composite.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_composite.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_composite.c.o
 
 src/draw/sdl/lv_draw_sdl_composite.i: src/draw/sdl/lv_draw_sdl_composite.c.i
@@ -6912,7 +6912,7 @@ src/draw/sdl/lv_draw_sdl_composite.i: src/draw/sdl/lv_draw_sdl_composite.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_composite.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_composite.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_composite.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_composite.c.i
 
 src/draw/sdl/lv_draw_sdl_composite.s: src/draw/sdl/lv_draw_sdl_composite.c.s
@@ -6920,7 +6920,7 @@ src/draw/sdl/lv_draw_sdl_composite.s: src/draw/sdl/lv_draw_sdl_composite.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_composite.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_composite.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_composite.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_composite.c.s
 
 src/draw/sdl/lv_draw_sdl_img.o: src/draw/sdl/lv_draw_sdl_img.c.o
@@ -6928,7 +6928,7 @@ src/draw/sdl/lv_draw_sdl_img.o: src/draw/sdl/lv_draw_sdl_img.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_img.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_img.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_img.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_img.c.o
 
 src/draw/sdl/lv_draw_sdl_img.i: src/draw/sdl/lv_draw_sdl_img.c.i
@@ -6936,7 +6936,7 @@ src/draw/sdl/lv_draw_sdl_img.i: src/draw/sdl/lv_draw_sdl_img.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_img.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_img.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_img.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_img.c.i
 
 src/draw/sdl/lv_draw_sdl_img.s: src/draw/sdl/lv_draw_sdl_img.c.s
@@ -6944,7 +6944,7 @@ src/draw/sdl/lv_draw_sdl_img.s: src/draw/sdl/lv_draw_sdl_img.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_img.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_img.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_img.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_img.c.s
 
 src/draw/sdl/lv_draw_sdl_label.o: src/draw/sdl/lv_draw_sdl_label.c.o
@@ -6952,7 +6952,7 @@ src/draw/sdl/lv_draw_sdl_label.o: src/draw/sdl/lv_draw_sdl_label.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_label.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_label.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_label.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_label.c.o
 
 src/draw/sdl/lv_draw_sdl_label.i: src/draw/sdl/lv_draw_sdl_label.c.i
@@ -6960,7 +6960,7 @@ src/draw/sdl/lv_draw_sdl_label.i: src/draw/sdl/lv_draw_sdl_label.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_label.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_label.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_label.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_label.c.i
 
 src/draw/sdl/lv_draw_sdl_label.s: src/draw/sdl/lv_draw_sdl_label.c.s
@@ -6968,7 +6968,7 @@ src/draw/sdl/lv_draw_sdl_label.s: src/draw/sdl/lv_draw_sdl_label.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_label.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_label.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_label.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_label.c.s
 
 src/draw/sdl/lv_draw_sdl_layer.o: src/draw/sdl/lv_draw_sdl_layer.c.o
@@ -6976,7 +6976,7 @@ src/draw/sdl/lv_draw_sdl_layer.o: src/draw/sdl/lv_draw_sdl_layer.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_layer.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_layer.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_layer.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_layer.c.o
 
 src/draw/sdl/lv_draw_sdl_layer.i: src/draw/sdl/lv_draw_sdl_layer.c.i
@@ -6984,7 +6984,7 @@ src/draw/sdl/lv_draw_sdl_layer.i: src/draw/sdl/lv_draw_sdl_layer.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_layer.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_layer.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_layer.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_layer.c.i
 
 src/draw/sdl/lv_draw_sdl_layer.s: src/draw/sdl/lv_draw_sdl_layer.c.s
@@ -6992,7 +6992,7 @@ src/draw/sdl/lv_draw_sdl_layer.s: src/draw/sdl/lv_draw_sdl_layer.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_layer.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_layer.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_layer.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_layer.c.s
 
 src/draw/sdl/lv_draw_sdl_line.o: src/draw/sdl/lv_draw_sdl_line.c.o
@@ -7000,7 +7000,7 @@ src/draw/sdl/lv_draw_sdl_line.o: src/draw/sdl/lv_draw_sdl_line.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_line.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_line.c.o
 
 src/draw/sdl/lv_draw_sdl_line.i: src/draw/sdl/lv_draw_sdl_line.c.i
@@ -7008,7 +7008,7 @@ src/draw/sdl/lv_draw_sdl_line.i: src/draw/sdl/lv_draw_sdl_line.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_line.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_line.c.i
 
 src/draw/sdl/lv_draw_sdl_line.s: src/draw/sdl/lv_draw_sdl_line.c.s
@@ -7016,7 +7016,7 @@ src/draw/sdl/lv_draw_sdl_line.s: src/draw/sdl/lv_draw_sdl_line.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_line.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_line.c.s
 
 src/draw/sdl/lv_draw_sdl_mask.o: src/draw/sdl/lv_draw_sdl_mask.c.o
@@ -7024,7 +7024,7 @@ src/draw/sdl/lv_draw_sdl_mask.o: src/draw/sdl/lv_draw_sdl_mask.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_mask.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_mask.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_mask.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_mask.c.o
 
 src/draw/sdl/lv_draw_sdl_mask.i: src/draw/sdl/lv_draw_sdl_mask.c.i
@@ -7032,7 +7032,7 @@ src/draw/sdl/lv_draw_sdl_mask.i: src/draw/sdl/lv_draw_sdl_mask.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_mask.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_mask.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_mask.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_mask.c.i
 
 src/draw/sdl/lv_draw_sdl_mask.s: src/draw/sdl/lv_draw_sdl_mask.c.s
@@ -7040,7 +7040,7 @@ src/draw/sdl/lv_draw_sdl_mask.s: src/draw/sdl/lv_draw_sdl_mask.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_mask.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_mask.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_mask.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_mask.c.s
 
 src/draw/sdl/lv_draw_sdl_polygon.o: src/draw/sdl/lv_draw_sdl_polygon.c.o
@@ -7048,7 +7048,7 @@ src/draw/sdl/lv_draw_sdl_polygon.o: src/draw/sdl/lv_draw_sdl_polygon.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_polygon.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_polygon.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_polygon.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_polygon.c.o
 
 src/draw/sdl/lv_draw_sdl_polygon.i: src/draw/sdl/lv_draw_sdl_polygon.c.i
@@ -7056,7 +7056,7 @@ src/draw/sdl/lv_draw_sdl_polygon.i: src/draw/sdl/lv_draw_sdl_polygon.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_polygon.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_polygon.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_polygon.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_polygon.c.i
 
 src/draw/sdl/lv_draw_sdl_polygon.s: src/draw/sdl/lv_draw_sdl_polygon.c.s
@@ -7064,7 +7064,7 @@ src/draw/sdl/lv_draw_sdl_polygon.s: src/draw/sdl/lv_draw_sdl_polygon.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_polygon.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_polygon.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_polygon.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_polygon.c.s
 
 src/draw/sdl/lv_draw_sdl_rect.o: src/draw/sdl/lv_draw_sdl_rect.c.o
@@ -7072,7 +7072,7 @@ src/draw/sdl/lv_draw_sdl_rect.o: src/draw/sdl/lv_draw_sdl_rect.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_rect.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_rect.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_rect.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_rect.c.o
 
 src/draw/sdl/lv_draw_sdl_rect.i: src/draw/sdl/lv_draw_sdl_rect.c.i
@@ -7080,7 +7080,7 @@ src/draw/sdl/lv_draw_sdl_rect.i: src/draw/sdl/lv_draw_sdl_rect.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_rect.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_rect.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_rect.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_rect.c.i
 
 src/draw/sdl/lv_draw_sdl_rect.s: src/draw/sdl/lv_draw_sdl_rect.c.s
@@ -7088,7 +7088,7 @@ src/draw/sdl/lv_draw_sdl_rect.s: src/draw/sdl/lv_draw_sdl_rect.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_rect.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_rect.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_rect.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_rect.c.s
 
 src/draw/sdl/lv_draw_sdl_stack_blur.o: src/draw/sdl/lv_draw_sdl_stack_blur.c.o
@@ -7096,7 +7096,7 @@ src/draw/sdl/lv_draw_sdl_stack_blur.o: src/draw/sdl/lv_draw_sdl_stack_blur.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_stack_blur.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_stack_blur.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_stack_blur.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_stack_blur.c.o
 
 src/draw/sdl/lv_draw_sdl_stack_blur.i: src/draw/sdl/lv_draw_sdl_stack_blur.c.i
@@ -7104,7 +7104,7 @@ src/draw/sdl/lv_draw_sdl_stack_blur.i: src/draw/sdl/lv_draw_sdl_stack_blur.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_stack_blur.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_stack_blur.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_stack_blur.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_stack_blur.c.i
 
 src/draw/sdl/lv_draw_sdl_stack_blur.s: src/draw/sdl/lv_draw_sdl_stack_blur.c.s
@@ -7112,7 +7112,7 @@ src/draw/sdl/lv_draw_sdl_stack_blur.s: src/draw/sdl/lv_draw_sdl_stack_blur.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_stack_blur.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_stack_blur.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_stack_blur.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_stack_blur.c.s
 
 src/draw/sdl/lv_draw_sdl_texture_cache.o: src/draw/sdl/lv_draw_sdl_texture_cache.c.o
@@ -7120,7 +7120,7 @@ src/draw/sdl/lv_draw_sdl_texture_cache.o: src/draw/sdl/lv_draw_sdl_texture_cache
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_texture_cache.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_texture_cache.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_texture_cache.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_texture_cache.c.o
 
 src/draw/sdl/lv_draw_sdl_texture_cache.i: src/draw/sdl/lv_draw_sdl_texture_cache.c.i
@@ -7128,7 +7128,7 @@ src/draw/sdl/lv_draw_sdl_texture_cache.i: src/draw/sdl/lv_draw_sdl_texture_cache
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_texture_cache.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_texture_cache.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_texture_cache.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_texture_cache.c.i
 
 src/draw/sdl/lv_draw_sdl_texture_cache.s: src/draw/sdl/lv_draw_sdl_texture_cache.c.s
@@ -7136,7 +7136,7 @@ src/draw/sdl/lv_draw_sdl_texture_cache.s: src/draw/sdl/lv_draw_sdl_texture_cache
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_texture_cache.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_texture_cache.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_texture_cache.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_texture_cache.c.s
 
 src/draw/sdl/lv_draw_sdl_utils.o: src/draw/sdl/lv_draw_sdl_utils.c.o
@@ -7144,7 +7144,7 @@ src/draw/sdl/lv_draw_sdl_utils.o: src/draw/sdl/lv_draw_sdl_utils.c.o
 
 # target to build an object file
 src/draw/sdl/lv_draw_sdl_utils.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_utils.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_utils.c.o
 .PHONY : src/draw/sdl/lv_draw_sdl_utils.c.o
 
 src/draw/sdl/lv_draw_sdl_utils.i: src/draw/sdl/lv_draw_sdl_utils.c.i
@@ -7152,7 +7152,7 @@ src/draw/sdl/lv_draw_sdl_utils.i: src/draw/sdl/lv_draw_sdl_utils.c.i
 
 # target to preprocess a source file
 src/draw/sdl/lv_draw_sdl_utils.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_utils.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_utils.c.i
 .PHONY : src/draw/sdl/lv_draw_sdl_utils.c.i
 
 src/draw/sdl/lv_draw_sdl_utils.s: src/draw/sdl/lv_draw_sdl_utils.c.s
@@ -7160,7 +7160,7 @@ src/draw/sdl/lv_draw_sdl_utils.s: src/draw/sdl/lv_draw_sdl_utils.c.s
 
 # target to generate assembly for a file
 src/draw/sdl/lv_draw_sdl_utils.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_utils.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_utils.c.s
 .PHONY : src/draw/sdl/lv_draw_sdl_utils.c.s
 
 src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.o: src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.o
@@ -7168,7 +7168,7 @@ src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.o: src/draw/stm32_dma2d/lv_gpu_stm32_dma
 
 # target to build an object file
 src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.o
 .PHONY : src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.o
 
 src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.i: src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
@@ -7176,7 +7176,7 @@ src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.i: src/draw/stm32_dma2d/lv_gpu_stm32_dma
 
 # target to preprocess a source file
 src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
 .PHONY : src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.i
 
 src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.s: src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
@@ -7184,7 +7184,7 @@ src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.s: src/draw/stm32_dma2d/lv_gpu_stm32_dma
 
 # target to generate assembly for a file
 src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
 .PHONY : src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c.s
 
 src/draw/sw/lv_draw_sw.o: src/draw/sw/lv_draw_sw.c.o
@@ -7192,7 +7192,7 @@ src/draw/sw/lv_draw_sw.o: src/draw/sw/lv_draw_sw.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw.c.o
 .PHONY : src/draw/sw/lv_draw_sw.c.o
 
 src/draw/sw/lv_draw_sw.i: src/draw/sw/lv_draw_sw.c.i
@@ -7200,7 +7200,7 @@ src/draw/sw/lv_draw_sw.i: src/draw/sw/lv_draw_sw.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw.c.i
 .PHONY : src/draw/sw/lv_draw_sw.c.i
 
 src/draw/sw/lv_draw_sw.s: src/draw/sw/lv_draw_sw.c.s
@@ -7208,7 +7208,7 @@ src/draw/sw/lv_draw_sw.s: src/draw/sw/lv_draw_sw.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw.c.s
 .PHONY : src/draw/sw/lv_draw_sw.c.s
 
 src/draw/sw/lv_draw_sw_arc.o: src/draw/sw/lv_draw_sw_arc.c.o
@@ -7216,7 +7216,7 @@ src/draw/sw/lv_draw_sw_arc.o: src/draw/sw/lv_draw_sw_arc.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_arc.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.o
 .PHONY : src/draw/sw/lv_draw_sw_arc.c.o
 
 src/draw/sw/lv_draw_sw_arc.i: src/draw/sw/lv_draw_sw_arc.c.i
@@ -7224,7 +7224,7 @@ src/draw/sw/lv_draw_sw_arc.i: src/draw/sw/lv_draw_sw_arc.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_arc.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.i
 .PHONY : src/draw/sw/lv_draw_sw_arc.c.i
 
 src/draw/sw/lv_draw_sw_arc.s: src/draw/sw/lv_draw_sw_arc.c.s
@@ -7232,7 +7232,7 @@ src/draw/sw/lv_draw_sw_arc.s: src/draw/sw/lv_draw_sw_arc.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_arc.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_arc.c.s
 .PHONY : src/draw/sw/lv_draw_sw_arc.c.s
 
 src/draw/sw/lv_draw_sw_blend.o: src/draw/sw/lv_draw_sw_blend.c.o
@@ -7240,7 +7240,7 @@ src/draw/sw/lv_draw_sw_blend.o: src/draw/sw/lv_draw_sw_blend.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_blend.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.o
 .PHONY : src/draw/sw/lv_draw_sw_blend.c.o
 
 src/draw/sw/lv_draw_sw_blend.i: src/draw/sw/lv_draw_sw_blend.c.i
@@ -7248,7 +7248,7 @@ src/draw/sw/lv_draw_sw_blend.i: src/draw/sw/lv_draw_sw_blend.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_blend.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.i
 .PHONY : src/draw/sw/lv_draw_sw_blend.c.i
 
 src/draw/sw/lv_draw_sw_blend.s: src/draw/sw/lv_draw_sw_blend.c.s
@@ -7256,7 +7256,7 @@ src/draw/sw/lv_draw_sw_blend.s: src/draw/sw/lv_draw_sw_blend.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_blend.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_blend.c.s
 .PHONY : src/draw/sw/lv_draw_sw_blend.c.s
 
 src/draw/sw/lv_draw_sw_dither.o: src/draw/sw/lv_draw_sw_dither.c.o
@@ -7264,7 +7264,7 @@ src/draw/sw/lv_draw_sw_dither.o: src/draw/sw/lv_draw_sw_dither.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_dither.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.o
 .PHONY : src/draw/sw/lv_draw_sw_dither.c.o
 
 src/draw/sw/lv_draw_sw_dither.i: src/draw/sw/lv_draw_sw_dither.c.i
@@ -7272,7 +7272,7 @@ src/draw/sw/lv_draw_sw_dither.i: src/draw/sw/lv_draw_sw_dither.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_dither.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.i
 .PHONY : src/draw/sw/lv_draw_sw_dither.c.i
 
 src/draw/sw/lv_draw_sw_dither.s: src/draw/sw/lv_draw_sw_dither.c.s
@@ -7280,7 +7280,7 @@ src/draw/sw/lv_draw_sw_dither.s: src/draw/sw/lv_draw_sw_dither.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_dither.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_dither.c.s
 .PHONY : src/draw/sw/lv_draw_sw_dither.c.s
 
 src/draw/sw/lv_draw_sw_gradient.o: src/draw/sw/lv_draw_sw_gradient.c.o
@@ -7288,7 +7288,7 @@ src/draw/sw/lv_draw_sw_gradient.o: src/draw/sw/lv_draw_sw_gradient.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_gradient.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.o
 .PHONY : src/draw/sw/lv_draw_sw_gradient.c.o
 
 src/draw/sw/lv_draw_sw_gradient.i: src/draw/sw/lv_draw_sw_gradient.c.i
@@ -7296,7 +7296,7 @@ src/draw/sw/lv_draw_sw_gradient.i: src/draw/sw/lv_draw_sw_gradient.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_gradient.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.i
 .PHONY : src/draw/sw/lv_draw_sw_gradient.c.i
 
 src/draw/sw/lv_draw_sw_gradient.s: src/draw/sw/lv_draw_sw_gradient.c.s
@@ -7304,7 +7304,7 @@ src/draw/sw/lv_draw_sw_gradient.s: src/draw/sw/lv_draw_sw_gradient.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_gradient.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_gradient.c.s
 .PHONY : src/draw/sw/lv_draw_sw_gradient.c.s
 
 src/draw/sw/lv_draw_sw_img.o: src/draw/sw/lv_draw_sw_img.c.o
@@ -7312,7 +7312,7 @@ src/draw/sw/lv_draw_sw_img.o: src/draw/sw/lv_draw_sw_img.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_img.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_img.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_img.c.o
 .PHONY : src/draw/sw/lv_draw_sw_img.c.o
 
 src/draw/sw/lv_draw_sw_img.i: src/draw/sw/lv_draw_sw_img.c.i
@@ -7320,7 +7320,7 @@ src/draw/sw/lv_draw_sw_img.i: src/draw/sw/lv_draw_sw_img.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_img.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_img.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_img.c.i
 .PHONY : src/draw/sw/lv_draw_sw_img.c.i
 
 src/draw/sw/lv_draw_sw_img.s: src/draw/sw/lv_draw_sw_img.c.s
@@ -7328,7 +7328,7 @@ src/draw/sw/lv_draw_sw_img.s: src/draw/sw/lv_draw_sw_img.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_img.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_img.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_img.c.s
 .PHONY : src/draw/sw/lv_draw_sw_img.c.s
 
 src/draw/sw/lv_draw_sw_layer.o: src/draw/sw/lv_draw_sw_layer.c.o
@@ -7336,7 +7336,7 @@ src/draw/sw/lv_draw_sw_layer.o: src/draw/sw/lv_draw_sw_layer.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_layer.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_layer.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_layer.c.o
 .PHONY : src/draw/sw/lv_draw_sw_layer.c.o
 
 src/draw/sw/lv_draw_sw_layer.i: src/draw/sw/lv_draw_sw_layer.c.i
@@ -7344,7 +7344,7 @@ src/draw/sw/lv_draw_sw_layer.i: src/draw/sw/lv_draw_sw_layer.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_layer.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_layer.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_layer.c.i
 .PHONY : src/draw/sw/lv_draw_sw_layer.c.i
 
 src/draw/sw/lv_draw_sw_layer.s: src/draw/sw/lv_draw_sw_layer.c.s
@@ -7352,7 +7352,7 @@ src/draw/sw/lv_draw_sw_layer.s: src/draw/sw/lv_draw_sw_layer.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_layer.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_layer.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_layer.c.s
 .PHONY : src/draw/sw/lv_draw_sw_layer.c.s
 
 src/draw/sw/lv_draw_sw_letter.o: src/draw/sw/lv_draw_sw_letter.c.o
@@ -7360,7 +7360,7 @@ src/draw/sw/lv_draw_sw_letter.o: src/draw/sw/lv_draw_sw_letter.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_letter.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.o
 .PHONY : src/draw/sw/lv_draw_sw_letter.c.o
 
 src/draw/sw/lv_draw_sw_letter.i: src/draw/sw/lv_draw_sw_letter.c.i
@@ -7368,7 +7368,7 @@ src/draw/sw/lv_draw_sw_letter.i: src/draw/sw/lv_draw_sw_letter.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_letter.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.i
 .PHONY : src/draw/sw/lv_draw_sw_letter.c.i
 
 src/draw/sw/lv_draw_sw_letter.s: src/draw/sw/lv_draw_sw_letter.c.s
@@ -7376,7 +7376,7 @@ src/draw/sw/lv_draw_sw_letter.s: src/draw/sw/lv_draw_sw_letter.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_letter.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_letter.c.s
 .PHONY : src/draw/sw/lv_draw_sw_letter.c.s
 
 src/draw/sw/lv_draw_sw_line.o: src/draw/sw/lv_draw_sw_line.c.o
@@ -7384,7 +7384,7 @@ src/draw/sw/lv_draw_sw_line.o: src/draw/sw/lv_draw_sw_line.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_line.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_line.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_line.c.o
 .PHONY : src/draw/sw/lv_draw_sw_line.c.o
 
 src/draw/sw/lv_draw_sw_line.i: src/draw/sw/lv_draw_sw_line.c.i
@@ -7392,7 +7392,7 @@ src/draw/sw/lv_draw_sw_line.i: src/draw/sw/lv_draw_sw_line.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_line.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_line.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_line.c.i
 .PHONY : src/draw/sw/lv_draw_sw_line.c.i
 
 src/draw/sw/lv_draw_sw_line.s: src/draw/sw/lv_draw_sw_line.c.s
@@ -7400,7 +7400,7 @@ src/draw/sw/lv_draw_sw_line.s: src/draw/sw/lv_draw_sw_line.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_line.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_line.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_line.c.s
 .PHONY : src/draw/sw/lv_draw_sw_line.c.s
 
 src/draw/sw/lv_draw_sw_polygon.o: src/draw/sw/lv_draw_sw_polygon.c.o
@@ -7408,7 +7408,7 @@ src/draw/sw/lv_draw_sw_polygon.o: src/draw/sw/lv_draw_sw_polygon.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_polygon.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.o
 .PHONY : src/draw/sw/lv_draw_sw_polygon.c.o
 
 src/draw/sw/lv_draw_sw_polygon.i: src/draw/sw/lv_draw_sw_polygon.c.i
@@ -7416,7 +7416,7 @@ src/draw/sw/lv_draw_sw_polygon.i: src/draw/sw/lv_draw_sw_polygon.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_polygon.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.i
 .PHONY : src/draw/sw/lv_draw_sw_polygon.c.i
 
 src/draw/sw/lv_draw_sw_polygon.s: src/draw/sw/lv_draw_sw_polygon.c.s
@@ -7424,7 +7424,7 @@ src/draw/sw/lv_draw_sw_polygon.s: src/draw/sw/lv_draw_sw_polygon.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_polygon.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_polygon.c.s
 .PHONY : src/draw/sw/lv_draw_sw_polygon.c.s
 
 src/draw/sw/lv_draw_sw_rect.o: src/draw/sw/lv_draw_sw_rect.c.o
@@ -7432,7 +7432,7 @@ src/draw/sw/lv_draw_sw_rect.o: src/draw/sw/lv_draw_sw_rect.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_rect.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.o
 .PHONY : src/draw/sw/lv_draw_sw_rect.c.o
 
 src/draw/sw/lv_draw_sw_rect.i: src/draw/sw/lv_draw_sw_rect.c.i
@@ -7440,7 +7440,7 @@ src/draw/sw/lv_draw_sw_rect.i: src/draw/sw/lv_draw_sw_rect.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_rect.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.i
 .PHONY : src/draw/sw/lv_draw_sw_rect.c.i
 
 src/draw/sw/lv_draw_sw_rect.s: src/draw/sw/lv_draw_sw_rect.c.s
@@ -7448,7 +7448,7 @@ src/draw/sw/lv_draw_sw_rect.s: src/draw/sw/lv_draw_sw_rect.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_rect.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_rect.c.s
 .PHONY : src/draw/sw/lv_draw_sw_rect.c.s
 
 src/draw/sw/lv_draw_sw_transform.o: src/draw/sw/lv_draw_sw_transform.c.o
@@ -7456,7 +7456,7 @@ src/draw/sw/lv_draw_sw_transform.o: src/draw/sw/lv_draw_sw_transform.c.o
 
 # target to build an object file
 src/draw/sw/lv_draw_sw_transform.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_transform.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_transform.c.o
 .PHONY : src/draw/sw/lv_draw_sw_transform.c.o
 
 src/draw/sw/lv_draw_sw_transform.i: src/draw/sw/lv_draw_sw_transform.c.i
@@ -7464,7 +7464,7 @@ src/draw/sw/lv_draw_sw_transform.i: src/draw/sw/lv_draw_sw_transform.c.i
 
 # target to preprocess a source file
 src/draw/sw/lv_draw_sw_transform.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_transform.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_transform.c.i
 .PHONY : src/draw/sw/lv_draw_sw_transform.c.i
 
 src/draw/sw/lv_draw_sw_transform.s: src/draw/sw/lv_draw_sw_transform.c.s
@@ -7472,7 +7472,7 @@ src/draw/sw/lv_draw_sw_transform.s: src/draw/sw/lv_draw_sw_transform.c.s
 
 # target to generate assembly for a file
 src/draw/sw/lv_draw_sw_transform.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_transform.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/sw/lv_draw_sw_transform.c.s
 .PHONY : src/draw/sw/lv_draw_sw_transform.c.s
 
 src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.o: src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.o
@@ -7480,7 +7480,7 @@ src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.o: src/draw/swm341_dma2d/lv_gpu_swm341
 
 # target to build an object file
 src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.o
 .PHONY : src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.o
 
 src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.i: src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
@@ -7488,7 +7488,7 @@ src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.i: src/draw/swm341_dma2d/lv_gpu_swm341
 
 # target to preprocess a source file
 src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
 .PHONY : src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.i
 
 src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.s: src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
@@ -7496,7 +7496,7 @@ src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.s: src/draw/swm341_dma2d/lv_gpu_swm341
 
 # target to generate assembly for a file
 src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
 .PHONY : src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c.s
 
 src/extra/layouts/flex/lv_flex.o: src/extra/layouts/flex/lv_flex.c.o
@@ -7504,7 +7504,7 @@ src/extra/layouts/flex/lv_flex.o: src/extra/layouts/flex/lv_flex.c.o
 
 # target to build an object file
 src/extra/layouts/flex/lv_flex.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/flex/lv_flex.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/flex/lv_flex.c.o
 .PHONY : src/extra/layouts/flex/lv_flex.c.o
 
 src/extra/layouts/flex/lv_flex.i: src/extra/layouts/flex/lv_flex.c.i
@@ -7512,7 +7512,7 @@ src/extra/layouts/flex/lv_flex.i: src/extra/layouts/flex/lv_flex.c.i
 
 # target to preprocess a source file
 src/extra/layouts/flex/lv_flex.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/flex/lv_flex.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/flex/lv_flex.c.i
 .PHONY : src/extra/layouts/flex/lv_flex.c.i
 
 src/extra/layouts/flex/lv_flex.s: src/extra/layouts/flex/lv_flex.c.s
@@ -7520,7 +7520,7 @@ src/extra/layouts/flex/lv_flex.s: src/extra/layouts/flex/lv_flex.c.s
 
 # target to generate assembly for a file
 src/extra/layouts/flex/lv_flex.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/flex/lv_flex.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/flex/lv_flex.c.s
 .PHONY : src/extra/layouts/flex/lv_flex.c.s
 
 src/extra/layouts/grid/lv_grid.o: src/extra/layouts/grid/lv_grid.c.o
@@ -7528,7 +7528,7 @@ src/extra/layouts/grid/lv_grid.o: src/extra/layouts/grid/lv_grid.c.o
 
 # target to build an object file
 src/extra/layouts/grid/lv_grid.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/grid/lv_grid.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/grid/lv_grid.c.o
 .PHONY : src/extra/layouts/grid/lv_grid.c.o
 
 src/extra/layouts/grid/lv_grid.i: src/extra/layouts/grid/lv_grid.c.i
@@ -7536,7 +7536,7 @@ src/extra/layouts/grid/lv_grid.i: src/extra/layouts/grid/lv_grid.c.i
 
 # target to preprocess a source file
 src/extra/layouts/grid/lv_grid.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/grid/lv_grid.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/grid/lv_grid.c.i
 .PHONY : src/extra/layouts/grid/lv_grid.c.i
 
 src/extra/layouts/grid/lv_grid.s: src/extra/layouts/grid/lv_grid.c.s
@@ -7544,7 +7544,7 @@ src/extra/layouts/grid/lv_grid.s: src/extra/layouts/grid/lv_grid.c.s
 
 # target to generate assembly for a file
 src/extra/layouts/grid/lv_grid.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/grid/lv_grid.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/layouts/grid/lv_grid.c.s
 .PHONY : src/extra/layouts/grid/lv_grid.c.s
 
 src/extra/libs/bmp/lv_bmp.o: src/extra/libs/bmp/lv_bmp.c.o
@@ -7552,7 +7552,7 @@ src/extra/libs/bmp/lv_bmp.o: src/extra/libs/bmp/lv_bmp.c.o
 
 # target to build an object file
 src/extra/libs/bmp/lv_bmp.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/bmp/lv_bmp.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/bmp/lv_bmp.c.o
 .PHONY : src/extra/libs/bmp/lv_bmp.c.o
 
 src/extra/libs/bmp/lv_bmp.i: src/extra/libs/bmp/lv_bmp.c.i
@@ -7560,7 +7560,7 @@ src/extra/libs/bmp/lv_bmp.i: src/extra/libs/bmp/lv_bmp.c.i
 
 # target to preprocess a source file
 src/extra/libs/bmp/lv_bmp.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/bmp/lv_bmp.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/bmp/lv_bmp.c.i
 .PHONY : src/extra/libs/bmp/lv_bmp.c.i
 
 src/extra/libs/bmp/lv_bmp.s: src/extra/libs/bmp/lv_bmp.c.s
@@ -7568,7 +7568,7 @@ src/extra/libs/bmp/lv_bmp.s: src/extra/libs/bmp/lv_bmp.c.s
 
 # target to generate assembly for a file
 src/extra/libs/bmp/lv_bmp.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/bmp/lv_bmp.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/bmp/lv_bmp.c.s
 .PHONY : src/extra/libs/bmp/lv_bmp.c.s
 
 src/extra/libs/ffmpeg/lv_ffmpeg.o: src/extra/libs/ffmpeg/lv_ffmpeg.c.o
@@ -7576,7 +7576,7 @@ src/extra/libs/ffmpeg/lv_ffmpeg.o: src/extra/libs/ffmpeg/lv_ffmpeg.c.o
 
 # target to build an object file
 src/extra/libs/ffmpeg/lv_ffmpeg.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.o
 .PHONY : src/extra/libs/ffmpeg/lv_ffmpeg.c.o
 
 src/extra/libs/ffmpeg/lv_ffmpeg.i: src/extra/libs/ffmpeg/lv_ffmpeg.c.i
@@ -7584,7 +7584,7 @@ src/extra/libs/ffmpeg/lv_ffmpeg.i: src/extra/libs/ffmpeg/lv_ffmpeg.c.i
 
 # target to preprocess a source file
 src/extra/libs/ffmpeg/lv_ffmpeg.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.i
 .PHONY : src/extra/libs/ffmpeg/lv_ffmpeg.c.i
 
 src/extra/libs/ffmpeg/lv_ffmpeg.s: src/extra/libs/ffmpeg/lv_ffmpeg.c.s
@@ -7592,7 +7592,7 @@ src/extra/libs/ffmpeg/lv_ffmpeg.s: src/extra/libs/ffmpeg/lv_ffmpeg.c.s
 
 # target to generate assembly for a file
 src/extra/libs/ffmpeg/lv_ffmpeg.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/ffmpeg/lv_ffmpeg.c.s
 .PHONY : src/extra/libs/ffmpeg/lv_ffmpeg.c.s
 
 src/extra/libs/freetype/lv_freetype.o: src/extra/libs/freetype/lv_freetype.c.o
@@ -7600,7 +7600,7 @@ src/extra/libs/freetype/lv_freetype.o: src/extra/libs/freetype/lv_freetype.c.o
 
 # target to build an object file
 src/extra/libs/freetype/lv_freetype.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/freetype/lv_freetype.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/freetype/lv_freetype.c.o
 .PHONY : src/extra/libs/freetype/lv_freetype.c.o
 
 src/extra/libs/freetype/lv_freetype.i: src/extra/libs/freetype/lv_freetype.c.i
@@ -7608,7 +7608,7 @@ src/extra/libs/freetype/lv_freetype.i: src/extra/libs/freetype/lv_freetype.c.i
 
 # target to preprocess a source file
 src/extra/libs/freetype/lv_freetype.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/freetype/lv_freetype.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/freetype/lv_freetype.c.i
 .PHONY : src/extra/libs/freetype/lv_freetype.c.i
 
 src/extra/libs/freetype/lv_freetype.s: src/extra/libs/freetype/lv_freetype.c.s
@@ -7616,7 +7616,7 @@ src/extra/libs/freetype/lv_freetype.s: src/extra/libs/freetype/lv_freetype.c.s
 
 # target to generate assembly for a file
 src/extra/libs/freetype/lv_freetype.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/freetype/lv_freetype.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/freetype/lv_freetype.c.s
 .PHONY : src/extra/libs/freetype/lv_freetype.c.s
 
 src/extra/libs/fsdrv/lv_fs_fatfs.o: src/extra/libs/fsdrv/lv_fs_fatfs.c.o
@@ -7624,7 +7624,7 @@ src/extra/libs/fsdrv/lv_fs_fatfs.o: src/extra/libs/fsdrv/lv_fs_fatfs.c.o
 
 # target to build an object file
 src/extra/libs/fsdrv/lv_fs_fatfs.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.o
 .PHONY : src/extra/libs/fsdrv/lv_fs_fatfs.c.o
 
 src/extra/libs/fsdrv/lv_fs_fatfs.i: src/extra/libs/fsdrv/lv_fs_fatfs.c.i
@@ -7632,7 +7632,7 @@ src/extra/libs/fsdrv/lv_fs_fatfs.i: src/extra/libs/fsdrv/lv_fs_fatfs.c.i
 
 # target to preprocess a source file
 src/extra/libs/fsdrv/lv_fs_fatfs.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.i
 .PHONY : src/extra/libs/fsdrv/lv_fs_fatfs.c.i
 
 src/extra/libs/fsdrv/lv_fs_fatfs.s: src/extra/libs/fsdrv/lv_fs_fatfs.c.s
@@ -7640,7 +7640,7 @@ src/extra/libs/fsdrv/lv_fs_fatfs.s: src/extra/libs/fsdrv/lv_fs_fatfs.c.s
 
 # target to generate assembly for a file
 src/extra/libs/fsdrv/lv_fs_fatfs.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_fatfs.c.s
 .PHONY : src/extra/libs/fsdrv/lv_fs_fatfs.c.s
 
 src/extra/libs/fsdrv/lv_fs_littlefs.o: src/extra/libs/fsdrv/lv_fs_littlefs.c.o
@@ -7648,7 +7648,7 @@ src/extra/libs/fsdrv/lv_fs_littlefs.o: src/extra/libs/fsdrv/lv_fs_littlefs.c.o
 
 # target to build an object file
 src/extra/libs/fsdrv/lv_fs_littlefs.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_littlefs.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_littlefs.c.o
 .PHONY : src/extra/libs/fsdrv/lv_fs_littlefs.c.o
 
 src/extra/libs/fsdrv/lv_fs_littlefs.i: src/extra/libs/fsdrv/lv_fs_littlefs.c.i
@@ -7656,7 +7656,7 @@ src/extra/libs/fsdrv/lv_fs_littlefs.i: src/extra/libs/fsdrv/lv_fs_littlefs.c.i
 
 # target to preprocess a source file
 src/extra/libs/fsdrv/lv_fs_littlefs.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_littlefs.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_littlefs.c.i
 .PHONY : src/extra/libs/fsdrv/lv_fs_littlefs.c.i
 
 src/extra/libs/fsdrv/lv_fs_littlefs.s: src/extra/libs/fsdrv/lv_fs_littlefs.c.s
@@ -7664,7 +7664,7 @@ src/extra/libs/fsdrv/lv_fs_littlefs.s: src/extra/libs/fsdrv/lv_fs_littlefs.c.s
 
 # target to generate assembly for a file
 src/extra/libs/fsdrv/lv_fs_littlefs.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_littlefs.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_littlefs.c.s
 .PHONY : src/extra/libs/fsdrv/lv_fs_littlefs.c.s
 
 src/extra/libs/fsdrv/lv_fs_posix.o: src/extra/libs/fsdrv/lv_fs_posix.c.o
@@ -7672,7 +7672,7 @@ src/extra/libs/fsdrv/lv_fs_posix.o: src/extra/libs/fsdrv/lv_fs_posix.c.o
 
 # target to build an object file
 src/extra/libs/fsdrv/lv_fs_posix.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.o
 .PHONY : src/extra/libs/fsdrv/lv_fs_posix.c.o
 
 src/extra/libs/fsdrv/lv_fs_posix.i: src/extra/libs/fsdrv/lv_fs_posix.c.i
@@ -7680,7 +7680,7 @@ src/extra/libs/fsdrv/lv_fs_posix.i: src/extra/libs/fsdrv/lv_fs_posix.c.i
 
 # target to preprocess a source file
 src/extra/libs/fsdrv/lv_fs_posix.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.i
 .PHONY : src/extra/libs/fsdrv/lv_fs_posix.c.i
 
 src/extra/libs/fsdrv/lv_fs_posix.s: src/extra/libs/fsdrv/lv_fs_posix.c.s
@@ -7688,7 +7688,7 @@ src/extra/libs/fsdrv/lv_fs_posix.s: src/extra/libs/fsdrv/lv_fs_posix.c.s
 
 # target to generate assembly for a file
 src/extra/libs/fsdrv/lv_fs_posix.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_posix.c.s
 .PHONY : src/extra/libs/fsdrv/lv_fs_posix.c.s
 
 src/extra/libs/fsdrv/lv_fs_stdio.o: src/extra/libs/fsdrv/lv_fs_stdio.c.o
@@ -7696,7 +7696,7 @@ src/extra/libs/fsdrv/lv_fs_stdio.o: src/extra/libs/fsdrv/lv_fs_stdio.c.o
 
 # target to build an object file
 src/extra/libs/fsdrv/lv_fs_stdio.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.o
 .PHONY : src/extra/libs/fsdrv/lv_fs_stdio.c.o
 
 src/extra/libs/fsdrv/lv_fs_stdio.i: src/extra/libs/fsdrv/lv_fs_stdio.c.i
@@ -7704,7 +7704,7 @@ src/extra/libs/fsdrv/lv_fs_stdio.i: src/extra/libs/fsdrv/lv_fs_stdio.c.i
 
 # target to preprocess a source file
 src/extra/libs/fsdrv/lv_fs_stdio.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.i
 .PHONY : src/extra/libs/fsdrv/lv_fs_stdio.c.i
 
 src/extra/libs/fsdrv/lv_fs_stdio.s: src/extra/libs/fsdrv/lv_fs_stdio.c.s
@@ -7712,7 +7712,7 @@ src/extra/libs/fsdrv/lv_fs_stdio.s: src/extra/libs/fsdrv/lv_fs_stdio.c.s
 
 # target to generate assembly for a file
 src/extra/libs/fsdrv/lv_fs_stdio.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_stdio.c.s
 .PHONY : src/extra/libs/fsdrv/lv_fs_stdio.c.s
 
 src/extra/libs/fsdrv/lv_fs_win32.o: src/extra/libs/fsdrv/lv_fs_win32.c.o
@@ -7720,7 +7720,7 @@ src/extra/libs/fsdrv/lv_fs_win32.o: src/extra/libs/fsdrv/lv_fs_win32.c.o
 
 # target to build an object file
 src/extra/libs/fsdrv/lv_fs_win32.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.o
 .PHONY : src/extra/libs/fsdrv/lv_fs_win32.c.o
 
 src/extra/libs/fsdrv/lv_fs_win32.i: src/extra/libs/fsdrv/lv_fs_win32.c.i
@@ -7728,7 +7728,7 @@ src/extra/libs/fsdrv/lv_fs_win32.i: src/extra/libs/fsdrv/lv_fs_win32.c.i
 
 # target to preprocess a source file
 src/extra/libs/fsdrv/lv_fs_win32.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.i
 .PHONY : src/extra/libs/fsdrv/lv_fs_win32.c.i
 
 src/extra/libs/fsdrv/lv_fs_win32.s: src/extra/libs/fsdrv/lv_fs_win32.c.s
@@ -7736,7 +7736,7 @@ src/extra/libs/fsdrv/lv_fs_win32.s: src/extra/libs/fsdrv/lv_fs_win32.c.s
 
 # target to generate assembly for a file
 src/extra/libs/fsdrv/lv_fs_win32.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/fsdrv/lv_fs_win32.c.s
 .PHONY : src/extra/libs/fsdrv/lv_fs_win32.c.s
 
 src/extra/libs/gif/gifdec.o: src/extra/libs/gif/gifdec.c.o
@@ -7744,7 +7744,7 @@ src/extra/libs/gif/gifdec.o: src/extra/libs/gif/gifdec.c.o
 
 # target to build an object file
 src/extra/libs/gif/gifdec.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/gifdec.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/gifdec.c.o
 .PHONY : src/extra/libs/gif/gifdec.c.o
 
 src/extra/libs/gif/gifdec.i: src/extra/libs/gif/gifdec.c.i
@@ -7752,7 +7752,7 @@ src/extra/libs/gif/gifdec.i: src/extra/libs/gif/gifdec.c.i
 
 # target to preprocess a source file
 src/extra/libs/gif/gifdec.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/gifdec.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/gifdec.c.i
 .PHONY : src/extra/libs/gif/gifdec.c.i
 
 src/extra/libs/gif/gifdec.s: src/extra/libs/gif/gifdec.c.s
@@ -7760,7 +7760,7 @@ src/extra/libs/gif/gifdec.s: src/extra/libs/gif/gifdec.c.s
 
 # target to generate assembly for a file
 src/extra/libs/gif/gifdec.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/gifdec.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/gifdec.c.s
 .PHONY : src/extra/libs/gif/gifdec.c.s
 
 src/extra/libs/gif/lv_gif.o: src/extra/libs/gif/lv_gif.c.o
@@ -7768,7 +7768,7 @@ src/extra/libs/gif/lv_gif.o: src/extra/libs/gif/lv_gif.c.o
 
 # target to build an object file
 src/extra/libs/gif/lv_gif.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/lv_gif.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/lv_gif.c.o
 .PHONY : src/extra/libs/gif/lv_gif.c.o
 
 src/extra/libs/gif/lv_gif.i: src/extra/libs/gif/lv_gif.c.i
@@ -7776,7 +7776,7 @@ src/extra/libs/gif/lv_gif.i: src/extra/libs/gif/lv_gif.c.i
 
 # target to preprocess a source file
 src/extra/libs/gif/lv_gif.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/lv_gif.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/lv_gif.c.i
 .PHONY : src/extra/libs/gif/lv_gif.c.i
 
 src/extra/libs/gif/lv_gif.s: src/extra/libs/gif/lv_gif.c.s
@@ -7784,7 +7784,7 @@ src/extra/libs/gif/lv_gif.s: src/extra/libs/gif/lv_gif.c.s
 
 # target to generate assembly for a file
 src/extra/libs/gif/lv_gif.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/lv_gif.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/gif/lv_gif.c.s
 .PHONY : src/extra/libs/gif/lv_gif.c.s
 
 src/extra/libs/png/lodepng.o: src/extra/libs/png/lodepng.c.o
@@ -7792,7 +7792,7 @@ src/extra/libs/png/lodepng.o: src/extra/libs/png/lodepng.c.o
 
 # target to build an object file
 src/extra/libs/png/lodepng.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lodepng.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lodepng.c.o
 .PHONY : src/extra/libs/png/lodepng.c.o
 
 src/extra/libs/png/lodepng.i: src/extra/libs/png/lodepng.c.i
@@ -7800,7 +7800,7 @@ src/extra/libs/png/lodepng.i: src/extra/libs/png/lodepng.c.i
 
 # target to preprocess a source file
 src/extra/libs/png/lodepng.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lodepng.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lodepng.c.i
 .PHONY : src/extra/libs/png/lodepng.c.i
 
 src/extra/libs/png/lodepng.s: src/extra/libs/png/lodepng.c.s
@@ -7808,7 +7808,7 @@ src/extra/libs/png/lodepng.s: src/extra/libs/png/lodepng.c.s
 
 # target to generate assembly for a file
 src/extra/libs/png/lodepng.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lodepng.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lodepng.c.s
 .PHONY : src/extra/libs/png/lodepng.c.s
 
 src/extra/libs/png/lv_png.o: src/extra/libs/png/lv_png.c.o
@@ -7816,7 +7816,7 @@ src/extra/libs/png/lv_png.o: src/extra/libs/png/lv_png.c.o
 
 # target to build an object file
 src/extra/libs/png/lv_png.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lv_png.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lv_png.c.o
 .PHONY : src/extra/libs/png/lv_png.c.o
 
 src/extra/libs/png/lv_png.i: src/extra/libs/png/lv_png.c.i
@@ -7824,7 +7824,7 @@ src/extra/libs/png/lv_png.i: src/extra/libs/png/lv_png.c.i
 
 # target to preprocess a source file
 src/extra/libs/png/lv_png.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lv_png.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lv_png.c.i
 .PHONY : src/extra/libs/png/lv_png.c.i
 
 src/extra/libs/png/lv_png.s: src/extra/libs/png/lv_png.c.s
@@ -7832,7 +7832,7 @@ src/extra/libs/png/lv_png.s: src/extra/libs/png/lv_png.c.s
 
 # target to generate assembly for a file
 src/extra/libs/png/lv_png.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lv_png.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/png/lv_png.c.s
 .PHONY : src/extra/libs/png/lv_png.c.s
 
 src/extra/libs/qrcode/lv_qrcode.o: src/extra/libs/qrcode/lv_qrcode.c.o
@@ -7840,7 +7840,7 @@ src/extra/libs/qrcode/lv_qrcode.o: src/extra/libs/qrcode/lv_qrcode.c.o
 
 # target to build an object file
 src/extra/libs/qrcode/lv_qrcode.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.o
 .PHONY : src/extra/libs/qrcode/lv_qrcode.c.o
 
 src/extra/libs/qrcode/lv_qrcode.i: src/extra/libs/qrcode/lv_qrcode.c.i
@@ -7848,7 +7848,7 @@ src/extra/libs/qrcode/lv_qrcode.i: src/extra/libs/qrcode/lv_qrcode.c.i
 
 # target to preprocess a source file
 src/extra/libs/qrcode/lv_qrcode.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.i
 .PHONY : src/extra/libs/qrcode/lv_qrcode.c.i
 
 src/extra/libs/qrcode/lv_qrcode.s: src/extra/libs/qrcode/lv_qrcode.c.s
@@ -7856,7 +7856,7 @@ src/extra/libs/qrcode/lv_qrcode.s: src/extra/libs/qrcode/lv_qrcode.c.s
 
 # target to generate assembly for a file
 src/extra/libs/qrcode/lv_qrcode.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/lv_qrcode.c.s
 .PHONY : src/extra/libs/qrcode/lv_qrcode.c.s
 
 src/extra/libs/qrcode/qrcodegen.o: src/extra/libs/qrcode/qrcodegen.c.o
@@ -7864,7 +7864,7 @@ src/extra/libs/qrcode/qrcodegen.o: src/extra/libs/qrcode/qrcodegen.c.o
 
 # target to build an object file
 src/extra/libs/qrcode/qrcodegen.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/qrcodegen.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/qrcodegen.c.o
 .PHONY : src/extra/libs/qrcode/qrcodegen.c.o
 
 src/extra/libs/qrcode/qrcodegen.i: src/extra/libs/qrcode/qrcodegen.c.i
@@ -7872,7 +7872,7 @@ src/extra/libs/qrcode/qrcodegen.i: src/extra/libs/qrcode/qrcodegen.c.i
 
 # target to preprocess a source file
 src/extra/libs/qrcode/qrcodegen.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/qrcodegen.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/qrcodegen.c.i
 .PHONY : src/extra/libs/qrcode/qrcodegen.c.i
 
 src/extra/libs/qrcode/qrcodegen.s: src/extra/libs/qrcode/qrcodegen.c.s
@@ -7880,7 +7880,7 @@ src/extra/libs/qrcode/qrcodegen.s: src/extra/libs/qrcode/qrcodegen.c.s
 
 # target to generate assembly for a file
 src/extra/libs/qrcode/qrcodegen.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/qrcodegen.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/qrcode/qrcodegen.c.s
 .PHONY : src/extra/libs/qrcode/qrcodegen.c.s
 
 src/extra/libs/rlottie/lv_rlottie.o: src/extra/libs/rlottie/lv_rlottie.c.o
@@ -7888,7 +7888,7 @@ src/extra/libs/rlottie/lv_rlottie.o: src/extra/libs/rlottie/lv_rlottie.c.o
 
 # target to build an object file
 src/extra/libs/rlottie/lv_rlottie.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.o
 .PHONY : src/extra/libs/rlottie/lv_rlottie.c.o
 
 src/extra/libs/rlottie/lv_rlottie.i: src/extra/libs/rlottie/lv_rlottie.c.i
@@ -7896,7 +7896,7 @@ src/extra/libs/rlottie/lv_rlottie.i: src/extra/libs/rlottie/lv_rlottie.c.i
 
 # target to preprocess a source file
 src/extra/libs/rlottie/lv_rlottie.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.i
 .PHONY : src/extra/libs/rlottie/lv_rlottie.c.i
 
 src/extra/libs/rlottie/lv_rlottie.s: src/extra/libs/rlottie/lv_rlottie.c.s
@@ -7904,7 +7904,7 @@ src/extra/libs/rlottie/lv_rlottie.s: src/extra/libs/rlottie/lv_rlottie.c.s
 
 # target to generate assembly for a file
 src/extra/libs/rlottie/lv_rlottie.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/rlottie/lv_rlottie.c.s
 .PHONY : src/extra/libs/rlottie/lv_rlottie.c.s
 
 src/extra/libs/sjpg/lv_sjpg.o: src/extra/libs/sjpg/lv_sjpg.c.o
@@ -7912,7 +7912,7 @@ src/extra/libs/sjpg/lv_sjpg.o: src/extra/libs/sjpg/lv_sjpg.c.o
 
 # target to build an object file
 src/extra/libs/sjpg/lv_sjpg.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.o
 .PHONY : src/extra/libs/sjpg/lv_sjpg.c.o
 
 src/extra/libs/sjpg/lv_sjpg.i: src/extra/libs/sjpg/lv_sjpg.c.i
@@ -7920,7 +7920,7 @@ src/extra/libs/sjpg/lv_sjpg.i: src/extra/libs/sjpg/lv_sjpg.c.i
 
 # target to preprocess a source file
 src/extra/libs/sjpg/lv_sjpg.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.i
 .PHONY : src/extra/libs/sjpg/lv_sjpg.c.i
 
 src/extra/libs/sjpg/lv_sjpg.s: src/extra/libs/sjpg/lv_sjpg.c.s
@@ -7928,7 +7928,7 @@ src/extra/libs/sjpg/lv_sjpg.s: src/extra/libs/sjpg/lv_sjpg.c.s
 
 # target to generate assembly for a file
 src/extra/libs/sjpg/lv_sjpg.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/lv_sjpg.c.s
 .PHONY : src/extra/libs/sjpg/lv_sjpg.c.s
 
 src/extra/libs/sjpg/tjpgd.o: src/extra/libs/sjpg/tjpgd.c.o
@@ -7936,7 +7936,7 @@ src/extra/libs/sjpg/tjpgd.o: src/extra/libs/sjpg/tjpgd.c.o
 
 # target to build an object file
 src/extra/libs/sjpg/tjpgd.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/tjpgd.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/tjpgd.c.o
 .PHONY : src/extra/libs/sjpg/tjpgd.c.o
 
 src/extra/libs/sjpg/tjpgd.i: src/extra/libs/sjpg/tjpgd.c.i
@@ -7944,7 +7944,7 @@ src/extra/libs/sjpg/tjpgd.i: src/extra/libs/sjpg/tjpgd.c.i
 
 # target to preprocess a source file
 src/extra/libs/sjpg/tjpgd.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/tjpgd.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/tjpgd.c.i
 .PHONY : src/extra/libs/sjpg/tjpgd.c.i
 
 src/extra/libs/sjpg/tjpgd.s: src/extra/libs/sjpg/tjpgd.c.s
@@ -7952,7 +7952,7 @@ src/extra/libs/sjpg/tjpgd.s: src/extra/libs/sjpg/tjpgd.c.s
 
 # target to generate assembly for a file
 src/extra/libs/sjpg/tjpgd.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/tjpgd.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/sjpg/tjpgd.c.s
 .PHONY : src/extra/libs/sjpg/tjpgd.c.s
 
 src/extra/libs/tiny_ttf/lv_tiny_ttf.o: src/extra/libs/tiny_ttf/lv_tiny_ttf.c.o
@@ -7960,7 +7960,7 @@ src/extra/libs/tiny_ttf/lv_tiny_ttf.o: src/extra/libs/tiny_ttf/lv_tiny_ttf.c.o
 
 # target to build an object file
 src/extra/libs/tiny_ttf/lv_tiny_ttf.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.o
 .PHONY : src/extra/libs/tiny_ttf/lv_tiny_ttf.c.o
 
 src/extra/libs/tiny_ttf/lv_tiny_ttf.i: src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
@@ -7968,7 +7968,7 @@ src/extra/libs/tiny_ttf/lv_tiny_ttf.i: src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
 
 # target to preprocess a source file
 src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
 .PHONY : src/extra/libs/tiny_ttf/lv_tiny_ttf.c.i
 
 src/extra/libs/tiny_ttf/lv_tiny_ttf.s: src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
@@ -7976,7 +7976,7 @@ src/extra/libs/tiny_ttf/lv_tiny_ttf.s: src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
 
 # target to generate assembly for a file
 src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
 .PHONY : src/extra/libs/tiny_ttf/lv_tiny_ttf.c.s
 
 src/extra/lv_extra.o: src/extra/lv_extra.c.o
@@ -7984,7 +7984,7 @@ src/extra/lv_extra.o: src/extra/lv_extra.c.o
 
 # target to build an object file
 src/extra/lv_extra.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/lv_extra.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/lv_extra.c.o
 .PHONY : src/extra/lv_extra.c.o
 
 src/extra/lv_extra.i: src/extra/lv_extra.c.i
@@ -7992,7 +7992,7 @@ src/extra/lv_extra.i: src/extra/lv_extra.c.i
 
 # target to preprocess a source file
 src/extra/lv_extra.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/lv_extra.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/lv_extra.c.i
 .PHONY : src/extra/lv_extra.c.i
 
 src/extra/lv_extra.s: src/extra/lv_extra.c.s
@@ -8000,7 +8000,7 @@ src/extra/lv_extra.s: src/extra/lv_extra.c.s
 
 # target to generate assembly for a file
 src/extra/lv_extra.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/lv_extra.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/lv_extra.c.s
 .PHONY : src/extra/lv_extra.c.s
 
 src/extra/others/fragment/lv_fragment.o: src/extra/others/fragment/lv_fragment.c.o
@@ -8008,7 +8008,7 @@ src/extra/others/fragment/lv_fragment.o: src/extra/others/fragment/lv_fragment.c
 
 # target to build an object file
 src/extra/others/fragment/lv_fragment.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment.c.o
 .PHONY : src/extra/others/fragment/lv_fragment.c.o
 
 src/extra/others/fragment/lv_fragment.i: src/extra/others/fragment/lv_fragment.c.i
@@ -8016,7 +8016,7 @@ src/extra/others/fragment/lv_fragment.i: src/extra/others/fragment/lv_fragment.c
 
 # target to preprocess a source file
 src/extra/others/fragment/lv_fragment.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment.c.i
 .PHONY : src/extra/others/fragment/lv_fragment.c.i
 
 src/extra/others/fragment/lv_fragment.s: src/extra/others/fragment/lv_fragment.c.s
@@ -8024,7 +8024,7 @@ src/extra/others/fragment/lv_fragment.s: src/extra/others/fragment/lv_fragment.c
 
 # target to generate assembly for a file
 src/extra/others/fragment/lv_fragment.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment.c.s
 .PHONY : src/extra/others/fragment/lv_fragment.c.s
 
 src/extra/others/fragment/lv_fragment_manager.o: src/extra/others/fragment/lv_fragment_manager.c.o
@@ -8032,7 +8032,7 @@ src/extra/others/fragment/lv_fragment_manager.o: src/extra/others/fragment/lv_fr
 
 # target to build an object file
 src/extra/others/fragment/lv_fragment_manager.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment_manager.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment_manager.c.o
 .PHONY : src/extra/others/fragment/lv_fragment_manager.c.o
 
 src/extra/others/fragment/lv_fragment_manager.i: src/extra/others/fragment/lv_fragment_manager.c.i
@@ -8040,7 +8040,7 @@ src/extra/others/fragment/lv_fragment_manager.i: src/extra/others/fragment/lv_fr
 
 # target to preprocess a source file
 src/extra/others/fragment/lv_fragment_manager.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment_manager.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment_manager.c.i
 .PHONY : src/extra/others/fragment/lv_fragment_manager.c.i
 
 src/extra/others/fragment/lv_fragment_manager.s: src/extra/others/fragment/lv_fragment_manager.c.s
@@ -8048,7 +8048,7 @@ src/extra/others/fragment/lv_fragment_manager.s: src/extra/others/fragment/lv_fr
 
 # target to generate assembly for a file
 src/extra/others/fragment/lv_fragment_manager.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment_manager.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/fragment/lv_fragment_manager.c.s
 .PHONY : src/extra/others/fragment/lv_fragment_manager.c.s
 
 src/extra/others/gridnav/lv_gridnav.o: src/extra/others/gridnav/lv_gridnav.c.o
@@ -8056,7 +8056,7 @@ src/extra/others/gridnav/lv_gridnav.o: src/extra/others/gridnav/lv_gridnav.c.o
 
 # target to build an object file
 src/extra/others/gridnav/lv_gridnav.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.o
 .PHONY : src/extra/others/gridnav/lv_gridnav.c.o
 
 src/extra/others/gridnav/lv_gridnav.i: src/extra/others/gridnav/lv_gridnav.c.i
@@ -8064,7 +8064,7 @@ src/extra/others/gridnav/lv_gridnav.i: src/extra/others/gridnav/lv_gridnav.c.i
 
 # target to preprocess a source file
 src/extra/others/gridnav/lv_gridnav.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.i
 .PHONY : src/extra/others/gridnav/lv_gridnav.c.i
 
 src/extra/others/gridnav/lv_gridnav.s: src/extra/others/gridnav/lv_gridnav.c.s
@@ -8072,7 +8072,7 @@ src/extra/others/gridnav/lv_gridnav.s: src/extra/others/gridnav/lv_gridnav.c.s
 
 # target to generate assembly for a file
 src/extra/others/gridnav/lv_gridnav.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/gridnav/lv_gridnav.c.s
 .PHONY : src/extra/others/gridnav/lv_gridnav.c.s
 
 src/extra/others/ime/lv_ime_pinyin.o: src/extra/others/ime/lv_ime_pinyin.c.o
@@ -8080,7 +8080,7 @@ src/extra/others/ime/lv_ime_pinyin.o: src/extra/others/ime/lv_ime_pinyin.c.o
 
 # target to build an object file
 src/extra/others/ime/lv_ime_pinyin.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/ime/lv_ime_pinyin.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/ime/lv_ime_pinyin.c.o
 .PHONY : src/extra/others/ime/lv_ime_pinyin.c.o
 
 src/extra/others/ime/lv_ime_pinyin.i: src/extra/others/ime/lv_ime_pinyin.c.i
@@ -8088,7 +8088,7 @@ src/extra/others/ime/lv_ime_pinyin.i: src/extra/others/ime/lv_ime_pinyin.c.i
 
 # target to preprocess a source file
 src/extra/others/ime/lv_ime_pinyin.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/ime/lv_ime_pinyin.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/ime/lv_ime_pinyin.c.i
 .PHONY : src/extra/others/ime/lv_ime_pinyin.c.i
 
 src/extra/others/ime/lv_ime_pinyin.s: src/extra/others/ime/lv_ime_pinyin.c.s
@@ -8096,7 +8096,7 @@ src/extra/others/ime/lv_ime_pinyin.s: src/extra/others/ime/lv_ime_pinyin.c.s
 
 # target to generate assembly for a file
 src/extra/others/ime/lv_ime_pinyin.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/ime/lv_ime_pinyin.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/ime/lv_ime_pinyin.c.s
 .PHONY : src/extra/others/ime/lv_ime_pinyin.c.s
 
 src/extra/others/imgfont/lv_imgfont.o: src/extra/others/imgfont/lv_imgfont.c.o
@@ -8104,7 +8104,7 @@ src/extra/others/imgfont/lv_imgfont.o: src/extra/others/imgfont/lv_imgfont.c.o
 
 # target to build an object file
 src/extra/others/imgfont/lv_imgfont.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/imgfont/lv_imgfont.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/imgfont/lv_imgfont.c.o
 .PHONY : src/extra/others/imgfont/lv_imgfont.c.o
 
 src/extra/others/imgfont/lv_imgfont.i: src/extra/others/imgfont/lv_imgfont.c.i
@@ -8112,7 +8112,7 @@ src/extra/others/imgfont/lv_imgfont.i: src/extra/others/imgfont/lv_imgfont.c.i
 
 # target to preprocess a source file
 src/extra/others/imgfont/lv_imgfont.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/imgfont/lv_imgfont.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/imgfont/lv_imgfont.c.i
 .PHONY : src/extra/others/imgfont/lv_imgfont.c.i
 
 src/extra/others/imgfont/lv_imgfont.s: src/extra/others/imgfont/lv_imgfont.c.s
@@ -8120,7 +8120,7 @@ src/extra/others/imgfont/lv_imgfont.s: src/extra/others/imgfont/lv_imgfont.c.s
 
 # target to generate assembly for a file
 src/extra/others/imgfont/lv_imgfont.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/imgfont/lv_imgfont.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/imgfont/lv_imgfont.c.s
 .PHONY : src/extra/others/imgfont/lv_imgfont.c.s
 
 src/extra/others/monkey/lv_monkey.o: src/extra/others/monkey/lv_monkey.c.o
@@ -8128,7 +8128,7 @@ src/extra/others/monkey/lv_monkey.o: src/extra/others/monkey/lv_monkey.c.o
 
 # target to build an object file
 src/extra/others/monkey/lv_monkey.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/monkey/lv_monkey.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/monkey/lv_monkey.c.o
 .PHONY : src/extra/others/monkey/lv_monkey.c.o
 
 src/extra/others/monkey/lv_monkey.i: src/extra/others/monkey/lv_monkey.c.i
@@ -8136,7 +8136,7 @@ src/extra/others/monkey/lv_monkey.i: src/extra/others/monkey/lv_monkey.c.i
 
 # target to preprocess a source file
 src/extra/others/monkey/lv_monkey.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/monkey/lv_monkey.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/monkey/lv_monkey.c.i
 .PHONY : src/extra/others/monkey/lv_monkey.c.i
 
 src/extra/others/monkey/lv_monkey.s: src/extra/others/monkey/lv_monkey.c.s
@@ -8144,7 +8144,7 @@ src/extra/others/monkey/lv_monkey.s: src/extra/others/monkey/lv_monkey.c.s
 
 # target to generate assembly for a file
 src/extra/others/monkey/lv_monkey.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/monkey/lv_monkey.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/monkey/lv_monkey.c.s
 .PHONY : src/extra/others/monkey/lv_monkey.c.s
 
 src/extra/others/msg/lv_msg.o: src/extra/others/msg/lv_msg.c.o
@@ -8152,7 +8152,7 @@ src/extra/others/msg/lv_msg.o: src/extra/others/msg/lv_msg.c.o
 
 # target to build an object file
 src/extra/others/msg/lv_msg.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/msg/lv_msg.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/msg/lv_msg.c.o
 .PHONY : src/extra/others/msg/lv_msg.c.o
 
 src/extra/others/msg/lv_msg.i: src/extra/others/msg/lv_msg.c.i
@@ -8160,7 +8160,7 @@ src/extra/others/msg/lv_msg.i: src/extra/others/msg/lv_msg.c.i
 
 # target to preprocess a source file
 src/extra/others/msg/lv_msg.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/msg/lv_msg.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/msg/lv_msg.c.i
 .PHONY : src/extra/others/msg/lv_msg.c.i
 
 src/extra/others/msg/lv_msg.s: src/extra/others/msg/lv_msg.c.s
@@ -8168,7 +8168,7 @@ src/extra/others/msg/lv_msg.s: src/extra/others/msg/lv_msg.c.s
 
 # target to generate assembly for a file
 src/extra/others/msg/lv_msg.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/msg/lv_msg.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/msg/lv_msg.c.s
 .PHONY : src/extra/others/msg/lv_msg.c.s
 
 src/extra/others/snapshot/lv_snapshot.o: src/extra/others/snapshot/lv_snapshot.c.o
@@ -8176,7 +8176,7 @@ src/extra/others/snapshot/lv_snapshot.o: src/extra/others/snapshot/lv_snapshot.c
 
 # target to build an object file
 src/extra/others/snapshot/lv_snapshot.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.o
 .PHONY : src/extra/others/snapshot/lv_snapshot.c.o
 
 src/extra/others/snapshot/lv_snapshot.i: src/extra/others/snapshot/lv_snapshot.c.i
@@ -8184,7 +8184,7 @@ src/extra/others/snapshot/lv_snapshot.i: src/extra/others/snapshot/lv_snapshot.c
 
 # target to preprocess a source file
 src/extra/others/snapshot/lv_snapshot.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.i
 .PHONY : src/extra/others/snapshot/lv_snapshot.c.i
 
 src/extra/others/snapshot/lv_snapshot.s: src/extra/others/snapshot/lv_snapshot.c.s
@@ -8192,7 +8192,7 @@ src/extra/others/snapshot/lv_snapshot.s: src/extra/others/snapshot/lv_snapshot.c
 
 # target to generate assembly for a file
 src/extra/others/snapshot/lv_snapshot.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/others/snapshot/lv_snapshot.c.s
 .PHONY : src/extra/others/snapshot/lv_snapshot.c.s
 
 src/extra/themes/basic/lv_theme_basic.o: src/extra/themes/basic/lv_theme_basic.c.o
@@ -8200,7 +8200,7 @@ src/extra/themes/basic/lv_theme_basic.o: src/extra/themes/basic/lv_theme_basic.c
 
 # target to build an object file
 src/extra/themes/basic/lv_theme_basic.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.o
 .PHONY : src/extra/themes/basic/lv_theme_basic.c.o
 
 src/extra/themes/basic/lv_theme_basic.i: src/extra/themes/basic/lv_theme_basic.c.i
@@ -8208,7 +8208,7 @@ src/extra/themes/basic/lv_theme_basic.i: src/extra/themes/basic/lv_theme_basic.c
 
 # target to preprocess a source file
 src/extra/themes/basic/lv_theme_basic.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.i
 .PHONY : src/extra/themes/basic/lv_theme_basic.c.i
 
 src/extra/themes/basic/lv_theme_basic.s: src/extra/themes/basic/lv_theme_basic.c.s
@@ -8216,7 +8216,7 @@ src/extra/themes/basic/lv_theme_basic.s: src/extra/themes/basic/lv_theme_basic.c
 
 # target to generate assembly for a file
 src/extra/themes/basic/lv_theme_basic.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/basic/lv_theme_basic.c.s
 .PHONY : src/extra/themes/basic/lv_theme_basic.c.s
 
 src/extra/themes/default/lv_theme_default.o: src/extra/themes/default/lv_theme_default.c.o
@@ -8224,7 +8224,7 @@ src/extra/themes/default/lv_theme_default.o: src/extra/themes/default/lv_theme_d
 
 # target to build an object file
 src/extra/themes/default/lv_theme_default.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/default/lv_theme_default.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/default/lv_theme_default.c.o
 .PHONY : src/extra/themes/default/lv_theme_default.c.o
 
 src/extra/themes/default/lv_theme_default.i: src/extra/themes/default/lv_theme_default.c.i
@@ -8232,7 +8232,7 @@ src/extra/themes/default/lv_theme_default.i: src/extra/themes/default/lv_theme_d
 
 # target to preprocess a source file
 src/extra/themes/default/lv_theme_default.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/default/lv_theme_default.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/default/lv_theme_default.c.i
 .PHONY : src/extra/themes/default/lv_theme_default.c.i
 
 src/extra/themes/default/lv_theme_default.s: src/extra/themes/default/lv_theme_default.c.s
@@ -8240,7 +8240,7 @@ src/extra/themes/default/lv_theme_default.s: src/extra/themes/default/lv_theme_d
 
 # target to generate assembly for a file
 src/extra/themes/default/lv_theme_default.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/default/lv_theme_default.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/default/lv_theme_default.c.s
 .PHONY : src/extra/themes/default/lv_theme_default.c.s
 
 src/extra/themes/mono/lv_theme_mono.o: src/extra/themes/mono/lv_theme_mono.c.o
@@ -8248,7 +8248,7 @@ src/extra/themes/mono/lv_theme_mono.o: src/extra/themes/mono/lv_theme_mono.c.o
 
 # target to build an object file
 src/extra/themes/mono/lv_theme_mono.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.o
 .PHONY : src/extra/themes/mono/lv_theme_mono.c.o
 
 src/extra/themes/mono/lv_theme_mono.i: src/extra/themes/mono/lv_theme_mono.c.i
@@ -8256,7 +8256,7 @@ src/extra/themes/mono/lv_theme_mono.i: src/extra/themes/mono/lv_theme_mono.c.i
 
 # target to preprocess a source file
 src/extra/themes/mono/lv_theme_mono.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.i
 .PHONY : src/extra/themes/mono/lv_theme_mono.c.i
 
 src/extra/themes/mono/lv_theme_mono.s: src/extra/themes/mono/lv_theme_mono.c.s
@@ -8264,7 +8264,7 @@ src/extra/themes/mono/lv_theme_mono.s: src/extra/themes/mono/lv_theme_mono.c.s
 
 # target to generate assembly for a file
 src/extra/themes/mono/lv_theme_mono.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/themes/mono/lv_theme_mono.c.s
 .PHONY : src/extra/themes/mono/lv_theme_mono.c.s
 
 src/extra/widgets/animimg/lv_animimg.o: src/extra/widgets/animimg/lv_animimg.c.o
@@ -8272,7 +8272,7 @@ src/extra/widgets/animimg/lv_animimg.o: src/extra/widgets/animimg/lv_animimg.c.o
 
 # target to build an object file
 src/extra/widgets/animimg/lv_animimg.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.o
 .PHONY : src/extra/widgets/animimg/lv_animimg.c.o
 
 src/extra/widgets/animimg/lv_animimg.i: src/extra/widgets/animimg/lv_animimg.c.i
@@ -8280,7 +8280,7 @@ src/extra/widgets/animimg/lv_animimg.i: src/extra/widgets/animimg/lv_animimg.c.i
 
 # target to preprocess a source file
 src/extra/widgets/animimg/lv_animimg.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.i
 .PHONY : src/extra/widgets/animimg/lv_animimg.c.i
 
 src/extra/widgets/animimg/lv_animimg.s: src/extra/widgets/animimg/lv_animimg.c.s
@@ -8288,7 +8288,7 @@ src/extra/widgets/animimg/lv_animimg.s: src/extra/widgets/animimg/lv_animimg.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/animimg/lv_animimg.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/animimg/lv_animimg.c.s
 .PHONY : src/extra/widgets/animimg/lv_animimg.c.s
 
 src/extra/widgets/calendar/lv_calendar.o: src/extra/widgets/calendar/lv_calendar.c.o
@@ -8296,7 +8296,7 @@ src/extra/widgets/calendar/lv_calendar.o: src/extra/widgets/calendar/lv_calendar
 
 # target to build an object file
 src/extra/widgets/calendar/lv_calendar.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.o
 .PHONY : src/extra/widgets/calendar/lv_calendar.c.o
 
 src/extra/widgets/calendar/lv_calendar.i: src/extra/widgets/calendar/lv_calendar.c.i
@@ -8304,7 +8304,7 @@ src/extra/widgets/calendar/lv_calendar.i: src/extra/widgets/calendar/lv_calendar
 
 # target to preprocess a source file
 src/extra/widgets/calendar/lv_calendar.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.i
 .PHONY : src/extra/widgets/calendar/lv_calendar.c.i
 
 src/extra/widgets/calendar/lv_calendar.s: src/extra/widgets/calendar/lv_calendar.c.s
@@ -8312,7 +8312,7 @@ src/extra/widgets/calendar/lv_calendar.s: src/extra/widgets/calendar/lv_calendar
 
 # target to generate assembly for a file
 src/extra/widgets/calendar/lv_calendar.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar.c.s
 .PHONY : src/extra/widgets/calendar/lv_calendar.c.s
 
 src/extra/widgets/calendar/lv_calendar_header_arrow.o: src/extra/widgets/calendar/lv_calendar_header_arrow.c.o
@@ -8320,7 +8320,7 @@ src/extra/widgets/calendar/lv_calendar_header_arrow.o: src/extra/widgets/calenda
 
 # target to build an object file
 src/extra/widgets/calendar/lv_calendar_header_arrow.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.o
 .PHONY : src/extra/widgets/calendar/lv_calendar_header_arrow.c.o
 
 src/extra/widgets/calendar/lv_calendar_header_arrow.i: src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
@@ -8328,7 +8328,7 @@ src/extra/widgets/calendar/lv_calendar_header_arrow.i: src/extra/widgets/calenda
 
 # target to preprocess a source file
 src/extra/widgets/calendar/lv_calendar_header_arrow.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
 .PHONY : src/extra/widgets/calendar/lv_calendar_header_arrow.c.i
 
 src/extra/widgets/calendar/lv_calendar_header_arrow.s: src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
@@ -8336,7 +8336,7 @@ src/extra/widgets/calendar/lv_calendar_header_arrow.s: src/extra/widgets/calenda
 
 # target to generate assembly for a file
 src/extra/widgets/calendar/lv_calendar_header_arrow.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
 .PHONY : src/extra/widgets/calendar/lv_calendar_header_arrow.c.s
 
 src/extra/widgets/calendar/lv_calendar_header_dropdown.o: src/extra/widgets/calendar/lv_calendar_header_dropdown.c.o
@@ -8344,7 +8344,7 @@ src/extra/widgets/calendar/lv_calendar_header_dropdown.o: src/extra/widgets/cale
 
 # target to build an object file
 src/extra/widgets/calendar/lv_calendar_header_dropdown.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.o
 .PHONY : src/extra/widgets/calendar/lv_calendar_header_dropdown.c.o
 
 src/extra/widgets/calendar/lv_calendar_header_dropdown.i: src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
@@ -8352,7 +8352,7 @@ src/extra/widgets/calendar/lv_calendar_header_dropdown.i: src/extra/widgets/cale
 
 # target to preprocess a source file
 src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
 .PHONY : src/extra/widgets/calendar/lv_calendar_header_dropdown.c.i
 
 src/extra/widgets/calendar/lv_calendar_header_dropdown.s: src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
@@ -8360,7 +8360,7 @@ src/extra/widgets/calendar/lv_calendar_header_dropdown.s: src/extra/widgets/cale
 
 # target to generate assembly for a file
 src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
 .PHONY : src/extra/widgets/calendar/lv_calendar_header_dropdown.c.s
 
 src/extra/widgets/chart/lv_chart.o: src/extra/widgets/chart/lv_chart.c.o
@@ -8368,7 +8368,7 @@ src/extra/widgets/chart/lv_chart.o: src/extra/widgets/chart/lv_chart.c.o
 
 # target to build an object file
 src/extra/widgets/chart/lv_chart.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/chart/lv_chart.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/chart/lv_chart.c.o
 .PHONY : src/extra/widgets/chart/lv_chart.c.o
 
 src/extra/widgets/chart/lv_chart.i: src/extra/widgets/chart/lv_chart.c.i
@@ -8376,7 +8376,7 @@ src/extra/widgets/chart/lv_chart.i: src/extra/widgets/chart/lv_chart.c.i
 
 # target to preprocess a source file
 src/extra/widgets/chart/lv_chart.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/chart/lv_chart.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/chart/lv_chart.c.i
 .PHONY : src/extra/widgets/chart/lv_chart.c.i
 
 src/extra/widgets/chart/lv_chart.s: src/extra/widgets/chart/lv_chart.c.s
@@ -8384,7 +8384,7 @@ src/extra/widgets/chart/lv_chart.s: src/extra/widgets/chart/lv_chart.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/chart/lv_chart.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/chart/lv_chart.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/chart/lv_chart.c.s
 .PHONY : src/extra/widgets/chart/lv_chart.c.s
 
 src/extra/widgets/colorwheel/lv_colorwheel.o: src/extra/widgets/colorwheel/lv_colorwheel.c.o
@@ -8392,7 +8392,7 @@ src/extra/widgets/colorwheel/lv_colorwheel.o: src/extra/widgets/colorwheel/lv_co
 
 # target to build an object file
 src/extra/widgets/colorwheel/lv_colorwheel.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.o
 .PHONY : src/extra/widgets/colorwheel/lv_colorwheel.c.o
 
 src/extra/widgets/colorwheel/lv_colorwheel.i: src/extra/widgets/colorwheel/lv_colorwheel.c.i
@@ -8400,7 +8400,7 @@ src/extra/widgets/colorwheel/lv_colorwheel.i: src/extra/widgets/colorwheel/lv_co
 
 # target to preprocess a source file
 src/extra/widgets/colorwheel/lv_colorwheel.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.i
 .PHONY : src/extra/widgets/colorwheel/lv_colorwheel.c.i
 
 src/extra/widgets/colorwheel/lv_colorwheel.s: src/extra/widgets/colorwheel/lv_colorwheel.c.s
@@ -8408,7 +8408,7 @@ src/extra/widgets/colorwheel/lv_colorwheel.s: src/extra/widgets/colorwheel/lv_co
 
 # target to generate assembly for a file
 src/extra/widgets/colorwheel/lv_colorwheel.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/colorwheel/lv_colorwheel.c.s
 .PHONY : src/extra/widgets/colorwheel/lv_colorwheel.c.s
 
 src/extra/widgets/imgbtn/lv_imgbtn.o: src/extra/widgets/imgbtn/lv_imgbtn.c.o
@@ -8416,7 +8416,7 @@ src/extra/widgets/imgbtn/lv_imgbtn.o: src/extra/widgets/imgbtn/lv_imgbtn.c.o
 
 # target to build an object file
 src/extra/widgets/imgbtn/lv_imgbtn.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.o
 .PHONY : src/extra/widgets/imgbtn/lv_imgbtn.c.o
 
 src/extra/widgets/imgbtn/lv_imgbtn.i: src/extra/widgets/imgbtn/lv_imgbtn.c.i
@@ -8424,7 +8424,7 @@ src/extra/widgets/imgbtn/lv_imgbtn.i: src/extra/widgets/imgbtn/lv_imgbtn.c.i
 
 # target to preprocess a source file
 src/extra/widgets/imgbtn/lv_imgbtn.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.i
 .PHONY : src/extra/widgets/imgbtn/lv_imgbtn.c.i
 
 src/extra/widgets/imgbtn/lv_imgbtn.s: src/extra/widgets/imgbtn/lv_imgbtn.c.s
@@ -8432,7 +8432,7 @@ src/extra/widgets/imgbtn/lv_imgbtn.s: src/extra/widgets/imgbtn/lv_imgbtn.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/imgbtn/lv_imgbtn.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/imgbtn/lv_imgbtn.c.s
 .PHONY : src/extra/widgets/imgbtn/lv_imgbtn.c.s
 
 src/extra/widgets/keyboard/lv_keyboard.o: src/extra/widgets/keyboard/lv_keyboard.c.o
@@ -8440,7 +8440,7 @@ src/extra/widgets/keyboard/lv_keyboard.o: src/extra/widgets/keyboard/lv_keyboard
 
 # target to build an object file
 src/extra/widgets/keyboard/lv_keyboard.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.o
 .PHONY : src/extra/widgets/keyboard/lv_keyboard.c.o
 
 src/extra/widgets/keyboard/lv_keyboard.i: src/extra/widgets/keyboard/lv_keyboard.c.i
@@ -8448,7 +8448,7 @@ src/extra/widgets/keyboard/lv_keyboard.i: src/extra/widgets/keyboard/lv_keyboard
 
 # target to preprocess a source file
 src/extra/widgets/keyboard/lv_keyboard.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.i
 .PHONY : src/extra/widgets/keyboard/lv_keyboard.c.i
 
 src/extra/widgets/keyboard/lv_keyboard.s: src/extra/widgets/keyboard/lv_keyboard.c.s
@@ -8456,7 +8456,7 @@ src/extra/widgets/keyboard/lv_keyboard.s: src/extra/widgets/keyboard/lv_keyboard
 
 # target to generate assembly for a file
 src/extra/widgets/keyboard/lv_keyboard.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/keyboard/lv_keyboard.c.s
 .PHONY : src/extra/widgets/keyboard/lv_keyboard.c.s
 
 src/extra/widgets/led/lv_led.o: src/extra/widgets/led/lv_led.c.o
@@ -8464,7 +8464,7 @@ src/extra/widgets/led/lv_led.o: src/extra/widgets/led/lv_led.c.o
 
 # target to build an object file
 src/extra/widgets/led/lv_led.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/led/lv_led.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/led/lv_led.c.o
 .PHONY : src/extra/widgets/led/lv_led.c.o
 
 src/extra/widgets/led/lv_led.i: src/extra/widgets/led/lv_led.c.i
@@ -8472,7 +8472,7 @@ src/extra/widgets/led/lv_led.i: src/extra/widgets/led/lv_led.c.i
 
 # target to preprocess a source file
 src/extra/widgets/led/lv_led.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/led/lv_led.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/led/lv_led.c.i
 .PHONY : src/extra/widgets/led/lv_led.c.i
 
 src/extra/widgets/led/lv_led.s: src/extra/widgets/led/lv_led.c.s
@@ -8480,7 +8480,7 @@ src/extra/widgets/led/lv_led.s: src/extra/widgets/led/lv_led.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/led/lv_led.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/led/lv_led.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/led/lv_led.c.s
 .PHONY : src/extra/widgets/led/lv_led.c.s
 
 src/extra/widgets/list/lv_list.o: src/extra/widgets/list/lv_list.c.o
@@ -8488,7 +8488,7 @@ src/extra/widgets/list/lv_list.o: src/extra/widgets/list/lv_list.c.o
 
 # target to build an object file
 src/extra/widgets/list/lv_list.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/list/lv_list.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/list/lv_list.c.o
 .PHONY : src/extra/widgets/list/lv_list.c.o
 
 src/extra/widgets/list/lv_list.i: src/extra/widgets/list/lv_list.c.i
@@ -8496,7 +8496,7 @@ src/extra/widgets/list/lv_list.i: src/extra/widgets/list/lv_list.c.i
 
 # target to preprocess a source file
 src/extra/widgets/list/lv_list.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/list/lv_list.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/list/lv_list.c.i
 .PHONY : src/extra/widgets/list/lv_list.c.i
 
 src/extra/widgets/list/lv_list.s: src/extra/widgets/list/lv_list.c.s
@@ -8504,7 +8504,7 @@ src/extra/widgets/list/lv_list.s: src/extra/widgets/list/lv_list.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/list/lv_list.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/list/lv_list.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/list/lv_list.c.s
 .PHONY : src/extra/widgets/list/lv_list.c.s
 
 src/extra/widgets/menu/lv_menu.o: src/extra/widgets/menu/lv_menu.c.o
@@ -8512,7 +8512,7 @@ src/extra/widgets/menu/lv_menu.o: src/extra/widgets/menu/lv_menu.c.o
 
 # target to build an object file
 src/extra/widgets/menu/lv_menu.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/menu/lv_menu.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/menu/lv_menu.c.o
 .PHONY : src/extra/widgets/menu/lv_menu.c.o
 
 src/extra/widgets/menu/lv_menu.i: src/extra/widgets/menu/lv_menu.c.i
@@ -8520,7 +8520,7 @@ src/extra/widgets/menu/lv_menu.i: src/extra/widgets/menu/lv_menu.c.i
 
 # target to preprocess a source file
 src/extra/widgets/menu/lv_menu.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/menu/lv_menu.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/menu/lv_menu.c.i
 .PHONY : src/extra/widgets/menu/lv_menu.c.i
 
 src/extra/widgets/menu/lv_menu.s: src/extra/widgets/menu/lv_menu.c.s
@@ -8528,7 +8528,7 @@ src/extra/widgets/menu/lv_menu.s: src/extra/widgets/menu/lv_menu.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/menu/lv_menu.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/menu/lv_menu.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/menu/lv_menu.c.s
 .PHONY : src/extra/widgets/menu/lv_menu.c.s
 
 src/extra/widgets/meter/lv_meter.o: src/extra/widgets/meter/lv_meter.c.o
@@ -8536,7 +8536,7 @@ src/extra/widgets/meter/lv_meter.o: src/extra/widgets/meter/lv_meter.c.o
 
 # target to build an object file
 src/extra/widgets/meter/lv_meter.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/meter/lv_meter.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/meter/lv_meter.c.o
 .PHONY : src/extra/widgets/meter/lv_meter.c.o
 
 src/extra/widgets/meter/lv_meter.i: src/extra/widgets/meter/lv_meter.c.i
@@ -8544,7 +8544,7 @@ src/extra/widgets/meter/lv_meter.i: src/extra/widgets/meter/lv_meter.c.i
 
 # target to preprocess a source file
 src/extra/widgets/meter/lv_meter.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/meter/lv_meter.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/meter/lv_meter.c.i
 .PHONY : src/extra/widgets/meter/lv_meter.c.i
 
 src/extra/widgets/meter/lv_meter.s: src/extra/widgets/meter/lv_meter.c.s
@@ -8552,7 +8552,7 @@ src/extra/widgets/meter/lv_meter.s: src/extra/widgets/meter/lv_meter.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/meter/lv_meter.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/meter/lv_meter.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/meter/lv_meter.c.s
 .PHONY : src/extra/widgets/meter/lv_meter.c.s
 
 src/extra/widgets/msgbox/lv_msgbox.o: src/extra/widgets/msgbox/lv_msgbox.c.o
@@ -8560,7 +8560,7 @@ src/extra/widgets/msgbox/lv_msgbox.o: src/extra/widgets/msgbox/lv_msgbox.c.o
 
 # target to build an object file
 src/extra/widgets/msgbox/lv_msgbox.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.o
 .PHONY : src/extra/widgets/msgbox/lv_msgbox.c.o
 
 src/extra/widgets/msgbox/lv_msgbox.i: src/extra/widgets/msgbox/lv_msgbox.c.i
@@ -8568,7 +8568,7 @@ src/extra/widgets/msgbox/lv_msgbox.i: src/extra/widgets/msgbox/lv_msgbox.c.i
 
 # target to preprocess a source file
 src/extra/widgets/msgbox/lv_msgbox.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.i
 .PHONY : src/extra/widgets/msgbox/lv_msgbox.c.i
 
 src/extra/widgets/msgbox/lv_msgbox.s: src/extra/widgets/msgbox/lv_msgbox.c.s
@@ -8576,7 +8576,7 @@ src/extra/widgets/msgbox/lv_msgbox.s: src/extra/widgets/msgbox/lv_msgbox.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/msgbox/lv_msgbox.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/msgbox/lv_msgbox.c.s
 .PHONY : src/extra/widgets/msgbox/lv_msgbox.c.s
 
 src/extra/widgets/span/lv_span.o: src/extra/widgets/span/lv_span.c.o
@@ -8584,7 +8584,7 @@ src/extra/widgets/span/lv_span.o: src/extra/widgets/span/lv_span.c.o
 
 # target to build an object file
 src/extra/widgets/span/lv_span.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/span/lv_span.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/span/lv_span.c.o
 .PHONY : src/extra/widgets/span/lv_span.c.o
 
 src/extra/widgets/span/lv_span.i: src/extra/widgets/span/lv_span.c.i
@@ -8592,7 +8592,7 @@ src/extra/widgets/span/lv_span.i: src/extra/widgets/span/lv_span.c.i
 
 # target to preprocess a source file
 src/extra/widgets/span/lv_span.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/span/lv_span.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/span/lv_span.c.i
 .PHONY : src/extra/widgets/span/lv_span.c.i
 
 src/extra/widgets/span/lv_span.s: src/extra/widgets/span/lv_span.c.s
@@ -8600,7 +8600,7 @@ src/extra/widgets/span/lv_span.s: src/extra/widgets/span/lv_span.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/span/lv_span.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/span/lv_span.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/span/lv_span.c.s
 .PHONY : src/extra/widgets/span/lv_span.c.s
 
 src/extra/widgets/spinbox/lv_spinbox.o: src/extra/widgets/spinbox/lv_spinbox.c.o
@@ -8608,7 +8608,7 @@ src/extra/widgets/spinbox/lv_spinbox.o: src/extra/widgets/spinbox/lv_spinbox.c.o
 
 # target to build an object file
 src/extra/widgets/spinbox/lv_spinbox.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.o
 .PHONY : src/extra/widgets/spinbox/lv_spinbox.c.o
 
 src/extra/widgets/spinbox/lv_spinbox.i: src/extra/widgets/spinbox/lv_spinbox.c.i
@@ -8616,7 +8616,7 @@ src/extra/widgets/spinbox/lv_spinbox.i: src/extra/widgets/spinbox/lv_spinbox.c.i
 
 # target to preprocess a source file
 src/extra/widgets/spinbox/lv_spinbox.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.i
 .PHONY : src/extra/widgets/spinbox/lv_spinbox.c.i
 
 src/extra/widgets/spinbox/lv_spinbox.s: src/extra/widgets/spinbox/lv_spinbox.c.s
@@ -8624,7 +8624,7 @@ src/extra/widgets/spinbox/lv_spinbox.s: src/extra/widgets/spinbox/lv_spinbox.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/spinbox/lv_spinbox.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinbox/lv_spinbox.c.s
 .PHONY : src/extra/widgets/spinbox/lv_spinbox.c.s
 
 src/extra/widgets/spinner/lv_spinner.o: src/extra/widgets/spinner/lv_spinner.c.o
@@ -8632,7 +8632,7 @@ src/extra/widgets/spinner/lv_spinner.o: src/extra/widgets/spinner/lv_spinner.c.o
 
 # target to build an object file
 src/extra/widgets/spinner/lv_spinner.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.o
 .PHONY : src/extra/widgets/spinner/lv_spinner.c.o
 
 src/extra/widgets/spinner/lv_spinner.i: src/extra/widgets/spinner/lv_spinner.c.i
@@ -8640,7 +8640,7 @@ src/extra/widgets/spinner/lv_spinner.i: src/extra/widgets/spinner/lv_spinner.c.i
 
 # target to preprocess a source file
 src/extra/widgets/spinner/lv_spinner.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.i
 .PHONY : src/extra/widgets/spinner/lv_spinner.c.i
 
 src/extra/widgets/spinner/lv_spinner.s: src/extra/widgets/spinner/lv_spinner.c.s
@@ -8648,7 +8648,7 @@ src/extra/widgets/spinner/lv_spinner.s: src/extra/widgets/spinner/lv_spinner.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/spinner/lv_spinner.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/spinner/lv_spinner.c.s
 .PHONY : src/extra/widgets/spinner/lv_spinner.c.s
 
 src/extra/widgets/tabview/lv_tabview.o: src/extra/widgets/tabview/lv_tabview.c.o
@@ -8656,7 +8656,7 @@ src/extra/widgets/tabview/lv_tabview.o: src/extra/widgets/tabview/lv_tabview.c.o
 
 # target to build an object file
 src/extra/widgets/tabview/lv_tabview.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.o
 .PHONY : src/extra/widgets/tabview/lv_tabview.c.o
 
 src/extra/widgets/tabview/lv_tabview.i: src/extra/widgets/tabview/lv_tabview.c.i
@@ -8664,7 +8664,7 @@ src/extra/widgets/tabview/lv_tabview.i: src/extra/widgets/tabview/lv_tabview.c.i
 
 # target to preprocess a source file
 src/extra/widgets/tabview/lv_tabview.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.i
 .PHONY : src/extra/widgets/tabview/lv_tabview.c.i
 
 src/extra/widgets/tabview/lv_tabview.s: src/extra/widgets/tabview/lv_tabview.c.s
@@ -8672,7 +8672,7 @@ src/extra/widgets/tabview/lv_tabview.s: src/extra/widgets/tabview/lv_tabview.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/tabview/lv_tabview.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tabview/lv_tabview.c.s
 .PHONY : src/extra/widgets/tabview/lv_tabview.c.s
 
 src/extra/widgets/tileview/lv_tileview.o: src/extra/widgets/tileview/lv_tileview.c.o
@@ -8680,7 +8680,7 @@ src/extra/widgets/tileview/lv_tileview.o: src/extra/widgets/tileview/lv_tileview
 
 # target to build an object file
 src/extra/widgets/tileview/lv_tileview.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.o
 .PHONY : src/extra/widgets/tileview/lv_tileview.c.o
 
 src/extra/widgets/tileview/lv_tileview.i: src/extra/widgets/tileview/lv_tileview.c.i
@@ -8688,7 +8688,7 @@ src/extra/widgets/tileview/lv_tileview.i: src/extra/widgets/tileview/lv_tileview
 
 # target to preprocess a source file
 src/extra/widgets/tileview/lv_tileview.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.i
 .PHONY : src/extra/widgets/tileview/lv_tileview.c.i
 
 src/extra/widgets/tileview/lv_tileview.s: src/extra/widgets/tileview/lv_tileview.c.s
@@ -8696,7 +8696,7 @@ src/extra/widgets/tileview/lv_tileview.s: src/extra/widgets/tileview/lv_tileview
 
 # target to generate assembly for a file
 src/extra/widgets/tileview/lv_tileview.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/tileview/lv_tileview.c.s
 .PHONY : src/extra/widgets/tileview/lv_tileview.c.s
 
 src/extra/widgets/win/lv_win.o: src/extra/widgets/win/lv_win.c.o
@@ -8704,7 +8704,7 @@ src/extra/widgets/win/lv_win.o: src/extra/widgets/win/lv_win.c.o
 
 # target to build an object file
 src/extra/widgets/win/lv_win.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/win/lv_win.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/win/lv_win.c.o
 .PHONY : src/extra/widgets/win/lv_win.c.o
 
 src/extra/widgets/win/lv_win.i: src/extra/widgets/win/lv_win.c.i
@@ -8712,7 +8712,7 @@ src/extra/widgets/win/lv_win.i: src/extra/widgets/win/lv_win.c.i
 
 # target to preprocess a source file
 src/extra/widgets/win/lv_win.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/win/lv_win.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/win/lv_win.c.i
 .PHONY : src/extra/widgets/win/lv_win.c.i
 
 src/extra/widgets/win/lv_win.s: src/extra/widgets/win/lv_win.c.s
@@ -8720,7 +8720,7 @@ src/extra/widgets/win/lv_win.s: src/extra/widgets/win/lv_win.c.s
 
 # target to generate assembly for a file
 src/extra/widgets/win/lv_win.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/win/lv_win.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/extra/widgets/win/lv_win.c.s
 .PHONY : src/extra/widgets/win/lv_win.c.s
 
 src/font/lv_font.o: src/font/lv_font.c.o
@@ -8728,7 +8728,7 @@ src/font/lv_font.o: src/font/lv_font.c.o
 
 # target to build an object file
 src/font/lv_font.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font.c.o
 .PHONY : src/font/lv_font.c.o
 
 src/font/lv_font.i: src/font/lv_font.c.i
@@ -8736,7 +8736,7 @@ src/font/lv_font.i: src/font/lv_font.c.i
 
 # target to preprocess a source file
 src/font/lv_font.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font.c.i
 .PHONY : src/font/lv_font.c.i
 
 src/font/lv_font.s: src/font/lv_font.c.s
@@ -8744,7 +8744,7 @@ src/font/lv_font.s: src/font/lv_font.c.s
 
 # target to generate assembly for a file
 src/font/lv_font.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font.c.s
 .PHONY : src/font/lv_font.c.s
 
 src/font/lv_font_dejavu_16_persian_hebrew.o: src/font/lv_font_dejavu_16_persian_hebrew.c.o
@@ -8752,7 +8752,7 @@ src/font/lv_font_dejavu_16_persian_hebrew.o: src/font/lv_font_dejavu_16_persian_
 
 # target to build an object file
 src/font/lv_font_dejavu_16_persian_hebrew.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.o
 .PHONY : src/font/lv_font_dejavu_16_persian_hebrew.c.o
 
 src/font/lv_font_dejavu_16_persian_hebrew.i: src/font/lv_font_dejavu_16_persian_hebrew.c.i
@@ -8760,7 +8760,7 @@ src/font/lv_font_dejavu_16_persian_hebrew.i: src/font/lv_font_dejavu_16_persian_
 
 # target to preprocess a source file
 src/font/lv_font_dejavu_16_persian_hebrew.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.i
 .PHONY : src/font/lv_font_dejavu_16_persian_hebrew.c.i
 
 src/font/lv_font_dejavu_16_persian_hebrew.s: src/font/lv_font_dejavu_16_persian_hebrew.c.s
@@ -8768,7 +8768,7 @@ src/font/lv_font_dejavu_16_persian_hebrew.s: src/font/lv_font_dejavu_16_persian_
 
 # target to generate assembly for a file
 src/font/lv_font_dejavu_16_persian_hebrew.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_dejavu_16_persian_hebrew.c.s
 .PHONY : src/font/lv_font_dejavu_16_persian_hebrew.c.s
 
 src/font/lv_font_fmt_txt.o: src/font/lv_font_fmt_txt.c.o
@@ -8776,7 +8776,7 @@ src/font/lv_font_fmt_txt.o: src/font/lv_font_fmt_txt.c.o
 
 # target to build an object file
 src/font/lv_font_fmt_txt.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_fmt_txt.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_fmt_txt.c.o
 .PHONY : src/font/lv_font_fmt_txt.c.o
 
 src/font/lv_font_fmt_txt.i: src/font/lv_font_fmt_txt.c.i
@@ -8784,7 +8784,7 @@ src/font/lv_font_fmt_txt.i: src/font/lv_font_fmt_txt.c.i
 
 # target to preprocess a source file
 src/font/lv_font_fmt_txt.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_fmt_txt.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_fmt_txt.c.i
 .PHONY : src/font/lv_font_fmt_txt.c.i
 
 src/font/lv_font_fmt_txt.s: src/font/lv_font_fmt_txt.c.s
@@ -8792,7 +8792,7 @@ src/font/lv_font_fmt_txt.s: src/font/lv_font_fmt_txt.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_fmt_txt.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_fmt_txt.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_fmt_txt.c.s
 .PHONY : src/font/lv_font_fmt_txt.c.s
 
 src/font/lv_font_loader.o: src/font/lv_font_loader.c.o
@@ -8800,7 +8800,7 @@ src/font/lv_font_loader.o: src/font/lv_font_loader.c.o
 
 # target to build an object file
 src/font/lv_font_loader.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_loader.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_loader.c.o
 .PHONY : src/font/lv_font_loader.c.o
 
 src/font/lv_font_loader.i: src/font/lv_font_loader.c.i
@@ -8808,7 +8808,7 @@ src/font/lv_font_loader.i: src/font/lv_font_loader.c.i
 
 # target to preprocess a source file
 src/font/lv_font_loader.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_loader.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_loader.c.i
 .PHONY : src/font/lv_font_loader.c.i
 
 src/font/lv_font_loader.s: src/font/lv_font_loader.c.s
@@ -8816,7 +8816,7 @@ src/font/lv_font_loader.s: src/font/lv_font_loader.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_loader.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_loader.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_loader.c.s
 .PHONY : src/font/lv_font_loader.c.s
 
 src/font/lv_font_montserrat_10.o: src/font/lv_font_montserrat_10.c.o
@@ -8824,7 +8824,7 @@ src/font/lv_font_montserrat_10.o: src/font/lv_font_montserrat_10.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_10.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_10.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_10.c.o
 .PHONY : src/font/lv_font_montserrat_10.c.o
 
 src/font/lv_font_montserrat_10.i: src/font/lv_font_montserrat_10.c.i
@@ -8832,7 +8832,7 @@ src/font/lv_font_montserrat_10.i: src/font/lv_font_montserrat_10.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_10.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_10.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_10.c.i
 .PHONY : src/font/lv_font_montserrat_10.c.i
 
 src/font/lv_font_montserrat_10.s: src/font/lv_font_montserrat_10.c.s
@@ -8840,7 +8840,7 @@ src/font/lv_font_montserrat_10.s: src/font/lv_font_montserrat_10.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_10.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_10.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_10.c.s
 .PHONY : src/font/lv_font_montserrat_10.c.s
 
 src/font/lv_font_montserrat_12.o: src/font/lv_font_montserrat_12.c.o
@@ -8848,7 +8848,7 @@ src/font/lv_font_montserrat_12.o: src/font/lv_font_montserrat_12.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_12.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12.c.o
 .PHONY : src/font/lv_font_montserrat_12.c.o
 
 src/font/lv_font_montserrat_12.i: src/font/lv_font_montserrat_12.c.i
@@ -8856,7 +8856,7 @@ src/font/lv_font_montserrat_12.i: src/font/lv_font_montserrat_12.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_12.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12.c.i
 .PHONY : src/font/lv_font_montserrat_12.c.i
 
 src/font/lv_font_montserrat_12.s: src/font/lv_font_montserrat_12.c.s
@@ -8864,7 +8864,7 @@ src/font/lv_font_montserrat_12.s: src/font/lv_font_montserrat_12.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_12.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12.c.s
 .PHONY : src/font/lv_font_montserrat_12.c.s
 
 src/font/lv_font_montserrat_12_subpx.o: src/font/lv_font_montserrat_12_subpx.c.o
@@ -8872,7 +8872,7 @@ src/font/lv_font_montserrat_12_subpx.o: src/font/lv_font_montserrat_12_subpx.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_12_subpx.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.o
 .PHONY : src/font/lv_font_montserrat_12_subpx.c.o
 
 src/font/lv_font_montserrat_12_subpx.i: src/font/lv_font_montserrat_12_subpx.c.i
@@ -8880,7 +8880,7 @@ src/font/lv_font_montserrat_12_subpx.i: src/font/lv_font_montserrat_12_subpx.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_12_subpx.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.i
 .PHONY : src/font/lv_font_montserrat_12_subpx.c.i
 
 src/font/lv_font_montserrat_12_subpx.s: src/font/lv_font_montserrat_12_subpx.c.s
@@ -8888,7 +8888,7 @@ src/font/lv_font_montserrat_12_subpx.s: src/font/lv_font_montserrat_12_subpx.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_12_subpx.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_12_subpx.c.s
 .PHONY : src/font/lv_font_montserrat_12_subpx.c.s
 
 src/font/lv_font_montserrat_14.o: src/font/lv_font_montserrat_14.c.o
@@ -8896,7 +8896,7 @@ src/font/lv_font_montserrat_14.o: src/font/lv_font_montserrat_14.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_14.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_14.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_14.c.o
 .PHONY : src/font/lv_font_montserrat_14.c.o
 
 src/font/lv_font_montserrat_14.i: src/font/lv_font_montserrat_14.c.i
@@ -8904,7 +8904,7 @@ src/font/lv_font_montserrat_14.i: src/font/lv_font_montserrat_14.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_14.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_14.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_14.c.i
 .PHONY : src/font/lv_font_montserrat_14.c.i
 
 src/font/lv_font_montserrat_14.s: src/font/lv_font_montserrat_14.c.s
@@ -8912,7 +8912,7 @@ src/font/lv_font_montserrat_14.s: src/font/lv_font_montserrat_14.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_14.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_14.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_14.c.s
 .PHONY : src/font/lv_font_montserrat_14.c.s
 
 src/font/lv_font_montserrat_16.o: src/font/lv_font_montserrat_16.c.o
@@ -8920,7 +8920,7 @@ src/font/lv_font_montserrat_16.o: src/font/lv_font_montserrat_16.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_16.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_16.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_16.c.o
 .PHONY : src/font/lv_font_montserrat_16.c.o
 
 src/font/lv_font_montserrat_16.i: src/font/lv_font_montserrat_16.c.i
@@ -8928,7 +8928,7 @@ src/font/lv_font_montserrat_16.i: src/font/lv_font_montserrat_16.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_16.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_16.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_16.c.i
 .PHONY : src/font/lv_font_montserrat_16.c.i
 
 src/font/lv_font_montserrat_16.s: src/font/lv_font_montserrat_16.c.s
@@ -8936,7 +8936,7 @@ src/font/lv_font_montserrat_16.s: src/font/lv_font_montserrat_16.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_16.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_16.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_16.c.s
 .PHONY : src/font/lv_font_montserrat_16.c.s
 
 src/font/lv_font_montserrat_18.o: src/font/lv_font_montserrat_18.c.o
@@ -8944,7 +8944,7 @@ src/font/lv_font_montserrat_18.o: src/font/lv_font_montserrat_18.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_18.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_18.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_18.c.o
 .PHONY : src/font/lv_font_montserrat_18.c.o
 
 src/font/lv_font_montserrat_18.i: src/font/lv_font_montserrat_18.c.i
@@ -8952,7 +8952,7 @@ src/font/lv_font_montserrat_18.i: src/font/lv_font_montserrat_18.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_18.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_18.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_18.c.i
 .PHONY : src/font/lv_font_montserrat_18.c.i
 
 src/font/lv_font_montserrat_18.s: src/font/lv_font_montserrat_18.c.s
@@ -8960,7 +8960,7 @@ src/font/lv_font_montserrat_18.s: src/font/lv_font_montserrat_18.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_18.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_18.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_18.c.s
 .PHONY : src/font/lv_font_montserrat_18.c.s
 
 src/font/lv_font_montserrat_20.o: src/font/lv_font_montserrat_20.c.o
@@ -8968,7 +8968,7 @@ src/font/lv_font_montserrat_20.o: src/font/lv_font_montserrat_20.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_20.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_20.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_20.c.o
 .PHONY : src/font/lv_font_montserrat_20.c.o
 
 src/font/lv_font_montserrat_20.i: src/font/lv_font_montserrat_20.c.i
@@ -8976,7 +8976,7 @@ src/font/lv_font_montserrat_20.i: src/font/lv_font_montserrat_20.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_20.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_20.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_20.c.i
 .PHONY : src/font/lv_font_montserrat_20.c.i
 
 src/font/lv_font_montserrat_20.s: src/font/lv_font_montserrat_20.c.s
@@ -8984,7 +8984,7 @@ src/font/lv_font_montserrat_20.s: src/font/lv_font_montserrat_20.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_20.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_20.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_20.c.s
 .PHONY : src/font/lv_font_montserrat_20.c.s
 
 src/font/lv_font_montserrat_22.o: src/font/lv_font_montserrat_22.c.o
@@ -8992,7 +8992,7 @@ src/font/lv_font_montserrat_22.o: src/font/lv_font_montserrat_22.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_22.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_22.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_22.c.o
 .PHONY : src/font/lv_font_montserrat_22.c.o
 
 src/font/lv_font_montserrat_22.i: src/font/lv_font_montserrat_22.c.i
@@ -9000,7 +9000,7 @@ src/font/lv_font_montserrat_22.i: src/font/lv_font_montserrat_22.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_22.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_22.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_22.c.i
 .PHONY : src/font/lv_font_montserrat_22.c.i
 
 src/font/lv_font_montserrat_22.s: src/font/lv_font_montserrat_22.c.s
@@ -9008,7 +9008,7 @@ src/font/lv_font_montserrat_22.s: src/font/lv_font_montserrat_22.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_22.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_22.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_22.c.s
 .PHONY : src/font/lv_font_montserrat_22.c.s
 
 src/font/lv_font_montserrat_24.o: src/font/lv_font_montserrat_24.c.o
@@ -9016,7 +9016,7 @@ src/font/lv_font_montserrat_24.o: src/font/lv_font_montserrat_24.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_24.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_24.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_24.c.o
 .PHONY : src/font/lv_font_montserrat_24.c.o
 
 src/font/lv_font_montserrat_24.i: src/font/lv_font_montserrat_24.c.i
@@ -9024,7 +9024,7 @@ src/font/lv_font_montserrat_24.i: src/font/lv_font_montserrat_24.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_24.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_24.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_24.c.i
 .PHONY : src/font/lv_font_montserrat_24.c.i
 
 src/font/lv_font_montserrat_24.s: src/font/lv_font_montserrat_24.c.s
@@ -9032,7 +9032,7 @@ src/font/lv_font_montserrat_24.s: src/font/lv_font_montserrat_24.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_24.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_24.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_24.c.s
 .PHONY : src/font/lv_font_montserrat_24.c.s
 
 src/font/lv_font_montserrat_26.o: src/font/lv_font_montserrat_26.c.o
@@ -9040,7 +9040,7 @@ src/font/lv_font_montserrat_26.o: src/font/lv_font_montserrat_26.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_26.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_26.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_26.c.o
 .PHONY : src/font/lv_font_montserrat_26.c.o
 
 src/font/lv_font_montserrat_26.i: src/font/lv_font_montserrat_26.c.i
@@ -9048,7 +9048,7 @@ src/font/lv_font_montserrat_26.i: src/font/lv_font_montserrat_26.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_26.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_26.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_26.c.i
 .PHONY : src/font/lv_font_montserrat_26.c.i
 
 src/font/lv_font_montserrat_26.s: src/font/lv_font_montserrat_26.c.s
@@ -9056,7 +9056,7 @@ src/font/lv_font_montserrat_26.s: src/font/lv_font_montserrat_26.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_26.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_26.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_26.c.s
 .PHONY : src/font/lv_font_montserrat_26.c.s
 
 src/font/lv_font_montserrat_28.o: src/font/lv_font_montserrat_28.c.o
@@ -9064,7 +9064,7 @@ src/font/lv_font_montserrat_28.o: src/font/lv_font_montserrat_28.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_28.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28.c.o
 .PHONY : src/font/lv_font_montserrat_28.c.o
 
 src/font/lv_font_montserrat_28.i: src/font/lv_font_montserrat_28.c.i
@@ -9072,7 +9072,7 @@ src/font/lv_font_montserrat_28.i: src/font/lv_font_montserrat_28.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_28.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28.c.i
 .PHONY : src/font/lv_font_montserrat_28.c.i
 
 src/font/lv_font_montserrat_28.s: src/font/lv_font_montserrat_28.c.s
@@ -9080,7 +9080,7 @@ src/font/lv_font_montserrat_28.s: src/font/lv_font_montserrat_28.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_28.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28.c.s
 .PHONY : src/font/lv_font_montserrat_28.c.s
 
 src/font/lv_font_montserrat_28_compressed.o: src/font/lv_font_montserrat_28_compressed.c.o
@@ -9088,7 +9088,7 @@ src/font/lv_font_montserrat_28_compressed.o: src/font/lv_font_montserrat_28_comp
 
 # target to build an object file
 src/font/lv_font_montserrat_28_compressed.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.o
 .PHONY : src/font/lv_font_montserrat_28_compressed.c.o
 
 src/font/lv_font_montserrat_28_compressed.i: src/font/lv_font_montserrat_28_compressed.c.i
@@ -9096,7 +9096,7 @@ src/font/lv_font_montserrat_28_compressed.i: src/font/lv_font_montserrat_28_comp
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_28_compressed.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.i
 .PHONY : src/font/lv_font_montserrat_28_compressed.c.i
 
 src/font/lv_font_montserrat_28_compressed.s: src/font/lv_font_montserrat_28_compressed.c.s
@@ -9104,7 +9104,7 @@ src/font/lv_font_montserrat_28_compressed.s: src/font/lv_font_montserrat_28_comp
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_28_compressed.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_28_compressed.c.s
 .PHONY : src/font/lv_font_montserrat_28_compressed.c.s
 
 src/font/lv_font_montserrat_30.o: src/font/lv_font_montserrat_30.c.o
@@ -9112,7 +9112,7 @@ src/font/lv_font_montserrat_30.o: src/font/lv_font_montserrat_30.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_30.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_30.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_30.c.o
 .PHONY : src/font/lv_font_montserrat_30.c.o
 
 src/font/lv_font_montserrat_30.i: src/font/lv_font_montserrat_30.c.i
@@ -9120,7 +9120,7 @@ src/font/lv_font_montserrat_30.i: src/font/lv_font_montserrat_30.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_30.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_30.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_30.c.i
 .PHONY : src/font/lv_font_montserrat_30.c.i
 
 src/font/lv_font_montserrat_30.s: src/font/lv_font_montserrat_30.c.s
@@ -9128,7 +9128,7 @@ src/font/lv_font_montserrat_30.s: src/font/lv_font_montserrat_30.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_30.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_30.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_30.c.s
 .PHONY : src/font/lv_font_montserrat_30.c.s
 
 src/font/lv_font_montserrat_32.o: src/font/lv_font_montserrat_32.c.o
@@ -9136,7 +9136,7 @@ src/font/lv_font_montserrat_32.o: src/font/lv_font_montserrat_32.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_32.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_32.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_32.c.o
 .PHONY : src/font/lv_font_montserrat_32.c.o
 
 src/font/lv_font_montserrat_32.i: src/font/lv_font_montserrat_32.c.i
@@ -9144,7 +9144,7 @@ src/font/lv_font_montserrat_32.i: src/font/lv_font_montserrat_32.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_32.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_32.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_32.c.i
 .PHONY : src/font/lv_font_montserrat_32.c.i
 
 src/font/lv_font_montserrat_32.s: src/font/lv_font_montserrat_32.c.s
@@ -9152,7 +9152,7 @@ src/font/lv_font_montserrat_32.s: src/font/lv_font_montserrat_32.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_32.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_32.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_32.c.s
 .PHONY : src/font/lv_font_montserrat_32.c.s
 
 src/font/lv_font_montserrat_34.o: src/font/lv_font_montserrat_34.c.o
@@ -9160,7 +9160,7 @@ src/font/lv_font_montserrat_34.o: src/font/lv_font_montserrat_34.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_34.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_34.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_34.c.o
 .PHONY : src/font/lv_font_montserrat_34.c.o
 
 src/font/lv_font_montserrat_34.i: src/font/lv_font_montserrat_34.c.i
@@ -9168,7 +9168,7 @@ src/font/lv_font_montserrat_34.i: src/font/lv_font_montserrat_34.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_34.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_34.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_34.c.i
 .PHONY : src/font/lv_font_montserrat_34.c.i
 
 src/font/lv_font_montserrat_34.s: src/font/lv_font_montserrat_34.c.s
@@ -9176,7 +9176,7 @@ src/font/lv_font_montserrat_34.s: src/font/lv_font_montserrat_34.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_34.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_34.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_34.c.s
 .PHONY : src/font/lv_font_montserrat_34.c.s
 
 src/font/lv_font_montserrat_36.o: src/font/lv_font_montserrat_36.c.o
@@ -9184,7 +9184,7 @@ src/font/lv_font_montserrat_36.o: src/font/lv_font_montserrat_36.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_36.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_36.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_36.c.o
 .PHONY : src/font/lv_font_montserrat_36.c.o
 
 src/font/lv_font_montserrat_36.i: src/font/lv_font_montserrat_36.c.i
@@ -9192,7 +9192,7 @@ src/font/lv_font_montserrat_36.i: src/font/lv_font_montserrat_36.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_36.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_36.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_36.c.i
 .PHONY : src/font/lv_font_montserrat_36.c.i
 
 src/font/lv_font_montserrat_36.s: src/font/lv_font_montserrat_36.c.s
@@ -9200,7 +9200,7 @@ src/font/lv_font_montserrat_36.s: src/font/lv_font_montserrat_36.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_36.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_36.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_36.c.s
 .PHONY : src/font/lv_font_montserrat_36.c.s
 
 src/font/lv_font_montserrat_38.o: src/font/lv_font_montserrat_38.c.o
@@ -9208,7 +9208,7 @@ src/font/lv_font_montserrat_38.o: src/font/lv_font_montserrat_38.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_38.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_38.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_38.c.o
 .PHONY : src/font/lv_font_montserrat_38.c.o
 
 src/font/lv_font_montserrat_38.i: src/font/lv_font_montserrat_38.c.i
@@ -9216,7 +9216,7 @@ src/font/lv_font_montserrat_38.i: src/font/lv_font_montserrat_38.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_38.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_38.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_38.c.i
 .PHONY : src/font/lv_font_montserrat_38.c.i
 
 src/font/lv_font_montserrat_38.s: src/font/lv_font_montserrat_38.c.s
@@ -9224,7 +9224,7 @@ src/font/lv_font_montserrat_38.s: src/font/lv_font_montserrat_38.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_38.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_38.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_38.c.s
 .PHONY : src/font/lv_font_montserrat_38.c.s
 
 src/font/lv_font_montserrat_40.o: src/font/lv_font_montserrat_40.c.o
@@ -9232,7 +9232,7 @@ src/font/lv_font_montserrat_40.o: src/font/lv_font_montserrat_40.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_40.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_40.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_40.c.o
 .PHONY : src/font/lv_font_montserrat_40.c.o
 
 src/font/lv_font_montserrat_40.i: src/font/lv_font_montserrat_40.c.i
@@ -9240,7 +9240,7 @@ src/font/lv_font_montserrat_40.i: src/font/lv_font_montserrat_40.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_40.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_40.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_40.c.i
 .PHONY : src/font/lv_font_montserrat_40.c.i
 
 src/font/lv_font_montserrat_40.s: src/font/lv_font_montserrat_40.c.s
@@ -9248,7 +9248,7 @@ src/font/lv_font_montserrat_40.s: src/font/lv_font_montserrat_40.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_40.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_40.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_40.c.s
 .PHONY : src/font/lv_font_montserrat_40.c.s
 
 src/font/lv_font_montserrat_42.o: src/font/lv_font_montserrat_42.c.o
@@ -9256,7 +9256,7 @@ src/font/lv_font_montserrat_42.o: src/font/lv_font_montserrat_42.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_42.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_42.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_42.c.o
 .PHONY : src/font/lv_font_montserrat_42.c.o
 
 src/font/lv_font_montserrat_42.i: src/font/lv_font_montserrat_42.c.i
@@ -9264,7 +9264,7 @@ src/font/lv_font_montserrat_42.i: src/font/lv_font_montserrat_42.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_42.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_42.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_42.c.i
 .PHONY : src/font/lv_font_montserrat_42.c.i
 
 src/font/lv_font_montserrat_42.s: src/font/lv_font_montserrat_42.c.s
@@ -9272,7 +9272,7 @@ src/font/lv_font_montserrat_42.s: src/font/lv_font_montserrat_42.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_42.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_42.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_42.c.s
 .PHONY : src/font/lv_font_montserrat_42.c.s
 
 src/font/lv_font_montserrat_44.o: src/font/lv_font_montserrat_44.c.o
@@ -9280,7 +9280,7 @@ src/font/lv_font_montserrat_44.o: src/font/lv_font_montserrat_44.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_44.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_44.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_44.c.o
 .PHONY : src/font/lv_font_montserrat_44.c.o
 
 src/font/lv_font_montserrat_44.i: src/font/lv_font_montserrat_44.c.i
@@ -9288,7 +9288,7 @@ src/font/lv_font_montserrat_44.i: src/font/lv_font_montserrat_44.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_44.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_44.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_44.c.i
 .PHONY : src/font/lv_font_montserrat_44.c.i
 
 src/font/lv_font_montserrat_44.s: src/font/lv_font_montserrat_44.c.s
@@ -9296,7 +9296,7 @@ src/font/lv_font_montserrat_44.s: src/font/lv_font_montserrat_44.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_44.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_44.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_44.c.s
 .PHONY : src/font/lv_font_montserrat_44.c.s
 
 src/font/lv_font_montserrat_46.o: src/font/lv_font_montserrat_46.c.o
@@ -9304,7 +9304,7 @@ src/font/lv_font_montserrat_46.o: src/font/lv_font_montserrat_46.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_46.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_46.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_46.c.o
 .PHONY : src/font/lv_font_montserrat_46.c.o
 
 src/font/lv_font_montserrat_46.i: src/font/lv_font_montserrat_46.c.i
@@ -9312,7 +9312,7 @@ src/font/lv_font_montserrat_46.i: src/font/lv_font_montserrat_46.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_46.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_46.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_46.c.i
 .PHONY : src/font/lv_font_montserrat_46.c.i
 
 src/font/lv_font_montserrat_46.s: src/font/lv_font_montserrat_46.c.s
@@ -9320,7 +9320,7 @@ src/font/lv_font_montserrat_46.s: src/font/lv_font_montserrat_46.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_46.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_46.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_46.c.s
 .PHONY : src/font/lv_font_montserrat_46.c.s
 
 src/font/lv_font_montserrat_48.o: src/font/lv_font_montserrat_48.c.o
@@ -9328,7 +9328,7 @@ src/font/lv_font_montserrat_48.o: src/font/lv_font_montserrat_48.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_48.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_48.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_48.c.o
 .PHONY : src/font/lv_font_montserrat_48.c.o
 
 src/font/lv_font_montserrat_48.i: src/font/lv_font_montserrat_48.c.i
@@ -9336,7 +9336,7 @@ src/font/lv_font_montserrat_48.i: src/font/lv_font_montserrat_48.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_48.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_48.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_48.c.i
 .PHONY : src/font/lv_font_montserrat_48.c.i
 
 src/font/lv_font_montserrat_48.s: src/font/lv_font_montserrat_48.c.s
@@ -9344,7 +9344,7 @@ src/font/lv_font_montserrat_48.s: src/font/lv_font_montserrat_48.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_48.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_48.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_48.c.s
 .PHONY : src/font/lv_font_montserrat_48.c.s
 
 src/font/lv_font_montserrat_8.o: src/font/lv_font_montserrat_8.c.o
@@ -9352,7 +9352,7 @@ src/font/lv_font_montserrat_8.o: src/font/lv_font_montserrat_8.c.o
 
 # target to build an object file
 src/font/lv_font_montserrat_8.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_8.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_8.c.o
 .PHONY : src/font/lv_font_montserrat_8.c.o
 
 src/font/lv_font_montserrat_8.i: src/font/lv_font_montserrat_8.c.i
@@ -9360,7 +9360,7 @@ src/font/lv_font_montserrat_8.i: src/font/lv_font_montserrat_8.c.i
 
 # target to preprocess a source file
 src/font/lv_font_montserrat_8.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_8.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_8.c.i
 .PHONY : src/font/lv_font_montserrat_8.c.i
 
 src/font/lv_font_montserrat_8.s: src/font/lv_font_montserrat_8.c.s
@@ -9368,7 +9368,7 @@ src/font/lv_font_montserrat_8.s: src/font/lv_font_montserrat_8.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_montserrat_8.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_8.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_montserrat_8.c.s
 .PHONY : src/font/lv_font_montserrat_8.c.s
 
 src/font/lv_font_simsun_16_cjk.o: src/font/lv_font_simsun_16_cjk.c.o
@@ -9376,7 +9376,7 @@ src/font/lv_font_simsun_16_cjk.o: src/font/lv_font_simsun_16_cjk.c.o
 
 # target to build an object file
 src/font/lv_font_simsun_16_cjk.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_simsun_16_cjk.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_simsun_16_cjk.c.o
 .PHONY : src/font/lv_font_simsun_16_cjk.c.o
 
 src/font/lv_font_simsun_16_cjk.i: src/font/lv_font_simsun_16_cjk.c.i
@@ -9384,7 +9384,7 @@ src/font/lv_font_simsun_16_cjk.i: src/font/lv_font_simsun_16_cjk.c.i
 
 # target to preprocess a source file
 src/font/lv_font_simsun_16_cjk.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_simsun_16_cjk.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_simsun_16_cjk.c.i
 .PHONY : src/font/lv_font_simsun_16_cjk.c.i
 
 src/font/lv_font_simsun_16_cjk.s: src/font/lv_font_simsun_16_cjk.c.s
@@ -9392,7 +9392,7 @@ src/font/lv_font_simsun_16_cjk.s: src/font/lv_font_simsun_16_cjk.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_simsun_16_cjk.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_simsun_16_cjk.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_simsun_16_cjk.c.s
 .PHONY : src/font/lv_font_simsun_16_cjk.c.s
 
 src/font/lv_font_unscii_16.o: src/font/lv_font_unscii_16.c.o
@@ -9400,7 +9400,7 @@ src/font/lv_font_unscii_16.o: src/font/lv_font_unscii_16.c.o
 
 # target to build an object file
 src/font/lv_font_unscii_16.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_16.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_16.c.o
 .PHONY : src/font/lv_font_unscii_16.c.o
 
 src/font/lv_font_unscii_16.i: src/font/lv_font_unscii_16.c.i
@@ -9408,7 +9408,7 @@ src/font/lv_font_unscii_16.i: src/font/lv_font_unscii_16.c.i
 
 # target to preprocess a source file
 src/font/lv_font_unscii_16.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_16.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_16.c.i
 .PHONY : src/font/lv_font_unscii_16.c.i
 
 src/font/lv_font_unscii_16.s: src/font/lv_font_unscii_16.c.s
@@ -9416,7 +9416,7 @@ src/font/lv_font_unscii_16.s: src/font/lv_font_unscii_16.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_unscii_16.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_16.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_16.c.s
 .PHONY : src/font/lv_font_unscii_16.c.s
 
 src/font/lv_font_unscii_8.o: src/font/lv_font_unscii_8.c.o
@@ -9424,7 +9424,7 @@ src/font/lv_font_unscii_8.o: src/font/lv_font_unscii_8.c.o
 
 # target to build an object file
 src/font/lv_font_unscii_8.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_8.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_8.c.o
 .PHONY : src/font/lv_font_unscii_8.c.o
 
 src/font/lv_font_unscii_8.i: src/font/lv_font_unscii_8.c.i
@@ -9432,7 +9432,7 @@ src/font/lv_font_unscii_8.i: src/font/lv_font_unscii_8.c.i
 
 # target to preprocess a source file
 src/font/lv_font_unscii_8.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_8.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_8.c.i
 .PHONY : src/font/lv_font_unscii_8.c.i
 
 src/font/lv_font_unscii_8.s: src/font/lv_font_unscii_8.c.s
@@ -9440,7 +9440,7 @@ src/font/lv_font_unscii_8.s: src/font/lv_font_unscii_8.c.s
 
 # target to generate assembly for a file
 src/font/lv_font_unscii_8.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_8.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/font/lv_font_unscii_8.c.s
 .PHONY : src/font/lv_font_unscii_8.c.s
 
 src/hal/lv_hal_disp.o: src/hal/lv_hal_disp.c.o
@@ -9448,7 +9448,7 @@ src/hal/lv_hal_disp.o: src/hal/lv_hal_disp.c.o
 
 # target to build an object file
 src/hal/lv_hal_disp.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_disp.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_disp.c.o
 .PHONY : src/hal/lv_hal_disp.c.o
 
 src/hal/lv_hal_disp.i: src/hal/lv_hal_disp.c.i
@@ -9456,7 +9456,7 @@ src/hal/lv_hal_disp.i: src/hal/lv_hal_disp.c.i
 
 # target to preprocess a source file
 src/hal/lv_hal_disp.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_disp.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_disp.c.i
 .PHONY : src/hal/lv_hal_disp.c.i
 
 src/hal/lv_hal_disp.s: src/hal/lv_hal_disp.c.s
@@ -9464,7 +9464,7 @@ src/hal/lv_hal_disp.s: src/hal/lv_hal_disp.c.s
 
 # target to generate assembly for a file
 src/hal/lv_hal_disp.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_disp.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_disp.c.s
 .PHONY : src/hal/lv_hal_disp.c.s
 
 src/hal/lv_hal_indev.o: src/hal/lv_hal_indev.c.o
@@ -9472,7 +9472,7 @@ src/hal/lv_hal_indev.o: src/hal/lv_hal_indev.c.o
 
 # target to build an object file
 src/hal/lv_hal_indev.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_indev.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_indev.c.o
 .PHONY : src/hal/lv_hal_indev.c.o
 
 src/hal/lv_hal_indev.i: src/hal/lv_hal_indev.c.i
@@ -9480,7 +9480,7 @@ src/hal/lv_hal_indev.i: src/hal/lv_hal_indev.c.i
 
 # target to preprocess a source file
 src/hal/lv_hal_indev.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_indev.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_indev.c.i
 .PHONY : src/hal/lv_hal_indev.c.i
 
 src/hal/lv_hal_indev.s: src/hal/lv_hal_indev.c.s
@@ -9488,7 +9488,7 @@ src/hal/lv_hal_indev.s: src/hal/lv_hal_indev.c.s
 
 # target to generate assembly for a file
 src/hal/lv_hal_indev.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_indev.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_indev.c.s
 .PHONY : src/hal/lv_hal_indev.c.s
 
 src/hal/lv_hal_tick.o: src/hal/lv_hal_tick.c.o
@@ -9496,7 +9496,7 @@ src/hal/lv_hal_tick.o: src/hal/lv_hal_tick.c.o
 
 # target to build an object file
 src/hal/lv_hal_tick.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_tick.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_tick.c.o
 .PHONY : src/hal/lv_hal_tick.c.o
 
 src/hal/lv_hal_tick.i: src/hal/lv_hal_tick.c.i
@@ -9504,7 +9504,7 @@ src/hal/lv_hal_tick.i: src/hal/lv_hal_tick.c.i
 
 # target to preprocess a source file
 src/hal/lv_hal_tick.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_tick.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_tick.c.i
 .PHONY : src/hal/lv_hal_tick.c.i
 
 src/hal/lv_hal_tick.s: src/hal/lv_hal_tick.c.s
@@ -9512,7 +9512,7 @@ src/hal/lv_hal_tick.s: src/hal/lv_hal_tick.c.s
 
 # target to generate assembly for a file
 src/hal/lv_hal_tick.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_tick.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/hal/lv_hal_tick.c.s
 .PHONY : src/hal/lv_hal_tick.c.s
 
 src/misc/lv_anim.o: src/misc/lv_anim.c.o
@@ -9520,7 +9520,7 @@ src/misc/lv_anim.o: src/misc/lv_anim.c.o
 
 # target to build an object file
 src/misc/lv_anim.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim.c.o
 .PHONY : src/misc/lv_anim.c.o
 
 src/misc/lv_anim.i: src/misc/lv_anim.c.i
@@ -9528,7 +9528,7 @@ src/misc/lv_anim.i: src/misc/lv_anim.c.i
 
 # target to preprocess a source file
 src/misc/lv_anim.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim.c.i
 .PHONY : src/misc/lv_anim.c.i
 
 src/misc/lv_anim.s: src/misc/lv_anim.c.s
@@ -9536,7 +9536,7 @@ src/misc/lv_anim.s: src/misc/lv_anim.c.s
 
 # target to generate assembly for a file
 src/misc/lv_anim.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim.c.s
 .PHONY : src/misc/lv_anim.c.s
 
 src/misc/lv_anim_timeline.o: src/misc/lv_anim_timeline.c.o
@@ -9544,7 +9544,7 @@ src/misc/lv_anim_timeline.o: src/misc/lv_anim_timeline.c.o
 
 # target to build an object file
 src/misc/lv_anim_timeline.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim_timeline.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim_timeline.c.o
 .PHONY : src/misc/lv_anim_timeline.c.o
 
 src/misc/lv_anim_timeline.i: src/misc/lv_anim_timeline.c.i
@@ -9552,7 +9552,7 @@ src/misc/lv_anim_timeline.i: src/misc/lv_anim_timeline.c.i
 
 # target to preprocess a source file
 src/misc/lv_anim_timeline.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim_timeline.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim_timeline.c.i
 .PHONY : src/misc/lv_anim_timeline.c.i
 
 src/misc/lv_anim_timeline.s: src/misc/lv_anim_timeline.c.s
@@ -9560,7 +9560,7 @@ src/misc/lv_anim_timeline.s: src/misc/lv_anim_timeline.c.s
 
 # target to generate assembly for a file
 src/misc/lv_anim_timeline.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim_timeline.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_anim_timeline.c.s
 .PHONY : src/misc/lv_anim_timeline.c.s
 
 src/misc/lv_area.o: src/misc/lv_area.c.o
@@ -9568,7 +9568,7 @@ src/misc/lv_area.o: src/misc/lv_area.c.o
 
 # target to build an object file
 src/misc/lv_area.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_area.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_area.c.o
 .PHONY : src/misc/lv_area.c.o
 
 src/misc/lv_area.i: src/misc/lv_area.c.i
@@ -9576,7 +9576,7 @@ src/misc/lv_area.i: src/misc/lv_area.c.i
 
 # target to preprocess a source file
 src/misc/lv_area.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_area.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_area.c.i
 .PHONY : src/misc/lv_area.c.i
 
 src/misc/lv_area.s: src/misc/lv_area.c.s
@@ -9584,7 +9584,7 @@ src/misc/lv_area.s: src/misc/lv_area.c.s
 
 # target to generate assembly for a file
 src/misc/lv_area.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_area.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_area.c.s
 .PHONY : src/misc/lv_area.c.s
 
 src/misc/lv_async.o: src/misc/lv_async.c.o
@@ -9592,7 +9592,7 @@ src/misc/lv_async.o: src/misc/lv_async.c.o
 
 # target to build an object file
 src/misc/lv_async.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_async.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_async.c.o
 .PHONY : src/misc/lv_async.c.o
 
 src/misc/lv_async.i: src/misc/lv_async.c.i
@@ -9600,7 +9600,7 @@ src/misc/lv_async.i: src/misc/lv_async.c.i
 
 # target to preprocess a source file
 src/misc/lv_async.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_async.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_async.c.i
 .PHONY : src/misc/lv_async.c.i
 
 src/misc/lv_async.s: src/misc/lv_async.c.s
@@ -9608,7 +9608,7 @@ src/misc/lv_async.s: src/misc/lv_async.c.s
 
 # target to generate assembly for a file
 src/misc/lv_async.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_async.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_async.c.s
 .PHONY : src/misc/lv_async.c.s
 
 src/misc/lv_bidi.o: src/misc/lv_bidi.c.o
@@ -9616,7 +9616,7 @@ src/misc/lv_bidi.o: src/misc/lv_bidi.c.o
 
 # target to build an object file
 src/misc/lv_bidi.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.o
 .PHONY : src/misc/lv_bidi.c.o
 
 src/misc/lv_bidi.i: src/misc/lv_bidi.c.i
@@ -9624,7 +9624,7 @@ src/misc/lv_bidi.i: src/misc/lv_bidi.c.i
 
 # target to preprocess a source file
 src/misc/lv_bidi.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.i
 .PHONY : src/misc/lv_bidi.c.i
 
 src/misc/lv_bidi.s: src/misc/lv_bidi.c.s
@@ -9632,7 +9632,7 @@ src/misc/lv_bidi.s: src/misc/lv_bidi.c.s
 
 # target to generate assembly for a file
 src/misc/lv_bidi.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_bidi.c.s
 .PHONY : src/misc/lv_bidi.c.s
 
 src/misc/lv_color.o: src/misc/lv_color.c.o
@@ -9640,7 +9640,7 @@ src/misc/lv_color.o: src/misc/lv_color.c.o
 
 # target to build an object file
 src/misc/lv_color.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_color.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_color.c.o
 .PHONY : src/misc/lv_color.c.o
 
 src/misc/lv_color.i: src/misc/lv_color.c.i
@@ -9648,7 +9648,7 @@ src/misc/lv_color.i: src/misc/lv_color.c.i
 
 # target to preprocess a source file
 src/misc/lv_color.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_color.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_color.c.i
 .PHONY : src/misc/lv_color.c.i
 
 src/misc/lv_color.s: src/misc/lv_color.c.s
@@ -9656,7 +9656,7 @@ src/misc/lv_color.s: src/misc/lv_color.c.s
 
 # target to generate assembly for a file
 src/misc/lv_color.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_color.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_color.c.s
 .PHONY : src/misc/lv_color.c.s
 
 src/misc/lv_fs.o: src/misc/lv_fs.c.o
@@ -9664,7 +9664,7 @@ src/misc/lv_fs.o: src/misc/lv_fs.c.o
 
 # target to build an object file
 src/misc/lv_fs.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_fs.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_fs.c.o
 .PHONY : src/misc/lv_fs.c.o
 
 src/misc/lv_fs.i: src/misc/lv_fs.c.i
@@ -9672,7 +9672,7 @@ src/misc/lv_fs.i: src/misc/lv_fs.c.i
 
 # target to preprocess a source file
 src/misc/lv_fs.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_fs.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_fs.c.i
 .PHONY : src/misc/lv_fs.c.i
 
 src/misc/lv_fs.s: src/misc/lv_fs.c.s
@@ -9680,7 +9680,7 @@ src/misc/lv_fs.s: src/misc/lv_fs.c.s
 
 # target to generate assembly for a file
 src/misc/lv_fs.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_fs.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_fs.c.s
 .PHONY : src/misc/lv_fs.c.s
 
 src/misc/lv_gc.o: src/misc/lv_gc.c.o
@@ -9688,7 +9688,7 @@ src/misc/lv_gc.o: src/misc/lv_gc.c.o
 
 # target to build an object file
 src/misc/lv_gc.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_gc.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_gc.c.o
 .PHONY : src/misc/lv_gc.c.o
 
 src/misc/lv_gc.i: src/misc/lv_gc.c.i
@@ -9696,7 +9696,7 @@ src/misc/lv_gc.i: src/misc/lv_gc.c.i
 
 # target to preprocess a source file
 src/misc/lv_gc.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_gc.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_gc.c.i
 .PHONY : src/misc/lv_gc.c.i
 
 src/misc/lv_gc.s: src/misc/lv_gc.c.s
@@ -9704,7 +9704,7 @@ src/misc/lv_gc.s: src/misc/lv_gc.c.s
 
 # target to generate assembly for a file
 src/misc/lv_gc.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_gc.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_gc.c.s
 .PHONY : src/misc/lv_gc.c.s
 
 src/misc/lv_ll.o: src/misc/lv_ll.c.o
@@ -9712,7 +9712,7 @@ src/misc/lv_ll.o: src/misc/lv_ll.c.o
 
 # target to build an object file
 src/misc/lv_ll.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_ll.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_ll.c.o
 .PHONY : src/misc/lv_ll.c.o
 
 src/misc/lv_ll.i: src/misc/lv_ll.c.i
@@ -9720,7 +9720,7 @@ src/misc/lv_ll.i: src/misc/lv_ll.c.i
 
 # target to preprocess a source file
 src/misc/lv_ll.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_ll.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_ll.c.i
 .PHONY : src/misc/lv_ll.c.i
 
 src/misc/lv_ll.s: src/misc/lv_ll.c.s
@@ -9728,7 +9728,7 @@ src/misc/lv_ll.s: src/misc/lv_ll.c.s
 
 # target to generate assembly for a file
 src/misc/lv_ll.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_ll.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_ll.c.s
 .PHONY : src/misc/lv_ll.c.s
 
 src/misc/lv_log.o: src/misc/lv_log.c.o
@@ -9736,7 +9736,7 @@ src/misc/lv_log.o: src/misc/lv_log.c.o
 
 # target to build an object file
 src/misc/lv_log.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_log.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_log.c.o
 .PHONY : src/misc/lv_log.c.o
 
 src/misc/lv_log.i: src/misc/lv_log.c.i
@@ -9744,7 +9744,7 @@ src/misc/lv_log.i: src/misc/lv_log.c.i
 
 # target to preprocess a source file
 src/misc/lv_log.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_log.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_log.c.i
 .PHONY : src/misc/lv_log.c.i
 
 src/misc/lv_log.s: src/misc/lv_log.c.s
@@ -9752,7 +9752,7 @@ src/misc/lv_log.s: src/misc/lv_log.c.s
 
 # target to generate assembly for a file
 src/misc/lv_log.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_log.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_log.c.s
 .PHONY : src/misc/lv_log.c.s
 
 src/misc/lv_lru.o: src/misc/lv_lru.c.o
@@ -9760,7 +9760,7 @@ src/misc/lv_lru.o: src/misc/lv_lru.c.o
 
 # target to build an object file
 src/misc/lv_lru.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_lru.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_lru.c.o
 .PHONY : src/misc/lv_lru.c.o
 
 src/misc/lv_lru.i: src/misc/lv_lru.c.i
@@ -9768,7 +9768,7 @@ src/misc/lv_lru.i: src/misc/lv_lru.c.i
 
 # target to preprocess a source file
 src/misc/lv_lru.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_lru.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_lru.c.i
 .PHONY : src/misc/lv_lru.c.i
 
 src/misc/lv_lru.s: src/misc/lv_lru.c.s
@@ -9776,7 +9776,7 @@ src/misc/lv_lru.s: src/misc/lv_lru.c.s
 
 # target to generate assembly for a file
 src/misc/lv_lru.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_lru.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_lru.c.s
 .PHONY : src/misc/lv_lru.c.s
 
 src/misc/lv_math.o: src/misc/lv_math.c.o
@@ -9784,7 +9784,7 @@ src/misc/lv_math.o: src/misc/lv_math.c.o
 
 # target to build an object file
 src/misc/lv_math.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_math.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_math.c.o
 .PHONY : src/misc/lv_math.c.o
 
 src/misc/lv_math.i: src/misc/lv_math.c.i
@@ -9792,7 +9792,7 @@ src/misc/lv_math.i: src/misc/lv_math.c.i
 
 # target to preprocess a source file
 src/misc/lv_math.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_math.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_math.c.i
 .PHONY : src/misc/lv_math.c.i
 
 src/misc/lv_math.s: src/misc/lv_math.c.s
@@ -9800,7 +9800,7 @@ src/misc/lv_math.s: src/misc/lv_math.c.s
 
 # target to generate assembly for a file
 src/misc/lv_math.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_math.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_math.c.s
 .PHONY : src/misc/lv_math.c.s
 
 src/misc/lv_mem.o: src/misc/lv_mem.c.o
@@ -9808,7 +9808,7 @@ src/misc/lv_mem.o: src/misc/lv_mem.c.o
 
 # target to build an object file
 src/misc/lv_mem.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_mem.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_mem.c.o
 .PHONY : src/misc/lv_mem.c.o
 
 src/misc/lv_mem.i: src/misc/lv_mem.c.i
@@ -9816,7 +9816,7 @@ src/misc/lv_mem.i: src/misc/lv_mem.c.i
 
 # target to preprocess a source file
 src/misc/lv_mem.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_mem.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_mem.c.i
 .PHONY : src/misc/lv_mem.c.i
 
 src/misc/lv_mem.s: src/misc/lv_mem.c.s
@@ -9824,7 +9824,7 @@ src/misc/lv_mem.s: src/misc/lv_mem.c.s
 
 # target to generate assembly for a file
 src/misc/lv_mem.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_mem.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_mem.c.s
 .PHONY : src/misc/lv_mem.c.s
 
 src/misc/lv_printf.o: src/misc/lv_printf.c.o
@@ -9832,7 +9832,7 @@ src/misc/lv_printf.o: src/misc/lv_printf.c.o
 
 # target to build an object file
 src/misc/lv_printf.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_printf.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_printf.c.o
 .PHONY : src/misc/lv_printf.c.o
 
 src/misc/lv_printf.i: src/misc/lv_printf.c.i
@@ -9840,7 +9840,7 @@ src/misc/lv_printf.i: src/misc/lv_printf.c.i
 
 # target to preprocess a source file
 src/misc/lv_printf.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_printf.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_printf.c.i
 .PHONY : src/misc/lv_printf.c.i
 
 src/misc/lv_printf.s: src/misc/lv_printf.c.s
@@ -9848,7 +9848,7 @@ src/misc/lv_printf.s: src/misc/lv_printf.c.s
 
 # target to generate assembly for a file
 src/misc/lv_printf.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_printf.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_printf.c.s
 .PHONY : src/misc/lv_printf.c.s
 
 src/misc/lv_style.o: src/misc/lv_style.c.o
@@ -9856,7 +9856,7 @@ src/misc/lv_style.o: src/misc/lv_style.c.o
 
 # target to build an object file
 src/misc/lv_style.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style.c.o
 .PHONY : src/misc/lv_style.c.o
 
 src/misc/lv_style.i: src/misc/lv_style.c.i
@@ -9864,7 +9864,7 @@ src/misc/lv_style.i: src/misc/lv_style.c.i
 
 # target to preprocess a source file
 src/misc/lv_style.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style.c.i
 .PHONY : src/misc/lv_style.c.i
 
 src/misc/lv_style.s: src/misc/lv_style.c.s
@@ -9872,7 +9872,7 @@ src/misc/lv_style.s: src/misc/lv_style.c.s
 
 # target to generate assembly for a file
 src/misc/lv_style.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style.c.s
 .PHONY : src/misc/lv_style.c.s
 
 src/misc/lv_style_gen.o: src/misc/lv_style_gen.c.o
@@ -9880,7 +9880,7 @@ src/misc/lv_style_gen.o: src/misc/lv_style_gen.c.o
 
 # target to build an object file
 src/misc/lv_style_gen.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style_gen.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style_gen.c.o
 .PHONY : src/misc/lv_style_gen.c.o
 
 src/misc/lv_style_gen.i: src/misc/lv_style_gen.c.i
@@ -9888,7 +9888,7 @@ src/misc/lv_style_gen.i: src/misc/lv_style_gen.c.i
 
 # target to preprocess a source file
 src/misc/lv_style_gen.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style_gen.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style_gen.c.i
 .PHONY : src/misc/lv_style_gen.c.i
 
 src/misc/lv_style_gen.s: src/misc/lv_style_gen.c.s
@@ -9896,7 +9896,7 @@ src/misc/lv_style_gen.s: src/misc/lv_style_gen.c.s
 
 # target to generate assembly for a file
 src/misc/lv_style_gen.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style_gen.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_style_gen.c.s
 .PHONY : src/misc/lv_style_gen.c.s
 
 src/misc/lv_templ.o: src/misc/lv_templ.c.o
@@ -9904,7 +9904,7 @@ src/misc/lv_templ.o: src/misc/lv_templ.c.o
 
 # target to build an object file
 src/misc/lv_templ.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_templ.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_templ.c.o
 .PHONY : src/misc/lv_templ.c.o
 
 src/misc/lv_templ.i: src/misc/lv_templ.c.i
@@ -9912,7 +9912,7 @@ src/misc/lv_templ.i: src/misc/lv_templ.c.i
 
 # target to preprocess a source file
 src/misc/lv_templ.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_templ.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_templ.c.i
 .PHONY : src/misc/lv_templ.c.i
 
 src/misc/lv_templ.s: src/misc/lv_templ.c.s
@@ -9920,7 +9920,7 @@ src/misc/lv_templ.s: src/misc/lv_templ.c.s
 
 # target to generate assembly for a file
 src/misc/lv_templ.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_templ.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_templ.c.s
 .PHONY : src/misc/lv_templ.c.s
 
 src/misc/lv_timer.o: src/misc/lv_timer.c.o
@@ -9928,7 +9928,7 @@ src/misc/lv_timer.o: src/misc/lv_timer.c.o
 
 # target to build an object file
 src/misc/lv_timer.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_timer.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_timer.c.o
 .PHONY : src/misc/lv_timer.c.o
 
 src/misc/lv_timer.i: src/misc/lv_timer.c.i
@@ -9936,7 +9936,7 @@ src/misc/lv_timer.i: src/misc/lv_timer.c.i
 
 # target to preprocess a source file
 src/misc/lv_timer.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_timer.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_timer.c.i
 .PHONY : src/misc/lv_timer.c.i
 
 src/misc/lv_timer.s: src/misc/lv_timer.c.s
@@ -9944,7 +9944,7 @@ src/misc/lv_timer.s: src/misc/lv_timer.c.s
 
 # target to generate assembly for a file
 src/misc/lv_timer.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_timer.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_timer.c.s
 .PHONY : src/misc/lv_timer.c.s
 
 src/misc/lv_tlsf.o: src/misc/lv_tlsf.c.o
@@ -9952,7 +9952,7 @@ src/misc/lv_tlsf.o: src/misc/lv_tlsf.c.o
 
 # target to build an object file
 src/misc/lv_tlsf.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.o
 .PHONY : src/misc/lv_tlsf.c.o
 
 src/misc/lv_tlsf.i: src/misc/lv_tlsf.c.i
@@ -9960,7 +9960,7 @@ src/misc/lv_tlsf.i: src/misc/lv_tlsf.c.i
 
 # target to preprocess a source file
 src/misc/lv_tlsf.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.i
 .PHONY : src/misc/lv_tlsf.c.i
 
 src/misc/lv_tlsf.s: src/misc/lv_tlsf.c.s
@@ -9968,7 +9968,7 @@ src/misc/lv_tlsf.s: src/misc/lv_tlsf.c.s
 
 # target to generate assembly for a file
 src/misc/lv_tlsf.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_tlsf.c.s
 .PHONY : src/misc/lv_tlsf.c.s
 
 src/misc/lv_txt.o: src/misc/lv_txt.c.o
@@ -9976,7 +9976,7 @@ src/misc/lv_txt.o: src/misc/lv_txt.c.o
 
 # target to build an object file
 src/misc/lv_txt.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt.c.o
 .PHONY : src/misc/lv_txt.c.o
 
 src/misc/lv_txt.i: src/misc/lv_txt.c.i
@@ -9984,7 +9984,7 @@ src/misc/lv_txt.i: src/misc/lv_txt.c.i
 
 # target to preprocess a source file
 src/misc/lv_txt.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt.c.i
 .PHONY : src/misc/lv_txt.c.i
 
 src/misc/lv_txt.s: src/misc/lv_txt.c.s
@@ -9992,7 +9992,7 @@ src/misc/lv_txt.s: src/misc/lv_txt.c.s
 
 # target to generate assembly for a file
 src/misc/lv_txt.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt.c.s
 .PHONY : src/misc/lv_txt.c.s
 
 src/misc/lv_txt_ap.o: src/misc/lv_txt_ap.c.o
@@ -10000,7 +10000,7 @@ src/misc/lv_txt_ap.o: src/misc/lv_txt_ap.c.o
 
 # target to build an object file
 src/misc/lv_txt_ap.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt_ap.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt_ap.c.o
 .PHONY : src/misc/lv_txt_ap.c.o
 
 src/misc/lv_txt_ap.i: src/misc/lv_txt_ap.c.i
@@ -10008,7 +10008,7 @@ src/misc/lv_txt_ap.i: src/misc/lv_txt_ap.c.i
 
 # target to preprocess a source file
 src/misc/lv_txt_ap.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt_ap.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt_ap.c.i
 .PHONY : src/misc/lv_txt_ap.c.i
 
 src/misc/lv_txt_ap.s: src/misc/lv_txt_ap.c.s
@@ -10016,7 +10016,7 @@ src/misc/lv_txt_ap.s: src/misc/lv_txt_ap.c.s
 
 # target to generate assembly for a file
 src/misc/lv_txt_ap.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt_ap.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_txt_ap.c.s
 .PHONY : src/misc/lv_txt_ap.c.s
 
 src/misc/lv_utils.o: src/misc/lv_utils.c.o
@@ -10024,7 +10024,7 @@ src/misc/lv_utils.o: src/misc/lv_utils.c.o
 
 # target to build an object file
 src/misc/lv_utils.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_utils.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_utils.c.o
 .PHONY : src/misc/lv_utils.c.o
 
 src/misc/lv_utils.i: src/misc/lv_utils.c.i
@@ -10032,7 +10032,7 @@ src/misc/lv_utils.i: src/misc/lv_utils.c.i
 
 # target to preprocess a source file
 src/misc/lv_utils.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_utils.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_utils.c.i
 .PHONY : src/misc/lv_utils.c.i
 
 src/misc/lv_utils.s: src/misc/lv_utils.c.s
@@ -10040,7 +10040,7 @@ src/misc/lv_utils.s: src/misc/lv_utils.c.s
 
 # target to generate assembly for a file
 src/misc/lv_utils.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_utils.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/misc/lv_utils.c.s
 .PHONY : src/misc/lv_utils.c.s
 
 src/widgets/lv_arc.o: src/widgets/lv_arc.c.o
@@ -10048,7 +10048,7 @@ src/widgets/lv_arc.o: src/widgets/lv_arc.c.o
 
 # target to build an object file
 src/widgets/lv_arc.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_arc.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_arc.c.o
 .PHONY : src/widgets/lv_arc.c.o
 
 src/widgets/lv_arc.i: src/widgets/lv_arc.c.i
@@ -10056,7 +10056,7 @@ src/widgets/lv_arc.i: src/widgets/lv_arc.c.i
 
 # target to preprocess a source file
 src/widgets/lv_arc.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_arc.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_arc.c.i
 .PHONY : src/widgets/lv_arc.c.i
 
 src/widgets/lv_arc.s: src/widgets/lv_arc.c.s
@@ -10064,7 +10064,7 @@ src/widgets/lv_arc.s: src/widgets/lv_arc.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_arc.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_arc.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_arc.c.s
 .PHONY : src/widgets/lv_arc.c.s
 
 src/widgets/lv_bar.o: src/widgets/lv_bar.c.o
@@ -10072,7 +10072,7 @@ src/widgets/lv_bar.o: src/widgets/lv_bar.c.o
 
 # target to build an object file
 src/widgets/lv_bar.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_bar.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_bar.c.o
 .PHONY : src/widgets/lv_bar.c.o
 
 src/widgets/lv_bar.i: src/widgets/lv_bar.c.i
@@ -10080,7 +10080,7 @@ src/widgets/lv_bar.i: src/widgets/lv_bar.c.i
 
 # target to preprocess a source file
 src/widgets/lv_bar.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_bar.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_bar.c.i
 .PHONY : src/widgets/lv_bar.c.i
 
 src/widgets/lv_bar.s: src/widgets/lv_bar.c.s
@@ -10088,7 +10088,7 @@ src/widgets/lv_bar.s: src/widgets/lv_bar.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_bar.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_bar.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_bar.c.s
 .PHONY : src/widgets/lv_bar.c.s
 
 src/widgets/lv_btn.o: src/widgets/lv_btn.c.o
@@ -10096,7 +10096,7 @@ src/widgets/lv_btn.o: src/widgets/lv_btn.c.o
 
 # target to build an object file
 src/widgets/lv_btn.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btn.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btn.c.o
 .PHONY : src/widgets/lv_btn.c.o
 
 src/widgets/lv_btn.i: src/widgets/lv_btn.c.i
@@ -10104,7 +10104,7 @@ src/widgets/lv_btn.i: src/widgets/lv_btn.c.i
 
 # target to preprocess a source file
 src/widgets/lv_btn.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btn.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btn.c.i
 .PHONY : src/widgets/lv_btn.c.i
 
 src/widgets/lv_btn.s: src/widgets/lv_btn.c.s
@@ -10112,7 +10112,7 @@ src/widgets/lv_btn.s: src/widgets/lv_btn.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_btn.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btn.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btn.c.s
 .PHONY : src/widgets/lv_btn.c.s
 
 src/widgets/lv_btnmatrix.o: src/widgets/lv_btnmatrix.c.o
@@ -10120,7 +10120,7 @@ src/widgets/lv_btnmatrix.o: src/widgets/lv_btnmatrix.c.o
 
 # target to build an object file
 src/widgets/lv_btnmatrix.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btnmatrix.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btnmatrix.c.o
 .PHONY : src/widgets/lv_btnmatrix.c.o
 
 src/widgets/lv_btnmatrix.i: src/widgets/lv_btnmatrix.c.i
@@ -10128,7 +10128,7 @@ src/widgets/lv_btnmatrix.i: src/widgets/lv_btnmatrix.c.i
 
 # target to preprocess a source file
 src/widgets/lv_btnmatrix.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btnmatrix.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btnmatrix.c.i
 .PHONY : src/widgets/lv_btnmatrix.c.i
 
 src/widgets/lv_btnmatrix.s: src/widgets/lv_btnmatrix.c.s
@@ -10136,7 +10136,7 @@ src/widgets/lv_btnmatrix.s: src/widgets/lv_btnmatrix.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_btnmatrix.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btnmatrix.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_btnmatrix.c.s
 .PHONY : src/widgets/lv_btnmatrix.c.s
 
 src/widgets/lv_canvas.o: src/widgets/lv_canvas.c.o
@@ -10144,7 +10144,7 @@ src/widgets/lv_canvas.o: src/widgets/lv_canvas.c.o
 
 # target to build an object file
 src/widgets/lv_canvas.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_canvas.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_canvas.c.o
 .PHONY : src/widgets/lv_canvas.c.o
 
 src/widgets/lv_canvas.i: src/widgets/lv_canvas.c.i
@@ -10152,7 +10152,7 @@ src/widgets/lv_canvas.i: src/widgets/lv_canvas.c.i
 
 # target to preprocess a source file
 src/widgets/lv_canvas.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_canvas.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_canvas.c.i
 .PHONY : src/widgets/lv_canvas.c.i
 
 src/widgets/lv_canvas.s: src/widgets/lv_canvas.c.s
@@ -10160,7 +10160,7 @@ src/widgets/lv_canvas.s: src/widgets/lv_canvas.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_canvas.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_canvas.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_canvas.c.s
 .PHONY : src/widgets/lv_canvas.c.s
 
 src/widgets/lv_checkbox.o: src/widgets/lv_checkbox.c.o
@@ -10168,7 +10168,7 @@ src/widgets/lv_checkbox.o: src/widgets/lv_checkbox.c.o
 
 # target to build an object file
 src/widgets/lv_checkbox.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_checkbox.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_checkbox.c.o
 .PHONY : src/widgets/lv_checkbox.c.o
 
 src/widgets/lv_checkbox.i: src/widgets/lv_checkbox.c.i
@@ -10176,7 +10176,7 @@ src/widgets/lv_checkbox.i: src/widgets/lv_checkbox.c.i
 
 # target to preprocess a source file
 src/widgets/lv_checkbox.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_checkbox.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_checkbox.c.i
 .PHONY : src/widgets/lv_checkbox.c.i
 
 src/widgets/lv_checkbox.s: src/widgets/lv_checkbox.c.s
@@ -10184,7 +10184,7 @@ src/widgets/lv_checkbox.s: src/widgets/lv_checkbox.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_checkbox.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_checkbox.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_checkbox.c.s
 .PHONY : src/widgets/lv_checkbox.c.s
 
 src/widgets/lv_dropdown.o: src/widgets/lv_dropdown.c.o
@@ -10192,7 +10192,7 @@ src/widgets/lv_dropdown.o: src/widgets/lv_dropdown.c.o
 
 # target to build an object file
 src/widgets/lv_dropdown.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_dropdown.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_dropdown.c.o
 .PHONY : src/widgets/lv_dropdown.c.o
 
 src/widgets/lv_dropdown.i: src/widgets/lv_dropdown.c.i
@@ -10200,7 +10200,7 @@ src/widgets/lv_dropdown.i: src/widgets/lv_dropdown.c.i
 
 # target to preprocess a source file
 src/widgets/lv_dropdown.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_dropdown.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_dropdown.c.i
 .PHONY : src/widgets/lv_dropdown.c.i
 
 src/widgets/lv_dropdown.s: src/widgets/lv_dropdown.c.s
@@ -10208,7 +10208,7 @@ src/widgets/lv_dropdown.s: src/widgets/lv_dropdown.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_dropdown.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_dropdown.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_dropdown.c.s
 .PHONY : src/widgets/lv_dropdown.c.s
 
 src/widgets/lv_img.o: src/widgets/lv_img.c.o
@@ -10216,7 +10216,7 @@ src/widgets/lv_img.o: src/widgets/lv_img.c.o
 
 # target to build an object file
 src/widgets/lv_img.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_img.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_img.c.o
 .PHONY : src/widgets/lv_img.c.o
 
 src/widgets/lv_img.i: src/widgets/lv_img.c.i
@@ -10224,7 +10224,7 @@ src/widgets/lv_img.i: src/widgets/lv_img.c.i
 
 # target to preprocess a source file
 src/widgets/lv_img.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_img.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_img.c.i
 .PHONY : src/widgets/lv_img.c.i
 
 src/widgets/lv_img.s: src/widgets/lv_img.c.s
@@ -10232,7 +10232,7 @@ src/widgets/lv_img.s: src/widgets/lv_img.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_img.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_img.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_img.c.s
 .PHONY : src/widgets/lv_img.c.s
 
 src/widgets/lv_label.o: src/widgets/lv_label.c.o
@@ -10240,7 +10240,7 @@ src/widgets/lv_label.o: src/widgets/lv_label.c.o
 
 # target to build an object file
 src/widgets/lv_label.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_label.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_label.c.o
 .PHONY : src/widgets/lv_label.c.o
 
 src/widgets/lv_label.i: src/widgets/lv_label.c.i
@@ -10248,7 +10248,7 @@ src/widgets/lv_label.i: src/widgets/lv_label.c.i
 
 # target to preprocess a source file
 src/widgets/lv_label.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_label.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_label.c.i
 .PHONY : src/widgets/lv_label.c.i
 
 src/widgets/lv_label.s: src/widgets/lv_label.c.s
@@ -10256,7 +10256,7 @@ src/widgets/lv_label.s: src/widgets/lv_label.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_label.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_label.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_label.c.s
 .PHONY : src/widgets/lv_label.c.s
 
 src/widgets/lv_line.o: src/widgets/lv_line.c.o
@@ -10264,7 +10264,7 @@ src/widgets/lv_line.o: src/widgets/lv_line.c.o
 
 # target to build an object file
 src/widgets/lv_line.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_line.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_line.c.o
 .PHONY : src/widgets/lv_line.c.o
 
 src/widgets/lv_line.i: src/widgets/lv_line.c.i
@@ -10272,7 +10272,7 @@ src/widgets/lv_line.i: src/widgets/lv_line.c.i
 
 # target to preprocess a source file
 src/widgets/lv_line.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_line.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_line.c.i
 .PHONY : src/widgets/lv_line.c.i
 
 src/widgets/lv_line.s: src/widgets/lv_line.c.s
@@ -10280,7 +10280,7 @@ src/widgets/lv_line.s: src/widgets/lv_line.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_line.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_line.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_line.c.s
 .PHONY : src/widgets/lv_line.c.s
 
 src/widgets/lv_objx_templ.o: src/widgets/lv_objx_templ.c.o
@@ -10288,7 +10288,7 @@ src/widgets/lv_objx_templ.o: src/widgets/lv_objx_templ.c.o
 
 # target to build an object file
 src/widgets/lv_objx_templ.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_objx_templ.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_objx_templ.c.o
 .PHONY : src/widgets/lv_objx_templ.c.o
 
 src/widgets/lv_objx_templ.i: src/widgets/lv_objx_templ.c.i
@@ -10296,7 +10296,7 @@ src/widgets/lv_objx_templ.i: src/widgets/lv_objx_templ.c.i
 
 # target to preprocess a source file
 src/widgets/lv_objx_templ.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_objx_templ.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_objx_templ.c.i
 .PHONY : src/widgets/lv_objx_templ.c.i
 
 src/widgets/lv_objx_templ.s: src/widgets/lv_objx_templ.c.s
@@ -10304,7 +10304,7 @@ src/widgets/lv_objx_templ.s: src/widgets/lv_objx_templ.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_objx_templ.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_objx_templ.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_objx_templ.c.s
 .PHONY : src/widgets/lv_objx_templ.c.s
 
 src/widgets/lv_roller.o: src/widgets/lv_roller.c.o
@@ -10312,7 +10312,7 @@ src/widgets/lv_roller.o: src/widgets/lv_roller.c.o
 
 # target to build an object file
 src/widgets/lv_roller.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_roller.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_roller.c.o
 .PHONY : src/widgets/lv_roller.c.o
 
 src/widgets/lv_roller.i: src/widgets/lv_roller.c.i
@@ -10320,7 +10320,7 @@ src/widgets/lv_roller.i: src/widgets/lv_roller.c.i
 
 # target to preprocess a source file
 src/widgets/lv_roller.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_roller.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_roller.c.i
 .PHONY : src/widgets/lv_roller.c.i
 
 src/widgets/lv_roller.s: src/widgets/lv_roller.c.s
@@ -10328,7 +10328,7 @@ src/widgets/lv_roller.s: src/widgets/lv_roller.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_roller.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_roller.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_roller.c.s
 .PHONY : src/widgets/lv_roller.c.s
 
 src/widgets/lv_slider.o: src/widgets/lv_slider.c.o
@@ -10336,7 +10336,7 @@ src/widgets/lv_slider.o: src/widgets/lv_slider.c.o
 
 # target to build an object file
 src/widgets/lv_slider.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_slider.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_slider.c.o
 .PHONY : src/widgets/lv_slider.c.o
 
 src/widgets/lv_slider.i: src/widgets/lv_slider.c.i
@@ -10344,7 +10344,7 @@ src/widgets/lv_slider.i: src/widgets/lv_slider.c.i
 
 # target to preprocess a source file
 src/widgets/lv_slider.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_slider.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_slider.c.i
 .PHONY : src/widgets/lv_slider.c.i
 
 src/widgets/lv_slider.s: src/widgets/lv_slider.c.s
@@ -10352,7 +10352,7 @@ src/widgets/lv_slider.s: src/widgets/lv_slider.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_slider.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_slider.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_slider.c.s
 .PHONY : src/widgets/lv_slider.c.s
 
 src/widgets/lv_switch.o: src/widgets/lv_switch.c.o
@@ -10360,7 +10360,7 @@ src/widgets/lv_switch.o: src/widgets/lv_switch.c.o
 
 # target to build an object file
 src/widgets/lv_switch.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_switch.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_switch.c.o
 .PHONY : src/widgets/lv_switch.c.o
 
 src/widgets/lv_switch.i: src/widgets/lv_switch.c.i
@@ -10368,7 +10368,7 @@ src/widgets/lv_switch.i: src/widgets/lv_switch.c.i
 
 # target to preprocess a source file
 src/widgets/lv_switch.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_switch.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_switch.c.i
 .PHONY : src/widgets/lv_switch.c.i
 
 src/widgets/lv_switch.s: src/widgets/lv_switch.c.s
@@ -10376,7 +10376,7 @@ src/widgets/lv_switch.s: src/widgets/lv_switch.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_switch.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_switch.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_switch.c.s
 .PHONY : src/widgets/lv_switch.c.s
 
 src/widgets/lv_table.o: src/widgets/lv_table.c.o
@@ -10384,7 +10384,7 @@ src/widgets/lv_table.o: src/widgets/lv_table.c.o
 
 # target to build an object file
 src/widgets/lv_table.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_table.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_table.c.o
 .PHONY : src/widgets/lv_table.c.o
 
 src/widgets/lv_table.i: src/widgets/lv_table.c.i
@@ -10392,7 +10392,7 @@ src/widgets/lv_table.i: src/widgets/lv_table.c.i
 
 # target to preprocess a source file
 src/widgets/lv_table.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_table.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_table.c.i
 .PHONY : src/widgets/lv_table.c.i
 
 src/widgets/lv_table.s: src/widgets/lv_table.c.s
@@ -10400,7 +10400,7 @@ src/widgets/lv_table.s: src/widgets/lv_table.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_table.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_table.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_table.c.s
 .PHONY : src/widgets/lv_table.c.s
 
 src/widgets/lv_textarea.o: src/widgets/lv_textarea.c.o
@@ -10408,7 +10408,7 @@ src/widgets/lv_textarea.o: src/widgets/lv_textarea.c.o
 
 # target to build an object file
 src/widgets/lv_textarea.c.o:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_textarea.c.o
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_textarea.c.o
 .PHONY : src/widgets/lv_textarea.c.o
 
 src/widgets/lv_textarea.i: src/widgets/lv_textarea.c.i
@@ -10416,7 +10416,7 @@ src/widgets/lv_textarea.i: src/widgets/lv_textarea.c.i
 
 # target to preprocess a source file
 src/widgets/lv_textarea.c.i:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_textarea.c.i
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_textarea.c.i
 .PHONY : src/widgets/lv_textarea.c.i
 
 src/widgets/lv_textarea.s: src/widgets/lv_textarea.c.s
@@ -10424,7 +10424,7 @@ src/widgets/lv_textarea.s: src/widgets/lv_textarea.c.s
 
 # target to generate assembly for a file
 src/widgets/lv_textarea.c.s:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_textarea.c.s
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(MAKE) $(MAKESILENT) -f lvgl/CMakeFiles/lvgl.dir/build.make lvgl/CMakeFiles/lvgl.dir/src/widgets/lv_textarea.c.s
 .PHONY : src/widgets/lv_textarea.c.s
 
 # Help Target
@@ -11731,6 +11731,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/hgfs/lvgl/lvgl-arm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

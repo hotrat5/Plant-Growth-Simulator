@@ -4,7 +4,7 @@
 # compile C with /usr/local/arm/5.4.0/usr/bin/arm-linux-gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/hgfs/lvgl/lvgl-arm/. -I/mnt/hgfs/lvgl/lvgl-arm/./UI
+C_INCLUDES = -I/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/. -I/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/./UI
 
 C_FLAGS = 
 

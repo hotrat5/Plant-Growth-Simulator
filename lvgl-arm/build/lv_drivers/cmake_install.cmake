@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/lvgl/lvgl-arm/lv_drivers
+# Install script for directory: /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lv_drivers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -51,14 +51,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/lvgl/lv_drivers/" TYPE DIRECTORY FILES "/mnt/hgfs/lvgl/lvgl-arm/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.git[^/]*$" EXCLUDE REGEX "/CMakeFiles$" EXCLUDE REGEX "/docs$" EXCLUDE REGEX "/lib$" EXCLUDE)
+  file(INSTALL DESTINATION "/usr/local/include/lvgl/lv_drivers/" TYPE DIRECTORY FILES "/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.git[^/]*$" EXCLUDE REGEX "/CMakeFiles$" EXCLUDE REGEX "/docs$" EXCLUDE REGEX "/lib$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/hgfs/lvgl/lvgl-arm/build/lib/liblv_drivers.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build/lib/liblv_drivers.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl/lv_drivers" TYPE FILE FILES "/mnt/hgfs/lvgl/lvgl-arm/lv_drv_conf.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lvgl/lv_drivers" TYPE FILE FILES "/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lv_drv_conf.h")
 endif()
 

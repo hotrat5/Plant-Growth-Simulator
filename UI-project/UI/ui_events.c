@@ -89,3 +89,213 @@ void growflowering(lv_event_t * e)
 {
 	// Your code here
 }
+
+void plant_insert_removal(lv_event_t * e)
+{
+	// Your code here
+}
+
+void plant_fertilize(lv_event_t * e)
+{
+	// Your code here
+}
+
+void plant_watering(lv_event_t * e)
+{
+	// Your code here
+}
+
+void switch2illustratedscreen(lv_event_t * e)
+{
+	// Your code here
+}
+
+void message_plantstage(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflowerseed(lv_event_t * e)
+{
+	// Your code here
+}
+
+void growthstagechange(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflower2(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflower3(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflower4(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflower5(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflower6(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_sunflower7(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_message(lv_event_t * e)
+{
+	// Your code here
+}
+
+void illu_img_change(lv_event_t * e)
+{
+	// Your code here
+}
+
+void illu_label_change(lv_event_t * e)
+{
+	// Your code here
+}
+
+void buy_sunflower(lv_event_t * e)
+{
+	// Your code here
+}
+
+void buy_tomato(lv_event_t * e)
+{
+	// Your code here
+}
+
+void buy_catus(lv_event_t * e)
+{
+	// Your code here
+}
+
+void buy_cannibal(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_money(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomatoseed(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomato2(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomato3(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomato4(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomato5(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomato6(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_tomato7(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactusseed(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactus2(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactus3(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactus4(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactus5(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactus6(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cactus7(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_cannibalseed(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_canniabl2(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_canniabl3(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_canniabl4(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_canniabl5(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_canniabl6(lv_event_t * e)
+{
+	// Your code here
+}
+
+void show_canniabl7(lv_event_t * e)
+{
+	// Your code here
+}

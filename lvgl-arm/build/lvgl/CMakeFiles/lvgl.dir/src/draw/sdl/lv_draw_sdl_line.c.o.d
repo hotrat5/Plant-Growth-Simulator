@@ -1,7 +1,7 @@
 lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.o: \
- /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/draw/sdl/lv_draw_sdl_line.c \
+ /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lvgl/src/draw/sdl/lv_draw_sdl_line.c \
  /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
- /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/draw/sdl/../../lv_conf_internal.h \
+ /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lvgl/src/draw/sdl/../../lv_conf_internal.h \
  /usr/local/arm/5.4.0/usr/lib/gcc/arm-none-linux-gnueabi/5.4.0/include/stdint.h \
  /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/stdint.h \
  /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/features.h \
@@ -10,5 +10,5 @@ lvgl/CMakeFiles/lvgl.dir/src/draw/sdl/lv_draw_sdl_line.c.o: \
  /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/gnu/stubs.h \
  /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/gnu/stubs-soft.h \
  /usr/local/arm/5.4.0/usr/arm-none-linux-gnueabi/sysroot/usr/include/bits/wchar.h \
- /mnt/hgfs/lvgl/lvgl-arm/lvgl/src/draw/sdl/../../lv_conf_kconfig.h \
- /mnt/hgfs/lvgl/lvgl-arm/./lv_conf.h
+ /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lvgl/src/draw/sdl/../../lv_conf_kconfig.h \
+ /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/./lv_conf.h

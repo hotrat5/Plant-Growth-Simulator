@@ -4,7 +4,7 @@
 # compile C with /usr/local/arm/5.4.0/usr/bin/arm-linux-gcc
 C_DEFINES = -DLV_CONF_INCLUDE_SIMPLE -DLV_LVGL_H_INCLUDE_SIMPLE
 
-C_INCLUDES = -I/mnt/hgfs/lvgl/lvgl-arm/. -I/mnt/hgfs/lvgl/lvgl-arm/./UI -isystem /mnt/hgfs/lvgl/lvgl-arm/lvgl -isystem /mnt/hgfs/lvgl/lvgl-arm/lvgl/examples -isystem /mnt/hgfs/lvgl/lvgl-arm/lvgl/demos -isystem /mnt/hgfs/lvgl/lvgl-arm/lv_drivers
+C_INCLUDES = -I/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/. -I/mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/./UI -isystem /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lvgl -isystem /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lvgl/examples -isystem /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lvgl/demos -isystem /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/lv_drivers
 
 C_FLAGS = 
 

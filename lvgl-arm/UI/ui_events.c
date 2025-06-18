@@ -4,310 +4,822 @@
 // Project name: SquareLine_Project
 
 #include "ui.h"
+#include "plant_simulation.h"
 #include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
-static char expression[100] = {0};
+extern PlantState* sunflower;
+extern PlantState* tomato;
+extern PlantState* cactus;
+extern PlantState* cannibal_flower;
+extern Environment* env;
+extern User* user;
+extern Commodity* commodity;
+
+extern lv_obj_t * ui_temperaturelabel1;
+bool isplant[4] = {0};
 
 
-static void append_to_expression(const char* value){
-	strcat(expression, value);
-}
-
-static void textarea_display(const char* text){
-	lv_textarea_add_text(ui_ioput, text);
-}
-
-void click7(lv_event_t * e)
+void plant_insert_removal(lv_event_t * e)
 {
-	append_to_expression("7");// Your code here
-	textarea_display("7");
-	
-
+	pest_control(sunflower);
+	//plant->health = plant->health + 5;
+	// Your code here
 }
 
-void click8(lv_event_t * e)
+void plant_insert_removal2(lv_event_t * e)
+{
+	pest_control(tomato);
+	//plant->health = plant->health + 5;
+	// Your code here
+}
+
+void plant_insert_removal3(lv_event_t * e)
+{
+	pest_control(cactus);
+	//plant->health = plant->health + 5;
+	// Your code here
+}
+
+void plant_insert_removal4(lv_event_t * e)
+{
+	pest_control(cannibal_flower);
+	//plant->health = plant->health + 5;
+	// Your code here
+}
+
+void plant_fertilize(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("8");
-	textarea_display("8");
-	
+	fertilize(sunflower);
+	//plant->health = plant->health + 5;
 }
-
-void click9(lv_event_t * e)
+void plant_fertilize2(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("9");
-	textarea_display("9");
+	fertilize(tomato);
+	//plant->health = plant->health + 5;
 }
-
-void click4(lv_event_t * e)
+void plant_fertilize3(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("4");
-	textarea_display("4");
+	fertilize(cactus);
+	//plant->health = plant->health + 5;
 }
-
-void click5(lv_event_t * e)
+void plant_fertilize4(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("5");
-	textarea_display("5");
+	fertilize(cannibal_flower);
+	//plant->health = plant->health + 5;
 }
 
-void click6(lv_event_t * e)
+
+void plant_watering(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("6");
-	textarea_display("6");
+	watering(sunflower);
+	//plant->health = plant->health + 5;
 }
-
-void click1(lv_event_t * e)
+void plant_watering2(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("1");
-	textarea_display("1");
+	watering(tomato);
+	//plant->health = plant->health + 5;
 }
-
-void click2(lv_event_t * e)
+void plant_watering3(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("2");
-	textarea_display("2");
+	watering(cactus);
+	//plant->health = plant->health + 5;
 }
-
-void click3(lv_event_t * e)
+void plant_watering4(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("3");
-	textarea_display("3");
+	watering(cannibal_flower);
+	//plant->health = plant->health + 5;
 }
 
-void click0(lv_event_t * e)
+
+
+void healthchange(lv_event_t * e)
 {
 	// Your code here
-	append_to_expression("0");
-	textarea_display("0");
-}
-
-void clickmul(lv_event_t * e)
-{
-	// Your code here
-	append_to_expression("*");
-	textarea_display("*");
-}
-
-void clickdiv(lv_event_t * e)
-{
-	// Your code here
-	append_to_expression("/");
-	textarea_display("/");
-}
-
-
-void clickadd(lv_event_t * e)
-{
-	// Your code here
-	append_to_expression("+");
-	textarea_display("+");
-	
-}
-
-void clicksub(lv_event_t * e)
-{
-	// Your code here
-	append_to_expression("-");
-	textarea_display("-");
-}
-
-
-/*
-static char* calculate_exp(const char* expression) {
-	
-    static char result[20] = {0}; 
-    double value = 0;
-    char* endptr;
+	uint8_t health = sunflower->health; 
     
-    if (strlen(expression) == 0) {
-        strcpy(result, "0");
-        return result;
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel1, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel1);
+}
+void healthchange2(lv_event_t * e)
+{
+	// Your code here
+	uint8_t health = tomato->health; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel2, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel2);
+}
+
+void healthchange3(lv_event_t * e)
+{
+	// Your code here
+	uint8_t health = cactus->health; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel3, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel3);
+}
+void healthchange4(lv_event_t * e)
+{
+	// Your code here
+	uint8_t health = cannibal_flower->health; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "健康: %d/100", health);
+    lv_label_set_text(ui_healthlabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_healthlabel4);
+}
+
+
+void agechange(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = sunflower->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel1, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel1);
+}
+
+void agechange2(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = tomato->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel2, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel2);
+}
+void agechange3(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = cactus->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel3, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel3);
+}
+void agechange4(lv_event_t * e)
+{
+	// Your code here
+	uint32_t age = cannibal_flower->age; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "年龄: %d天", age);
+    lv_label_set_text(ui_statelabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_statelabel4);
+}
+
+void humiditychange(lv_event_t * e)
+{
+	// Your code here
+	uint8_t humidity = env->humidity; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "湿度: %d", humidity);
+    lv_label_set_text(ui_humiditylabel1, temp_str);
+    lv_label_set_text(ui_humiditylabel2, temp_str);
+    lv_label_set_text(ui_humiditylabel3, temp_str);
+    lv_label_set_text(ui_humiditylabel4, temp_str);
+    // 触发界面刷新
+    lv_obj_invalidate(ui_humiditylabel1);
+    lv_obj_invalidate(ui_humiditylabel2);
+    lv_obj_invalidate(ui_humiditylabel3);
+    lv_obj_invalidate(ui_humiditylabel4);
+
+}
+
+void temperaturechange(lv_event_t * e)
+{
+	// 获取当前对象
+    //ui_temperaturelabel1 = lv_event_get_target(e);
+    
+    // 更新标签内容示例
+    
+    uint8_t temperature = env->temperature; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "温度: %d度", temperature);
+    lv_label_set_text(ui_temperaturelabel1, temp_str);
+    lv_label_set_text(ui_temperaturelabel2, temp_str);
+    lv_label_set_text(ui_temperaturelabel3, temp_str);
+    lv_label_set_text(ui_temperaturelabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_temperaturelabel1);
+    lv_obj_invalidate(ui_temperaturelabel2);
+    lv_obj_invalidate(ui_temperaturelabel3);
+    lv_obj_invalidate(ui_temperaturelabel4);
+
+	// Your code here
+}
+
+void lightchange(lv_event_t * e)
+{
+	// Your code here
+	uint8_t light = env->light; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "光照: %d", light);
+    lv_label_set_text(ui_lightlabel1, temp_str);
+    lv_label_set_text(ui_lightlabel2, temp_str);
+    lv_label_set_text(ui_lightlabel3, temp_str);
+    lv_label_set_text(ui_lightlabel4, temp_str);
+
+    // 触发界面刷新
+    lv_obj_invalidate(ui_lightlabel1);
+    lv_obj_invalidate(ui_lightlabel2);
+    lv_obj_invalidate(ui_lightlabel3);
+    lv_obj_invalidate(ui_lightlabel4);
+}
+
+void weatherchange(lv_event_t * e)
+{
+	// Your code here
+	const char* weather_str[] = {"Clear", "Cloudy", "Rainy", "Snowy", "Windy"};
+	WeatherType weather = env->weather; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s", weather_str[weather]);
+    lv_label_set_text(ui_weatherlabel1, temp_str);
+    lv_label_set_text(ui_weatherlabel2, temp_str);
+    lv_label_set_text(ui_weatherlabel3, temp_str);
+    lv_label_set_text(ui_weatherlabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_weatherlabel1);
+    lv_obj_invalidate(ui_weatherlabel2);
+    lv_obj_invalidate(ui_weatherlabel3);
+    lv_obj_invalidate(ui_weatherlabel4);
+    lv_obj_t *scr = lv_scr_act();
+    switch(weather){
+        case 0:
+            lv_obj_set_style_bg_img_src(scr, &ui_img_1664587152, LV_PART_MAIN | LV_STATE_DEFAULT);
+            break;
+        case 1:
+            lv_obj_set_style_bg_img_src(scr, &ui_img_1772208564, LV_PART_MAIN | LV_STATE_DEFAULT);
+            break;
+        case 2:
+            lv_obj_set_style_bg_img_src(scr, &ui_img_145349238, LV_PART_MAIN | LV_STATE_DEFAULT);
+            break;
+        case 3:
+            lv_obj_set_style_bg_img_src(scr, &ui_img_145351288, LV_PART_MAIN | LV_STATE_DEFAULT);
+            break;
+        case 4:
+            lv_obj_set_style_bg_img_src(scr, &ui_img_1224826616, LV_PART_MAIN | LV_STATE_DEFAULT);
+            break;
+    }
+    lv_obj_invalidate(scr);
+}
+
+void seasonchange(lv_event_t * e)
+{
+	// Your code here
+	const char* season_str[] = {"Spring", "Summer", "Autumn", "Winter"};
+	uint8_t season = env->season; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s", season_str[season]);
+    lv_label_set_text(ui_seasonlabel1, temp_str);
+    lv_label_set_text(ui_seasonlabel2, temp_str);
+    lv_label_set_text(ui_seasonlabel3, temp_str);
+    lv_label_set_text(ui_seasonlabel4, temp_str);
+    // 触发界面刷新
+    lv_obj_invalidate(ui_seasonlabel1);
+    lv_obj_invalidate(ui_seasonlabel2);
+    lv_obj_invalidate(ui_seasonlabel3);
+    lv_obj_invalidate(ui_seasonlabel4);
+}
+
+void growseed(lv_event_t * e){}
+
+void growthstagechange(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = sunflower->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], sunflower->growth);
+    lv_label_set_text(ui_growthstagelabel1, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel1);
+}
+
+
+void growthstagechange2(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = tomato->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], tomato->growth);
+    lv_label_set_text(ui_growthstagelabel2, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel2);
+}
+
+void growthstagechange3(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = cactus->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], cactus->growth);
+    lv_label_set_text(ui_growthstagelabel3, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel3);
+}
+void growthstagechange4(lv_event_t * e)
+{
+	// Your code here
+	const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	GrowthStage stage = cannibal_flower->stage; 
+    
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%s(%u%%)", stage_str[stage], cannibal_flower->growth);
+    lv_label_set_text(ui_growthstagelabel4, temp_str);
+    
+    // 触发界面刷新
+    lv_obj_invalidate(ui_growthstagelabel4);
+}
+
+
+
+void message_plantstage(lv_event_t * e)
+{
+    // const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
+	// GrowthStage stage = sunflower->stage; 
+    
+    // // 使用格式化字符串更新温度显示
+    // char temp_str[16];
+    // snprintf(temp_str, sizeof(temp_str), "植物%s了", stage_str[stage]);
+    // lv_label_set_text(ui_plantstagetextarea1, temp_str);
+    // lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
+    // // 触发界面刷新
+    // lv_obj_invalidate(ui_plantstagetextarea1);
+	// // Your code here
+    // lv_obj_add_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
+}
+
+void show_sunflowerseed(lv_event_t * e)
+{
+	// Your code here
+    //lv_obj_add_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
+    if(sunflower->stage == SEED){
+        init_plant(sunflower, SUNFLOWER, 2);
+        lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
+        isplant[0] = true;
+ 	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
     }
     
-    value = strtod(expression, &endptr);
-    
-    // 如果整个表达式是一个数字，直接返回
-    if (*endptr == '\0') {
-        sprintf(result, "%.2f", value);
-        return result;
-    }
-    
-    double num1, num2;
-    char op;
-    
-    num1 = strtod(expression, &endptr);
-    if (*endptr == '\0') {
-        sprintf(result, "%.2f", num1);
-        return result;
-    }
-    
-    op = *endptr++;
-    
-    num2 = strtod(endptr, &endptr);
-    
-    switch(op) {
-        case '+':
-            value = num1 + num2;
-            break;
-        case '-':
-            value = num1 - num2;
-            break;
-        case '*':
-            value = num1 * num2;
-            break;
-        case '/':
-            if (num2 != 0) {
-                value = num1 / num2;
-            } else {
-                strcpy(result, "Error");
-                return result;
-            }
-            break;
-        default:
-            strcpy(result, "Error");
-            return result;
-    }
-    
-    // 格式化结果
-    sprintf(result, "%.2f", value);
-	printf("%f\n", value);
-    return result;
-}
-*/
 
-// 递归下降表达式求值
-static const char* p; // 指向当前解析位置
-static double parse_number();
-static double parse_factor();
-static double parse_term();
-static double parse_expr();
-
-// 跳过空格
-static void skip_spaces() {
-    while (*p == ' ') p++;
 }
 
-// 解析数字（支持小数）
-static double parse_number() {
-    skip_spaces();
-    double val = strtod(p, (char**)&p);
-    skip_spaces();
-    return val;
+void show_sunflower2(lv_event_t * e)
+{
+	// Your code here
+    lv_obj_add_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_sunflower2, LV_OBJ_FLAG_HIDDEN);
 }
 
-// 解析括号或数字
-static double parse_factor() {
-    skip_spaces();
-    double val = 0;
-    if (*p == '(') {
-        p++; // 跳过 '('
-        val = parse_expr();
-        if (*p == ')') p++; // 跳过 ')'
+void show_sunflower3(lv_event_t * e)
+{
+	// Your code here
+    // lv_obj_add_flag(ui_sunflower2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_sunflower3, LV_OBJ_FLAG_HIDDEN);
+}
+
+void show_sunflower4(lv_event_t * e)
+{
+	// Your code here
+    lv_obj_add_flag(ui_sunflower2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_sunflower4, LV_OBJ_FLAG_HIDDEN);
+}
+
+void show_sunflower5(lv_event_t * e)
+{
+	// Your code here
+    lv_obj_add_flag(ui_sunflower4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_sunflower5, LV_OBJ_FLAG_HIDDEN);
+}
+
+void show_sunflower6(lv_event_t * e)
+{
+	// Your code here
+    lv_obj_add_flag(ui_sunflower5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_sunflower6, LV_OBJ_FLAG_HIDDEN);
+}
+
+void show_sunflower7(lv_event_t * e)
+{
+	// Your code here
+    lv_obj_add_flag(ui_sunflower6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_sunflower7, LV_OBJ_FLAG_HIDDEN);
+}
+
+void show_message(lv_event_t * e)
+{
+	// Your code here
+    const char* buffer = get_plant_needs(sunflower);
+    lv_label_set_text(ui_Label4, buffer);
+    lv_obj_invalidate(ui_Label4);
+}
+
+const char *get_obj_name(lv_obj_t *obj) {
+    if (obj == NULL) return "NULL_OBJECT";
+    return (const char *)lv_obj_get_user_data(obj); // 假设调用者已确保数据有效
+}
+
+// 从文件中读取内容并显示在文本区域
+static void read_and_display(const char *filename) {
+    FILE *file = fopen(filename, "r"); // 以只读模式打开文件
+    if (!file) {
+        perror("Error opening file");
+        printf("Failed to open file: %s\n", filename);
+        return;
+    }
+    
+    static lv_style_t style_textarea;
+    lv_style_init(&style_textarea);
+    lv_style_set_text_font(&style_textarea, &ui_font_Font1);
+    lv_obj_add_style(ui_illuTextArea, &style_textarea, 0);
+    // 清空文本区域
+    lv_textarea_set_text(ui_illuTextArea, "");
+    
+    char buffer[256]; // 行缓冲区
+    size_t totalChars = 0;
+    const size_t maxChars = 2048; // 设置最大字符限制，防止文件过大
+    
+    // 逐行读取文件内容
+    while (fgets(buffer, sizeof(buffer), file)) {
+        // 检查是否超过最大字符限制
+        size_t len = strlen(buffer);
+        if (totalChars + len >= maxChars) {
+            printf("Warning: File content exceeds maximum display limit\n");
+            break;
+        }
+        
+        // 追加到文本区域
+        lv_textarea_add_text(ui_illuTextArea, buffer);
+        totalChars += len;
+    }
+    
+    // 关闭文件
+    fclose(file);
+    
+    // 可选：滚动到顶部
+    lv_textarea_set_cursor_pos(ui_illuTextArea, 0);
+}
+
+
+void switch2illustratedscreen(lv_event_t * e) {
+    const char* screen_str[] = {
+        "ui_sunflowerscreen", "ui_tomatoscreen", 
+        "ui_cactusscreen", "ui_cannibalscreen"
+    };
+    const int screen_count = sizeof(screen_str) / sizeof(screen_str[0]);
+    
+    lv_obj_t* current_screen = lv_scr_act();
+    
+    if (current_screen == NULL) {
+        printf("Error: No active screen!\n");
+        return;
+    }
+
+    const char* screen_name = get_obj_name(current_screen);
+    
+    // 处理用户数据未设置的情况
+    if (screen_name == NULL) {
+        printf("Warning: User data not set for screen\n");
+        return;
+    }
+
+    printf("Current screen: %s\n", screen_name);
+    
+    // 根据屏幕名称选择对应的文件
+    const char *filename = NULL;
+    
+    if (strcmp(screen_name, "ui_sunflowerscreen") == 0) {
+        filename = "illu_sunflower.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_1692174141);
+        lv_label_set_text(ui_Label2, "向日葵");
+    } 
+    else if (strcmp(screen_name, "ui_tomatoscreen") == 0) {
+        filename = "illu_tomato.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_405436818);
+        lv_label_set_text(ui_Label2, "西红柿");
+    } 
+    else if (strcmp(screen_name, "ui_cactusscreen") == 0) {
+        filename = "illu_cactus.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_1437469183);
+        lv_label_set_text(ui_Label2, "仙人掌");
+    } 
+    else if (strcmp(screen_name, "ui_cannibalscreen") == 0) {
+        filename = "illu_cannibal.txt";
+        lv_img_set_src(ui_sunflower, &ui_img_cannibal7_png);
+        lv_label_set_text(ui_Label2, "食人花");
+    }
+    
+    // 如果找到匹配的文件名，读取并显示内容
+    if (filename) {
+        printf("Loading file: %s\n", filename);
+        read_and_display(filename);
     } else {
-        val = parse_number();
+        printf("Error: No matching file for screen '%s'\n", screen_name);
     }
-    skip_spaces();
-    return val;
-}
-
-// 解析乘除
-static double parse_term() {
-    double val = parse_factor();
-    while (1) {
-        skip_spaces();
-        if (*p == '*') {
-            p++;
-            val *= parse_factor();
-        } else if (*p == '/') {
-            p++;
-            double divisor = parse_factor();
-            if (divisor == 0) {
-                // 除零错误
-                return 1e308; // 特殊值，后面处理
-            }
-            val /= divisor;
-        } else {
-            break;
-        }
-    }
-    return val;
-}
-
-// 解析加减
-static double parse_expr() {
-    double val = parse_term();
-    while (1) {
-        skip_spaces();
-        if (*p == '+') {
-            p++;
-            val += parse_term();
-        } else if (*p == '-') {
-            p++;
-            val -= parse_term();
-        } else {
-            break;
-        }
-    }
-    return val;
-}
-
-// 计算表达式主函数
-static char* calculate_exp(const char* expression) {
-    static char result[32] = {0};
-    p = expression;
-    skip_spaces();
-    if (*p == '\0') {
-        strcpy(result, "0");
-        return result;
-    }
-    double val = parse_expr();
-    skip_spaces();
-    if (*p != '\0') {
-        strcpy(result, "Error");
-        return result;
-    }
-    if (val == 1e308) {
-        strcpy(result, "Error");
-        return result;
-    }
-    sprintf(result, "%.2f", val);
-    return result;
 }
 
 
 
+void illu_img_change(lv_event_t * e)
+{
 
-void clickdel(lv_event_t * e)
+}
+
+void illu_label_change(lv_event_t * e)
 {
 	// Your code here
-	lv_textarea_set_text(ui_ioput, "");
-	memset(expression, 0, sizeof(expression));
-	
 }
 
-void clickequal(lv_event_t * e) {
+void buy_sunflower(lv_event_t * e)
+{
+    buy_plant(user, commodity, SUNFLOWER);
+    init_plant(sunflower, SUNFLOWER, 1);
+    lv_label_set_text(ui_Label3, "已购买");
+    lv_obj_invalidate(ui_Label3);
+	// Your code here
+}
 
-	printf("equal:%s\n", expression);
-    // 先计算结果	
-    char* value = calculate_exp(expression);
+void buy_tomato(lv_event_t * e)
+{
+    buy_plant(user, commodity, TOMATO);
+    init_plant(tomato, TOMATO, 2);
+    lv_label_set_text(ui_Label6, "已购买");
+    lv_obj_invalidate(ui_Label6);
+	// Your code here
+}
+
+void buy_catus(lv_event_t * e)
+{
     
-    // 清空输入区域并显示结果
-    lv_textarea_set_text(ui_ioput, "");
-    lv_textarea_add_text(ui_ioput, value);
+    buy_plant(user, commodity, CACTUS);
+    init_plant(cactus, CACTUS, 2);
+    lv_label_set_text(ui_Label5, "已购买");
+    lv_obj_invalidate(ui_Label7);
+	// Your code here
+}
+
+void buy_cannibal(lv_event_t * e)
+{
+    buy_plant(user, commodity, CANNIBAL_FLOWERS);
+    init_plant(cannibal_flower, CANNIBAL_FLOWERS, 3);
+    lv_label_set_text(ui_Label7, "已购买");
+    lv_obj_invalidate(ui_Label3);
+	// Your code here
+}
+
+void show_money(lv_event_t * e)
+{
+    uint32_t coins = user->coins; 
     
-    // 重置表达式，准备下一次计算
-    memset(expression, 0, sizeof(expression));
-    strcpy(expression, "0");
+    // 使用格式化字符串更新温度显示
+    char temp_str[16];
+    snprintf(temp_str, sizeof(temp_str), "%d", coins);
+    lv_label_set_text(ui_moneymessage, temp_str);
     
+    // 触发界面刷新
+    lv_obj_invalidate(ui_moneymessage);
+	// Your code here
+}
+
+void show_tomatoseed(lv_event_t * e)
+{
+	// Your code here
+        lv_obj_clear_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
+        isplant[1] = true;
+ 	    lv_obj_add_state(ui_plant2, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    
+}
+
+void show_tomato2(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_tomato1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_tomato3(lv_event_t * e)
+{
+    // lv_obj_add_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_tomato3, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_tomato4(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_tomato2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato4, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_tomato5(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_tomato4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato5, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_tomato6(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_tomato5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato6, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_tomato7(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_tomato6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_tomato7, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cactusseed(lv_event_t * e)
+{
+    if(cactus->stage == SEED){
+        
+        lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
+        isplant[2] = true;
+ 	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
+    }
+	// Your code here
+}
+
+void show_cactus2(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cactus3(lv_event_t * e)
+{
+    // lv_obj_add_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_Cactus3, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cactus4(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cactus2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus4, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cactus5(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cactus4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus5, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cactus6(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cactus5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus6, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cactus7(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cactus6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cactus7, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_cannibalseed(lv_event_t * e)
+{
+    if(cannibal_flower->stage == SEED){
+        
+        lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
+        isplant[3] = true;
+ 	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
+        user->plant_num = 1;
+    }
+    else{
+        lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
+        //exist_plant = true;
+ 	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
+    }
+	// Your code here
+}
+
+void show_canniabl2(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_canniabl3(lv_event_t * e)
+{
+    // lv_obj_add_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
+    // lv_obj_clear_flag(ui_Cannibal3, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_canniabl4(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cannibal2, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal4, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_canniabl5(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cannibal4, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal5, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_canniabl6(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cannibal5, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal6, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
+}
+
+void show_canniabl7(lv_event_t * e)
+{
+    lv_obj_add_flag(ui_Cannibal6, LV_OBJ_FLAG_HIDDEN);
+    lv_obj_clear_flag(ui_Cannibal7, LV_OBJ_FLAG_HIDDEN);
+	// Your code here
 }

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/lvgl/lvgl-arm/UI
+# Install script for directory: /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/UI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

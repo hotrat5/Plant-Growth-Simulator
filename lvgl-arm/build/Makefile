@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/lvgl/lvgl-arm
+CMAKE_SOURCE_DIR = /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/lvgl/lvgl-arm/build
+CMAKE_BINARY_DIR = /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/lvgl/lvgl-arm/build/CMakeFiles /mnt/hgfs/lvgl/lvgl-arm/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build/CMakeFiles /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/lvgl/lvgl-arm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/Plant-Growth-Simulator/lvgl-arm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

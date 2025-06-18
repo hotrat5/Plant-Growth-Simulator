@@ -10,22 +10,78 @@
 extern "C" {
 #endif
 
-void click7(lv_event_t * e);
-void click8(lv_event_t * e);
-void click9(lv_event_t * e);
-void click4(lv_event_t * e);
-void click5(lv_event_t * e);
-void click6(lv_event_t * e);
-void click1(lv_event_t * e);
-void click2(lv_event_t * e);
-void click3(lv_event_t * e);
-void click0(lv_event_t * e);
-void clickmul(lv_event_t * e);
-void clickdiv(lv_event_t * e);
-void clickdel(lv_event_t * e);
-void clickadd(lv_event_t * e);
-void clicksub(lv_event_t * e);
-void clickequal(lv_event_t * e);
+void plant_insert_removal(lv_event_t * e);
+void plant_fertilize(lv_event_t * e);
+void plant_watering(lv_event_t * e);
+void healthchange(lv_event_t * e);
+void agechange(lv_event_t * e);
+void humiditychange(lv_event_t * e);
+void temperaturechange(lv_event_t * e);
+void lightchange(lv_event_t * e);
+void weatherchange(lv_event_t * e);
+void seasonchange(lv_event_t * e);
+
+void plant_insert_removal4(lv_event_t * e);
+void plant_fertilize4(lv_event_t * e);
+void plant_watering4(lv_event_t * e);
+void healthchange4(lv_event_t * e);
+void agechange4(lv_event_t * e);
+
+
+void plant_insert_removal2(lv_event_t * e);
+void plant_fertilize2(lv_event_t * e);
+void plant_watering2(lv_event_t * e);
+void healthchange2(lv_event_t * e);
+void agechange2(lv_event_t * e);
+
+
+void plant_insert_removal3(lv_event_t * e);
+void plant_fertilize3(lv_event_t * e);
+void plant_watering3(lv_event_t * e);
+void healthchange3(lv_event_t * e);
+void agechange3(lv_event_t * e);
+
+
+void switch2illustratedscreen(lv_event_t * e);
+void message_plantstage(lv_event_t * e);
+void show_sunflowerseed(lv_event_t * e);
+void growthstagechange(lv_event_t * e);
+void show_sunflower2(lv_event_t * e);
+void show_sunflower3(lv_event_t * e);
+void show_sunflower4(lv_event_t * e);
+void show_sunflower5(lv_event_t * e);
+void show_sunflower6(lv_event_t * e);
+void show_sunflower7(lv_event_t * e);
+void show_message(lv_event_t * e);
+void illu_img_change(lv_event_t * e);
+void illu_label_change(lv_event_t * e);
+void buy_sunflower(lv_event_t * e);
+void buy_tomato(lv_event_t * e);
+void buy_catus(lv_event_t * e);
+void buy_cannibal(lv_event_t * e);
+void show_money(lv_event_t * e);
+void show_tomatoseed(lv_event_t * e);
+void show_tomato2(lv_event_t * e);
+void show_tomato3(lv_event_t * e);
+void show_tomato4(lv_event_t * e);
+void show_tomato5(lv_event_t * e);
+void show_tomato6(lv_event_t * e);
+void show_tomato7(lv_event_t * e);
+void show_cactusseed(lv_event_t * e);
+void show_cactus2(lv_event_t * e);
+void show_cactus3(lv_event_t * e);
+void show_cactus4(lv_event_t * e);
+void show_cactus5(lv_event_t * e);
+void show_cactus6(lv_event_t * e);
+void show_cactus7(lv_event_t * e);
+void get_seed(lv_event_t * e);
+void show_cannibalseed(lv_event_t * e);
+void show_canniabl2(lv_event_t * e);
+void show_canniabl3(lv_event_t * e);
+void show_canniabl4(lv_event_t * e);
+void show_canniabl5(lv_event_t * e);
+void show_canniabl6(lv_event_t * e);
+void show_canniabl7(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/
