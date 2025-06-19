@@ -107,6 +107,7 @@ int main(void)
             init_commodity(commodity);
             init_user(user);
         }
+        
     
     // 等待植物初始化（添加超时机制）
     uint32_t start_time = custom_tick_get();
@@ -185,6 +186,7 @@ static void plant_update_timer(lv_timer_t *timer) {
         cannibal_flower->health <= 0) {
         return;
     }
+    
     printf("enter plant_update\n");
     day_change = true;
 
@@ -213,8 +215,10 @@ static void plant_update_timer(lv_timer_t *timer) {
     
        
     if(day_change == true){
+        if(user->plant_type[0]&&isplant[0]==true){
         lv_event_send(ui_healthlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_statelabel1, LV_EVENT_REFRESH, NULL);
+        }
         if(user->plant_type[1]&&isplant[1]==true){
             lv_event_send(ui_healthlabel2, LV_EVENT_REFRESH, NULL);
             lv_event_send(ui_statelabel2, LV_EVENT_REFRESH, NULL);
@@ -232,8 +236,12 @@ static void plant_update_timer(lv_timer_t *timer) {
         lv_event_send(ui_lightlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_weatherlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_seasonlabel1, LV_EVENT_REFRESH, NULL);
-        lv_event_send(ui_growthstagelabel1, LV_EVENT_REFRESH, NULL);
-        lv_event_send(ui_Label4, LV_EVENT_REFRESH, NULL);
+        
+        if(user->plant_type[0]&&isplant[0]==true){
+            lv_event_send(ui_growthstagelabel1, LV_EVENT_REFRESH, NULL);
+            lv_event_send(ui_Label4, LV_EVENT_REFRESH, NULL);
+        }
+        
         if(user->plant_type[1]&&isplant[1]==true){
             lv_event_send(ui_growthstagelabel2, LV_EVENT_REFRESH, NULL);
             lv_event_send(ui_Label9, LV_EVENT_REFRESH, NULL);
@@ -250,7 +258,7 @@ static void plant_update_timer(lv_timer_t *timer) {
         
         
     }
-
+    if(user->plant_type[0]&&isplant[0]==true){
     if(plantstage[0] != sunflower->stage){
         switch (sunflower->stage)
         {
@@ -277,6 +285,7 @@ static void plant_update_timer(lv_timer_t *timer) {
         }
         
     }
+}
 //own_plant[1]
     if(user->plant_type[1]&&isplant[1]==true){
         printf("%d\n", user->plant_type[1]);
@@ -373,6 +382,7 @@ static void plant_update_timer(lv_timer_t *timer) {
     }
 
     user->coins += 50;
+    if(user->coins>=99999) user->coins = 99999;
 
     day_change = false;
     lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
@@ -453,7 +463,7 @@ static void save_info() {
 //     //     handleSignal();
 //     // }
 // }
-}
+//}
 
 void lvgl_init_framebuffer_ts()
 {

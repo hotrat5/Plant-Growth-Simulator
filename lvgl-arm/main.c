@@ -21,6 +21,12 @@ static void plant_update_timer(lv_timer_t *timer);
 static void save_info();
 
 static void load_info();
+// 信号处理函数
+static void handleSignal(int signal);
+
+// 注册信号处理函数
+static void registerSignalHandlers();
+
 
 static const uint32_t UPDATE_INTERVAL = 2000;  // 5秒
 static const uint32_t TIMEOUT_WAIT_PLANT = 60000;  // 30秒超时
@@ -40,7 +46,7 @@ extern bool isplant[4];
 
 int main(void)
 {
-
+    registerSignalHandlers();
     lvgl_init_framebuffer_ts();
 
     // 初始化UI
@@ -132,10 +138,22 @@ int main(void)
     plantstage[2] = 0;
     plantstage[3] = 0;
 
-    if(sunflower->stage > 0) isplant[0] = true;
-    if(tomato->stage > 0) isplant[1] = true;
-    if(cactus->stage > 0) isplant[2] = true;
-    if(cannibal_flower->stage > 0) isplant[3] = true;
+    if(sunflower->stage > 0) {
+        isplant[0] = true;
+        user->plant_type[0] = 1;
+    }
+    if(tomato->stage > 0){
+        isplant[1] = true;
+        user->plant_type[1] = 1;
+    } 
+    if(cactus->stage > 0){
+        isplant[2] = true;
+        user->plant_type[2] = 1;
+    } 
+    if(cannibal_flower->stage > 0){
+        isplant[3] = true;
+        user->plant_type[3] = 1;
+    } 
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
@@ -185,7 +203,8 @@ static void plant_update_timer(lv_timer_t *timer) {
         cannibal_flower->health <= 0) {
         return;
     }
-    printf("enter plant_update\n");
+    
+    
     day_change = true;
 
     generate_environment(env);
@@ -213,8 +232,10 @@ static void plant_update_timer(lv_timer_t *timer) {
     
        
     if(day_change == true){
+        if(user->plant_type[0]&&isplant[0]==true){
         lv_event_send(ui_healthlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_statelabel1, LV_EVENT_REFRESH, NULL);
+        }
         if(user->plant_type[1]&&isplant[1]==true){
             lv_event_send(ui_healthlabel2, LV_EVENT_REFRESH, NULL);
             lv_event_send(ui_statelabel2, LV_EVENT_REFRESH, NULL);
@@ -232,8 +253,11 @@ static void plant_update_timer(lv_timer_t *timer) {
         lv_event_send(ui_lightlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_weatherlabel1, LV_EVENT_REFRESH, NULL);
         lv_event_send(ui_seasonlabel1, LV_EVENT_REFRESH, NULL);
-        lv_event_send(ui_growthstagelabel1, LV_EVENT_REFRESH, NULL);
-        lv_event_send(ui_Label4, LV_EVENT_REFRESH, NULL);
+        if(user->plant_type[0]&&isplant[0]==true){
+            lv_event_send(ui_growthstagelabel1, LV_EVENT_REFRESH, NULL);
+            lv_event_send(ui_Label4, LV_EVENT_REFRESH, NULL);
+        }
+        
         if(user->plant_type[1]&&isplant[1]==true){
             lv_event_send(ui_growthstagelabel2, LV_EVENT_REFRESH, NULL);
             lv_event_send(ui_Label9, LV_EVENT_REFRESH, NULL);
@@ -250,7 +274,7 @@ static void plant_update_timer(lv_timer_t *timer) {
         
         
     }
-
+if(user->plant_type[0]&&isplant[0]==true){
     if(plantstage[0] != sunflower->stage){
         switch (sunflower->stage)
         {
@@ -277,6 +301,7 @@ static void plant_update_timer(lv_timer_t *timer) {
         }
         
     }
+}
 //own_plant[1]
     if(user->plant_type[1]&&isplant[1]==true){
         printf("%d\n", user->plant_type[1]);
@@ -307,14 +332,9 @@ static void plant_update_timer(lv_timer_t *timer) {
         }
     }
     }
-    //     printf("user->plant_type[2]:%d\n", user->plant_type[2]);
-    //    printf("isplant[2]: %d\n", isplant[2]);
+
     if(user->plant_type[2]&&isplant[2]==true){
-    //    printf("user->plant_type[2]:%d\n", user->plant_type[2]);
-    //    printf("isplant[2]: %d\n", isplant[2]);
-    //    printf("plantstage[2]:%d\n", plantstage[2]);
-    //    printf("cactus->stage: %d\n", cactus->stage);
-    //     printf("%d\n", user->plant_type[2]);
+   
         if(plantstage[2] != cactus->stage){
         switch (cactus->stage)
         {
@@ -373,6 +393,7 @@ static void plant_update_timer(lv_timer_t *timer) {
     }
 
     user->coins += 50;
+    if(user->coins>=99999) user->coins = 99999;
 
     day_change = false;
     lv_event_send(ui_moneymessage, LV_EVENT_REFRESH, NULL);
@@ -443,17 +464,27 @@ static void save_info() {
     
 }
 
-// // 注册信号处理函数
-// static void registerSignalHandlers() {
-//     //SDL_EventType event;
-//     signal(SIGINT, handleSignal);  // 处理Ctrl+C
-//     signal(SIGTERM, handleSignal); // 处理终止信号
-//     signal(SIGQUIT, handleSignal); // 处理退出信号
-//     // if (event.type == SDL_QUIT){
-//     //     handleSignal();
-//     // }
-// }
 
+// 信号处理函数
+static void handleSignal(int signal) {
+    save_user(user);
+    save_commodity(commodity);
+    save_environment(env);
+    save_plant(sunflower);
+    save_plant(tomato);
+    save_plant(cactus);
+    save_plant(cannibal_flower);    
+    printf("程序接收到信号，即将退出\n");
+    exit(EXIT_SUCCESS);
+}
+
+// 注册信号处理函数
+static void registerSignalHandlers() {
+    //SDL_EventType event;
+    signal(SIGINT, handleSignal);  // 处理Ctrl+C
+    signal(SIGTERM, handleSignal); // 处理终止信号
+    
+}
 void lvgl_init_framebuffer_ts()
 {
     /*LittlevGL init*/

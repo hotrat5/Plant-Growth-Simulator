@@ -280,7 +280,7 @@ void lightchange(lv_event_t * e)
 void weatherchange(lv_event_t * e)
 {
 	// Your code here
-	const char* weather_str[] = {"Clear", "Cloudy", "Rainy", "Snowy", "Windy"};
+	const char* weather_str[] = {"晴天", "多云", "下雨", "下雪", "大风"};
 	WeatherType weather = env->weather; 
     
     // 使用格式化字符串更新温度显示
@@ -320,7 +320,7 @@ void weatherchange(lv_event_t * e)
 void seasonchange(lv_event_t * e)
 {
 	// Your code here
-	const char* season_str[] = {"Spring", "Summer", "Autumn", "Winter"};
+	const char* season_str[] = {"春天", "夏天", "秋天", "冬天"};
 	uint8_t season = env->season; 
     
     // 使用格式化字符串更新温度显示
@@ -400,46 +400,38 @@ void growthstagechange4(lv_event_t * e)
 }
 
 
+
 void message_plantstage1(lv_event_t * e)
 {
-    printf("enter message_plantstage1\n");
-    char* temp_str = "DEAD";
+    char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea1, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
-    // 触发界面刷新
-    lv_obj_invalidate(ui_plantstagetextarea1);
-    printf("out message_plantstage1\n");
-	
+    // 移除不必要的刷新调用
 }
 
 void message_plantstage2(lv_event_t * e)
 {
-    char* temp_str = "DEAD";
+    char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea2, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea2, LV_OBJ_FLAG_HIDDEN);
-    // 触发界面刷新
-    lv_obj_invalidate(ui_plantstagetextarea2);
+    
 	
 }
 
 void message_plantstage3(lv_event_t * e)
 {
-    char* temp_str = "DEAD";
+    char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea3, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea3, LV_OBJ_FLAG_HIDDEN);
-    // 触发界面刷新
-    lv_obj_invalidate(ui_plantstagetextarea3);
-	
+   
 }
 
 void message_plantstage4(lv_event_t * e)
 {
-    char* temp_str = "DEAD";
+    char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea4, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea4, LV_OBJ_FLAG_HIDDEN);
-    // 触发界面刷新
-    lv_obj_invalidate(ui_plantstagetextarea4);
-	
+   
 }
 
 void show_sunflowerseed(lv_event_t * e)

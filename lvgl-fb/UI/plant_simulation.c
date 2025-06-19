@@ -289,10 +289,10 @@ void watering(PlantState* plant) {
 
 // 获取提醒信息
 const char* get_plant_needs(const PlantState* plant) {
-    if (plant->needs_pest_control) return "NeedspestControl!";
-    if (plant->needs_fertilizer) return "NeedsFertilizer!";
-    if (plant->needs_water) return "NeedsWatering!";
-    return "NoUrgentNeeds";
+    if (plant->needs_pest_control) return "需要除虫";
+    if (plant->needs_fertilizer) return "需要施肥";
+    if (plant->needs_water) return "需要浇水";
+    return "无紧急事件";
 }
 
 // 打印植物状态
@@ -389,6 +389,7 @@ void init_user(User* user){
     user->plant_type[1] = 0;
     user->plant_type[2] = 0;
     user->plant_type[3] = 0;
+    
 }
 void init_commodity(Commodity* commodity){
     commodity->ishave[0] = 1;

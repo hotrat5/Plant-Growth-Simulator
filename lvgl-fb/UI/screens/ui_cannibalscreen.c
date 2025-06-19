@@ -371,7 +371,7 @@ void ui_cannibalscreen_screen_init(void)
     lv_obj_set_x(ui_achivevmentlabel4, -4);
     lv_obj_set_y(ui_achivevmentlabel4, 23);
     lv_obj_set_align(ui_achivevmentlabel4, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_achivevmentlabel4, "成就");
+    lv_label_set_text(ui_achivevmentlabel4, "食人花");
     lv_obj_set_style_text_font(ui_achivevmentlabel4, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_growthstage3 = lv_obj_create(ui_cannibalscreen);
@@ -501,7 +501,7 @@ void ui_cannibalscreen_screen_init(void)
     lv_obj_set_x(ui_Label11, 2);
     lv_obj_set_y(ui_Label11, -10);
     lv_obj_set_align(ui_Label11, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label11, "3333333333333");
+    lv_label_set_text(ui_Label11, "请种植植物");
     lv_obj_set_style_text_font(ui_Label11, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_Insectremoval4, ui_event_Insectremoval4, LV_EVENT_ALL, NULL);

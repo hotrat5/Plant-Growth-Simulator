@@ -28,7 +28,8 @@ void ui_mainscreen_screen_init(void)
     lv_obj_set_width(ui_Label16, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label16, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label16, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label16, "sunflower");
+    lv_label_set_text(ui_Label16, "向日葵");
+    lv_obj_set_style_text_font(ui_Label16, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Button3 = lv_btn_create(ui_mainscreen);
     lv_obj_set_width(ui_Button3, 100);
@@ -45,7 +46,8 @@ void ui_mainscreen_screen_init(void)
     lv_obj_set_width(ui_Label17, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label17, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label17, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label17, "tomato");
+    lv_label_set_text(ui_Label17, "西红柿");
+    lv_obj_set_style_text_font(ui_Label17, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Button4 = lv_btn_create(ui_mainscreen);
     lv_obj_set_width(ui_Button4, 100);
@@ -62,7 +64,8 @@ void ui_mainscreen_screen_init(void)
     lv_obj_set_width(ui_Label18, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label18, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label18, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label18, "cactus");
+    lv_label_set_text(ui_Label18, "仙人掌");
+    lv_obj_set_style_text_font(ui_Label18, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Button5 = lv_btn_create(ui_mainscreen);
     lv_obj_set_width(ui_Button5, 100);
@@ -79,7 +82,8 @@ void ui_mainscreen_screen_init(void)
     lv_obj_set_width(ui_Label19, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label19, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label19, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label19, "cannibal");
+    lv_label_set_text(ui_Label19, "食人花");
+    lv_obj_set_style_text_font(ui_Label19, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Button6 = lv_btn_create(ui_mainscreen);
     lv_obj_set_width(ui_Button6, 100);
@@ -96,7 +100,8 @@ void ui_mainscreen_screen_init(void)
     lv_obj_set_width(ui_Label20, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label20, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label20, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label20, "store");
+    lv_label_set_text(ui_Label20, "商店");
+    lv_obj_set_style_text_font(ui_Label20, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_Button2, ui_event_Button2, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Button3, ui_event_Button3, LV_EVENT_ALL, NULL);

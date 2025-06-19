@@ -368,7 +368,7 @@ void ui_event_Illustrated4(lv_event_t * e);
 lv_obj_t * ui_Illustrated4;
 lv_obj_t * ui_next4;
 lv_obj_t * ui_droplets4;
-//void ui_event_getseed4(lv_event_t * e);
+void ui_event_getseed4(lv_event_t * e);
 lv_obj_t * ui_getseed4;
 void ui_event_plantstagetextarea4(lv_event_t * e);
 lv_obj_t * ui_plantstagetextarea4;
@@ -650,7 +650,7 @@ void fertilizemove1_Animation(lv_obj_t * TargetObject, int delay)
     lv_anim_set_time(&PropertyAnimation_1, 1000);
     lv_anim_set_user_data(&PropertyAnimation_1, PropertyAnimation_1_user_data);
     lv_anim_set_custom_exec_cb(&PropertyAnimation_1, _ui_anim_callback_set_y);
-    lv_anim_set_values(&PropertyAnimation_1, 0, -150);
+    lv_anim_set_values(&PropertyAnimation_1, 0, -300);
     lv_anim_set_path_cb(&PropertyAnimation_1, lv_anim_path_linear);
     lv_anim_set_delay(&PropertyAnimation_1, delay + 0);
     lv_anim_set_deleted_cb(&PropertyAnimation_1, _ui_anim_callback_free_user_data);
@@ -692,7 +692,7 @@ void fertilizeback1_Animation(lv_obj_t * TargetObject, int delay)
     lv_anim_set_time(&PropertyAnimation_1, 1000);
     lv_anim_set_user_data(&PropertyAnimation_1, PropertyAnimation_1_user_data);
     lv_anim_set_custom_exec_cb(&PropertyAnimation_1, _ui_anim_callback_set_y);
-    lv_anim_set_values(&PropertyAnimation_1, 0, 150);
+    lv_anim_set_values(&PropertyAnimation_1, 0, 300);
     lv_anim_set_path_cb(&PropertyAnimation_1, lv_anim_path_linear);
     lv_anim_set_delay(&PropertyAnimation_1, delay + 0);
     lv_anim_set_deleted_cb(&PropertyAnimation_1, _ui_anim_callback_free_user_data);
@@ -1089,6 +1089,7 @@ void ui_event_buy1(lv_event_t * e)
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
         buy_sunflower(e);
+        _ui_screen_change(&ui_sunflowerscreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_sunflowerscreen_screen_init);
     }
 }
 void ui_event_buy2(lv_event_t * e)
@@ -1666,14 +1667,14 @@ void ui_event_Illustrated4(lv_event_t * e)
         
     }
 }
-// void ui_event_getseed4(lv_event_t * e)
-// {
-//     lv_event_code_t event_code = lv_event_get_code(e);
-//     lv_obj_t * target = lv_event_get_target(e);
-//     if(event_code == LV_EVENT_CLICKED) {
-//         get_seed(e);
-//     }
-// }
+void ui_event_getseed4(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_storeScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_storeScreen_screen_init);
+    }
+}
 void ui_event_plantstagetextarea4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);

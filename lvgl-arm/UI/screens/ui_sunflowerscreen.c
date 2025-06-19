@@ -373,7 +373,7 @@ void ui_sunflowerscreen_screen_init(void)
     lv_obj_set_x(ui_achivevmentlabel1, -4);
     lv_obj_set_y(ui_achivevmentlabel1, 23);
     lv_obj_set_align(ui_achivevmentlabel1, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_achivevmentlabel1, "成就");
+    lv_label_set_text(ui_achivevmentlabel1, "向日葵");
     lv_obj_set_style_text_font(ui_achivevmentlabel1, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_growthstage = lv_obj_create(ui_sunflowerscreen);
@@ -494,7 +494,7 @@ void ui_sunflowerscreen_screen_init(void)
     lv_obj_set_x(ui_Label4, 2);
     lv_obj_set_y(ui_Label4, -10);
     lv_obj_set_align(ui_Label4, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label4, "3333333333333");
+    lv_label_set_text(ui_Label4, "请种植植物");
     lv_obj_set_style_text_font(ui_Label4, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_backhome = lv_img_create(ui_sunflowerscreen);
