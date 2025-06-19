@@ -1254,7 +1254,7 @@ void ui_event_plantstagetextarea2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         message_plantstage2(e);
     }
 }
@@ -1466,7 +1466,7 @@ void ui_event_plantstagetextarea3(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         message_plantstage3(e);
     }
 }
@@ -1678,7 +1678,7 @@ void ui_event_plantstagetextarea4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
     lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
+    if(event_code == LV_EVENT_REFRESH) {
         message_plantstage4(e);
     }
 }

@@ -66,7 +66,7 @@ void ui_IllustratedScreen_screen_init(void)
     lv_obj_set_y(ui_illuTextArea, 8);
     lv_obj_set_align(ui_illuTextArea, LV_ALIGN_CENTER);
     lv_textarea_set_placeholder_text(ui_illuTextArea, "Placeholder...");
-    lv_obj_set_style_text_font(ui_illuTextArea, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_illuTextArea, &lv_font_montserrat_8, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_illuTextArea, lv_color_hex(0xFFE2AF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_illuTextArea, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 

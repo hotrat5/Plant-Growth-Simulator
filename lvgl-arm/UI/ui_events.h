@@ -43,9 +43,16 @@ void agechange3(lv_event_t * e);
 
 
 void switch2illustratedscreen(lv_event_t * e);
-void message_plantstage(lv_event_t * e);
+void message_plantstage1(lv_event_t * e);
+void message_plantstage2(lv_event_t * e);
+void message_plantstage3(lv_event_t * e);
+void message_plantstage4(lv_event_t * e);
 void show_sunflowerseed(lv_event_t * e);
 void growthstagechange(lv_event_t * e);
+void growthstagechange2(lv_event_t * e);
+void growthstagechange3(lv_event_t * e);
+void growthstagechange4(lv_event_t * e);
+
 void show_sunflower2(lv_event_t * e);
 void show_sunflower3(lv_event_t * e);
 void show_sunflower4(lv_event_t * e);
