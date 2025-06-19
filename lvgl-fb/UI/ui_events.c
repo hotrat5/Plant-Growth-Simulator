@@ -400,21 +400,46 @@ void growthstagechange4(lv_event_t * e)
 }
 
 
-
-void message_plantstage(lv_event_t * e)
+void message_plantstage1(lv_event_t * e)
 {
-    // const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
-	// GrowthStage stage = sunflower->stage; 
-    
-    // // 使用格式化字符串更新温度显示
-    // char temp_str[16];
-    // snprintf(temp_str, sizeof(temp_str), "植物%s了", stage_str[stage]);
-    // lv_label_set_text(ui_plantstagetextarea1, temp_str);
-    // lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
-    // // 触发界面刷新
-    // lv_obj_invalidate(ui_plantstagetextarea1);
-	// // Your code here
-    // lv_obj_add_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
+    printf("enter message_plantstage1\n");
+    char* temp_str = "DEAD";
+    lv_textarea_set_text(ui_plantstagetextarea1, temp_str);
+    lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
+    // 触发界面刷新
+    lv_obj_invalidate(ui_plantstagetextarea1);
+    printf("out message_plantstage1\n");
+	
+}
+
+void message_plantstage2(lv_event_t * e)
+{
+    char* temp_str = "DEAD";
+    lv_textarea_set_text(ui_plantstagetextarea2, temp_str);
+    lv_obj_clear_flag(ui_plantstagetextarea2, LV_OBJ_FLAG_HIDDEN);
+    // 触发界面刷新
+    lv_obj_invalidate(ui_plantstagetextarea2);
+	
+}
+
+void message_plantstage3(lv_event_t * e)
+{
+    char* temp_str = "DEAD";
+    lv_textarea_set_text(ui_plantstagetextarea3, temp_str);
+    lv_obj_clear_flag(ui_plantstagetextarea3, LV_OBJ_FLAG_HIDDEN);
+    // 触发界面刷新
+    lv_obj_invalidate(ui_plantstagetextarea3);
+	
+}
+
+void message_plantstage4(lv_event_t * e)
+{
+    char* temp_str = "DEAD";
+    lv_textarea_set_text(ui_plantstagetextarea4, temp_str);
+    lv_obj_clear_flag(ui_plantstagetextarea4, LV_OBJ_FLAG_HIDDEN);
+    // 触发界面刷新
+    lv_obj_invalidate(ui_plantstagetextarea4);
+	
 }
 
 void show_sunflowerseed(lv_event_t * e)
@@ -506,7 +531,7 @@ void show_message3(lv_event_t * e)
 {
 	// Your code here
     const char* buffer = get_plant_needs(cannibal_flower);
-    lv_label_set_text(ui_Label10, buffer);
+    lv_label_set_text(ui_Label11, buffer);
     lv_obj_invalidate(ui_Label11);
 }
 

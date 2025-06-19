@@ -120,10 +120,16 @@ int main(void)
     printf("植物初始化成功！\n");
     
 
-    plantstage[0] = sunflower->stage;
-    plantstage[1] = tomato->stage;
-    plantstage[2] = cactus->stage;
-    plantstage[3] = cannibal_flower->stage;
+    plantstage[0] = 0;
+    plantstage[1] = 0;
+    plantstage[2] = 0;
+    plantstage[3] = 0;
+
+    if(sunflower->stage > 0) isplant[0] = true;
+    if(tomato->stage > 0) isplant[1] = true;
+    if(cactus->stage > 0) isplant[2] = true;
+    if(cannibal_flower->stage > 0) isplant[3] = true;
+    
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     

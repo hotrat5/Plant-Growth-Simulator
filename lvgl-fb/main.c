@@ -24,7 +24,7 @@ static void handleSignal(int signal);
 static void registerSignalHandlers();
 static void load_info();
 
-static const uint32_t UPDATE_INTERVAL = 5000;  // 5秒
+static const uint32_t UPDATE_INTERVAL = 2000;  // 5秒
 static const uint32_t TIMEOUT_WAIT_PLANT = 60000;  // 30秒超时
 
 Environment* env = NULL;
@@ -120,10 +120,15 @@ int main(void)
     printf("植物初始化成功！\n");
     
 
-    plantstage[0] = sunflower->stage;
-    plantstage[1] = tomato->stage;
-    plantstage[2] = cactus->stage;
-    plantstage[3] = cannibal_flower->stage;
+    plantstage[0] = 0;
+    plantstage[1] = 0;
+    plantstage[2] = 0;
+    plantstage[3] = 0;
+
+    if(sunflower->stage > 0) isplant[0] = true;
+    if(tomato->stage > 0) isplant[1] = true;
+    if(cactus->stage > 0) isplant[2] = true;
+    if(cannibal_flower->stage > 0) isplant[3] = true;
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
@@ -153,16 +158,20 @@ int main(void)
 static void plant_update_timer(lv_timer_t *timer) {
     
 
-    if (sunflower == NULL || env == NULL || sunflower->health == 0) {
+    if (env == NULL) {
         return;
     }
     printf("enter plant_update\n");
     day_change = true;
 
     generate_environment(env);
-    simulate_day(sunflower, env);
+    
     print_environment(env);
-    print_plant_state(sunflower);
+    
+    if(user->plant_type[0]&&isplant[0]==true){
+        simulate_day(sunflower, env);
+        print_plant_state(sunflower);
+    }
 
 
     if(user->plant_type[1]&&isplant[1]==true){
@@ -274,14 +283,14 @@ static void plant_update_timer(lv_timer_t *timer) {
         }
     }
     }
-        printf("user->plant_type[2]:%d\n", user->plant_type[2]);
-       printf("isplant[2]: %d\n", isplant[2]);
+    //     printf("user->plant_type[2]:%d\n", user->plant_type[2]);
+    //    printf("isplant[2]: %d\n", isplant[2]);
     if(user->plant_type[2]&&isplant[2]==true){
-       printf("user->plant_type[2]:%d\n", user->plant_type[2]);
-       printf("isplant[2]: %d\n", isplant[2]);
-       printf("plantstage[2]:%d\n", plantstage[2]);
-       printf("cactus->stage: %d\n", cactus->stage);
-        printf("%d\n", user->plant_type[2]);
+    //    printf("user->plant_type[2]:%d\n", user->plant_type[2]);
+    //    printf("isplant[2]: %d\n", isplant[2]);
+    //    printf("plantstage[2]:%d\n", plantstage[2]);
+    //    printf("cactus->stage: %d\n", cactus->stage);
+    //     printf("%d\n", user->plant_type[2]);
         if(plantstage[2] != cactus->stage){
         switch (cactus->stage)
         {
@@ -319,7 +328,7 @@ static void plant_update_timer(lv_timer_t *timer) {
             lv_event_send(ui_Cannibal2, LV_EVENT_REFRESH, NULL);
             break;
         case 2:         
-            lv_event_send(ui_Cannibal3, LV_EVENT_REFRESH, NULL);
+            lv_event_send(ui_Cannibal4, LV_EVENT_REFRESH, NULL);
             break;
         case 3:
             lv_event_send(ui_Cannibal5, LV_EVENT_REFRESH, NULL);    
@@ -348,8 +357,25 @@ static void plant_update_timer(lv_timer_t *timer) {
     if(user->plant_type[1]) plantstage[1] = tomato->stage;
     if(user->plant_type[2]) plantstage[2] = cactus->stage;
     if(user->plant_type[3]) plantstage[3] = cannibal_flower->stage;
+    
+
+    if (sunflower->health <= 0 && user->plant_type[0]&&isplant[0]==true) {
+        printf("enter lv_event_send\n");
+        lv_event_send(ui_plantstagetextarea1, LV_EVENT_REFRESH, NULL);
+        printf("out lv_event_send\n");
+    }
+    if (tomato->health <= 0 &&user->plant_type[1]&&isplant[1]==true)  {
+        lv_event_send(ui_plantstagetextarea2, LV_EVENT_REFRESH, NULL);
+    }
+    if (cactus->health <= 0&&user->plant_type[2]&&isplant[2]==true){
+        lv_event_send(ui_plantstagetextarea3, LV_EVENT_REFRESH, NULL);
+    } 
+    if (cannibal_flower->health <= 0&&user->plant_type[3]&&isplant[3]==true) {
+        lv_event_send(ui_plantstagetextarea4, LV_EVENT_REFRESH, NULL);
+    }
+
     // 如果植物死亡，停止定时器
-    if (sunflower->health <= 0 && 
+    if (sunflower->health <= 0&& 
         tomato->health <= 0 &&
         cactus->health <= 0 &&
         cannibal_flower <= 0) {
@@ -360,6 +386,7 @@ static void plant_update_timer(lv_timer_t *timer) {
         init_plant(cannibal_flower, CANNIBAL_FLOWERS, 3);
         lv_timer_del(timer);  
     }
+    printf("nextday\n");
 }
 
 static void load_info(){

@@ -401,15 +401,12 @@ void growthstagechange4(lv_event_t * e)
 
 
 
-void message_plantstage(lv_event_t * e)
+void message_plantstage1(lv_event_t * e)
 {
-    // const char* stage_str[] = {"种子", "发芽", "幼苗", "成熟", "开花", "结果"};
-	// GrowthStage stage = sunflower->stage; 
     
-    // // 使用格式化字符串更新温度显示
     // char temp_str[16];
     // snprintf(temp_str, sizeof(temp_str), "植物%s了", stage_str[stage]);
-    // lv_label_set_text(ui_plantstagetextarea1, temp_str);
+     lv_label_set_text(ui_plantstagetextarea1, temp_str);
     // lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
     // // 触发界面刷新
     // lv_obj_invalidate(ui_plantstagetextarea1);
