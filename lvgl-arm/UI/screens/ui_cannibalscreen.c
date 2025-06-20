@@ -528,6 +528,6 @@ void ui_cannibalscreen_screen_init(void)
     lv_obj_add_event_cb(ui_Cannibal6, ui_event_Cannibal6, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Cannibal7, ui_event_Cannibal7, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Label11, ui_event_Label11, LV_EVENT_ALL, NULL);
-    lv_obj_add_event_cb(ui_cannibalscreen, ui_event_cannibalscreen, LV_EVENT_ALL, NULL);
+    //lv_obj_add_event_cb(ui_cannibalscreen, ui_event_cannibalscreen, LV_EVENT_ALL, NULL);
 
 }

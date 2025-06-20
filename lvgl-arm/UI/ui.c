@@ -327,7 +327,7 @@ lv_obj_t * ui_Label10;
 
 // SCREEN: ui_cannibalscreen
 void ui_cannibalscreen_screen_init(void);
-void ui_event_cannibalscreen(lv_event_t * e);
+//void ui_event_cannibalscreen(lv_event_t * e);
 lv_obj_t * ui_cannibalscreen;
 lv_obj_t * ui_background4;
 void ui_event_Insectremoval4(lv_event_t * e);
@@ -1559,14 +1559,14 @@ void ui_event_Label10(lv_event_t * e)
         show_message2(e);
     }
 }
-void ui_event_cannibalscreen(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-    lv_obj_t * target = lv_event_get_target(e);
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_storeScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_storeScreen_screen_init);
-    }
-}
+// void ui_event_cannibalscreen(lv_event_t * e)
+// {
+//     lv_event_code_t event_code = lv_event_get_code(e);
+//     lv_obj_t * target = lv_event_get_target(e);
+//     if(event_code == LV_EVENT_CLICKED) {
+//         _ui_screen_change(&ui_storeScreen, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_storeScreen_screen_init);
+//     }
+// }
 void ui_event_Insectremoval4(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);

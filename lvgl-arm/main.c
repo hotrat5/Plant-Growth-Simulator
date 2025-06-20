@@ -113,25 +113,8 @@ int main(void)
             init_commodity(commodity);
             init_user(user);
         }
-    
-    // 等待植物初始化（添加超时机制）
-    uint32_t start_time = custom_tick_get();
-    printf("等待植物初始化...\n");
-    
-    while(exist_plant == false) {
-        // 处理LVGL事件，保持界面响应
-        lv_timer_handler();
-        usleep(100000);  // 100ms检查一次
-        
-        if (custom_tick_get() - start_time > TIMEOUT_WAIT_PLANT) {
-            printf("等待植物初始化超时！\n");
-            if (env != NULL) free(env);
-            return -1;
-        }
-    }
-    
-    printf("植物初始化成功！\n");
-    
+
+
 
     plantstage[0] = 0;
     plantstage[1] = 0;
@@ -154,6 +137,27 @@ int main(void)
         isplant[3] = true;
         user->plant_type[3] = 1;
     } 
+    
+    // 等待植物初始化（添加超时机制）
+    uint32_t start_time = custom_tick_get();
+    printf("等待植物初始化...\n");
+    
+    // while(exist_plant == false) {
+    //     // 处理LVGL事件，保持界面响应
+    //     lv_timer_handler();
+    //     usleep(100000);  // 100ms检查一次
+        
+    //     if (custom_tick_get() - start_time > TIMEOUT_WAIT_PLANT) {
+    //         printf("等待植物初始化超时！\n");
+    //         if (env != NULL) free(env);
+    //         return -1;
+    //     }
+    // }
+    
+    printf("植物初始化成功！\n");
+    
+
+    
     // 创建LVGL定时器用于定期更新植物状态
     lv_timer_create(plant_update_timer, UPDATE_INTERVAL, NULL);
     
