@@ -320,7 +320,7 @@ void ui_event_Label10(lv_event_t * e);
 extern lv_obj_t * ui_Label10;
 // SCREEN: ui_cannibalscreen
 void ui_cannibalscreen_screen_init(void);
-void ui_event_cannibalscreen(lv_event_t * e);
+//void ui_event_cannibalscreen(lv_event_t * e);
 extern lv_obj_t * ui_cannibalscreen;
 extern lv_obj_t * ui_background4;
 void ui_event_Insectremoval4(lv_event_t * e);

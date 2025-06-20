@@ -237,21 +237,24 @@ void update_plant_growth(PlantState* plant) {
 
 // 用户操作：除虫
 void pest_control(PlantState* plant) {
-    if (plant->pest_control_count >= 1) {
-        plant->health = (plant->health < 8) ? 0 : plant->health - 8;
-        printf("Warning: %dExcessive pest control! Health -8\n", plant->type);
-        return;
-    }
-    
-    plant->health = (plant->health + 15 > 100) ? 100 : plant->health + 15;
-    plant->needs_pest_control = false;
-    plant->pest_control_count++;
-    printf("%dApplied pest control. Health +15\n", plant->type);
+     if(plant->health != 0){
+            if (plant->pest_control_count >= 1) {
+            plant->health = (plant->health < 8) ? 0 : plant->health - 8;
+            printf("Warning: %dExcessive pest control! Health -8\n", plant->type);
+            return;
+        }
+        
+        plant->health = (plant->health + 15 > 100) ? 100 : plant->health + 15;
+        plant->needs_pest_control = false;
+        plant->pest_control_count++;
+        printf("%dApplied pest control. Health +15\n", plant->type);
+    }    
 }
 
 // 用户操作：施肥
 void fertilize(PlantState* plant) {
-    if (plant->fertilize_count >= 1) {
+    if(plant->health != 0){
+        if (plant->fertilize_count >= 1) {
         plant->health = (plant->health < 8) ? 0 : plant->health - 8;
         printf("Warning: %dExcessive fertilization! Health -8\n", plant->type);
         return;
@@ -263,11 +266,14 @@ void fertilize(PlantState* plant) {
     plant->needs_fertilizer = false;
     plant->fertilize_count++;
     printf("%dApplied fertilizer. Health +20, Growth +10%%\n", plant->type);
+    }
+    
 }
 
 // 用户操作：浇水
 void watering(PlantState* plant) {
-    if (plant->water_count >= 2) {
+    if(plant->health != 0){
+        if (plant->water_count >= 2) {
         plant->health = (plant->health < 5) ? 0 : plant->health - 5;
         printf("Warning: %dExcessive watering! Health -5\n", plant->type);
         return;
@@ -277,14 +283,16 @@ void watering(PlantState* plant) {
     plant->needs_water = false;
     plant->water_count++;
     printf("%dWatered plant. Health +15\n", plant->type);
+    }
+    
 }
 
 // 获取提醒信息
 const char* get_plant_needs(const PlantState* plant) {
-    if (plant->needs_pest_control) return "NeedspestControl!";
-    if (plant->needs_fertilizer) return "NeedsFertilizer!";
-    if (plant->needs_water) return "NeedsWatering!";
-    return "NoUrgentNeeds";
+    if (plant->needs_pest_control) return "需要除虫";
+    if (plant->needs_fertilizer) return "需要施肥";
+    if (plant->needs_water) return "需要浇水";
+    return "无紧急事件";
 }
 
 // 打印植物状态
@@ -373,6 +381,22 @@ void buy_plant(User* user, Commodity* commodity, PlantType plant_type) {
     
     // 增加用户植物数量
     user->plant_num++;
+}
+
+void init_user(User* user){
+    user->plant_num = 0;
+    user->plant_type[0] = 0;
+    user->plant_type[1] = 0;
+    user->plant_type[2] = 0;
+    user->plant_type[3] = 0;
+    
+}
+void init_commodity(Commodity* commodity){
+    commodity->ishave[0] = 1;
+    commodity->ishave[1] = 1;
+    commodity->ishave[2] = 1;
+    commodity->ishave[3] = 1;
+
 }
 
 // 从文件加载用户数据

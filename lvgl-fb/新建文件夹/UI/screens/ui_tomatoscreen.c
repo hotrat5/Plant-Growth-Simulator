@@ -371,7 +371,7 @@ void ui_tomatoscreen_screen_init(void)
     lv_obj_set_x(ui_achivevmentlabel2, -4);
     lv_obj_set_y(ui_achivevmentlabel2, 23);
     lv_obj_set_align(ui_achivevmentlabel2, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_achivevmentlabel2, "成就");
+    lv_label_set_text(ui_achivevmentlabel2, "西红柿");
     lv_obj_set_style_text_font(ui_achivevmentlabel2, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_growthstage1 = lv_obj_create(ui_tomatoscreen);
@@ -503,7 +503,7 @@ void ui_tomatoscreen_screen_init(void)
     lv_obj_set_x(ui_Label9, 2);
     lv_obj_set_y(ui_Label9, -10);
     lv_obj_set_align(ui_Label9, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label9, "3333333333333");
+    lv_label_set_text(ui_Label9, "请种植植物");
     lv_obj_set_style_text_font(ui_Label9, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_Insectremoval2, ui_event_Insectremoval2, LV_EVENT_ALL, NULL);

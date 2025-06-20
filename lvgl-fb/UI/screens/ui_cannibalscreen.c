@@ -515,7 +515,7 @@ void ui_cannibalscreen_screen_init(void)
     lv_obj_add_event_cb(ui_weatherlabel4, ui_event_weatherlabel4, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_seasonlabel4, ui_event_seasonlabel4, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Illustrated4, ui_event_Illustrated4, LV_EVENT_ALL, NULL);
-    //lv_obj_add_event_cb(ui_getseed4, ui_event_getseed4, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_getseed4, ui_event_getseed4, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_plantstagetextarea4, ui_event_plantstagetextarea4, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_plant4, ui_event_plant4, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_achivevmentimage4, ui_event_achivevmentimage4, LV_EVENT_ALL, NULL);
@@ -528,6 +528,6 @@ void ui_cannibalscreen_screen_init(void)
     lv_obj_add_event_cb(ui_Cannibal6, ui_event_Cannibal6, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Cannibal7, ui_event_Cannibal7, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Label11, ui_event_Label11, LV_EVENT_ALL, NULL);
-    lv_obj_add_event_cb(ui_cannibalscreen, ui_event_cannibalscreen, LV_EVENT_ALL, NULL);
+    //lv_obj_add_event_cb(ui_cannibalscreen, ui_event_cannibalscreen, LV_EVENT_ALL, NULL);
 
 }

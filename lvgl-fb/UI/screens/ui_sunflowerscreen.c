@@ -311,7 +311,7 @@ void ui_sunflowerscreen_screen_init(void)
     lv_textarea_set_placeholder_text(ui_plantstagetextarea1, "Placeholder...");
     lv_textarea_set_one_line(ui_plantstagetextarea1, true);
     lv_obj_add_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);     /// Flags
-    lv_obj_set_style_text_font(ui_plantstagetextarea1, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_plantstagetextarea1, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_plantstagetextarea1, lv_color_hex(0xB7C16A), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_plantstagetextarea1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 

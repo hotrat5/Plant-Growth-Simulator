@@ -389,7 +389,6 @@ void init_user(User* user){
     user->plant_type[1] = 0;
     user->plant_type[2] = 0;
     user->plant_type[3] = 0;
-    
 }
 void init_commodity(Commodity* commodity){
     commodity->ishave[0] = 1;

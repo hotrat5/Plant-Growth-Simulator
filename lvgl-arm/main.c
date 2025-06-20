@@ -21,6 +21,7 @@ static void plant_update_timer(lv_timer_t *timer);
 static void save_info();
 
 static void load_info();
+
 // 信号处理函数
 static void handleSignal(int signal);
 
@@ -98,7 +99,6 @@ int main(void)
             printf("内存分配失败！\n");
             return -1;
         }
-   
     
 
     load_info();
@@ -307,7 +307,7 @@ if(user->plant_type[0]&&isplant[0]==true){
     }
 }
 //own_plant[1]
-    if(user->plant_type[1]&&isplant[1]==true){
+if(user->plant_type[1]&&isplant[1]==true){
         printf("%d\n", user->plant_type[1]);
         if(plantstage[1] != tomato->stage){
         switch (tomato->stage)
@@ -326,7 +326,6 @@ if(user->plant_type[0]&&isplant[0]==true){
             break;
         case 5:
             lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);  
-             
             break;
         case 6:
             lv_event_send(ui_tomato7, LV_EVENT_REFRESH, NULL);    

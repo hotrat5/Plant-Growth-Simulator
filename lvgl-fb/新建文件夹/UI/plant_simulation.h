@@ -111,7 +111,8 @@ void load_user(User* user);
 void load_commodity(Commodity* commodity);
 void load_environment(Environment* env);
 void load_plant(PlantState* plant, int planttype);
-
+void init_user(User* user);
+void init_commodity(Commodity* commodity);
 //保存信息到文件
 void save_user(User* user);
 void save_commodity(Commodity* commodity);

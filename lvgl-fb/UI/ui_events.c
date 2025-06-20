@@ -19,7 +19,7 @@ extern Commodity* commodity;
 
 extern lv_obj_t * ui_temperaturelabel1;
 bool isplant[4] = {0};
-
+extern bool exist_plant;
 
 void plant_insert_removal(lv_event_t * e)
 {
@@ -403,10 +403,12 @@ void growthstagechange4(lv_event_t * e)
 
 void message_plantstage1(lv_event_t * e)
 {
+    
     char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea1, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea1, LV_OBJ_FLAG_HIDDEN);
-    // 移除不必要的刷新调用
+    
+	
 }
 
 void message_plantstage2(lv_event_t * e)
@@ -423,7 +425,8 @@ void message_plantstage3(lv_event_t * e)
     char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea3, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea3, LV_OBJ_FLAG_HIDDEN);
-   
+    
+	
 }
 
 void message_plantstage4(lv_event_t * e)
@@ -431,7 +434,8 @@ void message_plantstage4(lv_event_t * e)
     char* temp_str = "DEAD......";
     lv_textarea_set_text(ui_plantstagetextarea4, temp_str);
     lv_obj_clear_flag(ui_plantstagetextarea4, LV_OBJ_FLAG_HIDDEN);
-   
+    
+	
 }
 
 void show_sunflowerseed(lv_event_t * e)
@@ -449,12 +453,12 @@ void show_sunflowerseed(lv_event_t * e)
     }
     else{
         lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
+        
  	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
     }
     }
     
-    
+    exist_plant = true;
 
 }
 
@@ -721,7 +725,7 @@ void show_tomatoseed(lv_event_t * e)
         user->plant_num = 1;
     }
         
-    
+    exist_plant = true;
 }
 
 void show_tomato2(lv_event_t * e)
@@ -788,11 +792,11 @@ void show_cactusseed(lv_event_t * e)
     }
     else{
         lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
+        
  	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
     }
     }
-    
+    exist_plant = true;
 	// Your code here
 }
 
@@ -860,11 +864,11 @@ void show_cannibalseed(lv_event_t * e)
     }
     else{
         lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
+        
  	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
     }
     }
-    
+    exist_plant = true;
 	// Your code here
 }
 

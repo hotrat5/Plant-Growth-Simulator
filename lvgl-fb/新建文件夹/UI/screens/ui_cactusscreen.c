@@ -371,7 +371,7 @@ void ui_cactusscreen_screen_init(void)
     lv_obj_set_x(ui_achivevmentlabel3, -4);
     lv_obj_set_y(ui_achivevmentlabel3, 23);
     lv_obj_set_align(ui_achivevmentlabel3, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_achivevmentlabel3, "成就");
+    lv_label_set_text(ui_achivevmentlabel3, "仙人掌");
     lv_obj_set_style_text_font(ui_achivevmentlabel3, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_growthstage2 = lv_obj_create(ui_cactusscreen);
@@ -503,7 +503,7 @@ void ui_cactusscreen_screen_init(void)
     lv_obj_set_x(ui_Label10, 2);
     lv_obj_set_y(ui_Label10, -10);
     lv_obj_set_align(ui_Label10, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label10, "3333333333333");
+    lv_label_set_text(ui_Label10, "请种植植物");
     lv_obj_set_style_text_font(ui_Label10, &ui_font_Font1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_Insectremoval3, ui_event_Insectremoval3, LV_EVENT_ALL, NULL);
