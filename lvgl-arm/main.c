@@ -142,17 +142,17 @@ int main(void)
     uint32_t start_time = custom_tick_get();
     printf("等待植物初始化...\n");
     
-    // while(exist_plant == false) {
-    //     // 处理LVGL事件，保持界面响应
-    //     lv_timer_handler();
-    //     usleep(100000);  // 100ms检查一次
+    while(exist_plant == false) {
+        // 处理LVGL事件，保持界面响应
+        lv_timer_handler();
+        usleep(100000);  // 100ms检查一次
         
-    //     if (custom_tick_get() - start_time > TIMEOUT_WAIT_PLANT) {
-    //         printf("等待植物初始化超时！\n");
-    //         if (env != NULL) free(env);
-    //         return -1;
-    //     }
-    // }
+        if (custom_tick_get() - start_time > TIMEOUT_WAIT_PLANT) {
+            printf("等待植物初始化超时！\n");
+            if (env != NULL) free(env);
+            return -1;
+        }
+    }
     
     printf("植物初始化成功！\n");
     

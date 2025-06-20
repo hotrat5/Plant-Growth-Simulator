@@ -19,7 +19,7 @@ extern Commodity* commodity;
 
 extern lv_obj_t * ui_temperaturelabel1;
 bool isplant[4] = {0};
-
+extern bool exist_plant;
 
 void plant_insert_removal(lv_event_t * e)
 {
@@ -453,12 +453,12 @@ void show_sunflowerseed(lv_event_t * e)
     }
     else{
         lv_obj_clear_flag(ui_sunflower1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
+        
  	    lv_obj_add_state(ui_plant1, LV_STATE_DISABLED);
     }
     }
     
-    
+    exist_plant = true;
 
 }
 
@@ -725,7 +725,7 @@ void show_tomatoseed(lv_event_t * e)
         user->plant_num = 1;
     }
         
-    
+    exist_plant = true;
 }
 
 void show_tomato2(lv_event_t * e)
@@ -792,11 +792,11 @@ void show_cactusseed(lv_event_t * e)
     }
     else{
         lv_obj_clear_flag(ui_Cactus1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
+        
  	    lv_obj_add_state(ui_plant3, LV_STATE_DISABLED);
     }
     }
-    
+    exist_plant = true;
 	// Your code here
 }
 
@@ -864,11 +864,11 @@ void show_cannibalseed(lv_event_t * e)
     }
     else{
         lv_obj_clear_flag(ui_Cannibal1, LV_OBJ_FLAG_HIDDEN);
-        //exist_plant = true;
+        
  	    lv_obj_add_state(ui_plant4, LV_STATE_DISABLED);
     }
     }
-    
+    exist_plant = true;
 	// Your code here
 }
 
